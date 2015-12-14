@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
+    <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
+    <lastBuildDate>Tue, 08 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Kehoe2015 (Discount Rates , Learning by Doing and Employment Fluctuations)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/Kehoe_Midrigan_Pastorino2015/</link>
+      <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/Kehoe_Midrigan_Pastorino2015/</guid>
+      <description>&lt;!-- My notes
+
+- Model the economy as families of individuals. There is perfect risk sharing within a family.
+- Individuals within a family can be employed or gain income income through home production
+- Families also own firms and gain income from firm profits -- because firms are owned by families, firms and families discount the future at the same rate
+- Individuals (workers) choose employment status to maximize the present discount value of working.
+    - If they choose to be employed they earn a state dependent wage, if not they earn a constant referred to as home production.
+    - Workers have a productivity level $z$
+--&gt;
+
+&lt;p&gt;&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;The model is a search and matching model in the flavor of DPM, with a few modifications.&lt;/p&gt;
+&lt;h3 id=&#34;consumers&#34;&gt;Consumers&lt;/h3&gt;
+&lt;p&gt;There are a continuum of identical consumers that have the following characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They face both idiosyncratic and aggregate risk (both productivity shocks that are AR(1) in logs)&lt;/li&gt;
+&lt;li&gt;Have a constant hazard probability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ϕ&lt;/em&gt;&lt;/span&gt; of dying each period&lt;/li&gt;
+&lt;li&gt;Are organized into families that pool all idiosyncratic risk and exhibit perfect idiosyncratic risk sharing within the family&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The family problem:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maximize the expected, discounted lifetime utility from consumption, where utility is CRRA in consumption and separable over time&lt;/li&gt;
+&lt;li&gt;Subject to a budget constraint that equates per period consumption and one-period ahead savings to security holding payoffs plus total income, plus profits from their family owns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The individual employment problem:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Given aggregate and idiosyncratic productivity levels, the individual chooses wether or not to work in order to maximize the present value of income
+&lt;ul&gt;
+&lt;li&gt;If the individual chooses to be employed, they earn the market wage. Otherwise, they provide a constant household production to the family&lt;/li&gt;
+&lt;li&gt;Human capital (idiosyncratic risk) follows and AR(1) in logs, but with different processes depending on employment status. Specifically, human capital is, on average, increasing for employed workers and decreasing for unemployed workers.&lt;/li&gt;
+&lt;li&gt;This makes the employment decision dynamic as it not only impacts current period income, but also future productivity&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;firms&#34;&gt;Firms&lt;/h3&gt;
+&lt;p&gt;Firms pay a vacancy cost to form a match with individuals, then produce according to individual and aggregate productivity when matched, and redistribute divided to the family of the worker.&lt;/p&gt;
+&lt;p&gt;Matches persist between periods, but can be destroyed by an exogenous shock with constant probability, or by either individuals or firms if the match is no longer profitable (possible because wages are because home production is constant while labor income is a function of stochastic productivity)&lt;/p&gt;
+&lt;h3 id=&#34;matching-bargaining-and-surplus&#34;&gt;Matching, Bargaining, and Surplus&lt;/h3&gt;
+&lt;p&gt;The authors assume a standard Cobb-Douglass style aggregate matching technology&lt;/p&gt;
+&lt;p&gt;Wages are renegotiated each period and are set by a generalized Nash bargaining protocol&lt;/p&gt;
+&lt;p&gt;The dynamics of the match surplus drives incentives for firms and individuals. Using the value functions of individuals and firms it can be written as the sum of two components:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;A standard term that is the discounted sum of the difference of production from employed and unemployed workers&lt;/li&gt;
+&lt;li&gt;A new second term that captures the benefit from human capital accumulation for employed workers over unemployed individuals&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;key-results&#34;&gt;Key Results&lt;/h2&gt;
+&lt;p&gt;The working paper only solves the model without aggregate shocks. There is an experiment where aggregate productivity unexpectedly drops 1% below its steady state level and then deterministically returns to the steady state.&lt;/p&gt;
+&lt;p&gt;The main findings are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Employment drops, and this drop is much more persistent than the drop in productivity
+&lt;ul&gt;
+&lt;li&gt;Most of this drop can be attributed to a drop in the market tightness (vacancies/unemployed)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The concavity of preferences amplifies the response of employment: the model with CRRA parameter set to &lt;span class=&#34;math inline&#34;&gt;5&lt;/span&gt; has an employment response 6 times larger than the model with linear preferences&lt;/li&gt;
+&lt;li&gt;On the job human capital accumulation makes the response to employment larger and more persistent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Kehoe2015&#34;&gt;
+&lt;p&gt;Kehoe, Patrick, Virgiliu Midrigan, and Elena Pastorino. 2015. “Discount Rates , Learning by Doing and Employment Fluctuations,” no. October.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Betts2008 (Real exchange rate movements and the relative price of non-traded goods)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/betts_kehoe2008/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/betts_kehoe2008/</guid>
+      <description>&lt;p&gt;&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
+&lt;p&gt;An empirical paper that examines the relationship between the real exchange rate and the relative price of non-traded vs traded goods.&lt;/p&gt;
+&lt;h2 id=&#34;modes-of-thought&#34;&gt;Modes of thought&lt;/h2&gt;
+&lt;p&gt;At the time of writing the paper, there were two main modes of thought for thinking about real exchange rate movements&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Traditional view: all movements in bilateral real exchange rate between two countries are due to fluctuations in the bilateral relative price of non-traded to traded goods.&lt;/li&gt;
+&lt;li&gt;New Open Economy Macroeconomics view (the &amp;quot;new view&amp;quot;): models that segment traded goods, allowing for deviations in the law of one price and have nominal rigidities that support these deviations. This means that purely monetary shocks to nominal exchange rates have persistent impact on prices and thus the real exchange rate. There is no distinction between traded and non-traded goods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An influential 1999 paper by Engel found evidence that we should abandon the traditional view and ignore the distinction between traded and non-traded goods.&lt;/p&gt;
+&lt;p&gt;This paper finds empirical evidence that suggests a substantial link between real exchange rates and relative prices of non-traded to traded goods.&lt;/p&gt;
+&lt;h2 id=&#34;key-equation&#34;&gt;Key equation&lt;/h2&gt;
+&lt;p&gt;The real exchange rate can be written as the product of a nominal exchange rate and a ratio of price indices.&lt;/p&gt;
+&lt;p&gt;If we multiply and divide by a price index for only traded goods for each country, we can decompose this product into two pieces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nominal exchange rate times relative price of traded goods &amp;ndash; we call this the bilateral real exchange rate of traded goods&lt;/li&gt;
+&lt;li&gt;Overall price index ratio divided by traded good price index ratio &amp;ndash; this is a ratio of one country relative price indices. This is the price ratio of non-traded vs traded goods mentioned earlier.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;The authors use data on 50 countries: all the countries they could find quarterly real exchange rate and price data for over the period 1980 through 2005.&lt;/p&gt;
+&lt;p&gt;The list accounts for 83.5% of all world trade in that time span. The main country missing from the list is China, for which the authors only had access to yearly data.&lt;/p&gt;
+&lt;h2 id=&#34;qualitative-description-of-main-findings&#34;&gt;Qualitative description of main findings&lt;/h2&gt;
+&lt;p&gt;The authors report 8 main findings:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The correlation between real exchange rate and the price ratio is on average just above 0.5&lt;/li&gt;
+&lt;li&gt;The volatility of relative prices is about &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; the volatility of the real exchange rate&lt;/li&gt;
+&lt;li&gt;The relative price accounts for about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; of the variance in the real exchange rate&lt;/li&gt;
+&lt;li&gt;The relationship between the price ratio and real exchange rates is strengthened as the trade intensity between countries increases&lt;/li&gt;
+&lt;li&gt;The relationship is stronger when the variance of the real exchange rate between two countries is low&lt;/li&gt;
+&lt;li&gt;The strength of the relationship does not depend systematically on whether the US is the pair of countries being studied&lt;/li&gt;
+&lt;li&gt;The relationship is not biased upwards when the authors account for high/low inflation pairings or rich/poor country pairings (in contrast to common beliefs at the time)&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;anaomaly&lt;/em&gt;: the relationship between the price ratio and the real exchange rate between EU/NAFTA and EU/US pairs is extremely weak compared to pairing from any other trade blocs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The authors document a string and robust statistical relationship between the real exchange rate and the relative price of non-traded to traded goods.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Betts2008&#34;&gt;
+&lt;p&gt;Betts, Caroline M, and Timothy J Kehoe. 2008. “Real exchange rate movements and the relative price of non-traded goods.” &lt;em&gt;NBER Working Paper&lt;/em&gt;, no. 14437. &lt;a href=&#34;http://www.nber.org/papers/w14437&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://www.nber.org/papers/w14437&#34;&gt;http://www.nber.org/papers/w14437&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ruhl2015 (New Exporter Dynamics)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/ruhl_willis/</link>
+      <pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/ruhl_willis/</guid>
+      <description>&lt;p&gt;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;The authors did some empirical work with data on Columbian firms to arrive at two stlyized facts about new exporters (firms who recently began exporting):&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;On average, entrant exporters are smaller than long-time exporters&lt;/li&gt;
+&lt;li&gt;The probability of exiting the export market falls with tenure&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The goal of the paper is to write a model that can match the data on these two dimensions.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;Partial equilibrium version of the model I presented last week. There will be three varaints:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;A baseline model similar to Melitz&lt;/li&gt;
+&lt;li&gt;A model that perturbs the baseline by making foreign demand grow with tenure in export market. This is called the delayed demand model&lt;/li&gt;
+&lt;li&gt;A model that perturbs the delayed demand model by making the fixed entry cost stochastic, rather than constant&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;baseline-model&#34;&gt;Baseline model&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Domestic demand&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Representative consumer supplies labor inelastically and aggregates differentiated varieties of the consumption good using a CES technology.&lt;/li&gt;
+&lt;li&gt;The consumer maximizes the level aggregated consumption, subject to the budget constraint that the sum of price times variety is equal to total income&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Foreign demand&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &amp;quot;rest of the world&amp;quot; is populated by another representative agent with the same preferences.&lt;/li&gt;
+&lt;li&gt;Only difference from domestic consumer is in demand for varieties, which differs with the exchange rate (varieties have different prices in different countries)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Plants&lt;/strong&gt; are indexed by the variety they produce and operate under monopolistic competition.&lt;/p&gt;
+&lt;p&gt;Plants operate a potentially DRS Cobg-Douglass production technology, with idiosyncratic TFP shocks.&lt;/p&gt;
+&lt;p&gt;Each period, each plant chooses domestic/foreign prices, domestic/foreign supply, input demand, and export status to maximize profits. Profits are the sum of revenues earned in both markets, less input costs.&lt;/p&gt;
+&lt;p&gt;The plant problem can be split into static and dynamic parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Static problem:
+&lt;ul&gt;
+&lt;li&gt;Given export status, choose prices, production and factor demand&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Dynamic problem:
+&lt;ul&gt;
+&lt;li&gt;Sunk entry costs make the export entry decision dynamic&lt;/li&gt;
+&lt;li&gt;When a plant enters the export market he must pay a fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;An incumbent exporter that chooses to continue exporting pays fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt; &amp;lt; &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;The plant&amp;rsquo;s state variables are its productivity and the real exchange rate. Both are modeled as an AR(1) in logs with Gaussian innovations.&lt;/li&gt;
+&lt;li&gt;In this problem the firm makes a discrete decision regarding&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;This model misses both empirical facts. In equilibrium, new exporters are too large relative to incumbents and probability of exit increases with time in export market.&lt;/p&gt;
+&lt;p&gt;The reason for this is that the discrete entry decision such that firms enter when either they have high productivity or face a favorable exchange rates. In short, the strongest, or largest, firms in the economy are the entrants. The size of these firms raises the initial export to sales ratio rise above the levels in the data.&lt;/p&gt;
+&lt;p&gt;Furthermore, the persistence of the process for both productivity and the exchange rate will cause profits to be front-loaded. As these state variables return to long run levels, firms choose to exit.&lt;/p&gt;
+&lt;p&gt;Another important point is that with front-loaded profits, the value function of the typical exporter is quite large. To match empirical moments on the entry rate, the entry cost must be very high.&lt;/p&gt;
+&lt;h2 id=&#34;extension-1-delayed-demand&#34;&gt;Extension 1: delayed demand&lt;/h2&gt;
+&lt;p&gt;The first extension to the baseline model is to make foreign demand grow slowly over time. This is done exogenously by causing foreign demand for each variety to rise with time in the export market.&lt;/p&gt;
+&lt;p&gt;This modeling assumption bakes in a smaller initial export to total sales ratio for entrant firms. This calibrated model matches the data on the export to sales ratio almost exactly, but still does very poorly at dealing addressing the inverted exit probability.&lt;/p&gt;
+&lt;h2 id=&#34;extension-2-delayed-demand-and-stochastic-entry-costs&#34;&gt;Extension 2: delayed demand and stochastic entry costs&lt;/h2&gt;
+&lt;p&gt;To get the model to match the other dimension of the data, the authors perturb the delayed demand model to allow some &amp;quot;bad&amp;quot; firms to enter. The mechanism that makes this happen is stochastic entry costs: in most periods the entry cost is positive, but in rare periods it is zero.&lt;/p&gt;
+&lt;p&gt;In the periods where entry costs are zero, some less productive firms who would not normally choose to enter the export market become exporters. When fixed costs are high again, they choose to exit.&lt;/p&gt;
+&lt;p&gt;The model with both extensions in place are able to match both stylized facts from the data that teh baseline model fails to produce.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Ruhl2015&#34;&gt;
+&lt;p&gt;Ruhl, K, and J Willis. 2015. “New Exporter Dynamics,” no. November. doi:&lt;a href=&#34;http://doi.org/10.2139/ssrn.2531105&#34;&gt;10.2139/ssrn.2531105&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alessandria2014 (Trade adjustment dynamics and the welfare gains from trade)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/Alessandria_Choi_Ruhl2015/</link>
+      <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/Alessandria_Choi_Ruhl2015/</guid>
+      <description>&lt;p&gt;&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;This is a general equilibrium trade model that focuses on producer export, entry, expansion, and exit. The structure of the model nests other standard models such as Krugman, Melitz and others.&lt;/p&gt;
+&lt;p&gt;In the model there are two symmetric countries. Within each country there are consumers, final goods producers, intermediate goods producers, and a government.&lt;/p&gt;
+&lt;h3 id=&#34;consumers&#34;&gt;Consumers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A unit mass of identical consumers live in each country and inelastically supple one unit of labor&lt;/li&gt;
+&lt;li&gt;Choose sequences of capital, risk free one period bond holdings, and consumption to maximize expected present discounted value of CRRA utility over consumption.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;final-goods-producers&#34;&gt;Final Goods Producers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The final goods producers combine home and foreign intermediate goods to produce a non-traded consumption good&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;intermediate-goods-producers&#34;&gt;Intermediate Goods Producers&lt;/h3&gt;
+&lt;p&gt;Intermediate goods producers are the most interesting agents in the economy. Each producer is characterized by three state variables: technology level (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;/span&gt;), iceberg costs (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ξ&lt;/em&gt;&lt;/span&gt;), and fixed costs (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;/span&gt;) and produces intermediate goods using capital, labor, and materials using a nested Cobb Douglass technology subject to TFP shocks.&lt;/p&gt;
+&lt;p&gt;The cost structure is discrete: fixed costs can be either low or high while iceberg costs can be one of three levels: low, high, or infinite.&lt;/p&gt;
+&lt;p&gt;A producer with infinite iceberg costs is a non-exporter. He can choose to pay no fixed cost and remain a non-exporter, or pay the high fixed cost and start the next period as an exporter with a high iceberg cost.&lt;/p&gt;
+&lt;p&gt;If a producer has either low or high iceberg costs, they can pay the low fixed cost to draw an iceberg cost for the next period. In the parameterization, the distribution is symmetric and places about 90% probability on staying with the same finite iceberg cost.&lt;/p&gt;
+&lt;p&gt;This structure nests other common models. If &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;L&lt;/em&gt;&lt;/sub&gt; &amp;lt; &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, then there is a sunk cost to being an exporter. If &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;L&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ξ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;L&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;ξ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; the export decision is static. If in addition the fixed costs are zero, then there is no export decision and the model is a generalized version of Krugman&amp;rsquo;s monopolistic competition.&lt;/p&gt;
+&lt;h3 id=&#34;entry&#34;&gt;Entry&lt;/h3&gt;
+&lt;p&gt;Entrants pay a fixed cost to set up shop and cannot export in their first period. In equilibrium there is a free entry condition that determines the measure of entrants.&lt;/p&gt;
+&lt;h3 id=&#34;aggregates&#34;&gt;Aggregates&lt;/h3&gt;
+&lt;p&gt;There is a government that collects export tariffs (calibrated to be 10%) and redistributes the proceeds lump sum to domestic consumers.&lt;/p&gt;
+&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
+&lt;h3 id=&#34;definition&#34;&gt;Definition&lt;/h3&gt;
+&lt;p&gt;An equilibrium is defined as allocations for consumers, intermediate good firms and final good firms in both countries as well as export decisions for intermediate good producers such that taking prices as given, the allocations are consistent with agent optimization, the free entry condition holds, market clearing and resource constraints hold.&lt;/p&gt;
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;Two main calibrations:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Benchmark. Some features
+&lt;ul&gt;
+&lt;li&gt;Low fixed cost for becoming exporter relatively small (3.7% of the cost to enter as new firm)&lt;/li&gt;
+&lt;li&gt;Profits are back loaded: new exporters expect to run losses for at least the first 3 years&lt;/li&gt;
+&lt;li&gt;Iceberg transition matrix for exports is symmetric and the Markov process is very persistent.&lt;/li&gt;
+&lt;li&gt;Older exporters are typically more efficient (low iceberg cost). This provides an incentive to remain an exporter (don&amp;rsquo;t want to start over at high iceberg again)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Sunk cost model
+&lt;ul&gt;
+&lt;li&gt;Restricting the iceberg costs to be the same results in a sunk cost model&lt;/li&gt;
+&lt;li&gt;Entry cost vs continuation cost higher than in benchmark model&lt;/li&gt;
+&lt;li&gt;Profits are front loaded: exports pay a large cost up front, but expect to earn profits in their first period of exporting&lt;/li&gt;
+&lt;li&gt;Incentive to remain an exporter comes through a different channel: firms don&amp;rsquo;t want to pay large fixed cost again.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;experiments&#34;&gt;Experiments&lt;/h4&gt;
+&lt;p&gt;The authors perform a number of experiments with different calibrations of the model.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Global Trade Liberalization:&lt;/strong&gt; The first experiment is that tariffs are unexpectedly reduced to zero globally. The key features of the response to the new steady state are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Trade grows slowly and smoothly to a higher SS&lt;/li&gt;
+&lt;li&gt;Consumption and output rise sharply and immediately, but follow a hump shaped path (overshoot new SS in early periods following policy change)&lt;/li&gt;
+&lt;li&gt;Entry rate declines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They did the same experiment in the sunk cost model. Differing results were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Transition is much faster (after 3 periods trade growth 55% percent of long run value in benchmark model, but 90% in sunk cost model)&lt;/li&gt;
+&lt;li&gt;Smaller welfare gain from policy change. Driven by stronger over shooting in consumption in benchmark model, which in turn is a driven by the fact that in sunk cost model new exporters export too large a share of aggregate exports. In the benchmark model new traders are less efficient, so they make up a smaller share of total trade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also did a version where fixed costs are zero and iceberg costs constant (no export decision, no cost model). Differences in response to regime change are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Smaller welfare gain (relative to benchmark model) because consumption grows smoothly and doesn&amp;rsquo;t overshoot.&lt;/li&gt;
+&lt;li&gt;This happens because The model without trade costs experiences smaller changes on the extensive margin than the model with costs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Alessandria2014&#34;&gt;
+&lt;p&gt;Alessandria, George, Horag Choi, and Kim J Ruhl. 2014. “Trade Adjustment Dynamics and the Welfare Gains from Trade.” &lt;em&gt;NBER Working Paper&lt;/em&gt; November (20663). &lt;a href=&#34;http://papers.ssrn.com/sol3/papers.cfm?abstract{\_}id=2428709&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://papers.ssrn.com/sol3/papers.cfm?abstract{_}id=2428709&#34;&gt;http://papers.ssrn.com/sol3/papers.cfm?abstract{_}id=2428709&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jermann2012 (Macroeconomic Effects of Financial Shocks)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/Jermann_Quadrini_2012/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/Jermann_Quadrini_2012/</guid>
+      <description>&lt;p&gt;&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;h3 id=&#34;firm-problem&#34;&gt;Firm Problem&lt;/h3&gt;
+&lt;p&gt;The model has a representative firm that uses capital and labor within CRS Cobb Douglas production technology, subject to TFP shock.&lt;/p&gt;
+&lt;p&gt;Capital evolution is standard: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; = (1 − &lt;em&gt;δ&lt;/em&gt;)&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; + &lt;em&gt;i&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Firms also raise resources through debt and equity financing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debt financing comes through the issuance of a non-state contingent one period bond.
+&lt;ul&gt;
+&lt;li&gt;Debt financing has a tax advantage relative to equity (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = 1 + &lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;(1 − &lt;em&gt;τ&lt;/em&gt;)&lt;/span&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Equity financing comes through dividend payments (or receipts) from shareholders
+&lt;ul&gt;
+&lt;li&gt;Total cost to firms of dividend payouts is the payment amount plus a quadratic term in deviation of payout from target (steady state).&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Timing in each period is in three stages:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Firms choose investment, labor, dividend payments, and issue new bonds.
+&lt;ul&gt;
+&lt;li&gt;Because all these payments happen at the start of the period firms raise within period working capital through an intra-period loan.&lt;/li&gt;
+&lt;li&gt;This loan is repaid at the end of each period and bears no interest&lt;/li&gt;
+&lt;li&gt;The value of the loan is equal to production, making budget constraint hold&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Production happens&lt;/li&gt;
+&lt;li&gt;The working capital loan is paid off&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Firms are allowed to default on debt, so in equilibrium there is an enforcement constraint. Suppose that at the moment the debt is contracted, with probability &lt;span class=&#34;math inline&#34;&gt;1 − &lt;em&gt;ξ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; the liquidation value of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt; is zero, otherwise it is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ξ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; is AR(1) in logs and is called a financial shock. Firms and lenders will negotiate to arrive at an enforcement constraint:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\xi&lt;em&gt;t \left(x&lt;/em&gt;{t+1} - \frac{b_{t+1}}{1+r_t} \right) \ge l_t$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The constraint is tighter with more intra-or inter-period debt and looser with a higher capital stock.&lt;/p&gt;
+&lt;p&gt;In summary, the firm&amp;rsquo;s financing problem has a few features. Debt financing is preferred to equity financing because of the tax benefit and lack of additional deviation from steady state cost. However, the amount of debt financing available is constrained in equilibrium.&lt;/p&gt;
+&lt;!-- TODO: Should I just show the recursive problem and talk about the constraints? --&gt;
+&lt;h3 id=&#34;household-problem&#34;&gt;Household Problem&lt;/h3&gt;
+&lt;p&gt;A representative household has time separable preferences over consumption and labor. The household chooses sequences of labor supply, bond holdings, and equity shares to maximize the expected present discounted value of period utility.&lt;/p&gt;
+&lt;p&gt;Each period equity payouts are shares times the sum of dividend payments plus the price of equity &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;. When choosing shares for next period, they pay &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;em&gt;p&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The household also pays lump sum taxes that finance the tax benefit firm&amp;rsquo;s receive by issuing debt.&lt;/p&gt;
+&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
+&lt;p&gt;Some key equilibrium results:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the tax benefit &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; is positive, then the enforcement constraint binds in a deterministic steady state. Can be read directly off the FOC for firm debt next period: if &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt; &amp;gt; 0&lt;/span&gt; then the multiplier on the enforcement constraint is also positive.
+&lt;ul&gt;
+&lt;li&gt;With uncertainty the constraint might be slack if &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; is not large enough. The authors consider &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; big enough that the constraint always binds.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;When the tax benefit and the equity costs are zero the constraint is always slack (even in stochastic environment) &lt;em&gt;and&lt;/em&gt; changes in the capital liquidation value shock do not impact labor or investment decisions.
+&lt;ul&gt;
+&lt;li&gt;So, to get the main result that the financial matters in equilibrium we need debt financing to be better than equity financing on both of these dimensions&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;empirical-results&#34;&gt;Empirical results&lt;/h2&gt;
+&lt;p&gt;The consider the response to the model under a variety of stochastic environments and asses how closely the model simulation matches the data on GDP and hours worked:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TFP shocks only: dosn&amp;rsquo;t match the data well.&lt;/li&gt;
+&lt;li&gt;Financial shocks only: does much better at maching the data.
+&lt;ul&gt;
+&lt;li&gt;To see why we need to understand that the marginal condition for the firm choosing labor demand is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;em&gt;K&lt;/em&gt;&lt;em&gt;L&lt;/em&gt; = &lt;em&gt;w&lt;/em&gt; × Labor wedge&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;This labor wedge is increasing in both the multiplier on the enforcement constraint and dividend costs.&lt;/li&gt;
+&lt;li&gt;As financial shocks go up, the constraint tightens, increasing the multiplier &amp;ndash; altering labor demand even more.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;They also do many other experiments and consider an extended model.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Jermann2012&#34;&gt;
+&lt;p&gt;Jermann, Urban, and Vincenzo Quadrini. 2012. “Macroeconomic Effects of Financial Shocks.” &lt;em&gt;American Economic Review&lt;/em&gt; 102 (1): 238–71. doi:&lt;a href=&#34;http://doi.org/10.1257/aer.102.1.238&#34;&gt;10.1257/aer.102.1.238&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Iskhakov2013 (Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/Iskhakov_Rust_Schjerning_2015/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/Iskhakov_Rust_Schjerning_2015/</guid>
+      <description>&lt;p&gt;&lt;h1 id=&#34;outline&#34;&gt;Outline&lt;/h1&gt;
+&lt;p&gt;The authors of this paper do 3 main things:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Describe a particular class of Dynamic economic games&lt;/li&gt;
+&lt;li&gt;Describe two algorithms for computing Markov perfect equilibria of those games&lt;/li&gt;
+&lt;li&gt;Give two detailed, non-trivial examples of how to apply the algorithms to games in this class&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We won&amp;rsquo;t have time to touch on the examples, but my goal today is to describe the class of models and explain the key components of the algorithms.&lt;/p&gt;
+&lt;h1 id=&#34;dynamic-directional-games&#34;&gt;Dynamic Directional Games&lt;/h1&gt;
+&lt;p&gt;The class of dynamic games considered in this paper have the following characteristics&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We consider a dynamic stochastic game &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; with &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; players and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; periods. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; might be &lt;span class=&#34;math inline&#34;&gt;∞&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Payoffs for each player are given by time separable von-Neumann Morgenstern utility functions.
+&lt;ul&gt;
+&lt;li&gt;Time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; payoffs depend on the state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;/span&gt; in time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; as well as the vector of actions &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; chosen by all players&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The state for time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/span&gt; is Markov, conditional on time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; state and actions&lt;/li&gt;
+&lt;li&gt;We restrict the state space to be finite&lt;/li&gt;
+&lt;li&gt;Players perfectly observe the current state as well as past actions&lt;/li&gt;
+&lt;li&gt;For each player the discount factor, set of feasible actions given the state, and the Markov transition probabilities are common knowledge&lt;/li&gt;
+&lt;li&gt;We will consider Markov perfect equilibria over behavior strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The authors further refine this class of games by introducing the concept of &lt;em&gt;directionality&lt;/em&gt; in one or more state variables. Specifically, they partition the state vector into two components: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;X&lt;/em&gt;&lt;/span&gt;. The set &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt; contains the elements of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; that can be represented by a directed acyclic graph. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;X&lt;/em&gt;&lt;/span&gt; contains all other states.&lt;/p&gt;
+&lt;p&gt;What does this mean? The set &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt; can be further divided into subgroups and ordered such that once the state moves from subgroup &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; to subgroup &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;j&lt;/em&gt; &amp;gt; &lt;em&gt;i&lt;/em&gt;&lt;/span&gt;, there is 0 probability of ever returning to subgroup &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;algorithm-1-state-recursion-algorithm&#34;&gt;Algorithm 1: State Recursion Algorithm&lt;/h1&gt;
+&lt;p&gt;How does directionality help? It allows them to define the first main algorithm in the paper: the state recursion algorithm.&lt;/p&gt;
+&lt;p&gt;Suppose that the set &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt; has been divided into &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt; groups, ordered such that the model begins in group &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt; and terminates in group &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt;. Then the state recursion algorithm roughly proceeds as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Starting with subgroup &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt;, iterating down to subgroup 1
+&lt;ul&gt;
+&lt;li&gt;For each state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt; ∈ &lt;em&gt;D&lt;/em&gt;&lt;sub&gt;&lt;em&gt;M&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Compute all MPE of the subgame starting from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt; = &lt;em&gt;d&lt;/em&gt; × &lt;em&gt;x&lt;/em&gt;,  ∀&lt;em&gt;x&lt;/em&gt; ∈ &lt;em&gt;X&lt;/em&gt;&lt;/span&gt;, taking as given optimal strategies already computed in subgroups &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;j&lt;/em&gt; &amp;gt; &lt;em&gt;i&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;If multiple such equilibria exist, use some deterministic equilibrium selection rule to choose a unique MPE&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;When the recursion terminates, the selected equilibria from each subgame are joined to form the MPE of the original game.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To understand how the State Recursion Algorithm works, consider two simple examples:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Let the only directional state variable be time. Then SRA is equivalent to familiar backwards time recursion:
+&lt;ul&gt;
+&lt;li&gt;start in the terminal period, solve the model for each state in that period&lt;/li&gt;
+&lt;li&gt;Step backwards once in time and for each state in time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt; − 1&lt;/span&gt;, compute the equilibrium, taking as given the optimal cap &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; strategy.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;A stylized version of Rubenstein&amp;rsquo;s 2 bargaining over a pie problem.
+&lt;ul&gt;
+&lt;li&gt;Suppose that 2 agents are bargaining over how to split a single perfectly divisible pie.&lt;/li&gt;
+&lt;li&gt;Further assume that the size of the pie evolves according to a 4 state Markov chain, where states are ordered in decreasing size of the pie (i.e. state 1 is the full pie) with an upper triangular transition matrix. Specifically, suppose that from state 1, there is non-zero probability of remaining in state 1, or moving to either state 2 or state 3. From state 2, you can remain in state 2 or move to state 4. From state 3 you can stay or move to 4. 4 is absorbing.&lt;/li&gt;
+&lt;li&gt;The state is partitioned into 3 subgroups &lt;code&gt;[(1,), (2,3), (4,)]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;After moving from &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;2&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;3&lt;/span&gt;, there is zero probability of ever moving back to &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt;. Similarly, once the state goes to &lt;span class=&#34;math inline&#34;&gt;4&lt;/span&gt;, it has zero probability of ever returning to &lt;span class=&#34;math inline&#34;&gt;1, 2,&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;3&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From the second example we can see how SRA is a generalization of backwards time recursion: the state can include variables other than time and have a stochastic law of motion between groups.&lt;/p&gt;
+&lt;p&gt;The SRA algorithm makes 2 assumptions:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;That we know how to solve for an MPE starting from each element in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;That we have a deterministic equilibrium selection rule in mind&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The output of the algorithm is a single MPE of the original game.&lt;/p&gt;
+&lt;h1 id=&#34;algorithm-2-recursive-lexicographical-search&#34;&gt;Algorithm 2: Recursive Lexicographical Search&lt;/h1&gt;
+&lt;p&gt;The second algorithm is called &amp;quot;Recursive Lexicographical Search&amp;quot;. This algorithm relaxes the equilibrium selection rule assumption and in return finds &lt;em&gt;all&lt;/em&gt; the MPE of the original game.&lt;/p&gt;
+&lt;p&gt;The core concept behind this algorithm is that you have an outer loop over all possible equilibrium selection rules, and use the SLA algorithm to compute a particular MPE associated with that ESR.&lt;/p&gt;
+&lt;p&gt;A key feature of their description of the algorithm is an extremely efficient and clearly explained algorithm for iterating over only the feasible ESRs. The output is that you can compute &lt;em&gt;all&lt;/em&gt; the MPE of the original game in linear time (i.e. computational time increases linearly with the number of equilibria). Naively iterating over the possible ESRs would require checking &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;K&lt;/em&gt;&lt;sup&gt;&lt;em&gt;N&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; candidates, where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;K&lt;/em&gt;&lt;/span&gt; is the maximal number of MPE for any particular stage-game and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; is the total number of stage-games. In one example this reduces the number of candidates from &lt;code&gt;1.7445e26&lt;/code&gt; to &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Iskhakov2013&#34;&gt;
+&lt;p&gt;Iskhakov, Fedor, John Rust, and Bertel Schjerning. 2015. “Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games” 1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Chassang2010 (Building routines: Learning, cooperation, and the dynamics of incomplete relational contracts)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/Chassing_2011/</link>
+      <pubDate>Tue, 20 Oct 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/Chassing_2011/</guid>
+      <description>&lt;p&gt;&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
+&lt;h2 id=&#34;mechanics&#34;&gt;Mechanics&lt;/h2&gt;
+&lt;p&gt;Two agents, infinite horizon, discrete time, and each agent has a common discount factor &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;δ&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Each period agent 1 can choose to enter or exit.&lt;/p&gt;
+&lt;p&gt;Player 2 has a countably finite set of actions, represented as the set &lt;span class=&#34;math inline&#34;&gt;𝒜&lt;/span&gt;, which is equal to the natural numbers. Each period an i.i.d subset of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt; ⊂ 𝒜&lt;/span&gt; is drawn. This is both the state of the economy in each period and agent 2&amp;rsquo;s feasible actions set for the period. Each action is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt; ∈ 𝒜&lt;/span&gt; is drawn with the same probability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; each period.&lt;/p&gt;
+&lt;p&gt;Each period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; is broken into two stages. In stage 1, agent 1 chooses to enter or exit. Upon exit, both players get 0 flow payoffs, the game moves to period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;If agent 1 chooses to enter, he pays a constant fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt; while agent 2 gets a benefit &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;π&lt;/em&gt;&lt;/span&gt;. Then the iid state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; ⊂ 𝒜&lt;/span&gt; is drawn and stage 2 begins.&lt;/p&gt;
+&lt;p&gt;In stage 2 player 2 chooses his action &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt; ∈ &lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;. This choice brings a deterministic cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt;. With probability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;q&lt;/em&gt;&lt;/span&gt; the action succeeds and agent 1 gains a deterministic payoff &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;b&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt;. With probability &lt;span class=&#34;math inline&#34;&gt;1 − &lt;em&gt;q&lt;/em&gt;&lt;/span&gt; the action fails and agent 1 gets &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;technology&#34;&gt;Technology&lt;/h2&gt;
+&lt;p&gt;In the set &lt;span class=&#34;math inline&#34;&gt;𝒜&lt;/span&gt; there are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; productive actions (numbered &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt; − 1&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;The function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt; takes on a constant value &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; for all productive actions, and &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt; for all non-productive actions.&lt;/p&gt;
+&lt;p&gt;The function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;b&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt; is positive (though not constant) for all productive actions, and &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt; for all other actions.&lt;/p&gt;
+&lt;p&gt;There is no mechanism for agents to share utility.&lt;/p&gt;
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;p&gt;All agents know perfectly the parameters &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;δ&lt;/em&gt;&lt;/span&gt; (discount rate), &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; (probability at which a particular action is drawn from &lt;span class=&#34;math inline&#34;&gt;𝒜&lt;/span&gt; each period), &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;q&lt;/em&gt;&lt;/span&gt; (probability a productive action is successful), and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; the total number of productive actions.&lt;/p&gt;
+&lt;p&gt;Both agents perfectly observe the state each period (though the time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; state is realized &lt;em&gt;after&lt;/em&gt; agent 1 makes his time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; decision). Both players also see perfectly the action &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; taken by player 2 and the payoff paid to agent &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Information is asymmetric in that only agent 2 sees the cost of his actions &amp;ndash; hence only agent 2 knows if the selected action is productive.&lt;/p&gt;
+&lt;p&gt;The realizations of the function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;b&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt; are drawn from a known distribution &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;B&lt;/em&gt;&lt;/span&gt; with compact support and held fixed throughout the game. Agents do not know these realizations ex ante, but share the same prior about the distribution from which they were drawn.&lt;/p&gt;
+&lt;p&gt;Agent 1 has an improper uniform prior over which actions are productive. Specifically&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\forall A \subset \mathcal{A}, \forall a \in A, \quad \text{prob} \left{a \in \mathcal{N} | \text{card} A \cap N = n\right} = \frac{n}{ \text{card} A}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Parameters are such that agent 1 doesn&amp;rsquo;t exit in period 1&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;equilibrium-concept&#34;&gt;Equilibrium concept&lt;/h2&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; ∈ {&lt;em&gt;S&lt;/em&gt;, &lt;em&gt;E&lt;/em&gt;}&lt;/span&gt; be agent 1&amp;rsquo;s decision to stay or exit at time &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;E&lt;/em&gt;&lt;/span&gt;, then &lt;span class=&#34;math inline&#34;&gt;$A_t = a_t = \tilde{b}(a_t) \emptyset$&lt;/span&gt;. There are three types of history:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;ℋ&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt; are histories of the form &lt;span class=&#34;math inline&#34;&gt;$h^1 = \left{d_1, A_1, a_1, \tilde{b}(a&lt;em&gt;1), \dots, d&lt;/em&gt;{t-1}, A&lt;em&gt;{t-1}, a&lt;/em&gt;{t-1} \tilde{b}(a_{t-1}) \right}$&lt;/span&gt; and correspond to agent 1&amp;rsquo;s information set at his decision node in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;ℋ&lt;sup&gt;2|1&lt;/sup&gt;&lt;/span&gt; histories are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sup&gt;1&lt;/sup&gt; ⊔ {&lt;em&gt;d&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;}&lt;/span&gt; are agent 1&amp;rsquo;s information at agent 2&amp;rsquo;s decision node in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;ℋ&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt; histories are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sup&gt;2|1&lt;/sup&gt; ⊔ 𝒩&lt;/span&gt; are agent 2&amp;rsquo;s information set at his decision node in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A pure strategy for player 1 is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt; : ℋ&lt;sup&gt;1&lt;/sup&gt; → {&lt;em&gt;S&lt;/em&gt;, &lt;em&gt;E&lt;/em&gt;}&lt;/span&gt;. A pure strategy for player 2 is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; : ℋ&lt;sup&gt;2&lt;/sup&gt; → 𝒜&lt;/span&gt; such that forall histories &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; ∈ ℋ&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;(&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt;)∈&lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The equilibrium concept is a Pareto efficient perfect Bayesian equilibrium in pure strategies. The strategy profiles form the equilibrium.&lt;/p&gt;
+&lt;h1 id=&#34;equilibrium-analysis&#34;&gt;Equilibrium Analysis&lt;/h1&gt;
+&lt;h2 id=&#34;complete-information-benchmark&#34;&gt;Complete information benchmark&lt;/h2&gt;
+&lt;p&gt;Consider a benchmark model of full information where agent 1 also knows agent 2&amp;rsquo;s cost function. In all Pareto efficient equilibria of this game, player 1 never chooses to exit.&lt;/p&gt;
+&lt;p&gt;Because the payoff to agent 1 is bounded above, value functions for player 1 and player 2 are bounded. Denote the highest possible value function for agent 2 in the perfect information game as &lt;span class=&#34;math inline&#34;&gt;$\bar{V}_2$&lt;/span&gt;. This will be used in later analysis.&lt;/p&gt;
+&lt;h2 id=&#34;asymmetric-information-model&#34;&gt;Asymmetric information model&lt;/h2&gt;
+&lt;p&gt;In the asymmetric information model, agent 1 learns which actions are productive. In the early stages of the game, monitoring is imperfect (agent 1 doesn&amp;rsquo;t know for sure if he got zero payoffs because agent 2 chose an unproductive action, or if a productive action failed.) As agent 1 learns, the game transitions to perfect monitoring.&lt;/p&gt;
+&lt;p&gt;An interesting feature of the asymmetric information model is that along this path to perfect monitoring, inefficient punishment (exit by player 1) is rational and on the equilibrium path.&lt;/p&gt;
+&lt;p&gt;Consider an equilibrium &lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;, &lt;em&gt;s&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;) A history &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sup&gt;2|1&lt;/sup&gt; ∈ ℋ&lt;sup&gt;2|1&lt;/sup&gt;&lt;/span&gt; is called a &lt;strong&gt;revelation stage&lt;/strong&gt; if there is non-zero probability that a productive action that has not been taken before will be taken. A history &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;sup&gt;1&lt;/sup&gt; ∈ ℋ&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt; is a &lt;strong&gt;confirmation stage&lt;/strong&gt; for action &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt; ∈ &lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; iff &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;a&lt;/em&gt;&lt;/span&gt; player 1&amp;rsquo;s payoff is positive (called a confirmation stage because agent 1 now perfectly knows that action &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; is productive.). In this case we say &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; was &lt;strong&gt;confirmed&lt;/strong&gt; in this confirmation stage.&lt;/p&gt;
+&lt;!-- TODO: do  i need to talk about routines? --&gt;
+&lt;p&gt;A &lt;strong&gt;routine&lt;/strong&gt; is a pair of strategies that starting from a particular history &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt; include only confirmed or unproductive actions in the continuation game.&lt;/p&gt;
+&lt;h3 id=&#34;optimal-inefficiency&#34;&gt;Optimal inefficiency&lt;/h3&gt;
+&lt;p&gt;A main result of the paper is that along an equilibrium equilibrium, agent 1&amp;rsquo;s strategy can include inefficient exit.&lt;/p&gt;
+&lt;p&gt;To see why consider a history &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;2|1&lt;/sup&gt;&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;′&amp;lt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; productive actions have been confirmed.&lt;/p&gt;
+&lt;p&gt;Then denote by &lt;span class=&#34;math inline&#34;&gt;$\underbar{V}_2^{N&amp;rsquo;}$&lt;/span&gt; the value agent 2 gets by selecting a non-productive action in every period along paths where agent 1 never exits.&lt;/p&gt;
+&lt;p&gt;Then, if at this history, &lt;span class=&#34;math inline&#34;&gt;$\delta (\bar{V} - \underbar{V}_2^{N&amp;rsquo;}) &amp;lt; c$&lt;/span&gt;, exit &lt;strong&gt;must&lt;/strong&gt; occur with positive probability on the continuation path.&lt;/p&gt;
+&lt;p&gt;This inequality means that the cost of choosing a productive action today, is greater than the discounted difference between maximal value in the full information game and the value of always choosing unproductive actions. In other words, given that agent 1 will never exit, agent 2 has no hope to make up losses in value induced by the cost today of choosing a productive action.&lt;/p&gt;
+&lt;p&gt;To make up for this, agent 1 then sometimes must choose to exit, which prevents agent 2 from gaining the flow utility, and lowers the value of the strategy of never choosing productive actions.&lt;/p&gt;
+&lt;p&gt;In this sense inefficient exit is used as a vehicle to motivate agent 2 to reveal information.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Chassang2010&#34;&gt;
+&lt;p&gt;Chassang, Sylvain. 2010. “Building routines: Learning, cooperation, and the dynamics of incomplete relational contracts.” &lt;em&gt;American Economic Review&lt;/em&gt; 100 (1): 448–65. doi:&lt;a href=&#34;http://doi.org/10.1257/aer.100.1.448&#34;&gt;10.1257/aer.100.1.448&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;In the first period agent 1 makes his decision based solely on his prior. If he chooses to exit, he learns nothing, and next period must make his decision with the same information. Because we look for pure strategy equilibria, he will make the same decision forever and the game will be trivial.&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Borovicka2011b (Risk Price Dynamics)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/Hansen_Borovicka_Hendricks_Scheinkman2011/</link>
+      <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/Hansen_Borovicka_Hendricks_Scheinkman2011/</guid>
+      <description>&lt;p&gt;&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Characterize the main conceptual composition of risk and shock elasticities and provide an example of their interpretation in a macro model.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outline&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General continuous time framework
+&lt;ul&gt;
+&lt;li&gt;Stochastic process for state&lt;/li&gt;
+&lt;li&gt;Growth processes and cash flows&lt;/li&gt;
+&lt;li&gt;Perturbations&lt;/li&gt;
+&lt;li&gt;Elasticities&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Simple example
+&lt;ul&gt;
+&lt;li&gt;Do the BL model. Can talk about choosing &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;e&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; = 1, 2, 3&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mathematical-framework&#34;&gt;Mathematical Framework&lt;/h2&gt;
+&lt;p&gt;I will &lt;em&gt;briefly&lt;/em&gt; explain the mathematical framework used in this and related papers.&lt;/p&gt;
+&lt;h3 id=&#34;state&#34;&gt;State&lt;/h3&gt;
+&lt;p&gt;State is Markov diffusion: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;μ&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;σ&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;d&lt;/em&gt;&lt;em&gt;W&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;W&lt;/em&gt;&lt;/span&gt; is standard BM, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;μ&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;σ&lt;/em&gt;&lt;/span&gt; may be non-linear.)&lt;/p&gt;
+&lt;h3 id=&#34;functionals&#34;&gt;Functionals&lt;/h3&gt;
+&lt;p&gt;Additive functionals: parameterized by state dependent drift &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;β&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;)&lt;/span&gt; and volatility &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;)&lt;/span&gt; coefficients integrated over time (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = ∫&lt;sub&gt;0&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sup&gt;&lt;em&gt;β&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;u&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;d&lt;/em&gt;&lt;em&gt;u&lt;/em&gt; + ∫&lt;sub&gt;0&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sup&gt;&lt;em&gt;α&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;u&lt;/em&gt;&lt;/sub&gt;)⋅&lt;em&gt;d&lt;/em&gt;&lt;em&gt;W&lt;/em&gt;&lt;sub&gt;&lt;em&gt;u&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;Multiplicative functionals are also characterized by &lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;β&lt;/em&gt;, &lt;em&gt;α&lt;/em&gt;)&lt;/span&gt; and are the exponential of an underlying additive functional (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt; = exp(&lt;em&gt;A&lt;/em&gt;)&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;Growth processes of economic interest, e.g. cash flows and consumption, will be modeled as multiplicative functionals.&lt;/p&gt;
+&lt;h3 id=&#34;perturbations&#34;&gt;Perturbations&lt;/h3&gt;
+&lt;p&gt;We will perturb the multiplicative functionals in a specific way that allow us to capture the &lt;em&gt;marginal value of exposure risk in a particular direction&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Similar in spirit to a risk premium, which measures the &lt;em&gt;average value of risk exposure&lt;/em&gt; (not marginal or isolated to a specific direction.)&lt;/p&gt;
+&lt;h4 id=&#34;how-to-construct-perturbations&#34;&gt;How to construct Perturbations&lt;/h4&gt;
+&lt;p&gt;NOTE: only talk about this if I have &lt;em&gt;cruised&lt;/em&gt; through the above. I want to be at this point after 2-3 minutes.&lt;/p&gt;
+&lt;p&gt;We construct perturbations of a multiplicative functional &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt; as the product of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt; and another multiplicative functional with precisely chosen drift and volatility coefficients. The perturbation coefficients are functions of a scalar parameter &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt;. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt; = 0&lt;/span&gt; the perturbation is equal to 1 (i.e. perturbed cash flow is just the cash flow).&lt;/p&gt;
+&lt;p&gt;Often the drift is chosen so the perturbation itself is a martingale, or the perturbed cash flow is a martingale. This simplifies computation.&lt;/p&gt;
+&lt;p&gt;The volatility coefficient can be varied to isolate the impact of innovations to a particular dimension of the BM. An example of this will be shown later.&lt;/p&gt;
+&lt;h3 id=&#34;risk-elasticities&#34;&gt;Risk elasticities&lt;/h3&gt;
+&lt;p&gt;A risk elasticity for a cash flow &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt; is defined as &lt;em&gt;the derivative of the log expectation of the perturbed cash flow evaluated at &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt; = 0&lt;/span&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The direct representation of the risk elasticity is additive over a particular time horizon &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;. To consider contributions that are localized in time, we build an integral representation.&lt;/p&gt;
+&lt;p&gt;This integral representation expresses the risk elasticity from a given initial state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; over a time horizon &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; as &lt;em&gt;the expectation (conditional on x), of the cash flow in time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; times the integral of a function&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The function that is integrated over is called a &lt;strong&gt;shock elasticity function&lt;/strong&gt; and captures the instantaneous contribution of the perturbation to the risk elasticity (i.e. shock elasticities are the building blocks for risk elasticities).&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;I will now highlight how these theoretical building blocks can be used within a macro model.&lt;/p&gt;
+&lt;h3 id=&#34;model&#34;&gt;Model&lt;/h3&gt;
+&lt;p&gt;The state is 2 dimensional: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt; represents consumption growth, and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; represents stochastic volatility.&lt;/p&gt;
+&lt;p&gt;The Brownian motion will be three dimensional, where dimensions correspond to independent shocks directly to consumption itself, consumption growth &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt;, and stochastic volatility &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Multiplicative functionals take a specific form:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The drift is affine in deviations of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (&lt;span class=&#34;math inline&#34;&gt;$\beta(x) = \bar{\beta}_0 + \bar{\beta}_t \cdot (x_1 - \iota_1) + \bar{\beta}_2 (x_t - \iota_2)$&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;The volatility is the square root of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; times a constant vector &lt;span class=&#34;math inline&#34;&gt;$(\alpha(x) = \sqrt{x_2} \bar{\alpha}$&lt;/span&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Consumption growth is modeled directly as a multiplicative functional.&lt;/p&gt;
+&lt;h4 id=&#34;preferences&#34;&gt;Preferences&lt;/h4&gt;
+&lt;p&gt;Agents have either CRRA preferences or Epstein-Zin preferences over streams of consumption.&lt;/p&gt;
+&lt;p&gt;Part of the solution to the agent&amp;rsquo;s problem is a stochastic discount factor used to price cash flows in the economy.&lt;/p&gt;
+&lt;p&gt;The cash flow of interest will be the growth of the consumption process (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;/&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/span&gt;).&lt;/p&gt;
+&lt;h4 id=&#34;elasticities&#34;&gt;Elasticities&lt;/h4&gt;
+&lt;p&gt;We consider two types of fundamental elasticities, as well as a third that is a function of the former two. These types are&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Exposure elasticities, where the multiplicative function is consumption&lt;/li&gt;
+&lt;li&gt;Value elasticities, where the MF is the price of consumption (consumption times SDF)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We will also consider a price elasticity, which is the difference between the exposure elasticity and the value elasticity. The price elasticities are the functions that characterize the &lt;em&gt;marginal value of exposure risk in a particular direction&lt;/em&gt; that we mentioned earlier.&lt;/p&gt;
+&lt;p&gt;We will allow the volatility coefficient of the perturbation to be each of the vectors &lt;span class=&#34;math inline&#34;&gt;[100]′&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;[010]′&lt;/span&gt;, or &lt;span class=&#34;math inline&#34;&gt;[001]′&lt;/span&gt;. This allows us to construct price elasticities in response to shocks to consumption, consumption growth, and stochastic volatility. This is the sense in which price elasticities characterize the exposure risk in a particular direction.&lt;/p&gt;
+&lt;h4 id=&#34;results&#34;&gt;Results&lt;/h4&gt;
+&lt;p&gt;The exposure elasticities for the two sets of preferences are the same. Remember the exposure elasticity is the elasticity for the cash flow, which is the same underlying consumption process in both models.&lt;/p&gt;
+&lt;p&gt;The Shock exposure elasticities (local increments) to each of the three dimensions of W are reported.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shock to consumption has permanent effect on consumption and the shock elasticity is constant over time&lt;/li&gt;
+&lt;li&gt;The shock exposure elasticity to a positive shock in the growth rate increases over time as the impact of a higher growth rate compounds&lt;/li&gt;
+&lt;li&gt;The volatility shock exposure elasticity declines over time as the volatility process mean reverts and the impact of the initial shock wears off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Given the form of agent&amp;rsquo;s SDF, the shock value elasticities are scaled versions of the shock exposure elasticities.&lt;/p&gt;
+&lt;h1 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Borovicka2011b&#34;&gt;
+&lt;p&gt;Borovička, Jaroslav, Lars Peter Hansen, Mark Hendricks, and José Alexandre Scheinkman. 2011. “Risk-Price Dynamics.” &lt;em&gt;Journal of Financial Econometrics&lt;/em&gt; 9 (1). Oxford University Press: 3–65. &lt;a href=&#34;http://jfec.oxfordjournals.org/content/9/1/3.full papers3://publication/doi/10.1093/jjfinec/nbq030&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://jfec.oxfordjournals.org/content/9/1/3.full&#34;&gt;http://jfec.oxfordjournals.org/content/9/1/3.full&lt;/a&gt; papers3://publication/doi/10.1093/jjfinec/nbq030&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Angeletos, Iovino, La&#39;O (2015) (Real Rigidity , Nominal Rigidity , and the Social Value of Information)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/Angeletos_Iovino_LaO_2015/</link>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/Angeletos_Iovino_LaO_2015/</guid>
+      <description>&lt;p&gt;&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
+&lt;p&gt;The model in this paper is fairly simple. The interesting analysis in this paper has to do with the information structure&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Agents in the model either live in the mainland or on one of a continuum of islands&lt;/p&gt;
+&lt;p&gt;Each island:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is populated by a continuum of workers and a continuum of monopolistic firms.&lt;/li&gt;
+&lt;li&gt;Within each island all firms are identical, as are workers&lt;/li&gt;
+&lt;li&gt;Firms:
+&lt;ul&gt;
+&lt;li&gt;Hire workers through competitive labor markets&lt;/li&gt;
+&lt;li&gt;Use labor in a linear production technology: product of labor supply island specific TFP
+&lt;ul&gt;
+&lt;li&gt;The log of TFP in each period is the sum of an aggregate and an idiosyncratic shock&lt;/li&gt;
+&lt;li&gt;All shocks in the model are mean zero Gaussians, unless otherwise specified.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Workers
+&lt;ul&gt;
+&lt;li&gt;Supply labor to firms&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Preferences for firms and workers are not considered here, as the economy will have a representative agent on the mainland.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So let&amp;rsquo;s turn to the mainland:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inhabited by a continuum of identical consumers&lt;/li&gt;
+&lt;li&gt;Each consumer is tied to a single firm and a single worker &lt;em&gt;on every island&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;This assumption lets the economy admit a representative agent&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The representative household maximizes the present discounted value of lifetime utility&lt;/li&gt;
+&lt;li&gt;Utility is time separable and utility in each period is the difference between utility from consumption and disutility from labor supply:
+&lt;ul&gt;
+&lt;li&gt;The aggregate consumption good is valued with a CRRA utility function over the output of a nested CES structure:
+&lt;ul&gt;
+&lt;li&gt;Inner most level: goods produced by all firms on an island are aggregated into an island final good.
+&lt;ul&gt;
+&lt;li&gt;This aggregator is subject to markup or cost-push shocks (i.e. the exponent in the aggregator is a random variable)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The island final goods are then aggregated into the final consumption good.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Labor is aggregated by integrating another CRRA function of labor supply over each island and each firm
+&lt;ul&gt;
+&lt;li&gt;This sum is subtracted from the utility of consumption&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The representative agent faces a budget constraint where consumption expenditures and risk-less bond purchases must be less than or equal to
+&lt;ul&gt;
+&lt;li&gt;aggregate firm profits&lt;/li&gt;
+&lt;li&gt;the return on bond holdings&lt;/li&gt;
+&lt;li&gt;Aggregate labor income tax and a lump sum transfer used to balance the budget.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The total wedge due to monopolistic power is a function of the island specific tax rate and the island specific markup or cost-push shock.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;p&gt;A crucial aspect of this model is the information setup. The authors run two experiments:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Fix monopoly markup and let agents receive noisy signals about TFP&lt;/li&gt;
+&lt;li&gt;Fix TFP and let agents see noisy signals about markups&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The signal structure mirrors that of Morris and Shin. Each period each island receives two signals:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;A public signal seen by all agents. This signal is the sum of the actual fundamental and a mean zero Gaussian noise term&lt;/li&gt;
+&lt;li&gt;A private signal with the same structure, but seen only by the island.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Similar to the result from Morris and Shin, the best response in each island is a production rule that is affine in productivity, monopolist markup, and expected aggregate output.&lt;/p&gt;
+&lt;p&gt;The coefficient on the expected aggregate output determines the degree of strategic complementarity, or how much firms like to behave like each other. Unlike earlier work on beauty-contest models, this parameter is micro founded as a function of underlying preference and technology parameters.&lt;/p&gt;
+&lt;p&gt;Extra notes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bergemann and Morris (2013) show that equilibrium results from any information structure with Gaussian signals can be replicated by the structure here.&lt;/li&gt;
+&lt;li&gt;Thus, within the family of Gaussian signals, the structure considered in the paper is without loss of generality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;experiments&#34;&gt;Experiments&lt;/h1&gt;
+&lt;p&gt;Definitions:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Σ&lt;/em&gt; ≡ Var(log&lt;em&gt;Y&lt;/em&gt;−log&lt;em&gt;Y&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\sigma \equiv \text{Var} \left( \log \tilde{y}_{it}  - \log \tilde{Y}_t\right)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\Delta \equiv \frac{E[Y]}{Y/Y^&lt;/em&gt;}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\Lambda \equiv \Sigma + \frac{1}{1 -\alpha} \sigma$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;In the experiments the authors do, they consider how welfare changes with the precision of the signals.&lt;/p&gt;
+&lt;p&gt;Welfare is decomposed into the product of two functions, each taking one argument.&lt;/p&gt;
+&lt;p&gt;The first function is a strictly concave function of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Δ&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The second function is strictly decreasing in the sum of volatility of the aggregate output gap and the cross-sectional dispersion of local output gaps (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Λ&lt;/em&gt;&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s consider the main results for each experiment&lt;/p&gt;
+&lt;h2 id=&#34;signals-about-tfp&#34;&gt;Signals about TFP&lt;/h2&gt;
+&lt;p&gt;In experiment with TFP shocks, the log of TFP of each island is modeled as the sum of an aggregate productivity shock common across all islands and an island specific idiosyncratic shock.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Schorfheide, Song, &amp; Yaron (2014) (Identifying Long-Run Risks: A Bayesian Mixed-Frequency Approach (@Schorfheide2014))</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/Schorfheide_Song_Yaron2014/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/Schorfheide_Song_Yaron2014/</guid>
+      <description>&lt;p&gt;&lt;h1 id=&#34;outline&#34;&gt;Outline&lt;/h1&gt;
+&lt;p&gt;This is paper is more empirical than theoretical.&lt;/p&gt;
+&lt;p&gt;Theoretical contributions are to specify more flexible stochastic environment than in other long run risk models a la &lt;span class=&#34;citation&#34;&gt;Bansal et al. (2007)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Empirical contributions are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;form a linear approximation of the stochastic environment to apply state space methods within an MCMC algorithm&lt;/li&gt;
+&lt;li&gt;Show how to incorporate data of various frequencies and accuracy in the inference algorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overview of this talk:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Background: consumption data is available at varying frequencies and varying degrees of of measurement error. The authors want to use all data available to identify innovations in consumption and dividend growth as well as asset returns.&lt;/li&gt;
+&lt;li&gt;They will build a simple representative agent exchange economy that includes short and long run components to consumption growth and stochastic volatility&lt;/li&gt;
+&lt;li&gt;Will use semi-linearized solutions to this model to define a non-linear state space system&lt;/li&gt;
+&lt;li&gt;Use a Gibbs sampler to characterize posterior of parameter distribution &amp;ndash; characterizing consumption growth innovations&lt;/li&gt;
+&lt;li&gt;They compare results of this posterior to moments in the data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
+&lt;h2 id=&#34;preferences&#34;&gt;Preferences&lt;/h2&gt;
+&lt;p&gt;Endowment economy with a representative agent with Epstein Zin preferences.&lt;/p&gt;
+&lt;p&gt;The agent maximizes lifetime utility subject to the simple Budget constraint &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;W&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; = (&lt;em&gt;W&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; − &lt;em&gt;C&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;, &lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;, &lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt; is the return on all invested wealth.&lt;/p&gt;
+&lt;p&gt;They also consider an extension with a time rate of preference shock (the flow utility C is shocked). The growth of this shock follows an AR(1) with innovations independent of all other processes in the model.&lt;/p&gt;
+&lt;h2 id=&#34;technologyendowment&#34;&gt;Technology/Endowment&lt;/h2&gt;
+&lt;p&gt;The authors save on some notation by jumping to the equilibrium outcome of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;Y&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and they describe the growth process for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;C&lt;/em&gt;&lt;/span&gt; directly.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They decompose consumption growth &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; into a persistent component &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; and a transitory shock that has stochastic volatility&lt;/li&gt;
+&lt;li&gt;The persistent component follows and AR(1) with its own stochastic volatility process&lt;/li&gt;
+&lt;li&gt;They also model dividend streams that have levered exposures to (linear in) both persistent and transitory components of consumption growth &lt;em&gt;and&lt;/em&gt; its own stochastic volatility process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All stochastic volatility processes are AR(1) in logs with Gaussian innovations, so that each stochastic volatility is log normal.&lt;/p&gt;
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;p&gt;The agent observes current wealth, consumption growth, dividend growth, and asset returns in every period.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;The focus of their work is on a unique estimation procedure. To facilitate this, they want a closed form solution for the model.&lt;/p&gt;
+&lt;p&gt;Non-Guassian dynamics for each volatility process prevents them from writing a closed form solution.&lt;/p&gt;
+&lt;p&gt;They use a linear approximation to the Log normal process. This linear approximation is Gaussian.&lt;/p&gt;
+&lt;p&gt;Key results from solution:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;State variables are the level &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; as well as the stochastic volatility of innovations to both &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;The log price consumption ratio (price of consumption good) and risk free rate are affine in state variables&lt;/li&gt;
+&lt;li&gt;State prices are reflected in innovations to the SDF (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; − &lt;em&gt;E&lt;/em&gt;[&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;]&lt;/span&gt;), which in equilibrium are linear innovations to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;, and the two associated volatilities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;state-space-representation&#34;&gt;State space representation&lt;/h1&gt;
+&lt;p&gt;This closed form solution to the model is used to identify the coefficient matrices in a state space representation of the model. Characteristics of the state space form are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The model is quite large
+&lt;ul&gt;
+&lt;li&gt;22 parameters&lt;/li&gt;
+&lt;li&gt;30 states: most deal with x and the various innovation realizations&lt;/li&gt;
+&lt;li&gt;3-6 measurement variables&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The state space model is non-linear because the levels of stochastic volatility are nonlinear.&lt;/li&gt;
+&lt;li&gt;Measurement equation for consumption must be flexible in two ways:
+&lt;ul&gt;
+&lt;li&gt;Allow various frequency of observations (annual pre-1959 and monthly from 1959 to 2011)&lt;/li&gt;
+&lt;li&gt;Allow for the potentially larger measurement errors for the monthly frequency data.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bayesian-inference&#34;&gt;Bayesian Inference&lt;/h2&gt;
+&lt;p&gt;The authors use a Gibbs sampling scheme to draw from the posterior of the parameter vector of the non-linear state space system. They split the parameters into two blocks:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;stochastic volatility levels | all other parameters&lt;/li&gt;
+&lt;li&gt;all other parameters | stochastic volatility levels&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In each step of the MCMC algorithm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The stochastic volatility block is updated using a non-linar particle filter&lt;/li&gt;
+&lt;li&gt;Then, taking as given levels of stochastic volatility, the rest of the equations form a linear Guassian state space. Thus, the prediction error decomposition within a Kalman filtering framework is used to update the parameters in this block.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A common result with particle filters is that their accuracy and stability degrade with the number of parameters. Isolating the non-linearity allows the authors to applying the Kalman filter to compute the exact conditional likelihood for the majority of the parameters. This substantially reduces the error inherent in large scale particle filters.&lt;/p&gt;
+&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
+&lt;p&gt;They run the MCMC algorithm on three versions of the model:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Without rate of time preference shocks and only using consumption and divided growth data (they drop the risk free rate and market returns from the measurement equation)&lt;/li&gt;
+&lt;li&gt;Without rate of time preference shocks and using consumption and divided growth data as well as market returns and the risk free rate&lt;/li&gt;
+&lt;li&gt;With rate of time preference shocks and using consumption and divided growth data as well as market returns and the risk free rate&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Key empirical results:&lt;/p&gt;
+&lt;p&gt;Common across all three versions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Strong evidence for a persistent component to consumption growth (robust to sample used &amp;ndash; i.e. pre/post 1959 and all). Shown in high correlation coefficient in AR(1) for x&lt;/li&gt;
+&lt;li&gt;Strong evidence for all three independent forms of stochastic volatility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Differences when including return data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Auto correlation increases from 0.97 to 0.99 (captures part of equity premium)&lt;/li&gt;
+&lt;li&gt;Volatility of long run risk innovations increases (reflects long run info about growth uncertainty contained in prices)&lt;/li&gt;
+&lt;li&gt;Predictability of consumption growth drops to levels that are closer to data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Differences when including time rate of preference shocks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Much better able to capture movements in risk free rate.
+&lt;ul&gt;
+&lt;li&gt;In fact, they do a variance decomposition of market returns, the price divided ratio, and the risk free rate in terms of x, the growth rate of the preference shock, and the volatility of x&lt;/li&gt;
+&lt;li&gt;They find that the growth rate of the preference shock explains almost no variation in the market returns or the price dividend ratio, but explains between 40-90% of the variation in the risk free rate over the sample.&lt;/li&gt;
+&lt;li&gt;Driven by the fact that the rate of time preference shock directly moves the SDF and that movement in the SDF maps directly into movement in the risk free rate.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Bansal2007&#34;&gt;
+&lt;p&gt;Bansal, Ravi, Ravi Bansal, Dana Kiku, Dana Kiku, Amir Yaron, and Amir Yaron. 2007. “Risks For the Long Run: Estimation and Inference.” &lt;a href=&#34;http://128.197.26.34/econ/seminars/macroeconomics/paperfall08/bky{\_}Sept2007.pdf&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://128.197.26.34/econ/seminars/macroeconomics/paperfall08/bky{_}Sept2007.pdf&#34;&gt;http://128.197.26.34/econ/seminars/macroeconomics/paperfall08/bky{_}Sept2007.pdf&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Schorfheide2014&#34;&gt;
+&lt;p&gt;Schorfheide, Frank, Nber Dongho Song, and Amir Yaron. 2014. “Identifying Long-Run Risks: A Bayesian Mixed-Frequency Approach.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>He &amp; Krishnamurthy (2013) (Intermediary Asset Pricing)</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/He_Krishnamurthy_2013/</link>
+      <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/He_Krishnamurthy_2013/</guid>
+      <description>&lt;p&gt;&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
+&lt;p&gt;This is two-type agent, continuous time model of financial intermediaries. &lt;span class=&#34;citation&#34;&gt;He and Krishnamurthy (2013)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Agents are either households or specialists.&lt;/p&gt;
+&lt;p&gt;Distinction will be made clear once we understand the market structure&lt;/p&gt;
+&lt;h2 id=&#34;market-structure&#34;&gt;Market structure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;One risk-free short run bond in zero net supply
+&lt;ul&gt;
+&lt;li&gt;All agents can freely buy this asset&lt;/li&gt;
+&lt;li&gt;Specialists can also short&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;One risky asset whose dividends evolve as GBM
+&lt;ul&gt;
+&lt;li&gt;Only specialists can purchase this asset, however they can do so in behalf of households via an intermediary mechanism to be explained shortly&lt;/li&gt;
+&lt;li&gt;Net supply normalized to 1&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technology-how-markets-work&#34;&gt;Technology (how markets work)&lt;/h2&gt;
+&lt;p&gt;Each period between &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; is split into 5 mini-periods:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;At &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; each specialist is randomly matched with a household to form and intermediary&lt;/li&gt;
+&lt;li&gt;Specialists allocate all &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; of their wealth to buy equity in intermediary. Households allocate a part, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, of their wealth to purchase equity&lt;/li&gt;
+&lt;li&gt;Specialists take &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; + &lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and allocates all of it between the risk free bond and risky. There are not restrictions in buying or shorting either asset&lt;/li&gt;
+&lt;li&gt;Returns are realized and distributed according to equity shares. Agents consume out of net wealth&lt;/li&gt;
+&lt;li&gt;At &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; the match is broken and new one is formed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note about choice of matching structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alternative would be standard Walrasian market.
+&lt;ul&gt;
+&lt;li&gt;Did this in 2012 paper.&lt;/li&gt;
+&lt;li&gt;Found with this market structure the specialists charge fees that rise in financial crisis &amp;ndash; this is counterfactual.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;agents&#34;&gt;Agents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Households:
+&lt;ul&gt;
+&lt;li&gt;An overlapping generation of agents.&lt;/li&gt;
+&lt;li&gt;At each time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; a unit mass of time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; agents is born with wealth &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; (evenly distributed based on end of period wealth of previous generation &amp;ndash; &lt;em&gt;means they don&amp;rsquo;t need to track the wealth distribution&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;They live between period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;, during which time they receive labor income that is constant fraction of risky asset dividends. (NOTE: without this it is possible to arrive in state where HH sector vanishes)&lt;/li&gt;
+&lt;li&gt;Authors assume a fraction &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;λ&lt;/em&gt;&lt;/span&gt; can only invest in risk-free asset. &lt;em&gt;This generates the &lt;span class=&#34;math inline&#34;&gt;+&lt;/span&gt; side of the zero net supply condition, making it possible for other agents to take a levered position in risky asset.&lt;/em&gt; HH cannot short the bond&lt;/li&gt;
+&lt;li&gt;Choose period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; consumption and asset positions to maximize convex combination of log of consumption and expectation of log of continuation wealth (utility and bequest motive both log form)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Unit mass of identical specialists. Each one:
+&lt;ul&gt;
+&lt;li&gt;Infinitely lived.&lt;/li&gt;
+&lt;li&gt;Operates a single intermediary (represent decision makers of bank, hedge fund, extc.)&lt;/li&gt;
+&lt;li&gt;Chooses sequence of consumption and portfolio shares in risky asset (acting as intermediary) to maximize the expected present discounted value of a CRRA utility function of consumption subject to&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Budget constraint: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = −&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;d&lt;/em&gt;&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;)−&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; is intermediary share in risky asset and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;)&lt;/span&gt; is the associated return&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;equilibrium-outcomes&#34;&gt;Equilibrium outcomes&lt;/h1&gt;
+&lt;p&gt;In this section we discuss the key outcomes in the paper.&lt;/p&gt;
+&lt;h2 id=&#34;friction&#34;&gt;Friction&lt;/h2&gt;
+&lt;p&gt;Model contains one &lt;strong&gt;key financial friction&lt;/strong&gt; that drives most results:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Households are willing to invest no more than a constant fraction &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; of specialist wealth as equity in the intermediary: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; ≤ &lt;em&gt;m&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; for some constant &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt; &amp;gt; 0&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Constrains intermediary&amp;rsquo;s ability to raise &lt;em&gt;outside equity financing&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Interpretation:
+&lt;ul&gt;
+&lt;li&gt;Managers usually have significant wealth tied in their own funds (aligns incentives)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Equilibrium effect:
+&lt;ul&gt;
+&lt;li&gt;Effectively creates a boundary &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sup&gt;&lt;em&gt;c&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; such that if specialist wealth relative to value (price) of risky asset &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt; = &lt;em&gt;w&lt;/em&gt;/&lt;em&gt;P&lt;/em&gt;&lt;/span&gt; falls below &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, they are constrained in how much equity they can raise.
+&lt;ul&gt;
+&lt;li&gt;In constrained region we have &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;m&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;If unconstrained &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; &amp;lt; &lt;em&gt;m&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and value of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; doesn&amp;rsquo;t impact decisions&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Adds leverage effect such that when specialist is constrained he can&amp;rsquo;t raise enough capital in intermediary via equity, therefore must take levered position by shorting risk free asset and holding a very large position in risky asset (see figure 2)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The main asset pricing impact of this friction can be seen in how the risk premium (return on expected risky asset less risk free return) changes as a function of specialist wealth. Before getting there we need to understand three details&lt;/p&gt;
+&lt;h2 id=&#34;equity-premium&#34;&gt;Equity premium&lt;/h2&gt;
+&lt;h3 id=&#34;risk-aversion&#34;&gt;Risk aversion&lt;/h3&gt;
+&lt;p&gt;First, note that specialist CRRA parameter &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;γ&lt;/em&gt;&lt;/span&gt; is calibrated to be greater than &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt; (i.e. specialists are more risk adverse than households). This causes all households who can to invest all their wealth in risky equity&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Intuitive reasoning&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Recall market clearing: zero net supply risk free asset and positive net supply risky asset &lt;span class=&#34;math inline&#34;&gt;⇒&lt;/span&gt; intermediary always holds more than 100% of wealth in risky asset&lt;/li&gt;
+&lt;li&gt;Household is less risk adverse, so they would like to hold more risky asset than specialist.&lt;/li&gt;
+&lt;li&gt;To hold more than specialist, who already holds more than 100%, household would have to be able to short bond, but they can&amp;rsquo;t. So they get as close as possible by spending all their wealth to purchase risky equity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;risky-asset-position-vs.-specialist-wealth&#34;&gt;Risky asset position vs. specialist wealth&lt;/h3&gt;
+&lt;p&gt;Second, the relationship between intermediary position in risky asset and specialist wealth is very asymmetric.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sup&gt; = risky asset holdings/total assets&lt;/span&gt;. Then the relationship beween &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; can be decomposed in two parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In unconstrained region (specialist wealth relatively high), &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; nearly independent of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;In constrained region; strong, non-linear inverse relationship between &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is driven by the leverage effect outlined above: a binding constraint forces specialists to short bond - ratcheting up &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;risk-premium-vs.-specialist-wealth&#34;&gt;Risk premium vs. specialist wealth&lt;/h3&gt;
+&lt;p&gt;Finally, the equilibrium risk premium is increasing in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Combining these points we see how the model delivers a state dependent risk premium. This result is different from similar results obtained in the literature on two fronts:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;This model has &amp;quot;standard&amp;quot; CRRA utility. Others modify the utility function to introduce state dependence (Campbell &amp;amp; Cochrane (1999), Barberis, Huang, and Santos (2001))&lt;/li&gt;
+&lt;li&gt;The relationship between capital (wealth) and the risk premium is very asymmetric: might provide important window for studying crises&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;dynamics&#34;&gt;Dynamics&lt;/h2&gt;
+&lt;p&gt;Wealth distribution is mean reverting. To see it notice what happens in the two tails:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Specialist wealth very low -&amp;gt; risk premium high -&amp;gt; specialist wealth expected to increase -&amp;gt; wealth distribution mean reverts&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;Household wealth very low -&amp;gt; risk premium low -&amp;gt; aggregate household return similar to aggregate specialist return -&amp;gt; extra labor income for HH pushes their wealth up -&amp;gt; wealth distribution mean reverts&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;That the equity premium is very high when intermediary leverage is high means that specialist wealth exhibits strong mean aversion.&lt;/li&gt;
+&lt;li&gt;When household wealth is relatively low, so is the risk premium. Thus, as household&amp;rsquo;s save their labor income, their wealth is expected to grow, causing the wealth distribution to mean revert from the other side&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- Make figures appear before the References section header is printed --&gt;
+&lt;!-- \clearpage --&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;!-- The following lines are text commands to make the bibliography section print properly --&gt;
+&lt;p&gt;    &lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-He2013b&#34;&gt;
+&lt;p&gt;He, Zhiguo, and Arvind Krishnamurthy. 2013. “Intermediary Asset Pricing.” &lt;em&gt;American Economic Review&lt;/em&gt; 103 (2). American Economic Association: 732–70. &lt;a href=&#34;http://pubs.aeaweb.org/doi/abs/10.1257/aer.103.2.732 papers3://publication/doi/10.1257/aer.103.2.732&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://pubs.aeaweb.org/doi/abs/10.1257/aer.103.2.732&#34;&gt;http://pubs.aeaweb.org/doi/abs/10.1257/aer.103.2.732&lt;/a&gt; papers3://publication/doi/10.1257/aer.103.2.732&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://replace-this-with-your-hugo-site.com/post/bkk_ez_way_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/post/bkk_ez_way_notes/</guid>
+      <description>&lt;p&gt;&lt;h1 id=&#34;section-1-intro&#34;&gt;Section 1 (intro):&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Two channels:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;productivity channel says move from low productivity to high productivity country&lt;/li&gt;
+&lt;li&gt;risk-sharing channel says move from low marginal utility (MU) to high MU country&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;section-2-lit-review&#34;&gt;Section 2 (lit review):&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Differ from Tretvol on three dimensions: (1) look at long run shocks, (2) Tretvoll considers standard BKK capital accumulation (TODO: what is used here) (3) parameter values are closer to asset pricing than RBC literature (RRA = 10, IES &amp;gt; 1 where tretvoll has RRA=100, IES &amp;lt; 1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;section-3-empirics&#34;&gt;Section 3 (empirics):&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Used data on G7 countries to show three main results:&lt;/li&gt;
+&lt;li&gt;Positive short run productivity news leads to net inflow of capital&lt;/li&gt;
+&lt;li&gt;Positive long run productivity news leads to net outflow of captial&lt;/li&gt;
+&lt;li&gt;Did estimation for US vs UK and then for US vs all other G6. Results were robust across rather large cross section of developed countries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;section-4-model&#34;&gt;Section 4 (model):&lt;/h1&gt;
+&lt;h2 id=&#34;model-features&#34;&gt;Model features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete markets (let&amp;rsquo;s them solve Pareto problem)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Two countries - GHH consumption/leasure aggregator &amp;ndash; avoids issue brought up by Raffo (2008) with CES aggregators - Homogeneous EZ preferences - Cobb-Douglass consumption good aggregator with home bias&lt;/p&gt;
+&lt;p&gt;Two goods - Country specific production with Cobb douglass aggregation of country specific labor and capital - Country specific capital and labor stock, but frictionless trade in consumption and investment good&lt;/p&gt;
+&lt;p&gt;Exogenous process: - constant volatility - with long and short run shocks. - Productivity across countries is cointegrated&lt;/p&gt;
+&lt;h2 id=&#34;intuition&#34;&gt;Intuition:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EZ prefs provide two &amp;quot;risk&amp;quot; motivators over additive preferences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;A preference for early (more common) or late resolution of uncertainty casues the variance of future Value function to impact current welfare (early resolution means higher variance -&amp;gt; lower welfare)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Extra term appears in SDF (relative to additive case) (future utility over its certainty equivalent) appears. Why does this matter? Creates a risk-sharing channel to impact flow of resources. How? Two things: first, with EZ prefs there is a 1-to-1 map between lifetime wealth and the value function; and second, SDF is used to price risk, so now there is a link between lifetime wealth and risk adjustments. In this model lifetime wealth changed by long run news (positive news about long run productivity =&amp;gt; higher lifetime welath =&amp;gt; higher value function =&amp;gt; lower marginal value =&amp;gt; planner moves resources toward other, high marginal value agent.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;section-5&#34;&gt;Section 5&lt;/h1&gt;
+&lt;h2 id=&#34;matching-moments&#34;&gt;Matching moments:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Volatility of output growth and consumption growth relatively close to data (same as BKK)&lt;/li&gt;
+&lt;li&gt;Volatility of investment growth and labor growth too low (same as BKK)&lt;/li&gt;
+&lt;li&gt;Equity premium generated by all three models (BKK with high/low RRA and EZ) is too low&lt;/li&gt;
+&lt;li&gt;All models match data mometns on correlation between c, n, i, nx. the nx one is harder for the high RA additive model to match&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Paper provides empirical evidence for G7 countries that short-and-long-term productivity news have differing effects on capital flows (short &lt;span class=&#34;math inline&#34;&gt;↑⇒&lt;/span&gt; captial in . long &lt;span class=&#34;math inline&#34;&gt;↑⇒&lt;/span&gt; capital out)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;They start with a classic BKK model (two agents, two goods, CRRA utility, constant volatility, persistent shocks to productivity, frictionless trade across countries). Here there is one main channel that prompts resource flows: productivity. So good news about either long run or short run productivity growth will cause resources to flow into that country.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;They also present an almost identical version of the model, the only change being endowing agents with Epstein Zin recursive preferences instead of additive preferences. In addition to the productivity channel inherited from the BKK structure, the EZ preferences bring a risk-channel or motive for resource allocation. This motive can be seen by considering 3 related things:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Under EZ preferneces there is a 1-to-1 mapping between lifetime wealth and the value function.&lt;/li&gt;
+&lt;li&gt;In the planner&amp;rsquo;s version of this problem, the parteto weights are monotonic in the ratio of SDFs.&lt;/li&gt;
+&lt;li&gt;The SDF under EZ preferences has an additional term that involves future utility and its certainty equivalent. When agents have a preference for early resolution of unceratinty (common parameterization), this extra term causes the SDF to fall as the future value function increases.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Keeping those three in mind, consider the effect of positive news about productivity growth in the domestic country:&lt;/p&gt;
+&lt;p&gt;Raises lifetime domestic wealth =&amp;gt; Raises lifetime domestic utility =&amp;gt; Causes domesic SDF to fall, relative to the foreign SDF=&amp;gt; Causes domestic pareto weight to fall =&amp;gt; planner to immdetiately move resources &lt;em&gt;out&lt;/em&gt; of that country.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They present some empirical results showing that their model does better than the standard BKK model at matching moments from international data.&lt;/li&gt;
+&lt;li&gt;They still fall short on 5 main fronts. Their problems were:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;investment is too smooth (not volatile enough)&lt;/li&gt;
+&lt;li&gt;correlation between domestic and foreign investment growth is negative (risk sharing result &amp;ndash; planner moves resources to less productive country, part of that is used in that country&amp;rsquo;s investment)&lt;/li&gt;
+&lt;li&gt;Risk premium is too small&lt;/li&gt;
+&lt;li&gt;Exchange rate volatility is too small&lt;/li&gt;
+&lt;li&gt;consumption growth rates are more correlated than output growth rates across countries&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;They then extend their baseline recursive model by allowing for a different home bias parameter for consumption and investment goods and by introducing the concept of vintage captial, or that captial becomes more productive over time. With these changes they at least partially resolve all 5 concerns above, without significant departures in other areas.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;They then do sensitivity analysis and conclude.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

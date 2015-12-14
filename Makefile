@@ -3,4 +3,4 @@ update_theme:
 	cp -R /Users/sglyon/personal_website/themes/hyde-y themes
 
 publish:
-	
+	ghp-import -n -p public

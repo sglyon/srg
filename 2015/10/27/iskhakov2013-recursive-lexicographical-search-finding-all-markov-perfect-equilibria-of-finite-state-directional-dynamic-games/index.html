@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Iskhakov2013 (Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games)  &middot; Sargent Reading Group Notes</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Iskhakov2013 (Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games)  &middot; Sargent Reading Group Notes ">
+<meta property="og:site_name" content="Sargent Reading Group Notes"/>
+<meta property="og:url" content="http://srg.spencerlyon.com/2015/10/27/iskhakov2013-recursive-lexicographical-search-finding-all-markov-perfect-equilibria-of-finite-state-directional-dynamic-games/" />
+<meta property="og:locale" content="en-EN">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2015-10-27T00:00:00Z" />
+<meta property="og:article:modified_time" content="2015-10-27T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Iskhakov2013 (Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games)" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://srg.spencerlyon.com/2015/10/27/iskhakov2013-recursive-lexicographical-search-finding-all-markov-perfect-equilibria-of-finite-state-directional-dynamic-games/" />
+<meta name="twitter:domain" content="http://srg.spencerlyon.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Iskhakov2013 (Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games)",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2015-10-27",
+    "description": "",
+    "wordCount":  929 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://srg.spencerlyon.com/2015/10/27/iskhakov2013-recursive-lexicographical-search-finding-all-markov-perfect-equilibria-of-finite-state-directional-dynamic-games/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
+<link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.16-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://srg.spencerlyon.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://srg.spencerlyon.com/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://srg.spencerlyon.com/">
+  srg
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Spencer Lyon
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://srg.spencerlyon.com/">Home</a>
+
+
+  
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:spencer.lyon@stern.nyu.edu">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>Iskhakov2013 (Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games)
+</h1>
+
+  <div class="metas">
+<time datetime="2015-10-27">27 Oct, 2015</time>
+
+
+  
+  &middot; Read in about 5 min
+  &middot; (929 Words)
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p><h1 id="outline">Outline</h1>
+<p>The authors of this paper do 3 main things:</p>
+<ol style="list-style-type: decimal">
+<li>Describe a particular class of Dynamic economic games</li>
+<li>Describe two algorithms for computing Markov perfect equilibria of those games</li>
+<li>Give two detailed, non-trivial examples of how to apply the algorithms to games in this class</li>
+</ol>
+<p>We won&rsquo;t have time to touch on the examples, but my goal today is to describe the class of models and explain the key components of the algorithms.</p>
+<h1 id="dynamic-directional-games">Dynamic Directional Games</h1>
+<p>The class of dynamic games considered in this paper have the following characteristics</p>
+<ul>
+<li>We consider a dynamic stochastic game <span class="math inline"><em>G</em></span> with <span class="math inline"><em>n</em></span> players and <span class="math inline"><em>T</em></span> periods. <span class="math inline"><em>T</em></span> might be <span class="math inline">∞</span>.</li>
+<li>Payoffs for each player are given by time separable von-Neumann Morgenstern utility functions.
+<ul>
+<li>Time <span class="math inline"><em>t</em></span> payoffs depend on the state <span class="math inline"><em>s</em></span> in time <span class="math inline"><em>t</em></span> as well as the vector of actions <span class="math inline"><em>a</em><sub><em>t</em></sub></span> chosen by all players</li>
+</ul></li>
+<li>The state for time <span class="math inline"><em>t</em> + 1</span> is Markov, conditional on time <span class="math inline"><em>t</em></span> state and actions</li>
+<li>We restrict the state space to be finite</li>
+<li>Players perfectly observe the current state as well as past actions</li>
+<li>For each player the discount factor, set of feasible actions given the state, and the Markov transition probabilities are common knowledge</li>
+<li>We will consider Markov perfect equilibria over behavior strategies</li>
+</ul>
+<p>The authors further refine this class of games by introducing the concept of <em>directionality</em> in one or more state variables. Specifically, they partition the state vector into two components: <span class="math inline"><em>D</em></span> and <span class="math inline"><em>X</em></span>. The set <span class="math inline"><em>D</em></span> contains the elements of <span class="math inline"><em>S</em></span> that can be represented by a directed acyclic graph. <span class="math inline"><em>X</em></span> contains all other states.</p>
+<p>What does this mean? The set <span class="math inline"><em>D</em></span> can be further divided into subgroups and ordered such that once the state moves from subgroup <span class="math inline"><em>i</em></span> to subgroup <span class="math inline"><em>j</em> &gt; <em>i</em></span>, there is 0 probability of ever returning to subgroup <span class="math inline"><em>i</em></span>.</p>
+<h1 id="algorithm-1-state-recursion-algorithm">Algorithm 1: State Recursion Algorithm</h1>
+<p>How does directionality help? It allows them to define the first main algorithm in the paper: the state recursion algorithm.</p>
+<p>Suppose that the set <span class="math inline"><em>D</em></span> has been divided into <span class="math inline"><em>M</em></span> groups, ordered such that the model begins in group <span class="math inline">1</span> and terminates in group <span class="math inline"><em>M</em></span>. Then the state recursion algorithm roughly proceeds as follows:</p>
+<ul>
+<li>Starting with subgroup <span class="math inline"><em>M</em></span>, iterating down to subgroup 1
+<ul>
+<li>For each state <span class="math inline"><em>d</em> ∈ <em>D</em><sub><em>M</em></sub></span>
+<ul>
+<li>Compute all MPE of the subgame starting from <span class="math inline"><em>s</em> = <em>d</em> × <em>x</em>,  ∀<em>x</em> ∈ <em>X</em></span>, taking as given optimal strategies already computed in subgroups <span class="math inline"><em>j</em> &gt; <em>i</em></span></li>
+<li>If multiple such equilibria exist, use some deterministic equilibrium selection rule to choose a unique MPE</li>
+</ul></li>
+</ul></li>
+<li>When the recursion terminates, the selected equilibria from each subgame are joined to form the MPE of the original game.</li>
+</ul>
+<p>To understand how the State Recursion Algorithm works, consider two simple examples:</p>
+<ol style="list-style-type: decimal">
+<li>Let the only directional state variable be time. Then SRA is equivalent to familiar backwards time recursion:
+<ul>
+<li>start in the terminal period, solve the model for each state in that period</li>
+<li>Step backwards once in time and for each state in time <span class="math inline"><em>T</em> − 1</span>, compute the equilibrium, taking as given the optimal cap <span class="math inline"><em>T</em></span> strategy.</li>
+</ul></li>
+<li>A stylized version of Rubenstein&rsquo;s 2 bargaining over a pie problem.
+<ul>
+<li>Suppose that 2 agents are bargaining over how to split a single perfectly divisible pie.</li>
+<li>Further assume that the size of the pie evolves according to a 4 state Markov chain, where states are ordered in decreasing size of the pie (i.e. state 1 is the full pie) with an upper triangular transition matrix. Specifically, suppose that from state 1, there is non-zero probability of remaining in state 1, or moving to either state 2 or state 3. From state 2, you can remain in state 2 or move to state 4. From state 3 you can stay or move to 4. 4 is absorbing.</li>
+<li>The state is partitioned into 3 subgroups <code>[(1,), (2,3), (4,)]</code></li>
+<li>After moving from <span class="math inline">1</span> to <span class="math inline">2</span> or <span class="math inline">3</span>, there is zero probability of ever moving back to <span class="math inline">1</span>. Similarly, once the state goes to <span class="math inline">4</span>, it has zero probability of ever returning to <span class="math inline">1, 2,</span> or <span class="math inline">3</span></li>
+</ul></li>
+</ol>
+<p>From the second example we can see how SRA is a generalization of backwards time recursion: the state can include variables other than time and have a stochastic law of motion between groups.</p>
+<p>The SRA algorithm makes 2 assumptions:</p>
+<ol style="list-style-type: decimal">
+<li>That we know how to solve for an MPE starting from each element in <span class="math inline"><em>D</em></span></li>
+<li>That we have a deterministic equilibrium selection rule in mind</li>
+</ol>
+<p>The output of the algorithm is a single MPE of the original game.</p>
+<h1 id="algorithm-2-recursive-lexicographical-search">Algorithm 2: Recursive Lexicographical Search</h1>
+<p>The second algorithm is called &quot;Recursive Lexicographical Search&quot;. This algorithm relaxes the equilibrium selection rule assumption and in return finds <em>all</em> the MPE of the original game.</p>
+<p>The core concept behind this algorithm is that you have an outer loop over all possible equilibrium selection rules, and use the SLA algorithm to compute a particular MPE associated with that ESR.</p>
+<p>A key feature of their description of the algorithm is an extremely efficient and clearly explained algorithm for iterating over only the feasible ESRs. The output is that you can compute <em>all</em> the MPE of the original game in linear time (i.e. computational time increases linearly with the number of equilibria). Naively iterating over the possible ESRs would require checking <span class="math inline"><em>K</em><sup><em>N</em></sup></span> candidates, where <span class="math inline"><em>K</em></span> is the maximal number of MPE for any particular stage-game and <span class="math inline"><em>N</em></span> is the total number of stage-games. In one example this reduces the number of candidates from <code>1.7445e26</code> to <code>1</code>.</p>
+<div id="refs" class="references">
+<div id="ref-Iskhakov2013">
+<p>Iskhakov, Fedor, John Rust, and Bertel Schjerning. 2015. “Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games” 1.</p>
+</div>
+</div></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://srg.spencerlyon.com/2015/10/20/chassang2010-building-routines-learning-cooperation-and-the-dynamics-of-incomplete-relational-contracts/" title="Chassang2010 (Building routines: Learning, cooperation, and the dynamics of incomplete relational contracts)">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="http://srg.spencerlyon.com/2015/11/03/jermann2012-macroeconomic-effects-of-financial-shocks/" title="Jermann2012 (Macroeconomic Effects of Financial Shocks)">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2015 Spencer Lyon.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+
+    
+  </body>
+</html>
+

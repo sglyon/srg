@@ -1,6 +1,7 @@
 ---
 'date': '2016-02-09'
-'title': 'Melitz 2003 (Market entry costs, producer heterogeneity, and export dynamics)'
+'title': 'Das, Roberts, Tybout (2007) (Market entry costs, producer heterogeneity,
+  and export dynamics)'
 ---
 
 <h2 id="intro">Intro</h2>

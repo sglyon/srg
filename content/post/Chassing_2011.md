@@ -54,7 +54,7 @@
 <p>In this sense inefficient exit is used as a vehicle to motivate agent 2 to reveal information.</p>
 <div id="refs" class="references">
 <div id="ref-Chassang2010">
-<p>Chassang, Sylvain. 2010. “Building routines: Learning, cooperation, and the dynamics of incomplete relational contracts.” <em>American Economic Review</em> 100 (1): 448–65. doi:<a href="http://doi.org/10.1257/aer.100.1.448">10.1257/aer.100.1.448</a>.</p>
+<p>Chassang, Sylvain. 2010. “Building routines: Learning, cooperation, and the dynamics of incomplete relational contracts.” <em>American Economic Review</em> 100 (1): 448–65. doi:<a href="https://doi.org/10.1257/aer.100.1.448">10.1257/aer.100.1.448</a>.</p>
 </div>
 </div>
 <div class="footnotes">

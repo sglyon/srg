@@ -61,7 +61,7 @@
 <h2 id="references" class="unnumbered">References</h2>
 <div id="refs" class="references">
 <div id="ref-Ruhl2015">
-<p>Ruhl, K, and J Willis. 2015. “New Exporter Dynamics,” no. November. doi:<a href="http://doi.org/10.2139/ssrn.2531105">10.2139/ssrn.2531105</a>.</p>
+<p>Ruhl, K, and J Willis. 2015. “New Exporter Dynamics,” no. November. doi:<a href="https://doi.org/10.2139/ssrn.2531105">10.2139/ssrn.2531105</a>.</p>
 </div>
 </div>
 

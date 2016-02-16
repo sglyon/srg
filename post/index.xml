@@ -9,8 +9,118 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 09 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Feb 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Niepmann (2013) (Banking across borders)</title>
+      <link>http://srg.spencerlyon.com/2016/02/16/niepmann-2013-banking-across-borders/</link>
+      <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/02/16/niepmann-2013-banking-across-borders/</guid>
+      <description>&lt;p&gt;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;This introduces heterogenous banks into a general equilibrium trade model in the flavor of Melitz. There are also empirical exercises that show that the model can generate some features of German banking data.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;We will describe the model in two stages:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Closed economy, where we will characterize economic setting and the optimization problem of each agent.&lt;/li&gt;
+&lt;li&gt;Open economy, where combine 2 closed economies and allow them to trade&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;closed-economy&#34;&gt;Closed economy&lt;/h3&gt;
+&lt;p&gt;The economy consists of the following agents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A continuum of capitalists of measure &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;K&lt;/em&gt;&lt;/span&gt;. Capitalists can choose to become bankers or depositors.
+&lt;ul&gt;
+&lt;li&gt;A banker has two roles (the optimization problem will be described later):
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Channel capital from depositors to firms and&lt;/li&gt;
+&lt;li&gt;Monitor the firms they lend to. Bankers earn a return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;/span&gt; on all capital they lend to firms (their own, plus that collected from depositors)&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;A depositor lends their capital endowment to banks and earn a return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;sup&gt;&lt;em&gt;D&lt;/em&gt;&lt;/sup&gt; &amp;lt; =&lt;em&gt;R&lt;/em&gt;&lt;/span&gt; on their investment. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;sup&gt;&lt;em&gt;D&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; is an equilibrium object. Preferences dictate that they then consume all that they have&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;A continuum of potential entrepreneurs that run firms.
+&lt;ul&gt;
+&lt;li&gt;Firms are perfectly competitive and operate a production technology that exhibits constant returns to scale in capital and labor.&lt;/li&gt;
+&lt;li&gt;They rent capital and labor and seek to maximize revenues less input costs&lt;/li&gt;
+&lt;li&gt;Firms have a random probability of being productive. If they are productive, they produce and those who supplied capital and labor are paid their rents. If they are not productive, output is zero and those who supplied capital and labor get nothing.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;A continuum of workers of measure &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; that inelastically supply labor to the firms and consume all labor income with linear utility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So; the depositor, worker, and firm problems are all trivial. Bankers are the interesting agents in this model, and we will describe their problem now.&lt;/p&gt;
+&lt;p&gt;The model consists of two time periods&lt;/p&gt;
+&lt;p&gt;In the first time period the following happens:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Capitalists draw a monitoring cost from a uniform distribution and then choose to become either a banker or depositors.&lt;/li&gt;
+&lt;li&gt;Depositors then lend all their capital to banks&lt;/li&gt;
+&lt;li&gt;Bankers collect capital from depositors and then make two choices: how much to lend to which firms and whether or not to monitor those firms:
+&lt;ul&gt;
+&lt;li&gt;The objective of bankers is to maximize the returns they earn, net of payouts to depositors and monitoring costs.&lt;/li&gt;
+&lt;li&gt;As stated above, parameters are such that the banker always chooses to monitor all firms. To credibly commit to monitoring, the banker invests his own capital into the firms he lends to.&lt;/li&gt;
+&lt;li&gt;Profit maximization boils down to maximizing the number of firms the banker lends to. This is a finite number because the banker has finite personal capital.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then in the second period&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Firm production is realized&lt;/li&gt;
+&lt;li&gt;Rents are paid to banks and workers&lt;/li&gt;
+&lt;li&gt;Banks pay creditors at a rate &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; (all depositors earn the same rate), keeping the rest&lt;/li&gt;
+&lt;li&gt;Workers, depositors, and bankers then consume everything they are left with (note all consumption must come out of produced good &amp;ndash; i.e. do not value capital or labor for consumption)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h3&gt;
+&lt;p&gt;In equilibrium there is free entry to become a banker. This boils down to having a cutoff in monitoring costs that says all capitalists with monitoring cost above the cutoff become depositors while all others become bankers.&lt;/p&gt;
+&lt;p&gt;The second equilibrium condition is that all capital in the economy is used in production.&lt;/p&gt;
+&lt;p&gt;These two conditions admit a semi-analytical solution for the cutoff monitoring cost and rate of return paid to depositors &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;open-economy&#34;&gt;Open economy&lt;/h2&gt;
+&lt;p&gt;In the open economy there are two countries that typically differ in endowment of capital and labor as well as distribution over monitoring costs. Workers, firms, and depositors only operate within their home country &amp;ndash; bankers are allowed to interact across the border.&lt;/p&gt;
+&lt;p&gt;Bankers can choose to raise deposits at home and abroad as well as invest in domestic or foreign firms.&lt;/p&gt;
+&lt;p&gt;International bankers face an variable &amp;quot;iceberg&amp;quot; costs where their return is a fraction less than one of what a banker from the foreign country would earn. Also payout costs to foreign depositors are a fraction higher than similar costs for domestic depositors.&lt;/p&gt;
+&lt;p&gt;Operating internationally also has associated fixed costs that come in 3 varieties:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;There is one fixed cost associated with becoming an international lender&lt;/li&gt;
+&lt;li&gt;Another (higher) fixed cost for bankers who with to borrow across the border&lt;/li&gt;
+&lt;li&gt;A third (highest) fixed cost associated with foreign direct investment where a banker establishes a foreign affiliate and then interacts through the affiliate and faces no variable costs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;equilibrium-1&#34;&gt;Equilibrium&lt;/h3&gt;
+&lt;p&gt;Equilibrium behavior in this model is similar in spirit to the equilibrium of Melitz: lower cost bankers will&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Take on higher fixed costs&lt;/li&gt;
+&lt;li&gt;Have a larger throughput (lend to more firms)&lt;/li&gt;
+&lt;li&gt;Earn higher profits&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The author proves a unique equilibrium exists.&lt;/p&gt;
+&lt;h2 id=&#34;simplified-model&#34;&gt;Simplified model&lt;/h2&gt;
+&lt;p&gt;The general version of the model is quite complicated. Each banker has 7 potential profit streams (lend domestic capital to foreign firms, lend foreign capital to foreign firms, lend foreign capital to domestic firms, those three repeated but via foreign affiliates, and pure domestic profits).&lt;/p&gt;
+&lt;p&gt;So consider a simplified version where we assume that factor endowments are such that bankers in country 1 earn a higher return than bankers in country 2 AND bankers in country 1 are more efficient than those in country 2 (have a lower lower bound on the uniform distribution from which costs are drawn).&lt;/p&gt;
+&lt;p&gt;In this case bankers in country 2 will operate only domestically, become international lenders, or operate via foreign direct investment.&lt;/p&gt;
+&lt;p&gt;Bankers in country 1 will operate domestically, become international borrowers, or operate via FDI.&lt;/p&gt;
+&lt;h3 id=&#34;experiment&#34;&gt;Experiment&lt;/h3&gt;
+&lt;p&gt;Consider an experiment where we compare the equilibrium outcomes when countries must live in autarky to the open economy equilibrium.&lt;/p&gt;
+&lt;p&gt;A few things will happen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The returns for bankers in the two countries will move closer to one another (that is the country with low returns will have higher returns than in autarky). This is driven by capital flowing into the higher return country, but not all the way to set returns in the two countries equal because of the fixed costs.&lt;/li&gt;
+&lt;li&gt;The cutoff for entry into domestic markets has an asymmetric impact.
+&lt;ul&gt;
+&lt;li&gt;In the more productive country the cutoff rises (loosens) and more banks enter. These bankers are more efficient than the foreign ones and are able to displace less efficient bankers.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Banks that operate internationally out of either country become larger.
+&lt;ul&gt;
+&lt;li&gt;For the borrowers in the high return/productivity country, the larger balance sheet is driven by access to reduced funding costs (rate paid to depositors falls)&lt;/li&gt;
+&lt;li&gt;For lenders in the less productive country, this is driven by access to markets with higher returns.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;empirics&#34;&gt;Empirics&lt;/h2&gt;
+&lt;p&gt;The author also conducts an empirical analysis using data on the foreign assets and liabilities of all (1998) German banks for a particular year (2005).&lt;/p&gt;
+&lt;p&gt;The reported findings support the predictions of the model:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The probability that a bank has foreign assets/liabilities and net FDI increase with the size of domestic business and efficiency.&lt;/li&gt;
+&lt;li&gt;Larger banks also hold more foreign assets and liabilities.&lt;/li&gt;
+&lt;li&gt;Fixed costs are a key component to foreign operations of banks. Only larger banks can overcome the fixed costs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Das, Roberts, Tybout (2007) (Market entry costs, producer heterogeneity, and export dynamics)</title>

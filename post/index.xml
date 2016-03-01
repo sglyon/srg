@@ -9,8 +9,191 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 16 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Costinot, Rodriguez, Werning (2016) (Micro to Macro: Optimal Trade Policy with Firm Heterogeneity)</title>
+      <link>http://srg.spencerlyon.com/2016/03/01/costinot-rodriguez-werning-2016-micro-to-macro-optimal-trade-policy-with-firm-heterogeneity/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/03/01/costinot-rodriguez-werning-2016-micro-to-macro-optimal-trade-policy-with-firm-heterogeneity/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper extends the Meltiz framework to allow for optimal tariff policies.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;This model extends a two country Melitz framework in two ways:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Allows for heterogeneity in variable and fixed costs. This will be a policy instrument where governments can set firm specific tariffs&lt;/li&gt;
+&lt;li&gt;The representative consumer in each country has a constant elasticity of substitution across all varieties procued within a country, but that elasticity can differ across countries.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;preferences&#34;&gt;Preferences&lt;/h3&gt;
+&lt;p&gt;In each country there is a representative consumer.&lt;/p&gt;
+&lt;p&gt;The consumer has CES preferences over all varieties in both countries, but the CES parameter might differ across countries.&lt;/p&gt;
+&lt;h3 id=&#34;technology&#34;&gt;Technology&lt;/h3&gt;
+&lt;p&gt;Household inelastically supply a fixed amount of aggregate labor to their own country. Firms pay households a country specific wage for each unit of labor.&lt;/p&gt;
+&lt;p&gt;There are a continuum of firms in each country, indexed by their productivity.&lt;/p&gt;
+&lt;p&gt;Each firm takes in labor and produces consumption good. Labor demand for each firm is affine in the quantity produced. The slope and intercept coefficients can be arbitrary functions of productivity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Markets&lt;/strong&gt; Firms sell their goods in a monopolistically competitive market.&lt;/p&gt;
+&lt;h3 id=&#34;taxes&#34;&gt;Taxes&lt;/h3&gt;
+&lt;p&gt;We will consider a cost structure where each firm can potentially face both an import tariff in the consumer&amp;rsquo;s country and an export subsidy in the firm&amp;rsquo;s country. Note that a negative tariff acts like an import subsidy and a negative export subsidy acts like an export tax.&lt;/p&gt;
+&lt;p&gt;All tax revenues are rebated lump sum to the consumer in the country where the revenues are collected.&lt;/p&gt;
+&lt;h3 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h3&gt;
+&lt;p&gt;We will consider a decentralized equilibrium in which&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;consumers maximize their utility subject to their budget constraint&lt;/li&gt;
+&lt;li&gt;firms choose their output to maximize their profits taking their residual demand curves a given&lt;/li&gt;
+&lt;li&gt;firms optimally choose to enter domestic and export markets, based on productivity and costs&lt;/li&gt;
+&lt;li&gt;The government&amp;rsquo;s budget is balanced in each country (all tax revenues are rebated to HH)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;I felt the solution technique was interesting.&lt;/p&gt;
+&lt;p&gt;The authors consider a special case of the model just described where the government in country &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;/span&gt; is strategic and the the government in country &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;/span&gt; is passive.&lt;/p&gt;
+&lt;p&gt;This means that the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;/span&gt; government chooses tariffs and subsidies to maximize home consumer&amp;rsquo;s utility, whereas all taxes and subsidies in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;/span&gt; are zero.&lt;/p&gt;
+&lt;p&gt;The home government&amp;rsquo;s problem is written as a planning problem where the planner chooses taxes, subsidies, prices, and quantities.&lt;/p&gt;
+&lt;h3 id=&#34;planning-problems&#34;&gt;Planning problems&lt;/h3&gt;
+&lt;p&gt;To solve this model the authors use a three step procedure:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Solve the problem of minimizing labor cost, subject to producing &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; units of aggregate consumption for the home consumer and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;em&gt;F&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; units for the foreign consumer.
+&lt;ul&gt;
+&lt;li&gt;This problem is infinite dimensional (a continuum of firms) and non-smooth (kinks because of fixed costs)&lt;/li&gt;
+&lt;li&gt;However, the objective and constraint are additively separable in the controls (quantities for each firm type) so the problem can be solved firm by firm and market by market using a Lagrangian approach.&lt;/li&gt;
+&lt;li&gt;This breaks down the difficult original problem one dimensional subproblems and an conditions on Lagrange multipliers such that the aggregate production constraint holds&lt;/li&gt;
+&lt;li&gt;This problem has a unique solution that is characterized in closed form&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Solve the problem of minimizing the cost of importing one unit of aggregate goods from country &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;/span&gt;, subject to aggregate imports being &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;F&lt;/em&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.
+&lt;ul&gt;
+&lt;li&gt;The control here is import quantities for each foreign firm.&lt;/li&gt;
+&lt;li&gt;The problem faces the same issues as before, but is also additively separable in the control, so it can be solved using a similar Lagrangian approach&lt;/li&gt;
+&lt;li&gt;The solution to this problem is also unique and characterized in closed form&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Solve the problem of optimally choosing &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;em&gt;F&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;F&lt;/em&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; to maximize the home consumer&amp;rsquo;s utility, subject to the constrains on aggregate quantities implied by aggregating the results of the previous two micro problems
+&lt;ul&gt;
+&lt;li&gt;The solution is again unique and characterized in closed form&lt;/li&gt;
+&lt;li&gt;The key output of this problem is that the optimal behavior can be characterized only by manipulating the terms of trade. This will be important for implementing this solution using taxes in the next section.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;With the solution to the decentralized planner&amp;rsquo;s problem in hand, the authors then describe how to implement this equilibrium using a variety of possible tariff and subsidy schemes.&lt;/p&gt;
+&lt;p&gt;I will focus on the equilibrium with a fully flexible tax system that allows the home government to choose tariffs and subsidies for each producer/consumer pair.&lt;/p&gt;
+&lt;p&gt;The results can be summarized as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The ratio of home to home subsidy and home to home tariffs is constant for all productivity levels.&lt;/li&gt;
+&lt;li&gt;The home to foreign subsidy is constant for all productivity levels&lt;/li&gt;
+&lt;li&gt;The foreign to home tariff discriminates across productivity levels.
+&lt;ul&gt;
+&lt;li&gt;For all foreign producers above a certain productivity level, per unit tariffs are flat.&lt;/li&gt;
+&lt;li&gt;For all foreign producers below this level who still choose to export in this equilibrium tariffs are lower, but strictly increasing in the export profitability of the firm.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The set of firms who face the discriminatory tariffs are the most interesting part of this equilibrium.&lt;/p&gt;
+&lt;p&gt;The firms in this set are have export profits that are exactly equal to the fixed costs of production in the foreign to home market.&lt;/p&gt;
+&lt;p&gt;In the decentralized equilibrium, the planner found it optimal to adjust the quantity demanded from these firms relative firms for which the constraint was slack, &lt;strong&gt;to ensure that binding firms are willing to produce and export strictly positive amounts&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The way to implement his feature of the first-best equilibrium using taxes, is to have tariffs scale one for one with the profitability of the firms whose export profit constraint binds.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The two extensions of the Melitz model (heterogenous trade costs and market specific CES parameters) generated one main departure from the Melitz equilibrium: an optimal one-sided tariff and subsidy policy that discriminates against low productivity foreign exporters.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eaton, Eslava, Jinkins, Krizan, Tybout (2014) (A search and learning model of export dynamics)</title>
+      <link>http://srg.spencerlyon.com/2016/02/16/eaton-eslava-jinkins-krizan-tybout-2014-a-search-and-learning-model-of-export-dynamics/</link>
+      <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/02/16/eaton-eslava-jinkins-krizan-tybout-2014-a-search-and-learning-model-of-export-dynamics/</guid>
+      <description>&lt;p&gt;&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;A primarily empirical paper that studies how allowing exporting firms to learn about demand for their product impacts firm dynamics in a Melitz style trade model.&lt;/p&gt;
+&lt;h2 id=&#34;data-and-stylized-facts&#34;&gt;Data and stylized facts&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with the data.&lt;/p&gt;
+&lt;p&gt;The data set used in this paper describes all imports by US buyers from Colombian exporters from 1992-2009. The source is the U.S. Census Bureau’s Longitudinal Foreign Trade Transactions Database (LFTTD).&lt;/p&gt;
+&lt;p&gt;Using this data, the authors report the following stylized facts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;About 80% of Colombian exporter/US importer matches are 1-1, meaning the Colombian firm has no other US buyers and the US firm only buys from a single Colombian firm.&lt;/li&gt;
+&lt;li&gt;About 70% of matches dissolve after one period. There are several additional features behind this fact:
+&lt;ul&gt;
+&lt;li&gt;If a match does survive the into a second period, there is a significantly higher chance it will survive into the third (about 50%). This trend continues as the duration of the match increases.&lt;/li&gt;
+&lt;li&gt;The survival probability of a new match increases with first year sales volume.&lt;/li&gt;
+&lt;li&gt;These facts suggest that there are many Colombian firms who merely &amp;quot;test the US waters&amp;quot; and export a small volume, find the conditions unfavorable, and exit. This might suggest these firms are trying to learn about foreign demand.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;Now let&amp;rsquo;s turn to the theoretical model. The model is set in continuous time and will feature Columbian firms who sell domestically and to US importers.&lt;/p&gt;
+&lt;h3 id=&#34;firm-pricing-problem&#34;&gt;Firm pricing problem&lt;/h3&gt;
+&lt;p&gt;Each Colombian firm competes monopolistically and seeks to maximize total profits. The details of the pricing problem solved by the firms are not given, but rather the authors jump to the Melitz result: prices are set to a constant markup over marginal costs. In this setting the profits of a firm can be written as a multiplicative function of three components:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;A macroeconomic state that is common to all firms&lt;/li&gt;
+&lt;li&gt;Firm productivity&lt;/li&gt;
+&lt;li&gt;A time-varying match specific demand shifter&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;relationships&#34;&gt;Relationships&lt;/h3&gt;
+&lt;p&gt;At each instant in time the seller maintains relationships with an endogenous number of buyers. These relationships are the product of a search process that will be outlined shortly. The matches dissolve exogenously at a constant rate &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;δ&lt;/em&gt;&lt;/span&gt; or if the seller no longer finds it profitable to pay a constant fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;/span&gt; to maintain the relationship.&lt;/p&gt;
+&lt;p&gt;If the match is kept alive, it may be hit by one of three events:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;With a constant hazard &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;λ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; the buyer places another order&lt;/li&gt;
+&lt;li&gt;With a hazard &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;X&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; the macro state will jump to a new level&lt;/li&gt;
+&lt;li&gt;With a hazard &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;y&lt;/em&gt;&lt;em&gt;y&lt;/em&gt;′&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;Y&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; the match specific demand shifter will jump to a new level&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As the shocks to macro and idiosyncratic states are Markov, the stopping time characterizing when one event occurs is distributed exponentially. This allows the authors to write the firms expected profit recursively and obtain expectations in closed form.&lt;/p&gt;
+&lt;h3 id=&#34;learning&#34;&gt;Learning&lt;/h3&gt;
+&lt;p&gt;Sellers conduct search in domestic and foreign markets. When searching in a particular market &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;, sellers understand that a constant fraction &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; of potential buys will form a match.&lt;/p&gt;
+&lt;p&gt;Each seller draws &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; before meeting with any clients and the draws remain fixed over time. All draws of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt; come independently from a beta distribution.&lt;/p&gt;
+&lt;p&gt;Sellers are assumed to have met with many domestic firms and know &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;. They will; however, have to learn about &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; by meeting with many firms.&lt;/p&gt;
+&lt;p&gt;For a given level of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;, the probability that a random sample of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; potential foreign buyers will result in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; matches is distributed binomally.&lt;/p&gt;
+&lt;p&gt;The beta and binomial distributions form a conjugate pair, so after &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; are realized, the posterior for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; is known in closed form.&lt;/p&gt;
+&lt;h3 id=&#34;search&#34;&gt;Search&lt;/h3&gt;
+&lt;p&gt;The final component of the model is the search problem. Each seller will continuously choose a market specific hazard rate &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; with which they meet with a potential buyer. At the moment of the meeting, the firm pays a flow cost of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/sup&gt;, &lt;em&gt;a&lt;/em&gt;)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; is still the number of successful previous matches.&lt;/p&gt;
+&lt;p&gt;The search problem for a firm with a specific productivity and matching efficiency can be written recursively with states being &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; and the macro state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;. The expectations in this recursive formulation are again over the stopping time of seller events, which means they can also be written in closed form.&lt;/p&gt;
+&lt;p&gt;The optimal search hazard rate for each firm in both markets can be characterized in closed form.&lt;/p&gt;
+&lt;h2 id=&#34;empirical-model&#34;&gt;Empirical Model&lt;/h2&gt;
+&lt;p&gt;To implement this model empirically, the authors impose the following additional structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A specific form for the search cost function&lt;/li&gt;
+&lt;li&gt;Distributions for all exogenous states (seller productivity, and macro/micro states) are all assumed.&lt;/li&gt;
+&lt;li&gt;The data is uninformative regarding the rate of time discount for sellers and the demand elasticity, so values for these parameters are directly assumed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The distribution of the states is a set of independent Ehrenfest diffusion processes. This process is special because it converges to the well known Ornstein-Uhlenbeck process as the spacing between grid points in the state space converges to zero&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;estimation&#34;&gt;Estimation&lt;/h2&gt;
+&lt;p&gt;Estimation is broken into 2 stages:&lt;/p&gt;
+&lt;h3 id=&#34;estimating-the-jump-process-for-macro-states&#34;&gt;Estimating the jump process for macro states&lt;/h3&gt;
+&lt;p&gt;They proxy &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; in each market as real expenditures on manufacturing goods in that country. Their distributional assumption for the macro states allow them summarize the distribution in terms of a jump size and hazard rate.&lt;/p&gt;
+&lt;h3 id=&#34;indirect-inference&#34;&gt;Indirect inference&lt;/h3&gt;
+&lt;p&gt;The rest of the estimation happens via indirect inference on the closed form results form the theoretical model.&lt;/p&gt;
+&lt;p&gt;The parameters are estimated to minimize distance between moments generated by the model and corresponding moments in the data. The data features that are targeted include&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Distribution of home and foreign sales&lt;/li&gt;
+&lt;li&gt;Distribution of clients across exporters&lt;/li&gt;
+&lt;li&gt;Sales per client, conditioned on the number of clients&lt;/li&gt;
+&lt;li&gt;An autoregression of log domestic sales&lt;/li&gt;
+&lt;li&gt;Transition probabilities in the number of clients&lt;/li&gt;
+&lt;li&gt;Exporter exit hazard by duration in foreign market&lt;/li&gt;
+&lt;li&gt;Match death probabilities and match sales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;basic-results&#34;&gt;Basic results&lt;/h3&gt;
+&lt;p&gt;There are many parameters, so I won&amp;rsquo;t enumerate how well the model does at targeting each parameter. The overall results are that the estimates match the signs of all empirical moments and the magnitude of most.&lt;/p&gt;
+&lt;p&gt;Some interpretation of the coefficients is helpful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mature (5+ years) matches fail with a probability of 40%, but the estimated exogenous separation rate is only 27%. This suggests that the idiosyncratic demand shift shocks impact long-run match survival.&lt;/li&gt;
+&lt;li&gt;On average, the success rate of matches is 0.18. However, the standard deviation of this estimate is 0.176, suggesting that there is significant room for learning.&lt;/li&gt;
+&lt;li&gt;Network effects are very strong. This is summarized by the search cost falling sharply as the number of successful matches rises.&lt;/li&gt;
+&lt;li&gt;Finally, the estimation also suggests that the network effects are strongest for sellers getting their first successful match (suggests that search costs are concave in the number of matches).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;experiments&#34;&gt;Experiments&lt;/h2&gt;
+&lt;p&gt;The authors then do a few experiments to further probe the model.&lt;/p&gt;
+&lt;h3 id=&#34;no-learning-model&#34;&gt;No-learning model&lt;/h3&gt;
+&lt;p&gt;They first consider a no learning model where firms are assumed to know both &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; with certainty at the onset of the model.&lt;/p&gt;
+&lt;p&gt;The main impact of this model restriction is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The exit of inexperienced exports is lower. This is driven both by having low &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; sellers not try to learn about foreign demand and by no learning based exit.&lt;/li&gt;
+&lt;li&gt;To overcome this and still match seller exit rates, exogenous separation probability doubles from 0.26 to 0.52.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Niepmann (2013) (Banking across borders)</title>
@@ -1040,216 +1223,6 @@
 &lt;p&gt;Schorfheide, Frank, Nber Dongho Song, and Amir Yaron. 2014. “Identifying Long-Run Risks: A Bayesian Mixed-Frequency Approach.”&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>He &amp; Krishnamurthy (2013) (Intermediary Asset Pricing)</title>
-      <link>http://srg.spencerlyon.com/2015/09/07/he--krishnamurthy-2013-intermediary-asset-pricing/</link>
-      <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/09/07/he--krishnamurthy-2013-intermediary-asset-pricing/</guid>
-      <description>&lt;p&gt;&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
-&lt;p&gt;This is two-type agent, continuous time model of financial intermediaries. &lt;span class=&#34;citation&#34;&gt;He and Krishnamurthy (2013)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Agents are either households or specialists.&lt;/p&gt;
-&lt;p&gt;Distinction will be made clear once we understand the market structure&lt;/p&gt;
-&lt;h2 id=&#34;market-structure&#34;&gt;Market structure&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;One risk-free short run bond in zero net supply
-&lt;ul&gt;
-&lt;li&gt;All agents can freely buy this asset&lt;/li&gt;
-&lt;li&gt;Specialists can also short&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;One risky asset whose dividends evolve as GBM
-&lt;ul&gt;
-&lt;li&gt;Only specialists can purchase this asset, however they can do so in behalf of households via an intermediary mechanism to be explained shortly&lt;/li&gt;
-&lt;li&gt;Net supply normalized to 1&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;technology-how-markets-work&#34;&gt;Technology (how markets work)&lt;/h2&gt;
-&lt;p&gt;Each period between &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; is split into 5 mini-periods:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;At &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; each specialist is randomly matched with a household to form and intermediary&lt;/li&gt;
-&lt;li&gt;Specialists allocate all &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; of their wealth to buy equity in intermediary. Households allocate a part, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, of their wealth to purchase equity&lt;/li&gt;
-&lt;li&gt;Specialists take &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; + &lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and allocates all of it between the risk free bond and risky. There are not restrictions in buying or shorting either asset&lt;/li&gt;
-&lt;li&gt;Returns are realized and distributed according to equity shares. Agents consume out of net wealth&lt;/li&gt;
-&lt;li&gt;At &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; the match is broken and new one is formed&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Note about choice of matching structure:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Alternative would be standard Walrasian market.
-&lt;ul&gt;
-&lt;li&gt;Did this in 2012 paper.&lt;/li&gt;
-&lt;li&gt;Found with this market structure the specialists charge fees that rise in financial crisis &amp;ndash; this is counterfactual.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;agents&#34;&gt;Agents&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Households:
-&lt;ul&gt;
-&lt;li&gt;An overlapping generation of agents.&lt;/li&gt;
-&lt;li&gt;At each time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; a unit mass of time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; agents is born with wealth &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; (evenly distributed based on end of period wealth of previous generation &amp;ndash; &lt;em&gt;means they don&amp;rsquo;t need to track the wealth distribution&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;They live between period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;, during which time they receive labor income that is constant fraction of risky asset dividends. (NOTE: without this it is possible to arrive in state where HH sector vanishes)&lt;/li&gt;
-&lt;li&gt;Authors assume a fraction &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;λ&lt;/em&gt;&lt;/span&gt; can only invest in risk-free asset. &lt;em&gt;This generates the &lt;span class=&#34;math inline&#34;&gt;+&lt;/span&gt; side of the zero net supply condition, making it possible for other agents to take a levered position in risky asset.&lt;/em&gt; HH cannot short the bond&lt;/li&gt;
-&lt;li&gt;Choose period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; consumption and asset positions to maximize convex combination of log of consumption and expectation of log of continuation wealth (utility and bequest motive both log form)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Unit mass of identical specialists. Each one:
-&lt;ul&gt;
-&lt;li&gt;Infinitely lived.&lt;/li&gt;
-&lt;li&gt;Operates a single intermediary (represent decision makers of bank, hedge fund, extc.)&lt;/li&gt;
-&lt;li&gt;Chooses sequence of consumption and portfolio shares in risky asset (acting as intermediary) to maximize the expected present discounted value of a CRRA utility function of consumption subject to&amp;hellip;&lt;/li&gt;
-&lt;li&gt;Budget constraint: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = −&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;d&lt;/em&gt;&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;)−&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; is intermediary share in risky asset and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;)&lt;/span&gt; is the associated return&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;equilibrium-outcomes&#34;&gt;Equilibrium outcomes&lt;/h1&gt;
-&lt;p&gt;In this section we discuss the key outcomes in the paper.&lt;/p&gt;
-&lt;h2 id=&#34;friction&#34;&gt;Friction&lt;/h2&gt;
-&lt;p&gt;Model contains one &lt;strong&gt;key financial friction&lt;/strong&gt; that drives most results:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Households are willing to invest no more than a constant fraction &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; of specialist wealth as equity in the intermediary: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; ≤ &lt;em&gt;m&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; for some constant &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt; &amp;gt; 0&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Constrains intermediary&amp;rsquo;s ability to raise &lt;em&gt;outside equity financing&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Interpretation:
-&lt;ul&gt;
-&lt;li&gt;Managers usually have significant wealth tied in their own funds (aligns incentives)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Equilibrium effect:
-&lt;ul&gt;
-&lt;li&gt;Effectively creates a boundary &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sup&gt;&lt;em&gt;c&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; such that if specialist wealth relative to value (price) of risky asset &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt; = &lt;em&gt;w&lt;/em&gt;/&lt;em&gt;P&lt;/em&gt;&lt;/span&gt; falls below &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, they are constrained in how much equity they can raise.
-&lt;ul&gt;
-&lt;li&gt;In constrained region we have &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;m&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;If unconstrained &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; &amp;lt; &lt;em&gt;m&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and value of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; doesn&amp;rsquo;t impact decisions&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Adds leverage effect such that when specialist is constrained he can&amp;rsquo;t raise enough capital in intermediary via equity, therefore must take levered position by shorting risk free asset and holding a very large position in risky asset (see figure 2)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The main asset pricing impact of this friction can be seen in how the risk premium (return on expected risky asset less risk free return) changes as a function of specialist wealth. Before getting there we need to understand three details&lt;/p&gt;
-&lt;h2 id=&#34;equity-premium&#34;&gt;Equity premium&lt;/h2&gt;
-&lt;h3 id=&#34;risk-aversion&#34;&gt;Risk aversion&lt;/h3&gt;
-&lt;p&gt;First, note that specialist CRRA parameter &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;γ&lt;/em&gt;&lt;/span&gt; is calibrated to be greater than &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt; (i.e. specialists are more risk adverse than households). This causes all households who can to invest all their wealth in risky equity&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Intuitive reasoning&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Recall market clearing: zero net supply risk free asset and positive net supply risky asset &lt;span class=&#34;math inline&#34;&gt;⇒&lt;/span&gt; intermediary always holds more than 100% of wealth in risky asset&lt;/li&gt;
-&lt;li&gt;Household is less risk adverse, so they would like to hold more risky asset than specialist.&lt;/li&gt;
-&lt;li&gt;To hold more than specialist, who already holds more than 100%, household would have to be able to short bond, but they can&amp;rsquo;t. So they get as close as possible by spending all their wealth to purchase risky equity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;risky-asset-position-vs.-specialist-wealth&#34;&gt;Risky asset position vs. specialist wealth&lt;/h3&gt;
-&lt;p&gt;Second, the relationship between intermediary position in risky asset and specialist wealth is very asymmetric.&lt;/p&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sup&gt; = risky asset holdings/total assets&lt;/span&gt;. Then the relationship beween &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; can be decomposed in two parts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In unconstrained region (specialist wealth relatively high), &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; nearly independent of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;In constrained region; strong, non-linear inverse relationship between &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;I&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;w&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is driven by the leverage effect outlined above: a binding constraint forces specialists to short bond - ratcheting up &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;risk-premium-vs.-specialist-wealth&#34;&gt;Risk premium vs. specialist wealth&lt;/h3&gt;
-&lt;p&gt;Finally, the equilibrium risk premium is increasing in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sup&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Combining these points we see how the model delivers a state dependent risk premium. This result is different from similar results obtained in the literature on two fronts:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;This model has &amp;quot;standard&amp;quot; CRRA utility. Others modify the utility function to introduce state dependence (Campbell &amp;amp; Cochrane (1999), Barberis, Huang, and Santos (2001))&lt;/li&gt;
-&lt;li&gt;The relationship between capital (wealth) and the risk premium is very asymmetric: might provide important window for studying crises&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;dynamics&#34;&gt;Dynamics&lt;/h2&gt;
-&lt;p&gt;Wealth distribution is mean reverting. To see it notice what happens in the two tails:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Specialist wealth very low -&amp;gt; risk premium high -&amp;gt; specialist wealth expected to increase -&amp;gt; wealth distribution mean reverts&lt;/li&gt;
-&lt;li&gt;&lt;ul&gt;
-&lt;li&gt;Household wealth very low -&amp;gt; risk premium low -&amp;gt; aggregate household return similar to aggregate specialist return -&amp;gt; extra labor income for HH pushes their wealth up -&amp;gt; wealth distribution mean reverts&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;That the equity premium is very high when intermediary leverage is high means that specialist wealth exhibits strong mean aversion.&lt;/li&gt;
-&lt;li&gt;When household wealth is relatively low, so is the risk premium. Thus, as household&amp;rsquo;s save their labor income, their wealth is expected to grow, causing the wealth distribution to mean revert from the other side&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- Make figures appear before the References section header is printed --&gt;
-&lt;!-- \clearpage --&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;!-- The following lines are text commands to make the bibliography section print properly --&gt;
-&lt;p&gt;    &lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-He2013b&#34;&gt;
-&lt;p&gt;He, Zhiguo, and Arvind Krishnamurthy. 2013. “Intermediary Asset Pricing.” &lt;em&gt;American Economic Review&lt;/em&gt; 103 (2). American Economic Association: 732–70. &lt;a href=&#34;http://pubs.aeaweb.org/doi/abs/10.1257/aer.103.2.732 papers3://publication/doi/10.1257/aer.103.2.732&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://pubs.aeaweb.org/doi/abs/10.1257/aer.103.2.732&#34;&gt;http://pubs.aeaweb.org/doi/abs/10.1257/aer.103.2.732&lt;/a&gt; papers3://publication/doi/10.1257/aer.103.2.732&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://srg.spencerlyon.com/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/1/01/01/</guid>
-      <description>&lt;p&gt;&lt;h1 id=&#34;section-1-intro&#34;&gt;Section 1 (intro):&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Two channels:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;productivity channel says move from low productivity to high productivity country&lt;/li&gt;
-&lt;li&gt;risk-sharing channel says move from low marginal utility (MU) to high MU country&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;section-2-lit-review&#34;&gt;Section 2 (lit review):&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Differ from Tretvol on three dimensions: (1) look at long run shocks, (2) Tretvoll considers standard BKK capital accumulation (TODO: what is used here) (3) parameter values are closer to asset pricing than RBC literature (RRA = 10, IES &amp;gt; 1 where tretvoll has RRA=100, IES &amp;lt; 1)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;section-3-empirics&#34;&gt;Section 3 (empirics):&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Used data on G7 countries to show three main results:&lt;/li&gt;
-&lt;li&gt;Positive short run productivity news leads to net inflow of capital&lt;/li&gt;
-&lt;li&gt;Positive long run productivity news leads to net outflow of captial&lt;/li&gt;
-&lt;li&gt;Did estimation for US vs UK and then for US vs all other G6. Results were robust across rather large cross section of developed countries.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;section-4-model&#34;&gt;Section 4 (model):&lt;/h1&gt;
-&lt;h2 id=&#34;model-features&#34;&gt;Model features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Complete markets (let&amp;rsquo;s them solve Pareto problem)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Two countries - GHH consumption/leasure aggregator &amp;ndash; avoids issue brought up by Raffo (2008) with CES aggregators - Homogeneous EZ preferences - Cobb-Douglass consumption good aggregator with home bias&lt;/p&gt;
-&lt;p&gt;Two goods - Country specific production with Cobb douglass aggregation of country specific labor and capital - Country specific capital and labor stock, but frictionless trade in consumption and investment good&lt;/p&gt;
-&lt;p&gt;Exogenous process: - constant volatility - with long and short run shocks. - Productivity across countries is cointegrated&lt;/p&gt;
-&lt;h2 id=&#34;intuition&#34;&gt;Intuition:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;EZ prefs provide two &amp;quot;risk&amp;quot; motivators over additive preferences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;A preference for early (more common) or late resolution of uncertainty casues the variance of future Value function to impact current welfare (early resolution means higher variance -&amp;gt; lower welfare)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Extra term appears in SDF (relative to additive case) (future utility over its certainty equivalent) appears. Why does this matter? Creates a risk-sharing channel to impact flow of resources. How? Two things: first, with EZ prefs there is a 1-to-1 map between lifetime wealth and the value function; and second, SDF is used to price risk, so now there is a link between lifetime wealth and risk adjustments. In this model lifetime wealth changed by long run news (positive news about long run productivity =&amp;gt; higher lifetime welath =&amp;gt; higher value function =&amp;gt; lower marginal value =&amp;gt; planner moves resources toward other, high marginal value agent.)&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;section-5&#34;&gt;Section 5&lt;/h1&gt;
-&lt;h2 id=&#34;matching-moments&#34;&gt;Matching moments:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Volatility of output growth and consumption growth relatively close to data (same as BKK)&lt;/li&gt;
-&lt;li&gt;Volatility of investment growth and labor growth too low (same as BKK)&lt;/li&gt;
-&lt;li&gt;Equity premium generated by all three models (BKK with high/low RRA and EZ) is too low&lt;/li&gt;
-&lt;li&gt;All models match data mometns on correlation between c, n, i, nx. the nx one is harder for the high RA additive model to match&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Paper provides empirical evidence for G7 countries that short-and-long-term productivity news have differing effects on capital flows (short &lt;span class=&#34;math inline&#34;&gt;↑⇒&lt;/span&gt; captial in . long &lt;span class=&#34;math inline&#34;&gt;↑⇒&lt;/span&gt; capital out)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;They start with a classic BKK model (two agents, two goods, CRRA utility, constant volatility, persistent shocks to productivity, frictionless trade across countries). Here there is one main channel that prompts resource flows: productivity. So good news about either long run or short run productivity growth will cause resources to flow into that country.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;They also present an almost identical version of the model, the only change being endowing agents with Epstein Zin recursive preferences instead of additive preferences. In addition to the productivity channel inherited from the BKK structure, the EZ preferences bring a risk-channel or motive for resource allocation. This motive can be seen by considering 3 related things:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Under EZ preferneces there is a 1-to-1 mapping between lifetime wealth and the value function.&lt;/li&gt;
-&lt;li&gt;In the planner&amp;rsquo;s version of this problem, the parteto weights are monotonic in the ratio of SDFs.&lt;/li&gt;
-&lt;li&gt;The SDF under EZ preferences has an additional term that involves future utility and its certainty equivalent. When agents have a preference for early resolution of unceratinty (common parameterization), this extra term causes the SDF to fall as the future value function increases.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Keeping those three in mind, consider the effect of positive news about productivity growth in the domestic country:&lt;/p&gt;
-&lt;p&gt;Raises lifetime domestic wealth =&amp;gt; Raises lifetime domestic utility =&amp;gt; Causes domesic SDF to fall, relative to the foreign SDF=&amp;gt; Causes domestic pareto weight to fall =&amp;gt; planner to immdetiately move resources &lt;em&gt;out&lt;/em&gt; of that country.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;They present some empirical results showing that their model does better than the standard BKK model at matching moments from international data.&lt;/li&gt;
-&lt;li&gt;They still fall short on 5 main fronts. Their problems were:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;investment is too smooth (not volatile enough)&lt;/li&gt;
-&lt;li&gt;correlation between domestic and foreign investment growth is negative (risk sharing result &amp;ndash; planner moves resources to less productive country, part of that is used in that country&amp;rsquo;s investment)&lt;/li&gt;
-&lt;li&gt;Risk premium is too small&lt;/li&gt;
-&lt;li&gt;Exchange rate volatility is too small&lt;/li&gt;
-&lt;li&gt;consumption growth rates are more correlated than output growth rates across countries&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;They then extend their baseline recursive model by allowing for a different home bias parameter for consumption and investment goods and by introducing the concept of vintage captial, or that captial becomes more productive over time. With these changes they at least partially resolve all 5 concerns above, without significant departures in other areas.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;They then do sensitivity analysis and conclude.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

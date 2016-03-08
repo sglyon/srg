@@ -9,8 +9,59 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Achdou, Han, Lasry, Lions, Moll (2015) (Hetergenous agent models in continuous time)</title>
+      <link>http://srg.spencerlyon.com/2016/03/08/achdou-han-lasry-lions-moll-2015-hetergenous-agent-models-in-continuous-time/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/03/08/achdou-han-lasry-lions-moll-2015-hetergenous-agent-models-in-continuous-time/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper looks at the class of equations used to represent and solve heterogenous agent models in continuous time and presents a solution approach that is efficient and tractable.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;A few models were presented in the paper. Here we&amp;rsquo;ll take the simplest one: a continuous time version of the Huggett economy.&lt;/p&gt;
+&lt;p&gt;In this economy there are a continuum of individuals that are heterogeneous in their wealth and income.&lt;/p&gt;
+&lt;p&gt;Individuals value streams of consumption using CRRA preferences and a constant discount factor &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ρ&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Income is exogenous and is given in units of the consumption good. Wealth is accumulates via a risk free bond. Wealth evolves deterministically via&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = (&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;+&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;a&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;−&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Households are subject to a fixed, exogenous borrowing constraint.&lt;/p&gt;
+&lt;p&gt;Income evolves stochastically and follows a two state Poisson process.&lt;/p&gt;
+&lt;p&gt;The only price in the economy is the interest rate. It will be determined by a zero net supply condition on the bond.&lt;/p&gt;
+&lt;p&gt;Because agents are heterogeneous, a state variable in this economy is the joint distribution of agents across wealth and income.&lt;/p&gt;
+&lt;h2 id=&#34;theoretical-contributions&#34;&gt;Theoretical contributions&lt;/h2&gt;
+&lt;p&gt;The authors make various theoretical contributions. We&amp;rsquo;ll review those before moving on to the described solution approach.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Agents in this economy are never borrowing constrained on the interior of the wealth state space. This means that the distribution is smooth everywhere, except possibly at the constraint. Very not true in discrete time. (multiple mass points in discrete economy). Also very easy to implement as they the only place the borrowing constraint enters the problem is in boundary conditions for the system of PDEs.&lt;/li&gt;
+&lt;li&gt;In the stationary equilibrium (constant &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt;), agents hit the constraint at a rate the authors characterize analytically&lt;/li&gt;
+&lt;li&gt;An analytic characterization of the shape of both tails of the wealth distribution. Difficult to do in discrete time&lt;/li&gt;
+&lt;li&gt;Equilibrium interest rate has a tight link to the number of constraint agents&lt;/li&gt;
+&lt;li&gt;And an existence proof&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;solution-method&#34;&gt;Solution method&lt;/h2&gt;
+&lt;p&gt;The economy we discussed above (and a class of other economies) can be boiled down to a coupled system of two PDEs:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;An HJB equation that describes the optimization behavior of agents&lt;/li&gt;
+&lt;li&gt;A Kolmogorov Forward (or Fokker Plank) equation that describes the evolution of the distribution of agents&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here&amp;rsquo;s the main steps of the algorithm they describe to compute the stationary equilibrium of the model:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Given an interest rate, solve the HJB equation using a finite difference method (details below). Output is a savings rate function for each type&lt;/li&gt;
+&lt;li&gt;Given the savings rules, solve the Kolmogorov Forward equation for the distribution&lt;/li&gt;
+&lt;li&gt;Given the distribution, aggregate the savings rule and check the equilibrium (market clearing) condition(s).&lt;/li&gt;
+&lt;li&gt;If the equilibrium condition(s) are not met, adjust r and iterate until convergence&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This algorithm is very standard, but there are a few key features here that you may not find in similar discrete time algorithms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The distribution is characterized by a well known PDE &amp;ndash; it is often very straightforward to solve&lt;/li&gt;
+&lt;li&gt;There is an established literature for solving HJB equations. The authors are able to leverage theoretical results (Barles and Souganidis (1991)) that guarantee the convergence of their finite difference scheme.&lt;/li&gt;
+&lt;li&gt;Borrowing constraint is completely handled via a boundary condition &amp;ndash; something that already required for solving the PDEs, not something additional you need to build the algorithm around.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Costinot, Rodriguez, Werning (2016) (Micro to Macro: Optimal Trade Policy with Firm Heterogeneity)</title>
@@ -1108,121 +1159,6 @@
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Schorfheide, Song, &amp; Yaron (2014) (Identifying Long-Run Risks: A Bayesian Mixed-Frequency Approach (@Schorfheide2014))</title>
-      <link>http://srg.spencerlyon.com/2015/09/15/schorfheide-song--yaron-2014-identifying-long-run-risks-a-bayesian-mixed-frequency-approach-schorfheide2014/</link>
-      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/09/15/schorfheide-song--yaron-2014-identifying-long-run-risks-a-bayesian-mixed-frequency-approach-schorfheide2014/</guid>
-      <description>&lt;p&gt;&lt;h1 id=&#34;outline&#34;&gt;Outline&lt;/h1&gt;
-&lt;p&gt;This is paper is more empirical than theoretical.&lt;/p&gt;
-&lt;p&gt;Theoretical contributions are to specify more flexible stochastic environment than in other long run risk models a la &lt;span class=&#34;citation&#34;&gt;Bansal et al. (2007)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Empirical contributions are&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;form a linear approximation of the stochastic environment to apply state space methods within an MCMC algorithm&lt;/li&gt;
-&lt;li&gt;Show how to incorporate data of various frequencies and accuracy in the inference algorithm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Overview of this talk:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Background: consumption data is available at varying frequencies and varying degrees of of measurement error. The authors want to use all data available to identify innovations in consumption and dividend growth as well as asset returns.&lt;/li&gt;
-&lt;li&gt;They will build a simple representative agent exchange economy that includes short and long run components to consumption growth and stochastic volatility&lt;/li&gt;
-&lt;li&gt;Will use semi-linearized solutions to this model to define a non-linear state space system&lt;/li&gt;
-&lt;li&gt;Use a Gibbs sampler to characterize posterior of parameter distribution &amp;ndash; characterizing consumption growth innovations&lt;/li&gt;
-&lt;li&gt;They compare results of this posterior to moments in the data&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
-&lt;h2 id=&#34;preferences&#34;&gt;Preferences&lt;/h2&gt;
-&lt;p&gt;Endowment economy with a representative agent with Epstein Zin preferences.&lt;/p&gt;
-&lt;p&gt;The agent maximizes lifetime utility subject to the simple Budget constraint &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;W&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; = (&lt;em&gt;W&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; − &lt;em&gt;C&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;, &lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;, &lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt; is the return on all invested wealth.&lt;/p&gt;
-&lt;p&gt;They also consider an extension with a time rate of preference shock (the flow utility C is shocked). The growth of this shock follows an AR(1) with innovations independent of all other processes in the model.&lt;/p&gt;
-&lt;h2 id=&#34;technologyendowment&#34;&gt;Technology/Endowment&lt;/h2&gt;
-&lt;p&gt;The authors save on some notation by jumping to the equilibrium outcome of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;Y&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and they describe the growth process for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;C&lt;/em&gt;&lt;/span&gt; directly.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;They decompose consumption growth &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; into a persistent component &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; and a transitory shock that has stochastic volatility&lt;/li&gt;
-&lt;li&gt;The persistent component follows and AR(1) with its own stochastic volatility process&lt;/li&gt;
-&lt;li&gt;They also model dividend streams that have levered exposures to (linear in) both persistent and transitory components of consumption growth &lt;em&gt;and&lt;/em&gt; its own stochastic volatility process.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;All stochastic volatility processes are AR(1) in logs with Gaussian innovations, so that each stochastic volatility is log normal.&lt;/p&gt;
-&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
-&lt;p&gt;The agent observes current wealth, consumption growth, dividend growth, and asset returns in every period.&lt;/p&gt;
-&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
-&lt;p&gt;The focus of their work is on a unique estimation procedure. To facilitate this, they want a closed form solution for the model.&lt;/p&gt;
-&lt;p&gt;Non-Guassian dynamics for each volatility process prevents them from writing a closed form solution.&lt;/p&gt;
-&lt;p&gt;They use a linear approximation to the Log normal process. This linear approximation is Gaussian.&lt;/p&gt;
-&lt;p&gt;Key results from solution:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;State variables are the level &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; as well as the stochastic volatility of innovations to both &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;The log price consumption ratio (price of consumption good) and risk free rate are affine in state variables&lt;/li&gt;
-&lt;li&gt;State prices are reflected in innovations to the SDF (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; − &lt;em&gt;E&lt;/em&gt;[&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;]&lt;/span&gt;), which in equilibrium are linear innovations to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;, and the two associated volatilities.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;state-space-representation&#34;&gt;State space representation&lt;/h1&gt;
-&lt;p&gt;This closed form solution to the model is used to identify the coefficient matrices in a state space representation of the model. Characteristics of the state space form are&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The model is quite large
-&lt;ul&gt;
-&lt;li&gt;22 parameters&lt;/li&gt;
-&lt;li&gt;30 states: most deal with x and the various innovation realizations&lt;/li&gt;
-&lt;li&gt;3-6 measurement variables&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The state space model is non-linear because the levels of stochastic volatility are nonlinear.&lt;/li&gt;
-&lt;li&gt;Measurement equation for consumption must be flexible in two ways:
-&lt;ul&gt;
-&lt;li&gt;Allow various frequency of observations (annual pre-1959 and monthly from 1959 to 2011)&lt;/li&gt;
-&lt;li&gt;Allow for the potentially larger measurement errors for the monthly frequency data.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;bayesian-inference&#34;&gt;Bayesian Inference&lt;/h2&gt;
-&lt;p&gt;The authors use a Gibbs sampling scheme to draw from the posterior of the parameter vector of the non-linear state space system. They split the parameters into two blocks:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;stochastic volatility levels | all other parameters&lt;/li&gt;
-&lt;li&gt;all other parameters | stochastic volatility levels&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In each step of the MCMC algorithm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The stochastic volatility block is updated using a non-linar particle filter&lt;/li&gt;
-&lt;li&gt;Then, taking as given levels of stochastic volatility, the rest of the equations form a linear Guassian state space. Thus, the prediction error decomposition within a Kalman filtering framework is used to update the parameters in this block.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A common result with particle filters is that their accuracy and stability degrade with the number of parameters. Isolating the non-linearity allows the authors to applying the Kalman filter to compute the exact conditional likelihood for the majority of the parameters. This substantially reduces the error inherent in large scale particle filters.&lt;/p&gt;
-&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
-&lt;p&gt;They run the MCMC algorithm on three versions of the model:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Without rate of time preference shocks and only using consumption and divided growth data (they drop the risk free rate and market returns from the measurement equation)&lt;/li&gt;
-&lt;li&gt;Without rate of time preference shocks and using consumption and divided growth data as well as market returns and the risk free rate&lt;/li&gt;
-&lt;li&gt;With rate of time preference shocks and using consumption and divided growth data as well as market returns and the risk free rate&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Key empirical results:&lt;/p&gt;
-&lt;p&gt;Common across all three versions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Strong evidence for a persistent component to consumption growth (robust to sample used &amp;ndash; i.e. pre/post 1959 and all). Shown in high correlation coefficient in AR(1) for x&lt;/li&gt;
-&lt;li&gt;Strong evidence for all three independent forms of stochastic volatility&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Differences when including return data:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Auto correlation increases from 0.97 to 0.99 (captures part of equity premium)&lt;/li&gt;
-&lt;li&gt;Volatility of long run risk innovations increases (reflects long run info about growth uncertainty contained in prices)&lt;/li&gt;
-&lt;li&gt;Predictability of consumption growth drops to levels that are closer to data&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Differences when including time rate of preference shocks:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Much better able to capture movements in risk free rate.
-&lt;ul&gt;
-&lt;li&gt;In fact, they do a variance decomposition of market returns, the price divided ratio, and the risk free rate in terms of x, the growth rate of the preference shock, and the volatility of x&lt;/li&gt;
-&lt;li&gt;They find that the growth rate of the preference shock explains almost no variation in the market returns or the price dividend ratio, but explains between 40-90% of the variation in the risk free rate over the sample.&lt;/li&gt;
-&lt;li&gt;Driven by the fact that the rate of time preference shock directly moves the SDF and that movement in the SDF maps directly into movement in the risk free rate.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h1&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Bansal2007&#34;&gt;
-&lt;p&gt;Bansal, Ravi, Ravi Bansal, Dana Kiku, Dana Kiku, Amir Yaron, and Amir Yaron. 2007. “Risks For the Long Run: Estimation and Inference.” &lt;a href=&#34;http://128.197.26.34/econ/seminars/macroeconomics/paperfall08/bky{\_}Sept2007.pdf&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://128.197.26.34/econ/seminars/macroeconomics/paperfall08/bky{_}Sept2007.pdf&#34;&gt;http://128.197.26.34/econ/seminars/macroeconomics/paperfall08/bky{_}Sept2007.pdf&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-Schorfheide2014&#34;&gt;
-&lt;p&gt;Schorfheide, Frank, Nber Dongho Song, and Amir Yaron. 2014. “Identifying Long-Run Risks: A Bayesian Mixed-Frequency Approach.”&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

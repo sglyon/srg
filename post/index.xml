@@ -9,8 +9,77 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Mar 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hull (2015) (Approximate dynamic programming with post-decision states as a solution method for dynamic economic models)</title>
+      <link>http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/</link>
+      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper presents a stochastic simulation method for solving dynamic economic models.&lt;/p&gt;
+&lt;p&gt;The ideas in this paper lean on a literature sometimes known as approximate dynamic programming and can enable us to solve models with many state variables and non-convexities in objectives and constraints.&lt;/p&gt;
+&lt;p&gt;My intent is to summarize the core theoretical ideas behind the algorithm.&lt;/p&gt;
+&lt;h2 id=&#34;main-idea-post-decision-states&#34;&gt;Main idea: Post decision states&lt;/h2&gt;
+&lt;h3 id=&#34;notation-classic-bellman-equation&#34;&gt;Notation: classic Bellman equation&lt;/h3&gt;
+&lt;p&gt;Consider a stationary economic model where at time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; the state is summarized by a vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; of endogenous state variables and a vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; of exogenous state variables.&lt;/p&gt;
+&lt;p&gt;The optimization problem of an agent is often summarized by a Bellman equation of the form&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)=&lt;em&gt;m&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/sub&gt;&lt;em&gt;u&lt;/em&gt;(&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;β&lt;/em&gt;&lt;em&gt;E&lt;/em&gt;[&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;)]&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;subject to&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;), &lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; ∈ &lt;em&gt;Γ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;), &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; = &lt;em&gt;g&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;ϵ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;post-decision-state-value-function&#34;&gt;Post-decision state value function&lt;/h3&gt;
+&lt;p&gt;Note that that the transition function for the endogenous state takes &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and emits &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;. We can think of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt; being chosen at the end of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;, meaning after the controls &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; have been decided.&lt;/p&gt;
+&lt;p&gt;In the standard (or pre-decision) Bellman equation, we have that the state at time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; is the endogenous state defined at the end of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt; and the exogenous state realized at the start of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;We will now consider a different representation of the state vector that couples the endogenous state defined at the end of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt; with the exogenous state realized at the start of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt;. That is we will consider &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;&lt;/span&gt;, which is known as the post-decision state at time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)&lt;/span&gt; be the value of having post-decision state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;&lt;/span&gt; in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt;. This is the maximum expected, discounted utility an agent can achieve after controls have been selected in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;&lt;/span&gt; is not chosen until &lt;em&gt;after&lt;/em&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;&lt;/span&gt; is realized, we know that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)&lt;/span&gt; is equal to the expectation of the maximum expected, discounted utility the agent will receive after &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; arrives. That is, we can write&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)=&lt;em&gt;E&lt;/em&gt;[&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)|&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;],&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt; is the pre-decision Bellman equation.&lt;/p&gt;
+&lt;p&gt;It follows that we can write&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)=&lt;em&gt;m&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/sub&gt; + &lt;em&gt;β&lt;/em&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;).&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;These equations can be manipulated to produce the recursive form of the post-decision state Bellman equation:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)=&lt;em&gt;E&lt;/em&gt;[&lt;em&gt;m&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/sub&gt;&lt;em&gt;u&lt;/em&gt;(&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;β&lt;/em&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)|&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;].&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Notice that the expectation is &lt;em&gt;outside&lt;/em&gt; the max operator, meaning that the maximization problem is deterministic.&lt;/p&gt;
+&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
+&lt;p&gt;Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I&amp;rsquo;ll discuss how I&amp;rsquo;d change it later.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Setup
+&lt;ul&gt;
+&lt;li&gt;Discretize endogenous state space&lt;/li&gt;
+&lt;li&gt;Choose a simulation length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Choose initial endogenous and exogenous states&lt;/li&gt;
+&lt;li&gt;Construct an initial guess for the value function at the discritized endogenous and exogenous states.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Iterations
+&lt;ul&gt;
+&lt;li&gt;Construct a time series of Exogenous states for t=1, 2, &amp;hellip;, T&lt;/li&gt;
+&lt;li&gt;For time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; = 1, 2, &amp;hellip;, &lt;em&gt;T&lt;/em&gt;&lt;/span&gt; perform the following 3 steps:
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Choose controls &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; to maximize the term inside the expectation on the RHS of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; − 1)&lt;/span&gt;. To do this we need to using the value function from the previous iteration for the future value function&lt;/li&gt;
+&lt;li&gt;Compute the expectation implicitly by updating the guess of the value function using a convex combination of the previous iteration&amp;rsquo;s value function and the value computed above&lt;/li&gt;
+&lt;li&gt;Using the chosen controls and realization of exogenous state, apply the endogenous transition equation to iterate the endogenous state forward one period&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Convergence:
+&lt;ul&gt;
+&lt;li&gt;Check a convergence criterion that compares the discretized value function across multiple iterations.&lt;/li&gt;
+&lt;li&gt;If converged, return the discretized value function and run a regression on the time series to obtain a policy function from the time series of controls&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;comments-on-the-algorithm&#34;&gt;Comments on the algorithm&lt;/h3&gt;
+&lt;p&gt;Here are a few comments about the algorithm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Because the expectation operator is outside the max operator, we don&amp;rsquo;t have to spend time computing expectations when solving the optimization problem in each period of the simulation. This speeds up computation quite a bit.&lt;/li&gt;
+&lt;li&gt;Expectations are computed implicitly when we update our guess for the post-decision state value function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;My compliant&lt;/strong&gt; I think it is incorrect to re-generate a time series of exogenous states on each iteration. Doing so will not allow the algorithm to ever converge as the updated value function in iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; is dependent on the randomness from the exogenous simulation in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Using the same simulated time series for exogenous states in every iteration (as in other simulation algorithms in the literature) will allow this algorithm to converge; subject to a particular exogenous path. To ensure that the solution is accurate for the underlying data generating process and not just the simulation you use, make sure that the length of the time series is large.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Achdou, Han, Lasry, Lions, Moll (2015) (Hetergenous agent models in continuous time)</title>
@@ -1062,103 +1131,6 @@
 &lt;p&gt;Borovička, Jaroslav, Lars Peter Hansen, Mark Hendricks, and José Alexandre Scheinkman. 2011. “Risk-Price Dynamics.” &lt;em&gt;Journal of Financial Econometrics&lt;/em&gt; 9 (1). Oxford University Press: 3–65. &lt;a href=&#34;http://jfec.oxfordjournals.org/content/9/1/3.full papers3://publication/doi/10.1093/jjfinec/nbq030&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://jfec.oxfordjournals.org/content/9/1/3.full&#34;&gt;http://jfec.oxfordjournals.org/content/9/1/3.full&lt;/a&gt; papers3://publication/doi/10.1093/jjfinec/nbq030&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Angeletos, Iovino, La&#39;O (2015) (Real Rigidity , Nominal Rigidity , and the Social Value of Information)</title>
-      <link>http://srg.spencerlyon.com/2015/10/06/angeletos-iovino-lao-2015-real-rigidity--nominal-rigidity--and-the-social-value-of-information/</link>
-      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/10/06/angeletos-iovino-lao-2015-real-rigidity--nominal-rigidity--and-the-social-value-of-information/</guid>
-      <description>&lt;p&gt;&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
-&lt;p&gt;The model in this paper is fairly simple. The interesting analysis in this paper has to do with the information structure&lt;/p&gt;
-&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Agents in the model either live in the mainland or on one of a continuum of islands&lt;/p&gt;
-&lt;p&gt;Each island:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Is populated by a continuum of workers and a continuum of monopolistic firms.&lt;/li&gt;
-&lt;li&gt;Within each island all firms are identical, as are workers&lt;/li&gt;
-&lt;li&gt;Firms:
-&lt;ul&gt;
-&lt;li&gt;Hire workers through competitive labor markets&lt;/li&gt;
-&lt;li&gt;Use labor in a linear production technology: product of labor supply island specific TFP
-&lt;ul&gt;
-&lt;li&gt;The log of TFP in each period is the sum of an aggregate and an idiosyncratic shock&lt;/li&gt;
-&lt;li&gt;All shocks in the model are mean zero Gaussians, unless otherwise specified.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Workers
-&lt;ul&gt;
-&lt;li&gt;Supply labor to firms&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Preferences for firms and workers are not considered here, as the economy will have a representative agent on the mainland.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So let&amp;rsquo;s turn to the mainland:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Inhabited by a continuum of identical consumers&lt;/li&gt;
-&lt;li&gt;Each consumer is tied to a single firm and a single worker &lt;em&gt;on every island&lt;/em&gt;
-&lt;ul&gt;
-&lt;li&gt;This assumption lets the economy admit a representative agent&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The representative household maximizes the present discounted value of lifetime utility&lt;/li&gt;
-&lt;li&gt;Utility is time separable and utility in each period is the difference between utility from consumption and disutility from labor supply:
-&lt;ul&gt;
-&lt;li&gt;The aggregate consumption good is valued with a CRRA utility function over the output of a nested CES structure:
-&lt;ul&gt;
-&lt;li&gt;Inner most level: goods produced by all firms on an island are aggregated into an island final good.
-&lt;ul&gt;
-&lt;li&gt;This aggregator is subject to markup or cost-push shocks (i.e. the exponent in the aggregator is a random variable)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The island final goods are then aggregated into the final consumption good.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Labor is aggregated by integrating another CRRA function of labor supply over each island and each firm
-&lt;ul&gt;
-&lt;li&gt;This sum is subtracted from the utility of consumption&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The representative agent faces a budget constraint where consumption expenditures and risk-less bond purchases must be less than or equal to
-&lt;ul&gt;
-&lt;li&gt;aggregate firm profits&lt;/li&gt;
-&lt;li&gt;the return on bond holdings&lt;/li&gt;
-&lt;li&gt;Aggregate labor income tax and a lump sum transfer used to balance the budget.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The total wedge due to monopolistic power is a function of the island specific tax rate and the island specific markup or cost-push shock.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
-&lt;p&gt;A crucial aspect of this model is the information setup. The authors run two experiments:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Fix monopoly markup and let agents receive noisy signals about TFP&lt;/li&gt;
-&lt;li&gt;Fix TFP and let agents see noisy signals about markups&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The signal structure mirrors that of Morris and Shin. Each period each island receives two signals:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;A public signal seen by all agents. This signal is the sum of the actual fundamental and a mean zero Gaussian noise term&lt;/li&gt;
-&lt;li&gt;A private signal with the same structure, but seen only by the island.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Similar to the result from Morris and Shin, the best response in each island is a production rule that is affine in productivity, monopolist markup, and expected aggregate output.&lt;/p&gt;
-&lt;p&gt;The coefficient on the expected aggregate output determines the degree of strategic complementarity, or how much firms like to behave like each other. Unlike earlier work on beauty-contest models, this parameter is micro founded as a function of underlying preference and technology parameters.&lt;/p&gt;
-&lt;p&gt;Extra notes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bergemann and Morris (2013) show that equilibrium results from any information structure with Gaussian signals can be replicated by the structure here.&lt;/li&gt;
-&lt;li&gt;Thus, within the family of Gaussian signals, the structure considered in the paper is without loss of generality.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;experiments&#34;&gt;Experiments&lt;/h1&gt;
-&lt;p&gt;Definitions:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Σ&lt;/em&gt; ≡ Var(log&lt;em&gt;Y&lt;/em&gt;−log&lt;em&gt;Y&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\sigma \equiv \text{Var} \left( \log \tilde{y}_{it}  - \log \tilde{Y}_t\right)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\Delta \equiv \frac{E[Y]}{Y/Y^&lt;/em&gt;}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\Lambda \equiv \Sigma + \frac{1}{1 -\alpha} \sigma$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;In the experiments the authors do, they consider how welfare changes with the precision of the signals.&lt;/p&gt;
-&lt;p&gt;Welfare is decomposed into the product of two functions, each taking one argument.&lt;/p&gt;
-&lt;p&gt;The first function is a strictly concave function of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Δ&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The second function is strictly decreasing in the sum of volatility of the aggregate output gap and the cross-sectional dispersion of local output gaps (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Λ&lt;/em&gt;&lt;/span&gt;).&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s consider the main results for each experiment&lt;/p&gt;
-&lt;h2 id=&#34;signals-about-tfp&#34;&gt;Signals about TFP&lt;/h2&gt;
-&lt;p&gt;In experiment with TFP shocks, the log of TFP of each island is modeled as the sum of an aggregate productivity shock common across all islands and an island specific idiosyncratic shock.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

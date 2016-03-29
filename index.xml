@@ -9,8 +9,52 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 22 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Mar 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>de Farias &amp; van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)</title>
+      <link>http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/</link>
+      <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper was published in Operations Research and as such they use a different notation and jargon than economists. I&amp;rsquo;ll present some of their main results, but in a language and notation that is familiar to me.&lt;/p&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Consider a typical dynamic programming problem faced by an economic agent, which we summarize by the following Bellman equation:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$V(x) = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E V(x&amp;rsquo;)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Now define the natural operator associated with the Bellman, which we call &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$T v = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E v(x&amp;rsquo;)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;For ease of presentation we will directly assume that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is a contraction mapping and that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; belongs to the set of bounded and continuous functions.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt; be the optimal value function. Under our assumptions &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; is the unique fixed point of Bellman&amp;rsquo;s equation.&lt;/p&gt;
+&lt;h2 id=&#34;mathematical-programs&#34;&gt;Mathematical programs&lt;/h2&gt;
+&lt;p&gt;Under our assumptions, the operator &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is monotonic.&lt;/p&gt;
+&lt;p&gt;This means that for any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; we have &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Also &lt;span class=&#34;math inline&#34;&gt;∀&lt;em&gt;v&lt;/em&gt;&lt;em&gt;s&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Typically this property of our contraction mapping is used to show that value function iteration will converge for any initial guess of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;. Today we will use it in a slightly different way.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; be any vector of all positive elements. Consider the mathematical program defined by&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{align&lt;em&gt;}&amp;amp;\underset{V}{\min} c&amp;rsquo;v \ s.t. &amp;amp; \quad v \ge T v \end{align&lt;/em&gt;}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;By the monotonicity of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; it is easy to see that any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; satisfying the constraint must be at least as big at &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Then notice that the objective is to minimize the inner product between a strictly positive vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; and the choice &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;These two facts mean that the unique solution to the programming problem is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;linear-program&#34;&gt;Linear program&lt;/h2&gt;
+&lt;p&gt;I told you that we would use linear programming, but notice that the constraint is nonlinear because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is nonlinear.&lt;/p&gt;
+&lt;p&gt;However, if we stare at the definition of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; for long enough we will notice that if we consider the constraint &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; state by state, (e.g. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)≥&lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)&lt;/span&gt;) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.&lt;/p&gt;
+&lt;p&gt;This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman&amp;rsquo;s equation for that state and control. The program looks as follows:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{align&lt;em&gt;}&amp;amp;\underset{V}{\min} c&amp;rsquo;v \ s.t. &amp;amp; \quad v(x) \ge u(x,c) + \beta \sum_{x&amp;rsquo;} P(x&amp;rsquo;| x,c)v(x&amp;rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x \end{align&lt;/em&gt;}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;curse-of-dimensionality&#34;&gt;Curse of dimensionality&lt;/h2&gt;
+&lt;p&gt;This linear program has an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; dimensional state with an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt; &lt;em&gt; &lt;em&gt;A&lt;/em&gt;&lt;/span&gt; dimensional constraint matrix. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; are large, this problem can quickly become subject to the curse of dimensionality.&lt;/p&gt;
+&lt;p&gt;The authors of this paper propose approximate linear programming as a way to resolve this issue.&lt;/p&gt;
+&lt;p&gt;Specifically they choose to represent &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; as the product of a basis matrix and a vector of coefficients &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;They then write down a linear program&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{align&lt;/em&gt;}&amp;amp;\underset{V}{\min} c&amp;rsquo;\Phi r \ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x&amp;rsquo;} P(x&amp;rsquo;| x,c) \Phi r(x&amp;rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x \end{align*}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Notice now that we have swapped out a vector of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt;, for a vector with length equal to the number of columns in the basis matrix. This is something that we have control over, thus we can choose the &amp;quot;size&amp;quot; of this problem. Thus the objective is smaller, but the number of constraints is exactly the same.&lt;/p&gt;
+&lt;p&gt;However, if we choose each column of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Φ&lt;/em&gt;&lt;/span&gt; to have finite support (i.e. we use splines), most constraints become inactive and the large constraint matrix becomes sparse.&lt;/p&gt;
+&lt;p&gt;The remainder of the paper, and its main contribution, is to bound the error we are subject to by solving the approximate linear program instead of the exact linear program.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hull (2015) (Approximate dynamic programming with post-decision states as a solution method for dynamic economic models)</title>
@@ -1046,90 +1090,6 @@
 &lt;ol&gt;
 &lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;In the first period agent 1 makes his decision based solely on his prior. If he chooses to exit, he learns nothing, and next period must make his decision with the same information. Because we look for pure strategy equilibria, he will make the same decision forever and the game will be trivial.&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Borovicka2011b (Risk Price Dynamics)</title>
-      <link>http://srg.spencerlyon.com/2015/10/13/borovicka2011b-risk-price-dynamics/</link>
-      <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/10/13/borovicka2011b-risk-price-dynamics/</guid>
-      <description>&lt;p&gt;&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Characterize the main conceptual composition of risk and shock elasticities and provide an example of their interpretation in a macro model.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Outline&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;General continuous time framework
-&lt;ul&gt;
-&lt;li&gt;Stochastic process for state&lt;/li&gt;
-&lt;li&gt;Growth processes and cash flows&lt;/li&gt;
-&lt;li&gt;Perturbations&lt;/li&gt;
-&lt;li&gt;Elasticities&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Simple example
-&lt;ul&gt;
-&lt;li&gt;Do the BL model. Can talk about choosing &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;e&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; = 1, 2, 3&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;mathematical-framework&#34;&gt;Mathematical Framework&lt;/h2&gt;
-&lt;p&gt;I will &lt;em&gt;briefly&lt;/em&gt; explain the mathematical framework used in this and related papers.&lt;/p&gt;
-&lt;h3 id=&#34;state&#34;&gt;State&lt;/h3&gt;
-&lt;p&gt;State is Markov diffusion: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;μ&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;d&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; + &lt;em&gt;σ&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;d&lt;/em&gt;&lt;em&gt;W&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;W&lt;/em&gt;&lt;/span&gt; is standard BM, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;μ&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;σ&lt;/em&gt;&lt;/span&gt; may be non-linear.)&lt;/p&gt;
-&lt;h3 id=&#34;functionals&#34;&gt;Functionals&lt;/h3&gt;
-&lt;p&gt;Additive functionals: parameterized by state dependent drift &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;β&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;)&lt;/span&gt; and volatility &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;)&lt;/span&gt; coefficients integrated over time (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = ∫&lt;sub&gt;0&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sup&gt;&lt;em&gt;β&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;u&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;d&lt;/em&gt;&lt;em&gt;u&lt;/em&gt; + ∫&lt;sub&gt;0&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sup&gt;&lt;em&gt;α&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;&lt;sub&gt;&lt;em&gt;u&lt;/em&gt;&lt;/sub&gt;)⋅&lt;em&gt;d&lt;/em&gt;&lt;em&gt;W&lt;/em&gt;&lt;sub&gt;&lt;em&gt;u&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;)&lt;/p&gt;
-&lt;p&gt;Multiplicative functionals are also characterized by &lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;β&lt;/em&gt;, &lt;em&gt;α&lt;/em&gt;)&lt;/span&gt; and are the exponential of an underlying additive functional (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt; = exp(&lt;em&gt;A&lt;/em&gt;)&lt;/span&gt;)&lt;/p&gt;
-&lt;p&gt;Growth processes of economic interest, e.g. cash flows and consumption, will be modeled as multiplicative functionals.&lt;/p&gt;
-&lt;h3 id=&#34;perturbations&#34;&gt;Perturbations&lt;/h3&gt;
-&lt;p&gt;We will perturb the multiplicative functionals in a specific way that allow us to capture the &lt;em&gt;marginal value of exposure risk in a particular direction&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Similar in spirit to a risk premium, which measures the &lt;em&gt;average value of risk exposure&lt;/em&gt; (not marginal or isolated to a specific direction.)&lt;/p&gt;
-&lt;h4 id=&#34;how-to-construct-perturbations&#34;&gt;How to construct Perturbations&lt;/h4&gt;
-&lt;p&gt;NOTE: only talk about this if I have &lt;em&gt;cruised&lt;/em&gt; through the above. I want to be at this point after 2-3 minutes.&lt;/p&gt;
-&lt;p&gt;We construct perturbations of a multiplicative functional &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt; as the product of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt; and another multiplicative functional with precisely chosen drift and volatility coefficients. The perturbation coefficients are functions of a scalar parameter &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt;. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt; = 0&lt;/span&gt; the perturbation is equal to 1 (i.e. perturbed cash flow is just the cash flow).&lt;/p&gt;
-&lt;p&gt;Often the drift is chosen so the perturbation itself is a martingale, or the perturbed cash flow is a martingale. This simplifies computation.&lt;/p&gt;
-&lt;p&gt;The volatility coefficient can be varied to isolate the impact of innovations to a particular dimension of the BM. An example of this will be shown later.&lt;/p&gt;
-&lt;h3 id=&#34;risk-elasticities&#34;&gt;Risk elasticities&lt;/h3&gt;
-&lt;p&gt;A risk elasticity for a cash flow &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt; is defined as &lt;em&gt;the derivative of the log expectation of the perturbed cash flow evaluated at &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt; = 0&lt;/span&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The direct representation of the risk elasticity is additive over a particular time horizon &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;. To consider contributions that are localized in time, we build an integral representation.&lt;/p&gt;
-&lt;p&gt;This integral representation expresses the risk elasticity from a given initial state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; over a time horizon &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; as &lt;em&gt;the expectation (conditional on x), of the cash flow in time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; times the integral of a function&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The function that is integrated over is called a &lt;strong&gt;shock elasticity function&lt;/strong&gt; and captures the instantaneous contribution of the perturbation to the risk elasticity (i.e. shock elasticities are the building blocks for risk elasticities).&lt;/p&gt;
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;p&gt;I will now highlight how these theoretical building blocks can be used within a macro model.&lt;/p&gt;
-&lt;h3 id=&#34;model&#34;&gt;Model&lt;/h3&gt;
-&lt;p&gt;The state is 2 dimensional: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt; represents consumption growth, and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; represents stochastic volatility.&lt;/p&gt;
-&lt;p&gt;The Brownian motion will be three dimensional, where dimensions correspond to independent shocks directly to consumption itself, consumption growth &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt;, and stochastic volatility &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Multiplicative functionals take a specific form:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The drift is affine in deviations of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (&lt;span class=&#34;math inline&#34;&gt;$\beta(x) = \bar{\beta}_0 + \bar{\beta}_t \cdot (x_1 - \iota_1) + \bar{\beta}_2 (x_t - \iota_2)$&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;The volatility is the square root of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; times a constant vector &lt;span class=&#34;math inline&#34;&gt;$(\alpha(x) = \sqrt{x_2} \bar{\alpha}$&lt;/span&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Consumption growth is modeled directly as a multiplicative functional.&lt;/p&gt;
-&lt;h4 id=&#34;preferences&#34;&gt;Preferences&lt;/h4&gt;
-&lt;p&gt;Agents have either CRRA preferences or Epstein-Zin preferences over streams of consumption.&lt;/p&gt;
-&lt;p&gt;Part of the solution to the agent&amp;rsquo;s problem is a stochastic discount factor used to price cash flows in the economy.&lt;/p&gt;
-&lt;p&gt;The cash flow of interest will be the growth of the consumption process (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;/&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/span&gt;).&lt;/p&gt;
-&lt;h4 id=&#34;elasticities&#34;&gt;Elasticities&lt;/h4&gt;
-&lt;p&gt;We consider two types of fundamental elasticities, as well as a third that is a function of the former two. These types are&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Exposure elasticities, where the multiplicative function is consumption&lt;/li&gt;
-&lt;li&gt;Value elasticities, where the MF is the price of consumption (consumption times SDF)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;We will also consider a price elasticity, which is the difference between the exposure elasticity and the value elasticity. The price elasticities are the functions that characterize the &lt;em&gt;marginal value of exposure risk in a particular direction&lt;/em&gt; that we mentioned earlier.&lt;/p&gt;
-&lt;p&gt;We will allow the volatility coefficient of the perturbation to be each of the vectors &lt;span class=&#34;math inline&#34;&gt;[100]′&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;[010]′&lt;/span&gt;, or &lt;span class=&#34;math inline&#34;&gt;[001]′&lt;/span&gt;. This allows us to construct price elasticities in response to shocks to consumption, consumption growth, and stochastic volatility. This is the sense in which price elasticities characterize the exposure risk in a particular direction.&lt;/p&gt;
-&lt;h4 id=&#34;results&#34;&gt;Results&lt;/h4&gt;
-&lt;p&gt;The exposure elasticities for the two sets of preferences are the same. Remember the exposure elasticity is the elasticity for the cash flow, which is the same underlying consumption process in both models.&lt;/p&gt;
-&lt;p&gt;The Shock exposure elasticities (local increments) to each of the three dimensions of W are reported.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Shock to consumption has permanent effect on consumption and the shock elasticity is constant over time&lt;/li&gt;
-&lt;li&gt;The shock exposure elasticity to a positive shock in the growth rate increases over time as the impact of a higher growth rate compounds&lt;/li&gt;
-&lt;li&gt;The volatility shock exposure elasticity declines over time as the volatility process mean reverts and the impact of the initial shock wears off.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Given the form of agent&amp;rsquo;s SDF, the shock value elasticities are scaled versions of the shock exposure elasticities.&lt;/p&gt;
-&lt;h1 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h1&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Borovicka2011b&#34;&gt;
-&lt;p&gt;Borovička, Jaroslav, Lars Peter Hansen, Mark Hendricks, and José Alexandre Scheinkman. 2011. “Risk-Price Dynamics.” &lt;em&gt;Journal of Financial Econometrics&lt;/em&gt; 9 (1). Oxford University Press: 3–65. &lt;a href=&#34;http://jfec.oxfordjournals.org/content/9/1/3.full papers3://publication/doi/10.1093/jjfinec/nbq030&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://jfec.oxfordjournals.org/content/9/1/3.full&#34;&gt;http://jfec.oxfordjournals.org/content/9/1/3.full&lt;/a&gt; papers3://publication/doi/10.1093/jjfinec/nbq030&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>

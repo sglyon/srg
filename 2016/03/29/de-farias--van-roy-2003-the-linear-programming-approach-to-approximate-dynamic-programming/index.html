@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>de Farias &amp; van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)  &middot; Sargent Reading Group Notes</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="de Farias &amp; van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)  &middot; Sargent Reading Group Notes ">
+<meta property="og:site_name" content="Sargent Reading Group Notes"/>
+<meta property="og:url" content="http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/" />
+<meta property="og:locale" content="en-EN">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-03-29T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-03-29T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="de Farias &amp; van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/" />
+<meta name="twitter:domain" content="http://srg.spencerlyon.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "de Farias \x26 van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-03-29",
+    "description": "",
+    "wordCount":  640 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
+<link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.16-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://srg.spencerlyon.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://srg.spencerlyon.com/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://srg.spencerlyon.com/">
+  srg
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Spencer Lyon
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://srg.spencerlyon.com/">Home</a>
+
+
+  
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:spencer.lyon@stern.nyu.edu">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>de Farias &amp; van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)
+</h1>
+
+  <div class="metas">
+<time datetime="2016-03-29">29 Mar, 2016</time>
+
+
+  
+  &middot; Read in about 4 min
+  &middot; (640 Words)
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p><p>This paper was published in Operations Research and as such they use a different notation and jargon than economists. I&rsquo;ll present some of their main results, but in a language and notation that is familiar to me.</p>
+<h2 id="background">Background</h2>
+<p>Consider a typical dynamic programming problem faced by an economic agent, which we summarize by the following Bellman equation:</p>
+<p><br /><span class="math display">$$V(x) = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E V(x&rsquo;)$$</span><br /></p>
+<p>Now define the natural operator associated with the Bellman, which we call <span class="math inline"><em>T</em></span>:</p>
+<p><br /><span class="math display">$$T v = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E v(x&rsquo;)$$</span><br /></p>
+<p>For ease of presentation we will directly assume that <span class="math inline"><em>T</em></span> is a contraction mapping and that <span class="math inline"><em>v</em></span> belongs to the set of bounded and continuous functions.</p>
+<p>Let <span class="math inline"><em>v</em><sup><em></sup></span> be the optimal value function. Under our assumptions <span class="math inline"><em>v</em><sup></em></sup></span> is the unique fixed point of Bellman&rsquo;s equation.</p>
+<h2 id="mathematical-programs">Mathematical programs</h2>
+<p>Under our assumptions, the operator <span class="math inline"><em>T</em></span> is monotonic.</p>
+<p>This means that for any <span class="math inline"><em>v</em></span> such that <span class="math inline"><em>v</em> ≥ <em>T</em><em>v</em></span> we have <span class="math inline"><em>v</em> ≥ <em>v</em><sup><em></sup></span>.</p>
+<p>Also <span class="math inline">∀<em>v</em><em>s</em><em>t</em><em>v</em> ≤ <em>T</em><em>v</em></span>, <span class="math inline"><em>v</em> ≤ <em>v</em><sup></em></sup></span>.</p>
+<p>Typically this property of our contraction mapping is used to show that value function iteration will converge for any initial guess of <span class="math inline"><em>v</em></span>. Today we will use it in a slightly different way.</p>
+<p>Let <span class="math inline"><em>c</em></span> be any vector of all positive elements. Consider the mathematical program defined by</p>
+<p><br /><span class="math display">$$\begin{align<em>}&amp;\underset{V}{\min} c&rsquo;v \ s.t. &amp; \quad v \ge T v \end{align</em>}$$</span><br /></p>
+<p>By the monotonicity of <span class="math inline"><em>T</em></span> it is easy to see that any <span class="math inline"><em>v</em></span> satisfying the constraint must be at least as big at <span class="math inline"><em>v</em><sup><em></sup></span>.</p>
+<p>Then notice that the objective is to minimize the inner product between a strictly positive vector <span class="math inline"><em>c</em></span> and the choice <span class="math inline"><em>v</em></span>.</p>
+<p>These two facts mean that the unique solution to the programming problem is <span class="math inline"><em>v</em><sup></em></sup></span>.</p>
+<h2 id="linear-program">Linear program</h2>
+<p>I told you that we would use linear programming, but notice that the constraint is nonlinear because <span class="math inline"><em>T</em></span> is nonlinear.</p>
+<p>However, if we stare at the definition of <span class="math inline"><em>T</em></span> for long enough we will notice that if we consider the constraint <span class="math inline"><em>v</em> ≥ <em>T</em><em>v</em></span> state by state, (e.g. <span class="math inline"><em>v</em>(<em>x</em>)≥<em>T</em><em>v</em>(<em>x</em>)</span>) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.</p>
+<p>This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman&rsquo;s equation for that state and control. The program looks as follows:</p>
+<p><br /><span class="math display">$$\begin{align<em>}&amp;\underset{V}{\min} c&rsquo;v \ s.t. &amp; \quad v(x) \ge u(x,c) + \beta \sum_{x&rsquo;} P(x&rsquo;| x,c)v(x&rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x \end{align</em>}$$</span><br /></p>
+<h2 id="curse-of-dimensionality">Curse of dimensionality</h2>
+<p>This linear program has an <span class="math inline"><em>S</em></span> dimensional state with an <span class="math inline"><em>S</em> <em> <em>A</em></span> dimensional constraint matrix. When <span class="math inline"><em>S</em></span> or <span class="math inline"><em>A</em></span> are large, this problem can quickly become subject to the curse of dimensionality.</p>
+<p>The authors of this paper propose approximate linear programming as a way to resolve this issue.</p>
+<p>Specifically they choose to represent <span class="math inline"><em>v</em></span> as the product of a basis matrix and a vector of coefficients <span class="math inline"><em>r</em></span>.</p>
+<p>They then write down a linear program</p>
+<p><br /><span class="math display">$$\begin{align</em>}&amp;\underset{V}{\min} c&rsquo;\Phi r \ s.t. &amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x&rsquo;} P(x&rsquo;| x,c) \Phi r(x&rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x \end{align*}$$</span><br /></p>
+<p>Notice now that we have swapped out a vector of length <span class="math inline"><em>S</em></span>, for a vector with length equal to the number of columns in the basis matrix. This is something that we have control over, thus we can choose the &quot;size&quot; of this problem. Thus the objective is smaller, but the number of constraints is exactly the same.</p>
+<p>However, if we choose each column of <span class="math inline"><em>Φ</em></span> to have finite support (i.e. we use splines), most constraints become inactive and the large constraint matrix becomes sparse.</p>
+<p>The remainder of the paper, and its main contribution, is to bound the error we are subject to by solving the approximate linear program instead of the exact linear program.</p>
+<div id="refs" class="references"></p>
+
+<p></div></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/" title="Hull (2015) (Approximate dynamic programming with post-decision states as a solution method for dynamic economic models)">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2015 Spencer Lyon.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+
+    
+  </body>
+</html>
+

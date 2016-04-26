@@ -9,8 +9,200 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 29 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Timoshenko (2015) (Product switching in a model of learning)</title>
+      <link>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-product-switching-in-a-model-of-learning/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-product-switching-in-a-model-of-learning/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper documents facts about Brazilian manufacturing firms that switch their bundle of exported products over time. The author then builds a Melitz-style trade model that attempts to explain these facts.&lt;/p&gt;
+&lt;h2 id=&#34;empirics&#34;&gt;Empirics&lt;/h2&gt;
+&lt;p&gt;The author uses data product level data on Brazilian manufacturing firms to document several stylized facts.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;72% of continuing exporters alter their product mix every year (add new exported products or drop existing exported products)&lt;/li&gt;
+&lt;li&gt;83% of all Brazilian exports come from these product switching firms&lt;/li&gt;
+&lt;li&gt;The proportion of exporters who do product switching falls with age in export market&lt;/li&gt;
+&lt;li&gt;The frequency with which exporters engage in product switching falls with age&lt;/li&gt;
+&lt;li&gt;The exit rate of product switching firms is lower than aggregate exit rate for all ages of exporter.&lt;/li&gt;
+&lt;li&gt;Conditional on an exporter adding new products, over &amp;frac12; of exporter products are added products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;The model in this paper extends Melitz (2003) in two ways:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Consumers have firm specific demand shocks in their consumption aggregator&lt;/li&gt;
+&lt;li&gt;Firms of a particular brand produce a finite, discrete number of products&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here&amp;rsquo;s the main points of the model:&lt;/p&gt;
+&lt;h3 id=&#34;consumers&#34;&gt;Consumers&lt;/h3&gt;
+&lt;p&gt;In each of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries, there is a representative consumer that has log preferences over an aggregate consumption good.&lt;/p&gt;
+&lt;p&gt;The aggregate good is a CES aggregated bundle of firm goods from all &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries. Each firm good is hit with a time-varying, firm-and-import-country-specific demand shock.&lt;/p&gt;
+&lt;p&gt;The firm goods are a CES aggregation of a finite number of differentiated products produced by the firm.&lt;/p&gt;
+&lt;p&gt;Consumers inelastically supply a country specific fixed labor each period and earn labor income from firms. They also own firms in their country and retain all profits.&lt;/p&gt;
+&lt;p&gt;Consumers take prices and wages as given maximize the utility of consuming the aggregate good subject to total expenditures being equal to labor income plus firm profits.&lt;/p&gt;
+&lt;p&gt;The output of the consumer problem is a demand function for each product from each firm in each country.&lt;/p&gt;
+&lt;p&gt;This demand function is a function of the consumer&amp;rsquo;s income, the current demand shock for the firm and prices. Crucially, it can be inverted to give prices as a function of quantity and the demand shock.&lt;/p&gt;
+&lt;h3 id=&#34;firms&#34;&gt;Firms&lt;/h3&gt;
+&lt;p&gt;Firm&amp;rsquo;s differ in their ability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt; to produce all their products. This ability or productivity is constant over time and across products and is drawn from a Pareto distribution.&lt;/p&gt;
+&lt;p&gt;The demand shock in the consumer&amp;rsquo;s CES aggregator is the sum of a constant firm specific component and a mean zero normally distributed iid shock drawn each period. The firm specific constant component is drawn from a normal distribution with known (to the firm) mean and variance. The prior beliefs of every firm are that the firm specific demand shock is drawn from its true distribution. Because signals and priors are normal, posterior beliefs are also normal and sufficient statistics are the mean and variance of the firm specific component.&lt;/p&gt;
+&lt;p&gt;Firms choose the quantity of each product to be sold in each country, &lt;em&gt;before&lt;/em&gt; seeing the value of the demand shock for their firm in a given period. Consumers&amp;rsquo; see this quantity and use their optimality conditions to declare the price they are willing to pay for the good. The firm observes this prices, which can be manipulated to reveal the current level of the demand shock. This acts as a signal about the firm specific constant component of the demand shock. Firms are Bayesian and update their beliefs about this component each period after observing the demand shock.&lt;/p&gt;
+&lt;p&gt;Firms face fixed per-period cost of selling into each country. These costs increase with the number of products produced.&lt;/p&gt;
+&lt;p&gt;Conditional on entering into a specific market, each period firms choose the number of products to be sold into the market as well as a quantity of each of these goods to maximize the expected value of their one period profits. Firm&amp;rsquo;s operate in monopolistically competitive markets, so they understand how their quantity decision will impact the market clearing price. However, they do not know the current value of the demand shock, so they form expectations of the price using their current beliefs about the firm specific demand shock. The output of this problem is a quantity for each product as well as an expected profit for each profit.&lt;/p&gt;
+&lt;p&gt;Firms continue to add products until the expected profits from adding more varieties (taking into account the fixed costs) are negative.&lt;/p&gt;
+&lt;p&gt;Finally, firms face an entry and exit decision. A firm with productivity &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt; has as state variables the sufficient statistics for their beliefs regarding the firm specific demand shock. They then choose whether or not to enter each market using the expected profit functions we just discussed.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Timoshenko looks at a symmetric, stationary equilibrium of this economy. Some properties of this equilibrium are are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The market participation policy is given by a cutoff threshold for the current expected value of the firm specific demand shock in terms of productive and other sufficient statistics. This cutoff is decreasing in productivity and increasing in the precision (inverse of variance).&lt;/li&gt;
+&lt;li&gt;The quantity adjustment in response to seeing another signal about the demand shock is positive when the posterior mean is sufficiently high and negative when it is lower. The cutoff is a function of the prior mean and variance and the variance of the signal.&lt;/li&gt;
+&lt;li&gt;Profits scale with quantities, so many high signals expands quantities and profits, and causes firms to add new products. A sequence of low signals has the opposite effect: lower quantities and profits leading to dropping products.&lt;/li&gt;
+&lt;li&gt;Firms posterior precision increases deterministically, meaning asymptotically firms perfectly learn the firm specific component of the demand shocks. This generates age effects in quantity decisions and profits, which in turn generate age effects in adding and dropping products that match the data.&lt;/li&gt;
+&lt;li&gt;If trade costs are lowered, the quantity of all current products is expanded. This is &lt;em&gt;not&lt;/em&gt; supported empirically. In the data, lower trade costs tend to have firms specialize more &amp;ndash; meaning they increase qualities of their most profitable products and scale back on quantities of marginal products.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;quantitative-results&#34;&gt;Quantitative results&lt;/h3&gt;
+&lt;p&gt;A brief quantitative section is given. The main message is that the model generates more modest values of the number of exporters that engage in product switching, the age dependent survival rate of exporters, and the age dependence of product switching. This suggests that the learning mechanism in the model is significant and supported by the data, but not sufficient to fully explain product switching behavior of Brazilian firms.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Konda and Tsitsiklis (2003) (Actor-critic Algorithms)</title>
+      <link>http://srg.spencerlyon.com/2016/04/19/konda-and-tsitsiklis-2003-actor-critic-algorithms/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/04/19/konda-and-tsitsiklis-2003-actor-critic-algorithms/</guid>
+      <description>&lt;p&gt;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;When a Markov decision process (MDP) is formulated as a dynamic programming problem, the reinforcement learning literature proposes are two classic classes of algorithms to solve them. Let&amp;rsquo;s briefly review these types of algorithms and point out strengths and weaknesses of each.&lt;/p&gt;
+&lt;h4 id=&#34;actor-only-methods&#34;&gt;1: Actor only methods&lt;/h4&gt;
+&lt;p&gt;We can think of an actor as a fictitious character that operates on a policy rule.&lt;/p&gt;
+&lt;p&gt;When I talk about the performance of an actor, I mean the value of following a policy.&lt;/p&gt;
+&lt;p&gt;These methods are often implemented by estimating the gradient of the performance of an actor using simulation.&lt;/p&gt;
+&lt;p&gt;There are two main issues with these &amp;quot;policy iteration&amp;quot;-esque algorithms:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Gradient estimators can have high variance&lt;/li&gt;
+&lt;li&gt;As the policy changes, a new gradient is estimated independently. This means there is no sense of learning from past data.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;critic-only-methods&#34;&gt;2: Critic only methods&lt;/h4&gt;
+&lt;p&gt;We can think of a critic operating on either a Q or V value function.&lt;/p&gt;
+&lt;p&gt;These methods rely exclusively on value function approximation and try to learn the solution to Bellman&amp;rsquo;s equation.&lt;/p&gt;
+&lt;p&gt;The main issues with critic only methods are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;They are indirect in that they do not try to optimize directly over the policy space&lt;/li&gt;
+&lt;li&gt;Even with an accurate approximation of the value function, results that guarantee the near-optimality of the corresponding policy are difficult to guarantee.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;main-idea&#34;&gt;Main idea&lt;/h2&gt;
+&lt;p&gt;This paper suggests two actor-critic hybrid methods that aim to maintain the best features of each algorithm, while overcoming the shortcomings mentioned above.&lt;/p&gt;
+&lt;p&gt;The main idea behind the algorithms is that the critic uses a linearly parameterized approximation scheme and simulation to learn a value function. The actor then uses the learned information to update parameters on the policy function in a direction of performance improvement.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Aside to tie back to econ&lt;/em&gt;: This feels like modified policy iteration or Howard&amp;rsquo;s improvement algorithm, but it is different in a few ways:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;There is a learning element to these algorithms, which means we don&amp;rsquo;t have to compute expectations explicitly.&lt;/li&gt;
+&lt;li&gt;We will be learning Q functions, which describe the value of being in a state and taking any feasible action (instead of the V function that describes the value of being in a state and choosing the optimal action).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;
+&lt;!-- The algorithms are presented in terms of identifying a randomized stationary
+policy. We typically think of a policy function as assigning a unique action to
+each state. A randomized stationary policy attaches a probability distribution
+over actions to each state. In some sense a standard policy is like a pure
+strategy, whereas a randomized stationary is like a mixed strategy. --&gt;
+&lt;p&gt;The presentation is very technical and relies on assumptions that aren&amp;rsquo;t necessarily applicable to the models we write down, so I won&amp;rsquo;t the paper exactly as it was written. Instead, I will sketch the algorithm and explain the key insight the authors have that makes the algorithm tractable.&lt;/p&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;p&gt;We will represent the critic using three variables:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A coefficient vector of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; that describe a linear parametrization of Q in terms of basis functions.&lt;/li&gt;
+&lt;li&gt;A scalar &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;/span&gt; that represents the average value of following the actor&amp;rsquo;s policy&lt;/li&gt;
+&lt;li&gt;A vector of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; that represents Sutton&amp;rsquo;s eligibility trace. This vector is used to form a bridge between fixed point methods and Monte Carlo methods&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The actor is represented by a suitable parametric representation of the policy function.&lt;/p&gt;
+&lt;h3 id=&#34;algo&#34;&gt;Algo&lt;/h3&gt;
+&lt;p&gt;In order to understand the algorithm, I need to provide two related definitions. A &lt;strong&gt;temporal difference&lt;/strong&gt; is the difference between the current approximation of a variable and a realization of that variable. In other words it is the error in our approximation for a particular sample.&lt;/p&gt;
+&lt;p&gt;We say we &lt;em&gt;update&lt;/em&gt; parameters or approximations using a &lt;strong&gt;temporal difference&lt;/strong&gt; if the new approximation is the sum of the current approximation and a scaled temporal difference.&lt;/p&gt;
+&lt;p&gt;The algorithm &lt;em&gt;roughly&lt;/em&gt; proceeds as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initialize the actor and critic&lt;/li&gt;
+&lt;li&gt;Perform one step updates of the actor and critic as follows:
+&lt;ul&gt;
+&lt;li&gt;Because we learn Q, we enter a time period with a particular state and action in hand&lt;/li&gt;
+&lt;li&gt;The actor will dictate a new action and we need to simulate a new state, potentially given that action&lt;/li&gt;
+&lt;li&gt;The critic&amp;rsquo;s parameters are updated according to:
+&lt;ul&gt;
+&lt;li&gt;Average value of policy: temporal difference update (using flow implied by state and action)&lt;/li&gt;
+&lt;li&gt;Coefficient vector for Q: temporal difference update, scaled by eligibility trace&lt;/li&gt;
+&lt;li&gt;Eligibility trace:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The actor&amp;rsquo;s parameter vector is updated using a gradient approach that resembles Newton&amp;rsquo;s method. It takes into account updates to the actor&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The key insight the authors have that make this algorithm tractable is the following:&lt;/p&gt;
+&lt;p&gt;Actors have to update a small number of parameters compared to the number of states. So the critic doesn&amp;rsquo;t need to form an approximation over the entire domain of Q, but rather a special projection of the Q onto the space spanned by the actor&amp;rsquo;s parameter vector.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Busoniu, DeSchutter, Babuska(2010) (Approximate dynamic programming and reinforcement learning)</title>
+      <link>http://srg.spencerlyon.com/2016/04/12/busoniu-deschutter-babuska2010-approximate-dynamic-programming-and-reinforcement-learning/</link>
+      <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/04/12/busoniu-deschutter-babuska2010-approximate-dynamic-programming-and-reinforcement-learning/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper provides an overview of various solution concepts that belong to the families of approximate dynamic programming and reinforcement learning.&lt;/p&gt;
+&lt;p&gt;I will discuss an alternative representation of a dynamic programming that is often used in this literature and provide an overview of some solution methods that are common with this representation.&lt;/p&gt;
+&lt;h2 id=&#34;basics-q-functions&#34;&gt;Basics: Q-functions&lt;/h2&gt;
+&lt;p&gt;In economics, the standard representation of a dynamic programming problem is to define a recursive function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; that maps from a state space into the real line. Today I will call &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; function. The &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; function describes the value of being in a particular state.&lt;/p&gt;
+&lt;p&gt;Consider an alternative function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; that maps from the state-action space, into the real line. I will call this the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function. The &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function describes the value of being in a particular state and choosing a particular action.&lt;/p&gt;
+&lt;p&gt;As we do with the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;-function, we can express the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function recursively using Bellman&amp;rsquo;s principle of optimality. The recursive form of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function is&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Q&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;, &lt;em&gt;x&lt;/em&gt;)=&lt;em&gt;E&lt;/em&gt;&lt;sub&gt;&lt;em&gt;s&lt;/em&gt;′∼&lt;em&gt;f&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;, &lt;em&gt;x&lt;/em&gt;, ⋅)&lt;/sub&gt;[&lt;em&gt;r&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;,&lt;em&gt;x&lt;/em&gt;,&lt;em&gt;s&lt;/em&gt;′)+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;em&gt;Q&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;′,&lt;em&gt;x&lt;/em&gt;′)]&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;We can make some basic comparisons between &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; by studying their recursive representations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Parameteric representations (i.e. splines or other interpolands) of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; are more expensive than representations of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; is defined over the state-action space instead of just the state space.&lt;/li&gt;
+&lt;li&gt;Computing the maximization on the right hand side of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; is easier than the max on the RHS of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;. This is because the expectation is &lt;em&gt;outside&lt;/em&gt; the max in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;, but inside the max for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Bellman operator associated with the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function is a contraction mapping under the same conditions that Bellman operator associated &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; is a contraction mapping. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;&amp;rsquo;s operator is a contraction mapping, the operators&amp;rsquo; unique fixed point &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt; is the optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function.&lt;/p&gt;
+&lt;p&gt;The optimal policy can be easily computed from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;: &lt;span class=&#34;math inline&#34;&gt;$h^* (s) = \underset{x}{\text{argmax}} Q^* (s, x)$&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;-function can be obtained from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;: &lt;span class=&#34;math inline&#34;&gt;$V^&lt;/em&gt; = \underset{x}{\max} Q^* (s, x)$&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;computing-q&#34;&gt;Computing Q&lt;/h2&gt;
+&lt;p&gt;We see that if we can find &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;, we can get the value and policy functions we care about as economists. I want to briefly describe a few flavors of algorithms that can be used to compute &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;q-learning&#34;&gt;Q-learning&lt;/h3&gt;
+&lt;p&gt;Q-learning is classified as an online, model-free algorithm. This means you can update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt; whenever new data becomes available. Economists would classify this as a simulation algorithm.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the basics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with any initial guess for the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function&lt;/li&gt;
+&lt;li&gt;Then on each iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;:
+&lt;ul&gt;
+&lt;li&gt;Given the state action pair on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;th iteration (&lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;), the observation of the period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and the state iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip; update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; using: &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)=(1 − &lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;,&lt;em&gt;u&lt;/em&gt;′))&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notice that the right hand side is a convex combination of the current guess of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function and the right hand side of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function operator. This is very similar to standard value function iteration, but has the main advantage of not having any expectations.&lt;/p&gt;
+&lt;p&gt;This can be applied to any model for which you have a transition function that defines the state today as a function of the state and action yesterday and a random innovation from a distribution you can sample. Many economic models fit into this framework.&lt;/p&gt;
+&lt;p&gt;When the action space is continuous, you need do a modest alteration of the basic algorithm to ensure asymptotic convergence to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;approximate-q-iteration&#34;&gt;Approximate Q-iteration&lt;/h3&gt;
+&lt;p&gt;One strength of this literature is the number of different ways of reducing the dimensionality of a dynamic programming problem.&lt;/p&gt;
+&lt;p&gt;Approximate Q-iteration is one example of this type of algorithm. Here instead of operating on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function directly, we instead operate on a parameterized approximation of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function.&lt;/p&gt;
+&lt;p&gt;This can be done using linear dependence on coefficients (splines, Chebyshev polynomials) or non-linear parametric approximations (neural nets).&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll focus on the linearly parametrized version here. We will form an approximation &lt;span class=&#34;math inline&#34;&gt;$\hat{Q}(s, x) = \sum_{l=1}^n \phi_l(s, x) \theta&lt;em&gt;l = \Phi\theta$&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;We and talk about a variant of the Q-learning we previously discussed that uses gradient information to update the coefficient vector.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the basic idea:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with any guess of coefficients &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Then on each iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;:
+&lt;ul&gt;
+&lt;li&gt;Given the state action pair on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;th iteration (&lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;), the observation of the period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and the state iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip; update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt; using: &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\theta&lt;/em&gt;{i+1} = \theta_i + \alpha_i \left[r&lt;em&gt;i + \beta \max&lt;/em&gt;{x&amp;rsquo;} \hat{Q}&lt;em&gt;i(s&lt;/em&gt;{i+1}, x&amp;rsquo;)  - \hat{Q}_i(s_i, x_i)\right] \frac{\partial}{\partial \theta_i} \hat{Q}_i(s_i, x_i)$$&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;In the linear parameterization world we are in this becomes &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt; = &lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; + &lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;[&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;(&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;,&lt;em&gt;x&lt;/em&gt;′)&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)−&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;,&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;]&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As this is a Q-learning algorithm, the same computational benefits arise here, but now we additionally have the benefit of a potentially vastly reduced computational problem depending on the state-action space the choice of basis functions.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>de Farias &amp; van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)</title>
@@ -32,7 +224,9 @@
 &lt;p&gt;Also &lt;span class=&#34;math inline&#34;&gt;∀&lt;em&gt;v&lt;/em&gt;&lt;em&gt;s&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Typically this property of our contraction mapping is used to show that value function iteration will converge for any initial guess of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;. Today we will use it in a slightly different way.&lt;/p&gt;
 &lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; be any vector of all positive elements. Consider the mathematical program defined by&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{align&lt;em&gt;}&amp;amp;\underset{V}{\min} c&amp;rsquo;v \ s.t. &amp;amp; \quad v \ge T v \end{align&lt;/em&gt;}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&amp;rsquo;v \
+s.t. &amp;amp; \quad v \ge T v
+\end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;By the monotonicity of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; it is easy to see that any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; satisfying the constraint must be at least as big at &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Then notice that the objective is to minimize the inner product between a strictly positive vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; and the choice &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;These two facts mean that the unique solution to the programming problem is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
@@ -40,13 +234,17 @@
 &lt;p&gt;I told you that we would use linear programming, but notice that the constraint is nonlinear because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is nonlinear.&lt;/p&gt;
 &lt;p&gt;However, if we stare at the definition of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; for long enough we will notice that if we consider the constraint &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; state by state, (e.g. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)≥&lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)&lt;/span&gt;) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.&lt;/p&gt;
 &lt;p&gt;This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman&amp;rsquo;s equation for that state and control. The program looks as follows:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{align&lt;em&gt;}&amp;amp;\underset{V}{\min} c&amp;rsquo;v \ s.t. &amp;amp; \quad v(x) \ge u(x,c) + \beta \sum_{x&amp;rsquo;} P(x&amp;rsquo;| x,c)v(x&amp;rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x \end{align&lt;/em&gt;}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&amp;rsquo;v \
+s.t. &amp;amp; \quad v(x) \ge u(x,c) + \beta \sum_{x&amp;rsquo;} P(x&amp;rsquo;| x,c)v(x&amp;rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}&lt;em&gt;x
+\end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;curse-of-dimensionality&#34;&gt;Curse of dimensionality&lt;/h2&gt;
-&lt;p&gt;This linear program has an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; dimensional state with an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt; &lt;em&gt; &lt;em&gt;A&lt;/em&gt;&lt;/span&gt; dimensional constraint matrix. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; are large, this problem can quickly become subject to the curse of dimensionality.&lt;/p&gt;
+&lt;p&gt;This linear program has an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; dimensional state with an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt; * &lt;em&gt;A&lt;/em&gt;&lt;/span&gt; dimensional constraint matrix. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; are large, this problem can quickly become subject to the curse of dimensionality.&lt;/p&gt;
 &lt;p&gt;The authors of this paper propose approximate linear programming as a way to resolve this issue.&lt;/p&gt;
 &lt;p&gt;Specifically they choose to represent &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; as the product of a basis matrix and a vector of coefficients &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;They then write down a linear program&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{align&lt;/em&gt;}&amp;amp;\underset{V}{\min} c&amp;rsquo;\Phi r \ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x&amp;rsquo;} P(x&amp;rsquo;| x,c) \Phi r(x&amp;rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x \end{align*}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&amp;rsquo;\Phi r \
+s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} P(x&amp;rsquo;| x,c) \Phi r(x&amp;rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x
+\end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Notice now that we have swapped out a vector of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt;, for a vector with length equal to the number of columns in the basis matrix. This is something that we have control over, thus we can choose the &amp;quot;size&amp;quot; of this problem. Thus the objective is smaller, but the number of constraints is exactly the same.&lt;/p&gt;
 &lt;p&gt;However, if we choose each column of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Φ&lt;/em&gt;&lt;/span&gt; to have finite support (i.e. we use splines), most constraints become inactive and the large constraint matrix becomes sparse.&lt;/p&gt;
 &lt;p&gt;The remainder of the paper, and its main contribution, is to bound the error we are subject to by solving the approximate linear program instead of the exact linear program.&lt;/p&gt;
@@ -791,7 +989,7 @@
 &lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
 &lt;div id=&#34;ref-Ruhl2015&#34;&gt;
-&lt;p&gt;Ruhl, K, and J Willis. 2015. “New Exporter Dynamics,” no. November. doi:&lt;a href=&#34;https://doi.org/10.2139/ssrn.2531105&#34;&gt;10.2139/ssrn.2531105&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ruhl, Kim J, and J Willis. 2015. “New Exporter Dynamics,” no. November. doi:&lt;a href=&#34;https://doi.org/10.2139/ssrn.2531105&#34;&gt;10.2139/ssrn.2531105&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 </description>
@@ -869,227 +1067,6 @@
 &lt;div id=&#34;ref-Alessandria2014&#34;&gt;
 &lt;p&gt;Alessandria, George, Horag Choi, and Kim J Ruhl. 2014. “Trade Adjustment Dynamics and the Welfare Gains from Trade.” &lt;em&gt;NBER Working Paper&lt;/em&gt; November (20663). &lt;a href=&#34;http://papers.ssrn.com/sol3/papers.cfm?abstract{\_}id=2428709&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://papers.ssrn.com/sol3/papers.cfm?abstract{_}id=2428709&#34;&gt;http://papers.ssrn.com/sol3/papers.cfm?abstract{_}id=2428709&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Jermann2012 (Macroeconomic Effects of Financial Shocks)</title>
-      <link>http://srg.spencerlyon.com/2015/11/03/jermann2012-macroeconomic-effects-of-financial-shocks/</link>
-      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/11/03/jermann2012-macroeconomic-effects-of-financial-shocks/</guid>
-      <description>&lt;p&gt;&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;h3 id=&#34;firm-problem&#34;&gt;Firm Problem&lt;/h3&gt;
-&lt;p&gt;The model has a representative firm that uses capital and labor within CRS Cobb Douglas production technology, subject to TFP shock.&lt;/p&gt;
-&lt;p&gt;Capital evolution is standard: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; = (1 − &lt;em&gt;δ&lt;/em&gt;)&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; + &lt;em&gt;i&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Firms also raise resources through debt and equity financing:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Debt financing comes through the issuance of a non-state contingent one period bond.
-&lt;ul&gt;
-&lt;li&gt;Debt financing has a tax advantage relative to equity (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = 1 + &lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;(1 − &lt;em&gt;τ&lt;/em&gt;)&lt;/span&gt;)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Equity financing comes through dividend payments (or receipts) from shareholders
-&lt;ul&gt;
-&lt;li&gt;Total cost to firms of dividend payouts is the payment amount plus a quadratic term in deviation of payout from target (steady state).&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Timing in each period is in three stages:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Firms choose investment, labor, dividend payments, and issue new bonds.
-&lt;ul&gt;
-&lt;li&gt;Because all these payments happen at the start of the period firms raise within period working capital through an intra-period loan.&lt;/li&gt;
-&lt;li&gt;This loan is repaid at the end of each period and bears no interest&lt;/li&gt;
-&lt;li&gt;The value of the loan is equal to production, making budget constraint hold&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Production happens&lt;/li&gt;
-&lt;li&gt;The working capital loan is paid off&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Firms are allowed to default on debt, so in equilibrium there is an enforcement constraint. Suppose that at the moment the debt is contracted, with probability &lt;span class=&#34;math inline&#34;&gt;1 − &lt;em&gt;ξ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; the liquidation value of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt; is zero, otherwise it is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ξ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; is AR(1) in logs and is called a financial shock. Firms and lenders will negotiate to arrive at an enforcement constraint:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\xi&lt;em&gt;t \left(x&lt;/em&gt;{t+1} - \frac{b_{t+1}}{1+r_t} \right) \ge l_t$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;The constraint is tighter with more intra-or inter-period debt and looser with a higher capital stock.&lt;/p&gt;
-&lt;p&gt;In summary, the firm&amp;rsquo;s financing problem has a few features. Debt financing is preferred to equity financing because of the tax benefit and lack of additional deviation from steady state cost. However, the amount of debt financing available is constrained in equilibrium.&lt;/p&gt;
-&lt;!-- TODO: Should I just show the recursive problem and talk about the constraints? --&gt;
-&lt;h3 id=&#34;household-problem&#34;&gt;Household Problem&lt;/h3&gt;
-&lt;p&gt;A representative household has time separable preferences over consumption and labor. The household chooses sequences of labor supply, bond holdings, and equity shares to maximize the expected present discounted value of period utility.&lt;/p&gt;
-&lt;p&gt;Each period equity payouts are shares times the sum of dividend payments plus the price of equity &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;. When choosing shares for next period, they pay &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;em&gt;p&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;The household also pays lump sum taxes that finance the tax benefit firm&amp;rsquo;s receive by issuing debt.&lt;/p&gt;
-&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
-&lt;p&gt;Some key equilibrium results:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;If the tax benefit &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; is positive, then the enforcement constraint binds in a deterministic steady state. Can be read directly off the FOC for firm debt next period: if &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt; &amp;gt; 0&lt;/span&gt; then the multiplier on the enforcement constraint is also positive.
-&lt;ul&gt;
-&lt;li&gt;With uncertainty the constraint might be slack if &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; is not large enough. The authors consider &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; big enough that the constraint always binds.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;When the tax benefit and the equity costs are zero the constraint is always slack (even in stochastic environment) &lt;em&gt;and&lt;/em&gt; changes in the capital liquidation value shock do not impact labor or investment decisions.
-&lt;ul&gt;
-&lt;li&gt;So, to get the main result that the financial matters in equilibrium we need debt financing to be better than equity financing on both of these dimensions&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;empirical-results&#34;&gt;Empirical results&lt;/h2&gt;
-&lt;p&gt;The consider the response to the model under a variety of stochastic environments and asses how closely the model simulation matches the data on GDP and hours worked:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TFP shocks only: dosn&amp;rsquo;t match the data well.&lt;/li&gt;
-&lt;li&gt;Financial shocks only: does much better at maching the data.
-&lt;ul&gt;
-&lt;li&gt;To see why we need to understand that the marginal condition for the firm choosing labor demand is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;em&gt;K&lt;/em&gt;&lt;em&gt;L&lt;/em&gt; = &lt;em&gt;w&lt;/em&gt; × Labor wedge&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;This labor wedge is increasing in both the multiplier on the enforcement constraint and dividend costs.&lt;/li&gt;
-&lt;li&gt;As financial shocks go up, the constraint tightens, increasing the multiplier &amp;ndash; altering labor demand even more.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;They also do many other experiments and consider an extended model.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Jermann2012&#34;&gt;
-&lt;p&gt;Jermann, Urban, and Vincenzo Quadrini. 2012. “Macroeconomic Effects of Financial Shocks.” &lt;em&gt;American Economic Review&lt;/em&gt; 102 (1): 238–71. doi:&lt;a href=&#34;https://doi.org/10.1257/aer.102.1.238&#34;&gt;10.1257/aer.102.1.238&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Iskhakov2013 (Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games)</title>
-      <link>http://srg.spencerlyon.com/2015/10/27/iskhakov2013-recursive-lexicographical-search-finding-all-markov-perfect-equilibria-of-finite-state-directional-dynamic-games/</link>
-      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/10/27/iskhakov2013-recursive-lexicographical-search-finding-all-markov-perfect-equilibria-of-finite-state-directional-dynamic-games/</guid>
-      <description>&lt;p&gt;&lt;h1 id=&#34;outline&#34;&gt;Outline&lt;/h1&gt;
-&lt;p&gt;The authors of this paper do 3 main things:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Describe a particular class of Dynamic economic games&lt;/li&gt;
-&lt;li&gt;Describe two algorithms for computing Markov perfect equilibria of those games&lt;/li&gt;
-&lt;li&gt;Give two detailed, non-trivial examples of how to apply the algorithms to games in this class&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;We won&amp;rsquo;t have time to touch on the examples, but my goal today is to describe the class of models and explain the key components of the algorithms.&lt;/p&gt;
-&lt;h1 id=&#34;dynamic-directional-games&#34;&gt;Dynamic Directional Games&lt;/h1&gt;
-&lt;p&gt;The class of dynamic games considered in this paper have the following characteristics&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;We consider a dynamic stochastic game &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; with &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; players and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; periods. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; might be &lt;span class=&#34;math inline&#34;&gt;∞&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;Payoffs for each player are given by time separable von-Neumann Morgenstern utility functions.
-&lt;ul&gt;
-&lt;li&gt;Time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; payoffs depend on the state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;/span&gt; in time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; as well as the vector of actions &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; chosen by all players&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The state for time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/span&gt; is Markov, conditional on time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; state and actions&lt;/li&gt;
-&lt;li&gt;We restrict the state space to be finite&lt;/li&gt;
-&lt;li&gt;Players perfectly observe the current state as well as past actions&lt;/li&gt;
-&lt;li&gt;For each player the discount factor, set of feasible actions given the state, and the Markov transition probabilities are common knowledge&lt;/li&gt;
-&lt;li&gt;We will consider Markov perfect equilibria over behavior strategies&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The authors further refine this class of games by introducing the concept of &lt;em&gt;directionality&lt;/em&gt; in one or more state variables. Specifically, they partition the state vector into two components: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;X&lt;/em&gt;&lt;/span&gt;. The set &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt; contains the elements of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; that can be represented by a directed acyclic graph. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;X&lt;/em&gt;&lt;/span&gt; contains all other states.&lt;/p&gt;
-&lt;p&gt;What does this mean? The set &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt; can be further divided into subgroups and ordered such that once the state moves from subgroup &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; to subgroup &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;j&lt;/em&gt; &amp;gt; &lt;em&gt;i&lt;/em&gt;&lt;/span&gt;, there is 0 probability of ever returning to subgroup &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;algorithm-1-state-recursion-algorithm&#34;&gt;Algorithm 1: State Recursion Algorithm&lt;/h1&gt;
-&lt;p&gt;How does directionality help? It allows them to define the first main algorithm in the paper: the state recursion algorithm.&lt;/p&gt;
-&lt;p&gt;Suppose that the set &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt; has been divided into &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt; groups, ordered such that the model begins in group &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt; and terminates in group &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt;. Then the state recursion algorithm roughly proceeds as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Starting with subgroup &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;/span&gt;, iterating down to subgroup 1
-&lt;ul&gt;
-&lt;li&gt;For each state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt; ∈ &lt;em&gt;D&lt;/em&gt;&lt;sub&gt;&lt;em&gt;M&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;
-&lt;ul&gt;
-&lt;li&gt;Compute all MPE of the subgame starting from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt; = &lt;em&gt;d&lt;/em&gt; × &lt;em&gt;x&lt;/em&gt;,  ∀&lt;em&gt;x&lt;/em&gt; ∈ &lt;em&gt;X&lt;/em&gt;&lt;/span&gt;, taking as given optimal strategies already computed in subgroups &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;j&lt;/em&gt; &amp;gt; &lt;em&gt;i&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;If multiple such equilibria exist, use some deterministic equilibrium selection rule to choose a unique MPE&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;When the recursion terminates, the selected equilibria from each subgame are joined to form the MPE of the original game.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To understand how the State Recursion Algorithm works, consider two simple examples:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Let the only directional state variable be time. Then SRA is equivalent to familiar backwards time recursion:
-&lt;ul&gt;
-&lt;li&gt;start in the terminal period, solve the model for each state in that period&lt;/li&gt;
-&lt;li&gt;Step backwards once in time and for each state in time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt; − 1&lt;/span&gt;, compute the equilibrium, taking as given the optimal cap &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; strategy.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;A stylized version of Rubenstein&amp;rsquo;s 2 bargaining over a pie problem.
-&lt;ul&gt;
-&lt;li&gt;Suppose that 2 agents are bargaining over how to split a single perfectly divisible pie.&lt;/li&gt;
-&lt;li&gt;Further assume that the size of the pie evolves according to a 4 state Markov chain, where states are ordered in decreasing size of the pie (i.e. state 1 is the full pie) with an upper triangular transition matrix. Specifically, suppose that from state 1, there is non-zero probability of remaining in state 1, or moving to either state 2 or state 3. From state 2, you can remain in state 2 or move to state 4. From state 3 you can stay or move to 4. 4 is absorbing.&lt;/li&gt;
-&lt;li&gt;The state is partitioned into 3 subgroups &lt;code&gt;[(1,), (2,3), (4,)]&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;After moving from &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;2&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;3&lt;/span&gt;, there is zero probability of ever moving back to &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt;. Similarly, once the state goes to &lt;span class=&#34;math inline&#34;&gt;4&lt;/span&gt;, it has zero probability of ever returning to &lt;span class=&#34;math inline&#34;&gt;1, 2,&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;3&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;From the second example we can see how SRA is a generalization of backwards time recursion: the state can include variables other than time and have a stochastic law of motion between groups.&lt;/p&gt;
-&lt;p&gt;The SRA algorithm makes 2 assumptions:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;That we know how to solve for an MPE starting from each element in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;That we have a deterministic equilibrium selection rule in mind&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The output of the algorithm is a single MPE of the original game.&lt;/p&gt;
-&lt;h1 id=&#34;algorithm-2-recursive-lexicographical-search&#34;&gt;Algorithm 2: Recursive Lexicographical Search&lt;/h1&gt;
-&lt;p&gt;The second algorithm is called &amp;quot;Recursive Lexicographical Search&amp;quot;. This algorithm relaxes the equilibrium selection rule assumption and in return finds &lt;em&gt;all&lt;/em&gt; the MPE of the original game.&lt;/p&gt;
-&lt;p&gt;The core concept behind this algorithm is that you have an outer loop over all possible equilibrium selection rules, and use the SLA algorithm to compute a particular MPE associated with that ESR.&lt;/p&gt;
-&lt;p&gt;A key feature of their description of the algorithm is an extremely efficient and clearly explained algorithm for iterating over only the feasible ESRs. The output is that you can compute &lt;em&gt;all&lt;/em&gt; the MPE of the original game in linear time (i.e. computational time increases linearly with the number of equilibria). Naively iterating over the possible ESRs would require checking &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;K&lt;/em&gt;&lt;sup&gt;&lt;em&gt;N&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; candidates, where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;K&lt;/em&gt;&lt;/span&gt; is the maximal number of MPE for any particular stage-game and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; is the total number of stage-games. In one example this reduces the number of candidates from &lt;code&gt;1.7445e26&lt;/code&gt; to &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Iskhakov2013&#34;&gt;
-&lt;p&gt;Iskhakov, Fedor, John Rust, and Bertel Schjerning. 2015. “Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games” 1.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Chassang2010 (Building routines: Learning, cooperation, and the dynamics of incomplete relational contracts)</title>
-      <link>http://srg.spencerlyon.com/2015/10/20/chassang2010-building-routines-learning-cooperation-and-the-dynamics-of-incomplete-relational-contracts/</link>
-      <pubDate>Tue, 20 Oct 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/10/20/chassang2010-building-routines-learning-cooperation-and-the-dynamics-of-incomplete-relational-contracts/</guid>
-      <description>&lt;p&gt;&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
-&lt;h2 id=&#34;mechanics&#34;&gt;Mechanics&lt;/h2&gt;
-&lt;p&gt;Two agents, infinite horizon, discrete time, and each agent has a common discount factor &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;δ&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Each period agent 1 can choose to enter or exit.&lt;/p&gt;
-&lt;p&gt;Player 2 has a countably finite set of actions, represented as the set &lt;span class=&#34;math inline&#34;&gt;𝒜&lt;/span&gt;, which is equal to the natural numbers. Each period an i.i.d subset of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt; ⊂ 𝒜&lt;/span&gt; is drawn. This is both the state of the economy in each period and agent 2&amp;rsquo;s feasible actions set for the period. Each action is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt; ∈ 𝒜&lt;/span&gt; is drawn with the same probability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; each period.&lt;/p&gt;
-&lt;p&gt;Each period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; is broken into two stages. In stage 1, agent 1 chooses to enter or exit. Upon exit, both players get 0 flow payoffs, the game moves to period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;If agent 1 chooses to enter, he pays a constant fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt; while agent 2 gets a benefit &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;π&lt;/em&gt;&lt;/span&gt;. Then the iid state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; ⊂ 𝒜&lt;/span&gt; is drawn and stage 2 begins.&lt;/p&gt;
-&lt;p&gt;In stage 2 player 2 chooses his action &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt; ∈ &lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;. This choice brings a deterministic cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt;. With probability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;q&lt;/em&gt;&lt;/span&gt; the action succeeds and agent 1 gains a deterministic payoff &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;b&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt;. With probability &lt;span class=&#34;math inline&#34;&gt;1 − &lt;em&gt;q&lt;/em&gt;&lt;/span&gt; the action fails and agent 1 gets &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;technology&#34;&gt;Technology&lt;/h2&gt;
-&lt;p&gt;In the set &lt;span class=&#34;math inline&#34;&gt;𝒜&lt;/span&gt; there are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; productive actions (numbered &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt; − 1&lt;/span&gt;).&lt;/p&gt;
-&lt;p&gt;The function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt; takes on a constant value &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; for all productive actions, and &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt; for all non-productive actions.&lt;/p&gt;
-&lt;p&gt;The function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;b&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt; is positive (though not constant) for all productive actions, and &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt; for all other actions.&lt;/p&gt;
-&lt;p&gt;There is no mechanism for agents to share utility.&lt;/p&gt;
-&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
-&lt;p&gt;All agents know perfectly the parameters &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;δ&lt;/em&gt;&lt;/span&gt; (discount rate), &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; (probability at which a particular action is drawn from &lt;span class=&#34;math inline&#34;&gt;𝒜&lt;/span&gt; each period), &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;q&lt;/em&gt;&lt;/span&gt; (probability a productive action is successful), and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; the total number of productive actions.&lt;/p&gt;
-&lt;p&gt;Both agents perfectly observe the state each period (though the time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; state is realized &lt;em&gt;after&lt;/em&gt; agent 1 makes his time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; decision). Both players also see perfectly the action &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; taken by player 2 and the payoff paid to agent &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Information is asymmetric in that only agent 2 sees the cost of his actions &amp;ndash; hence only agent 2 knows if the selected action is productive.&lt;/p&gt;
-&lt;p&gt;The realizations of the function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;b&lt;/em&gt;(&lt;em&gt;a&lt;/em&gt;)&lt;/span&gt; are drawn from a known distribution &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;B&lt;/em&gt;&lt;/span&gt; with compact support and held fixed throughout the game. Agents do not know these realizations ex ante, but share the same prior about the distribution from which they were drawn.&lt;/p&gt;
-&lt;p&gt;Agent 1 has an improper uniform prior over which actions are productive. Specifically&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\forall A \subset \mathcal{A}, \forall a \in A, \quad \text{prob} \left{a \in \mathcal{N} | \text{card} A \cap N = n\right} = \frac{n}{ \text{card} A}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Parameters are such that agent 1 doesn&amp;rsquo;t exit in period 1&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;equilibrium-concept&#34;&gt;Equilibrium concept&lt;/h2&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; ∈ {&lt;em&gt;S&lt;/em&gt;, &lt;em&gt;E&lt;/em&gt;}&lt;/span&gt; be agent 1&amp;rsquo;s decision to stay or exit at time &lt;span class=&#34;math inline&#34;&gt;1&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;E&lt;/em&gt;&lt;/span&gt;, then &lt;span class=&#34;math inline&#34;&gt;$A_t = a_t = \tilde{b}(a_t) \emptyset$&lt;/span&gt;. There are three types of history:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;ℋ&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt; are histories of the form &lt;span class=&#34;math inline&#34;&gt;$h^1 = \left{d_1, A_1, a_1, \tilde{b}(a&lt;em&gt;1), \dots, d&lt;/em&gt;{t-1}, A&lt;em&gt;{t-1}, a&lt;/em&gt;{t-1} \tilde{b}(a_{t-1}) \right}$&lt;/span&gt; and correspond to agent 1&amp;rsquo;s information set at his decision node in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;ℋ&lt;sup&gt;2|1&lt;/sup&gt;&lt;/span&gt; histories are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sup&gt;1&lt;/sup&gt; ⊔ {&lt;em&gt;d&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;}&lt;/span&gt; are agent 1&amp;rsquo;s information at agent 2&amp;rsquo;s decision node in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;ℋ&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt; histories are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sup&gt;2|1&lt;/sup&gt; ⊔ 𝒩&lt;/span&gt; are agent 2&amp;rsquo;s information set at his decision node in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;A pure strategy for player 1 is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt; : ℋ&lt;sup&gt;1&lt;/sup&gt; → {&lt;em&gt;S&lt;/em&gt;, &lt;em&gt;E&lt;/em&gt;}&lt;/span&gt;. A pure strategy for player 2 is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; : ℋ&lt;sup&gt;2&lt;/sup&gt; → 𝒜&lt;/span&gt; such that forall histories &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; ∈ ℋ&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;(&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt;)∈&lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;The equilibrium concept is a Pareto efficient perfect Bayesian equilibrium in pure strategies. The strategy profiles form the equilibrium.&lt;/p&gt;
-&lt;h1 id=&#34;equilibrium-analysis&#34;&gt;Equilibrium Analysis&lt;/h1&gt;
-&lt;h2 id=&#34;complete-information-benchmark&#34;&gt;Complete information benchmark&lt;/h2&gt;
-&lt;p&gt;Consider a benchmark model of full information where agent 1 also knows agent 2&amp;rsquo;s cost function. In all Pareto efficient equilibria of this game, player 1 never chooses to exit.&lt;/p&gt;
-&lt;p&gt;Because the payoff to agent 1 is bounded above, value functions for player 1 and player 2 are bounded. Denote the highest possible value function for agent 2 in the perfect information game as &lt;span class=&#34;math inline&#34;&gt;$\bar{V}_2$&lt;/span&gt;. This will be used in later analysis.&lt;/p&gt;
-&lt;h2 id=&#34;asymmetric-information-model&#34;&gt;Asymmetric information model&lt;/h2&gt;
-&lt;p&gt;In the asymmetric information model, agent 1 learns which actions are productive. In the early stages of the game, monitoring is imperfect (agent 1 doesn&amp;rsquo;t know for sure if he got zero payoffs because agent 2 chose an unproductive action, or if a productive action failed.) As agent 1 learns, the game transitions to perfect monitoring.&lt;/p&gt;
-&lt;p&gt;An interesting feature of the asymmetric information model is that along this path to perfect monitoring, inefficient punishment (exit by player 1) is rational and on the equilibrium path.&lt;/p&gt;
-&lt;p&gt;Consider an equilibrium &lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;, &lt;em&gt;s&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;) A history &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sup&gt;2|1&lt;/sup&gt; ∈ ℋ&lt;sup&gt;2|1&lt;/sup&gt;&lt;/span&gt; is called a &lt;strong&gt;revelation stage&lt;/strong&gt; if there is non-zero probability that a productive action that has not been taken before will be taken. A history &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;sup&gt;1&lt;/sup&gt; ∈ ℋ&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt; is a &lt;strong&gt;confirmation stage&lt;/strong&gt; for action &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt; ∈ &lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; iff &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;a&lt;/em&gt;&lt;/span&gt; player 1&amp;rsquo;s payoff is positive (called a confirmation stage because agent 1 now perfectly knows that action &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; is productive.). In this case we say &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; was &lt;strong&gt;confirmed&lt;/strong&gt; in this confirmation stage.&lt;/p&gt;
-&lt;!-- TODO: do  i need to talk about routines? --&gt;
-&lt;p&gt;A &lt;strong&gt;routine&lt;/strong&gt; is a pair of strategies that starting from a particular history &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt; include only confirmed or unproductive actions in the continuation game.&lt;/p&gt;
-&lt;h3 id=&#34;optimal-inefficiency&#34;&gt;Optimal inefficiency&lt;/h3&gt;
-&lt;p&gt;A main result of the paper is that along an equilibrium equilibrium, agent 1&amp;rsquo;s strategy can include inefficient exit.&lt;/p&gt;
-&lt;p&gt;To see why consider a history &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;2|1&lt;/sup&gt;&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;′&amp;lt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; productive actions have been confirmed.&lt;/p&gt;
-&lt;p&gt;Then denote by &lt;span class=&#34;math inline&#34;&gt;$\underbar{V}_2^{N&amp;rsquo;}$&lt;/span&gt; the value agent 2 gets by selecting a non-productive action in every period along paths where agent 1 never exits.&lt;/p&gt;
-&lt;p&gt;Then, if at this history, &lt;span class=&#34;math inline&#34;&gt;$\delta (\bar{V} - \underbar{V}_2^{N&amp;rsquo;}) &amp;lt; c$&lt;/span&gt;, exit &lt;strong&gt;must&lt;/strong&gt; occur with positive probability on the continuation path.&lt;/p&gt;
-&lt;p&gt;This inequality means that the cost of choosing a productive action today, is greater than the discounted difference between maximal value in the full information game and the value of always choosing unproductive actions. In other words, given that agent 1 will never exit, agent 2 has no hope to make up losses in value induced by the cost today of choosing a productive action.&lt;/p&gt;
-&lt;p&gt;To make up for this, agent 1 then sometimes must choose to exit, which prevents agent 2 from gaining the flow utility, and lowers the value of the strategy of never choosing productive actions.&lt;/p&gt;
-&lt;p&gt;In this sense inefficient exit is used as a vehicle to motivate agent 2 to reveal information.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Chassang2010&#34;&gt;
-&lt;p&gt;Chassang, Sylvain. 2010. “Building routines: Learning, cooperation, and the dynamics of incomplete relational contracts.” &lt;em&gt;American Economic Review&lt;/em&gt; 100 (1): 448–65. doi:&lt;a href=&#34;https://doi.org/10.1257/aer.100.1.448&#34;&gt;10.1257/aer.100.1.448&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;In the first period agent 1 makes his decision based solely on his prior. If he chooses to exit, he learns nothing, and next period must make his decision with the same information. Because we look for pure strategy equilibria, he will make the same decision forever and the game will be trivial.&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
 &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Brumm, Mikushin, Scheidegger and Schenk (2015) (Scalable high-dimensional dynamic stochastic economic modeling)  &middot; Sargent Reading Group Notes</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Brumm, Mikushin, Scheidegger and Schenk (2015) (Scalable high-dimensional dynamic stochastic economic modeling)  &middot; Sargent Reading Group Notes ">
+<meta property="og:site_name" content="Sargent Reading Group Notes"/>
+<meta property="og:url" content="http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/" />
+<meta property="og:locale" content="en-EN">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-05-09T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-05-09T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Brumm, Mikushin, Scheidegger and Schenk (2015) (Scalable high-dimensional dynamic stochastic economic modeling)" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/" />
+<meta name="twitter:domain" content="http://srg.spencerlyon.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Brumm, Mikushin, Scheidegger and Schenk (2015) (Scalable high-dimensional dynamic stochastic economic modeling)",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-05-09",
+    "description": "",
+    "wordCount":  620 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
+<link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.16-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://srg.spencerlyon.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://srg.spencerlyon.com/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://srg.spencerlyon.com/">
+  srg
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Spencer Lyon
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://srg.spencerlyon.com/">Home</a>
+
+
+  
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:spencer.lyon@stern.nyu.edu">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>Brumm, Mikushin, Scheidegger and Schenk (2015) (Scalable high-dimensional dynamic stochastic economic modeling)
+</h1>
+
+  <div class="metas">
+<time datetime="2016-05-09">9 May, 2016</time>
+
+
+  
+  &middot; Read in about 3 min
+  &middot; (620 Words)
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p><p>An economist, a physicist, and two computer scientists walk into a bar&hellip;</p>
+<p>This is a computational paper that describes and algorithm featuring an adaptive sparse grid and discuss implementation details on a sophisticated HPC cluster.</p>
+<h2 id="model">Model</h2>
+<p>They provide examples of their algorithm and computation using a standard international real business cycle model. This is not the interesting part of the paper, so I will not focus on it here.</p>
+<h2 id="computation">Computation</h2>
+<h3 id="adaptive-sparse-grids">Adaptive Sparse Grids</h3>
+<p>The first main contribution of this paper is to introduce economists to a specialized flavor of function approximation.</p>
+<p>The authors use familiar linear Splines; but do so on a sparse, adaptive, and hierarchical grid.</p>
+<p>By sparse I mean that the n-dimensional grid is not composed of the tensor product, or Cartesian product, of all univariate grids. This helps alleviate the curse of dimensionality.</p>
+<p>By adaptive I mean that the knot vector for the grid in each dimension will change as the solution algorithm for the economic problem proceeds. This helps preserve accuracy of function approximation routines when the grid is sparse.</p>
+<p>By hierarchical I mean that the grid for a particular level of refinement is a strict subset of the grid for all higher levels of refinement. This helps reduce computation costs as the basis functions for higher order terms only require a few additional function evaluations instead of a full basis matrix.</p>
+<h3 id="algorithm">Algorithm</h3>
+<p>The second main contribution of the paper is an algorithm that leverages this special interpolation scheme to solve high dimensional dynamic stochastic models.</p>
+<p>The main steps of the iterative portion of the algorithm are:</p>
+<ul>
+<li>Start with the coarsest refinement level <span class="math inline"><em>l</em> = 1</span> for all dimensions. Call the grid G. Choose a maximum refinement level</li>
+<li>Also Initialize <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span> and <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span> to be the empty set</li>
+<li>While G and <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span> are not the same (NOTE: at end of this loop explain the while goes until we are at Lmax or until we don&rsquo;t add refinement points)
+<ul>
+<li>For each grid point in <span class="math inline"><em>G</em> \ <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span>
+<ul>
+<li>Solve the system of non-linear equations characterizing the optimal controls at that grid point (note you will need to interpolate over the current guess of the policy function) to obtain a new guess for the policy rule at that point</li>
+<li>If the distance between the old and new guess for the policy at the grid point is greater than some threshold, add the neighboring points at the next refinement level to G_new</li>
+</ul></li>
+<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> + =1</span></li>
+</ul></li>
+<li>Calculate the error for this iteration as the sup norm over the implied policy rule from the current iteration and the previous iteration</li>
+</ul>
+<p>Notice that this algorithm will start with very few points across the entire domain and iteratively add points only in regions where the policy rule has dramatic changes. This will naturally cause the grid to adapt and add more grid points in areas of the state space that feature non-linearities or discontinuities.</p>
+<h2 id="results">Results</h2>
+<p>This algorithm was implemented by coders who know their stuff! They build on cutting edge software and run their code on state of the art super computers in Switzerland.</p>
+<p>The results are impressive.</p>
+<p>On just one node of the super-computer, they were able to achieve a 30x speedup for their code by utilizing a GPU and multi-threaded parallelism.</p>
+<p>They were then able to scale that code from a single node to up to 2048 nodes to achieve a speedup on the order of 10,000x.</p>
+<p>They compare their algorithm to a non-adaptive sparse grid and find that the log 10 average Euler errors from their algorithm are smaller on average than the sparse grid case, but run time is up 2 to 3 orders of magnitude smaller.</p>
+<div id="refs" class="references"></p>
+
+<p></div></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://srg.spencerlyon.com/2016/05/03/farias-saure-weintraub-2012-an-approximate-dynamic-programming-approach-to-solving-dynamic-oligopoly-models/" title="Farias Saure Weintraub (2012) (An approximate dynamic programming approach to solving dynamic oligopoly models)">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2015 Spencer Lyon.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -9,8 +9,149 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 26 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 May 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Brumm, Mikushin, Scheidegger and Schenk (2015) (Scalable high-dimensional dynamic stochastic economic modeling)</title>
+      <link>http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/</link>
+      <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/</guid>
+      <description>&lt;p&gt;&lt;p&gt;An economist, a physicist, and two computer scientists walk into a bar&amp;hellip;&lt;/p&gt;
+&lt;p&gt;This is a computational paper that describes and algorithm featuring an adaptive sparse grid and discuss implementation details on a sophisticated HPC cluster.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;They provide examples of their algorithm and computation using a standard international real business cycle model. This is not the interesting part of the paper, so I will not focus on it here.&lt;/p&gt;
+&lt;h2 id=&#34;computation&#34;&gt;Computation&lt;/h2&gt;
+&lt;h3 id=&#34;adaptive-sparse-grids&#34;&gt;Adaptive Sparse Grids&lt;/h3&gt;
+&lt;p&gt;The first main contribution of this paper is to introduce economists to a specialized flavor of function approximation.&lt;/p&gt;
+&lt;p&gt;The authors use familiar linear Splines; but do so on a sparse, adaptive, and hierarchical grid.&lt;/p&gt;
+&lt;p&gt;By sparse I mean that the n-dimensional grid is not composed of the tensor product, or Cartesian product, of all univariate grids. This helps alleviate the curse of dimensionality.&lt;/p&gt;
+&lt;p&gt;By adaptive I mean that the knot vector for the grid in each dimension will change as the solution algorithm for the economic problem proceeds. This helps preserve accuracy of function approximation routines when the grid is sparse.&lt;/p&gt;
+&lt;p&gt;By hierarchical I mean that the grid for a particular level of refinement is a strict subset of the grid for all higher levels of refinement. This helps reduce computation costs as the basis functions for higher order terms only require a few additional function evaluations instead of a full basis matrix.&lt;/p&gt;
+&lt;h3 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h3&gt;
+&lt;p&gt;The second main contribution of the paper is an algorithm that leverages this special interpolation scheme to solve high dimensional dynamic stochastic models.&lt;/p&gt;
+&lt;p&gt;The main steps of the iterative portion of the algorithm are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with the coarsest refinement level &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;l&lt;/em&gt; = 1&lt;/span&gt; for all dimensions. Call the grid G. Choose a maximum refinement level&lt;/li&gt;
+&lt;li&gt;Also Initialize &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;e&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;/span&gt; to be the empty set&lt;/li&gt;
+&lt;li&gt;While G and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt; are not the same (NOTE: at end of this loop explain the while goes until we are at Lmax or until we don&amp;rsquo;t add refinement points)
+&lt;ul&gt;
+&lt;li&gt;For each grid point in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt; \ &lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Solve the system of non-linear equations characterizing the optimal controls at that grid point (note you will need to interpolate over the current guess of the policy function) to obtain a new guess for the policy rule at that point&lt;/li&gt;
+&lt;li&gt;If the distance between the old and new guess for the policy at the grid point is greater than some threshold, add the neighboring points at the next refinement level to G_new&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt; = &lt;em&gt;G&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt; = &lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt; ∪ &lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;e&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;e&lt;/em&gt;&lt;em&gt;w&lt;/em&gt; = ∅&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;l&lt;/em&gt; + =1&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Calculate the error for this iteration as the sup norm over the implied policy rule from the current iteration and the previous iteration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notice that this algorithm will start with very few points across the entire domain and iteratively add points only in regions where the policy rule has dramatic changes. This will naturally cause the grid to adapt and add more grid points in areas of the state space that feature non-linearities or discontinuities.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;This algorithm was implemented by coders who know their stuff! They build on cutting edge software and run their code on state of the art super computers in Switzerland.&lt;/p&gt;
+&lt;p&gt;The results are impressive.&lt;/p&gt;
+&lt;p&gt;On just one node of the super-computer, they were able to achieve a 30x speedup for their code by utilizing a GPU and multi-threaded parallelism.&lt;/p&gt;
+&lt;p&gt;They were then able to scale that code from a single node to up to 2048 nodes to achieve a speedup on the order of 10,000x.&lt;/p&gt;
+&lt;p&gt;They compare their algorithm to a non-adaptive sparse grid and find that the log 10 average Euler errors from their algorithm are smaller on average than the sparse grid case, but run time is up 2 to 3 orders of magnitude smaller.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Farias Saure Weintraub (2012) (An approximate dynamic programming approach to solving dynamic oligopoly models)</title>
+      <link>http://srg.spencerlyon.com/2016/05/03/farias-saure-weintraub-2012-an-approximate-dynamic-programming-approach-to-solving-dynamic-oligopoly-models/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/05/03/farias-saure-weintraub-2012-an-approximate-dynamic-programming-approach-to-solving-dynamic-oligopoly-models/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper builds on the approximate linear programming work of Farias and van Roy that I presented a few weeks ago and applies a version of that technique to a dynamic oligopoly model.&lt;/p&gt;
+&lt;p&gt;The actual model is not novel to this research, so I will spend most of my time talking about the algorithm.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The model is set in discrete time and multiple firms compete in a single good market over an infinite horizon.&lt;/li&gt;
+&lt;li&gt;Firms are identified by a firm specific state x that takes on an integer value between 0 and some upper limit xbar&lt;/li&gt;
+&lt;li&gt;The aggregate state s is a histogram of the number of firms at each individual state (a vector of xbar+1 integers)&lt;/li&gt;
+&lt;li&gt;The maximum number of incumbent firms is fixed at N. Each period there are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt; − &lt;em&gt;s&lt;/em&gt;&lt;em&gt;u&lt;/em&gt;&lt;em&gt;m&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;)&lt;/span&gt; possible entrants. Entrants do not produce or earn profits in the first period.&lt;/li&gt;
+&lt;li&gt;Incumbents choose an investment level that determines the probability of remaining in the same state, or moving up or down one step to a neighboring state in the next period.&lt;/li&gt;
+&lt;li&gt;Each period the following events occur in this order:
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Incumbent firms draw a random sell-off cost and decide if they want to exit. If they stay, they make investment decisions.&lt;/li&gt;
+&lt;li&gt;Each potential entrant draws a random entry cost and makes entry decision&lt;/li&gt;
+&lt;li&gt;Incumbent firms compete in spot market and receive prices&lt;/li&gt;
+&lt;li&gt;Exiting firms exit and receive sell off values&lt;/li&gt;
+&lt;li&gt;Shocks are realized, each firm that stays transitions to a new state.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The equilibrium concept studied in this paper is a symmetric Markov perfect equilibrium. In this context a MPE is an investment/exit strategy for incumbents and an entry strategy for potential entrants such that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;given that all other incumbents follow the exit/investment strategy, each incumbent does not want to deviate from that strategy&lt;/li&gt;
+&lt;li&gt;For all states with a positive number of entrants, the cutoff entry value is equal to the expected discounted value of profits of entering the industry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;computation&#34;&gt;Computation&lt;/h2&gt;
+&lt;h3 id=&#34;naive-algorithm&#34;&gt;Naive algorithm&lt;/h3&gt;
+&lt;p&gt;To understand the contribution of this paper, it is helpful to have a basic understanding of a naive &amp;quot;brute force&amp;quot; algorithm.&lt;/p&gt;
+&lt;p&gt;The naive algorithm presented here is iterating on a best response operator and proceeds as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choose some initial investment, exit, and entry policy&lt;/li&gt;
+&lt;li&gt;Repeat the following until the policies are close enough:
+&lt;ul&gt;
+&lt;li&gt;Taking that N-1 players use the current guess for the policy, compute a best response for one agent. To do this you can apply standard dynamic programming algorithms&lt;/li&gt;
+&lt;li&gt;Compute some notion of a norm between the best response and the current guess for the policy&lt;/li&gt;
+&lt;li&gt;Set the current guess equal to the best response and continue if needed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This algorithm is robust, but has one major drawback: the curse of dimensionality. For in a model with 20 incumbents and 20 individual states, there are over a thousand billion states that must be iterated over when computing the best response.&lt;/p&gt;
+&lt;h3 id=&#34;approximate-dynamic-programming-algorithm&#34;&gt;Approximate dynamic programming algorithm&lt;/h3&gt;
+&lt;p&gt;The authors of this paper make 4 modifications to the naive algorithm:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;They form the linear program version of the dynamic programming problem to solve for the best response&lt;/li&gt;
+&lt;li&gt;They apply approximate linear programming approach of de Farias and van Roy to reduce the number of variables the solver must find&lt;/li&gt;
+&lt;li&gt;They use constraint sampling to only enforce a subset of the constraints of the linear program&lt;/li&gt;
+&lt;li&gt;They choose basis functions that are especially well suited to their problem&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;The authors do a few numerical experiments. The experiments all revolve around solving for the MPE exactly or approximately and then computing implied long run aggregates, such as average producer and consumer surplus, average share of ith largest firm, and average investment.&lt;/p&gt;
+&lt;h4 id=&#34;exercise-1-small-model-exact-comparison&#34;&gt;Exercise 1: small model, exact comparison&lt;/h4&gt;
+&lt;p&gt;For a relatively small version of the model (number of incumbents low), they are able to apply the naive algorithm and compute the true MPE. They also solve the model using their proposed algorithm and show that the aggregates are always within 8% of the true values, typically within 2%.&lt;/p&gt;
+&lt;p&gt;Runtime for their algorithm is on the order of minutes in each case. With a max of 3 incumbents, runtime for the naive algorithm is on the order of seconds. When the max number of incumbents is 5, the naive algorithm takes a few hours.&lt;/p&gt;
+&lt;h4 id=&#34;exercise-2-large-model-compare-oe&#34;&gt;Exercise 2: large model, compare OE&lt;/h4&gt;
+&lt;p&gt;They also run a similar experiment for a much larger model where they compare a current state of the art algorithm to their proposed algorithm.&lt;/p&gt;
+&lt;p&gt;They find that the aggregates are always within 13% of one another, but often within 5%.&lt;/p&gt;
+&lt;p&gt;As the state of the art is also an approximation, this doesn&amp;rsquo;t say much more than that both algorithms appear to approximate a similar thing.&lt;/p&gt;
+&lt;p&gt;They comment that the runtime for a version of the model with 20 incumbents is a couple of hours. Unfortunately they don&amp;rsquo;t elaborate on the difference in runtime between the algorithms.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Timoshenko (2015) (Learning versus sunk costs explanations of export persistence)</title>
+      <link>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-learning-versus-sunk-costs-explanations-of-export-persistence/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-learning-versus-sunk-costs-explanations-of-export-persistence/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This is a &lt;em&gt;mostly&lt;/em&gt; empirical paper that tries to decompose exporter persistence into sunk cost and learning components.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;Let firms be indexed by &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;. Firms have two state variables: productivity &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;, &lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; that follows an AR(1) process and export experience &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;, &lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;. In &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;, &lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; is the number of consecutive periods a firm has exported coming into period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Without microfoudations, Timoshenko assumes that per-period sales are the Melitz result, multiplied by a function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; of export experience:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;$S(z, A) = g(A) E P^{\sigma-1} \left( \frac{\sigma}{\sigma-1} \frac{\tau w}{\exp(z)} \right)^{1-\sigma}$&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If a firm chooses to export, profits are given by &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;π&lt;/em&gt;(&lt;em&gt;z&lt;/em&gt;, &lt;em&gt;A&lt;/em&gt;)=&lt;em&gt;S&lt;/em&gt;(&lt;em&gt;z&lt;/em&gt;, &lt;em&gt;A&lt;/em&gt;)/&lt;em&gt;σ&lt;/em&gt;&lt;/span&gt; less a sunk market-entry cost if &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt; = 0&lt;/span&gt;. If a firm does not export, period profits are 0.&lt;/p&gt;
+&lt;p&gt;Timoshenko assumes that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;(&lt;em&gt;A&lt;/em&gt;)&lt;/span&gt; is increasing in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt;. She calls this the age-dependence (or learning) assumption and uses it to get empirical results later on.&lt;/p&gt;
+&lt;p&gt;Export decision problem has a policy rule characterized by a pair of cutoff productivities &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sub&gt; &amp;gt; &lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;: a exit threshold &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;A&lt;/em&gt;)&lt;/span&gt; and an entry threshold &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;. Firms enter when they get a productivity draw above &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;. They continue to export until productivity falls below &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;A&lt;/em&gt;)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;A&lt;/em&gt;)&lt;/span&gt; is a function of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; because there is a hysteresis effect caused by &lt;span class=&#34;math inline&#34;&gt;$\frac{\partial g(A)}{\partial A} &amp;gt; 0$&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sub&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; is not a function of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt;, because by definition of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; we have &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt; = 0&lt;/span&gt; for all firms considering entry.&lt;/p&gt;
+&lt;h2 id=&#34;empirics&#34;&gt;Empirics&lt;/h2&gt;
+&lt;p&gt;Timoshenko then does some empirical work to try to tease out the importance of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; function on export sales and participation. Because there are sunk export costs in the model, she claims that considering both &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; and sunk costs isolates all learning effects into coefficients for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;To do this she starts from her reduced form theoretical model to build an empirical model. She controls for firm characteristics like location, domestic sales, investment, labor and materials expenditures, capital stock, wage rate, productivity, etc. She also builds in plant specific random effects. The result is an system of estimable equations that effectively regress the export decision rule on firm characteristics, exporter age dummies, and other controls.&lt;/p&gt;
+&lt;h3 id=&#34;aside&#34;&gt;Aside&lt;/h3&gt;
+&lt;p&gt;I don&amp;rsquo;t necessarily agree with her main claim. Without micro-foundations, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; doesn&amp;rsquo;t say anything about learning specifically. As it is written &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; is a simply a mechanism that causes sales and profits to increase with exporter age. This could be learning, more efficient production, more efficient transporting of goods, exogenous rise in foreign demand, market penetration/firm reputation in foreign market, etc. You might make an argument that the efficiency angles are a subset of learning: firms are &lt;em&gt;learning&lt;/em&gt; to be more efficient, but I believe separating different channels of learning is important.&lt;/p&gt;
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;Using plant level data on Columbian firms in the 1980&amp;rsquo;s Timoshenko finds evidence that supports her age-dependence hypothesis. The findings are robust across industries. The punchline is that about &amp;frac12; of the value of the state dependence parameter is attributed to sunk costs and about &amp;frac12; is attributed to age-dependence. By state dependence I mean the impact of yesterday&amp;rsquo;s export status on today&amp;rsquo;s export decision.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Timoshenko (2015) (Product switching in a model of learning)</title>
@@ -771,10 +912,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;p&gt;To close the economy, we also must consider a free entry condition. This condition says that the average value of entering net of entry costs must be zero.&lt;/p&gt;
 &lt;h4 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h4&gt;
 &lt;p&gt;There exists a unique equilibrium in this model in which aggregate variables are constant across time. This equilibrium can be understood by a single figure:&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://srg.spencerlyon.com/Users/sglyon/Research/SargentReadingGroup/images/melitz_eqm.png&#34; alt=&#34;Melitz equilibrium&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Melitz equilibrium&lt;/p&gt;
-&lt;/div&gt;
+&lt;!-- ![Melitz equilibrium](/Users/sglyon/Research/SargentReadingGroup/images/melitz_eqm.png) --&gt;
 &lt;p&gt;Consider &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt; on the horizontal axis and firm profits on the vertical axis. Then we put two lines in this space:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;The &amp;quot;zero profit cutoff&amp;quot;, which characterizes average profits as a function of the cutoff productivity. This will be a downward sloping line&lt;/li&gt;
@@ -868,206 +1006,9 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;The concavity of preferences amplifies the response of employment: the model with CRRA parameter set to &lt;span class=&#34;math inline&#34;&gt;5&lt;/span&gt; has an employment response 6 times larger than the model with linear preferences&lt;/li&gt;
 &lt;li&gt;On the job human capital accumulation makes the response to employment larger and more persistent&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Kehoe2015&#34;&gt;
-&lt;p&gt;Kehoe, Patrick, Virgiliu Midrigan, and Elena Pastorino. 2015. “Discount Rates , Learning by Doing and Employment Fluctuations,” no. October.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Betts2008 (Real exchange rate movements and the relative price of non-traded goods)</title>
-      <link>http://srg.spencerlyon.com/2015/11/24/betts2008-real-exchange-rate-movements-and-the-relative-price-of-non-traded-goods/</link>
-      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/11/24/betts2008-real-exchange-rate-movements-and-the-relative-price-of-non-traded-goods/</guid>
-      <description>&lt;p&gt;&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
-&lt;p&gt;An empirical paper that examines the relationship between the real exchange rate and the relative price of non-traded vs traded goods.&lt;/p&gt;
-&lt;h2 id=&#34;modes-of-thought&#34;&gt;Modes of thought&lt;/h2&gt;
-&lt;p&gt;At the time of writing the paper, there were two main modes of thought for thinking about real exchange rate movements&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Traditional view: all movements in bilateral real exchange rate between two countries are due to fluctuations in the bilateral relative price of non-traded to traded goods.&lt;/li&gt;
-&lt;li&gt;New Open Economy Macroeconomics view (the &amp;quot;new view&amp;quot;): models that segment traded goods, allowing for deviations in the law of one price and have nominal rigidities that support these deviations. This means that purely monetary shocks to nominal exchange rates have persistent impact on prices and thus the real exchange rate. There is no distinction between traded and non-traded goods.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;An influential 1999 paper by Engel found evidence that we should abandon the traditional view and ignore the distinction between traded and non-traded goods.&lt;/p&gt;
-&lt;p&gt;This paper finds empirical evidence that suggests a substantial link between real exchange rates and relative prices of non-traded to traded goods.&lt;/p&gt;
-&lt;h2 id=&#34;key-equation&#34;&gt;Key equation&lt;/h2&gt;
-&lt;p&gt;The real exchange rate can be written as the product of a nominal exchange rate and a ratio of price indices.&lt;/p&gt;
-&lt;p&gt;If we multiply and divide by a price index for only traded goods for each country, we can decompose this product into two pieces:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nominal exchange rate times relative price of traded goods &amp;ndash; we call this the bilateral real exchange rate of traded goods&lt;/li&gt;
-&lt;li&gt;Overall price index ratio divided by traded good price index ratio &amp;ndash; this is a ratio of one country relative price indices. This is the price ratio of non-traded vs traded goods mentioned earlier.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-&lt;p&gt;The authors use data on 50 countries: all the countries they could find quarterly real exchange rate and price data for over the period 1980 through 2005.&lt;/p&gt;
-&lt;p&gt;The list accounts for 83.5% of all world trade in that time span. The main country missing from the list is China, for which the authors only had access to yearly data.&lt;/p&gt;
-&lt;h2 id=&#34;qualitative-description-of-main-findings&#34;&gt;Qualitative description of main findings&lt;/h2&gt;
-&lt;p&gt;The authors report 8 main findings:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;The correlation between real exchange rate and the price ratio is on average just above 0.5&lt;/li&gt;
-&lt;li&gt;The volatility of relative prices is about 2/3 the volatility of the real exchange rate&lt;/li&gt;
-&lt;li&gt;The relative price accounts for about 1/3 of the variance in the real exchange rate&lt;/li&gt;
-&lt;li&gt;The relationship between the price ratio and real exchange rates is strengthened as the trade intensity between countries increases&lt;/li&gt;
-&lt;li&gt;The relationship is stronger when the variance of the real exchange rate between two countries is low&lt;/li&gt;
-&lt;li&gt;The strength of the relationship does not depend systematically on whether the US is the pair of countries being studied&lt;/li&gt;
-&lt;li&gt;The relationship is not biased upwards when the authors account for high/low inflation pairings or rich/poor country pairings (in contrast to common beliefs at the time)&lt;/li&gt;
-&lt;li&gt;The &lt;em&gt;anaomaly&lt;/em&gt;: the relationship between the price ratio and the real exchange rate between EU/NAFTA and EU/US pairs is extremely weak compared to pairing from any other trade blocs.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;The authors document a string and robust statistical relationship between the real exchange rate and the relative price of non-traded to traded goods.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Betts2008&#34;&gt;
-&lt;p&gt;Betts, Caroline M, and Timothy J Kehoe. 2008. “Real exchange rate movements and the relative price of non-traded goods.” &lt;em&gt;NBER Working Paper&lt;/em&gt;, no. 14437. &lt;a href=&#34;http://www.nber.org/papers/w14437&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://www.nber.org/papers/w14437&#34;&gt;http://www.nber.org/papers/w14437&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ruhl2015 (New Exporter Dynamics)</title>
-      <link>http://srg.spencerlyon.com/2015/11/17/ruhl2015-new-exporter-dynamics/</link>
-      <pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/11/17/ruhl2015-new-exporter-dynamics/</guid>
-      <description>&lt;p&gt;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;The authors did some empirical work with data on Columbian firms to arrive at two stlyized facts about new exporters (firms who recently began exporting):&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;On average, entrant exporters are smaller than long-time exporters&lt;/li&gt;
-&lt;li&gt;The probability of exiting the export market falls with tenure&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The goal of the paper is to write a model that can match the data on these two dimensions.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;Partial equilibrium version of the model I presented last week. There will be three varaints:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;A baseline model similar to Melitz&lt;/li&gt;
-&lt;li&gt;A model that perturbs the baseline by making foreign demand grow with tenure in export market. This is called the delayed demand model&lt;/li&gt;
-&lt;li&gt;A model that perturbs the delayed demand model by making the fixed entry cost stochastic, rather than constant&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;baseline-model&#34;&gt;Baseline model&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Domestic demand&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Representative consumer supplies labor inelastically and aggregates differentiated varieties of the consumption good using a CES technology.&lt;/li&gt;
-&lt;li&gt;The consumer maximizes the level aggregated consumption, subject to the budget constraint that the sum of price times variety is equal to total income&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Foreign demand&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The &amp;quot;rest of the world&amp;quot; is populated by another representative agent with the same preferences.&lt;/li&gt;
-&lt;li&gt;Only difference from domestic consumer is in demand for varieties, which differs with the exchange rate (varieties have different prices in different countries)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Plants&lt;/strong&gt; are indexed by the variety they produce and operate under monopolistic competition.&lt;/p&gt;
-&lt;p&gt;Plants operate a potentially DRS Cobg-Douglass production technology, with idiosyncratic TFP shocks.&lt;/p&gt;
-&lt;p&gt;Each period, each plant chooses domestic/foreign prices, domestic/foreign supply, input demand, and export status to maximize profits. Profits are the sum of revenues earned in both markets, less input costs.&lt;/p&gt;
-&lt;p&gt;The plant problem can be split into static and dynamic parts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Static problem:
-&lt;ul&gt;
-&lt;li&gt;Given export status, choose prices, production and factor demand&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Dynamic problem:
-&lt;ul&gt;
-&lt;li&gt;Sunk entry costs make the export entry decision dynamic&lt;/li&gt;
-&lt;li&gt;When a plant enters the export market he must pay a fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;An incumbent exporter that chooses to continue exporting pays fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt; &amp;lt; &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;The plant&amp;rsquo;s state variables are its productivity and the real exchange rate. Both are modeled as an AR(1) in logs with Gaussian innovations.&lt;/li&gt;
-&lt;li&gt;In this problem the firm makes a discrete decision regarding&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;p&gt;This model misses both empirical facts. In equilibrium, new exporters are too large relative to incumbents and probability of exit increases with time in export market.&lt;/p&gt;
-&lt;p&gt;The reason for this is that the discrete entry decision such that firms enter when either they have high productivity or face a favorable exchange rates. In short, the strongest, or largest, firms in the economy are the entrants. The size of these firms raises the initial export to sales ratio rise above the levels in the data.&lt;/p&gt;
-&lt;p&gt;Furthermore, the persistence of the process for both productivity and the exchange rate will cause profits to be front-loaded. As these state variables return to long run levels, firms choose to exit.&lt;/p&gt;
-&lt;p&gt;Another important point is that with front-loaded profits, the value function of the typical exporter is quite large. To match empirical moments on the entry rate, the entry cost must be very high.&lt;/p&gt;
-&lt;h2 id=&#34;extension-1-delayed-demand&#34;&gt;Extension 1: delayed demand&lt;/h2&gt;
-&lt;p&gt;The first extension to the baseline model is to make foreign demand grow slowly over time. This is done exogenously by causing foreign demand for each variety to rise with time in the export market.&lt;/p&gt;
-&lt;p&gt;This modeling assumption bakes in a smaller initial export to total sales ratio for entrant firms. This calibrated model matches the data on the export to sales ratio almost exactly, but still does very poorly at dealing addressing the inverted exit probability.&lt;/p&gt;
-&lt;h2 id=&#34;extension-2-delayed-demand-and-stochastic-entry-costs&#34;&gt;Extension 2: delayed demand and stochastic entry costs&lt;/h2&gt;
-&lt;p&gt;To get the model to match the other dimension of the data, the authors perturb the delayed demand model to allow some &amp;quot;bad&amp;quot; firms to enter. The mechanism that makes this happen is stochastic entry costs: in most periods the entry cost is positive, but in rare periods it is zero.&lt;/p&gt;
-&lt;p&gt;In the periods where entry costs are zero, some less productive firms who would not normally choose to enter the export market become exporters. When fixed costs are high again, they choose to exit.&lt;/p&gt;
-&lt;p&gt;The model with both extensions in place are able to match both stylized facts from the data that teh baseline model fails to produce.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Ruhl2015&#34;&gt;
-&lt;p&gt;Ruhl, Kim J, and J Willis. 2015. “New Exporter Dynamics,” no. November. doi:&lt;a href=&#34;https://doi.org/10.2139/ssrn.2531105&#34;&gt;10.2139/ssrn.2531105&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Alessandria2014 (Trade adjustment dynamics and the welfare gains from trade)</title>
-      <link>http://srg.spencerlyon.com/2015/11/10/alessandria2014-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</link>
-      <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/11/10/alessandria2014-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</guid>
-      <description>&lt;p&gt;&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;This is a general equilibrium trade model that focuses on producer export, entry, expansion, and exit. The structure of the model nests other standard models such as Krugman, Melitz and others.&lt;/p&gt;
-&lt;p&gt;In the model there are two symmetric countries. Within each country there are consumers, final goods producers, intermediate goods producers, and a government.&lt;/p&gt;
-&lt;h3 id=&#34;consumers&#34;&gt;Consumers&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A unit mass of identical consumers live in each country and inelastically supple one unit of labor&lt;/li&gt;
-&lt;li&gt;Choose sequences of capital, risk free one period bond holdings, and consumption to maximize expected present discounted value of CRRA utility over consumption.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;final-goods-producers&#34;&gt;Final Goods Producers&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The final goods producers combine home and foreign intermediate goods to produce a non-traded consumption good&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;intermediate-goods-producers&#34;&gt;Intermediate Goods Producers&lt;/h3&gt;
-&lt;p&gt;Intermediate goods producers are the most interesting agents in the economy. Each producer is characterized by three state variables: technology level (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;/span&gt;), iceberg costs (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ξ&lt;/em&gt;&lt;/span&gt;), and fixed costs (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;/span&gt;) and produces intermediate goods using capital, labor, and materials using a nested Cobb Douglass technology subject to TFP shocks.&lt;/p&gt;
-&lt;p&gt;The cost structure is discrete: fixed costs can be either low or high while iceberg costs can be one of three levels: low, high, or infinite.&lt;/p&gt;
-&lt;p&gt;A producer with infinite iceberg costs is a non-exporter. He can choose to pay no fixed cost and remain a non-exporter, or pay the high fixed cost and start the next period as an exporter with a high iceberg cost.&lt;/p&gt;
-&lt;p&gt;If a producer has either low or high iceberg costs, they can pay the low fixed cost to draw an iceberg cost for the next period. In the parameterization, the distribution is symmetric and places about 90% probability on staying with the same finite iceberg cost.&lt;/p&gt;
-&lt;p&gt;This structure nests other common models. If &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;L&lt;/em&gt;&lt;/sub&gt; &amp;lt; &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, then there is a sunk cost to being an exporter. If &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;L&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ξ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;L&lt;/em&gt;&lt;/sub&gt; = &lt;em&gt;ξ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; the export decision is static. If in addition the fixed costs are zero, then there is no export decision and the model is a generalized version of Krugman&amp;rsquo;s monopolistic competition.&lt;/p&gt;
-&lt;h3 id=&#34;entry&#34;&gt;Entry&lt;/h3&gt;
-&lt;p&gt;Entrants pay a fixed cost to set up shop and cannot export in their first period. In equilibrium there is a free entry condition that determines the measure of entrants.&lt;/p&gt;
-&lt;h3 id=&#34;aggregates&#34;&gt;Aggregates&lt;/h3&gt;
-&lt;p&gt;There is a government that collects export tariffs (calibrated to be 10%) and redistributes the proceeds lump sum to domestic consumers.&lt;/p&gt;
-&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
-&lt;h3 id=&#34;definition&#34;&gt;Definition&lt;/h3&gt;
-&lt;p&gt;An equilibrium is defined as allocations for consumers, intermediate good firms and final good firms in both countries as well as export decisions for intermediate good producers such that taking prices as given, the allocations are consistent with agent optimization, the free entry condition holds, market clearing and resource constraints hold.&lt;/p&gt;
-&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
-&lt;p&gt;Two main calibrations:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Benchmark. Some features
-&lt;ul&gt;
-&lt;li&gt;Low fixed cost for becoming exporter relatively small (3.7% of the cost to enter as new firm)&lt;/li&gt;
-&lt;li&gt;Profits are back loaded: new exporters expect to run losses for at least the first 3 years&lt;/li&gt;
-&lt;li&gt;Iceberg transition matrix for exports is symmetric and the Markov process is very persistent.&lt;/li&gt;
-&lt;li&gt;Older exporters are typically more efficient (low iceberg cost). This provides an incentive to remain an exporter (don&amp;rsquo;t want to start over at high iceberg again)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Sunk cost model
-&lt;ul&gt;
-&lt;li&gt;Restricting the iceberg costs to be the same results in a sunk cost model&lt;/li&gt;
-&lt;li&gt;Entry cost vs continuation cost higher than in benchmark model&lt;/li&gt;
-&lt;li&gt;Profits are front loaded: exports pay a large cost up front, but expect to earn profits in their first period of exporting&lt;/li&gt;
-&lt;li&gt;Incentive to remain an exporter comes through a different channel: firms don&amp;rsquo;t want to pay large fixed cost again.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;experiments&#34;&gt;Experiments&lt;/h4&gt;
-&lt;p&gt;The authors perform a number of experiments with different calibrations of the model.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Global Trade Liberalization:&lt;/strong&gt; The first experiment is that tariffs are unexpectedly reduced to zero globally. The key features of the response to the new steady state are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Trade grows slowly and smoothly to a higher SS&lt;/li&gt;
-&lt;li&gt;Consumption and output rise sharply and immediately, but follow a hump shaped path (overshoot new SS in early periods following policy change)&lt;/li&gt;
-&lt;li&gt;Entry rate declines&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They did the same experiment in the sunk cost model. Differing results were:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Transition is much faster (after 3 periods trade growth 55% percent of long run value in benchmark model, but 90% in sunk cost model)&lt;/li&gt;
-&lt;li&gt;Smaller welfare gain from policy change. Driven by stronger over shooting in consumption in benchmark model, which in turn is a driven by the fact that in sunk cost model new exporters export too large a share of aggregate exports. In the benchmark model new traders are less efficient, so they make up a smaller share of total trade&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Also did a version where fixed costs are zero and iceberg costs constant (no export decision, no cost model). Differences in response to regime change are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Smaller welfare gain (relative to benchmark model) because consumption grows smoothly and doesn&amp;rsquo;t overshoot.&lt;/li&gt;
-&lt;li&gt;This happens because The model without trade costs experiences smaller changes on the extensive margin than the model with costs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;references&#34; class=&#34;unnumbered&#34;&gt;References&lt;/h2&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Alessandria2014&#34;&gt;
-&lt;p&gt;Alessandria, George, Horag Choi, and Kim J Ruhl. 2014. “Trade Adjustment Dynamics and the Welfare Gains from Trade.” &lt;em&gt;NBER Working Paper&lt;/em&gt; November (20663). &lt;a href=&#34;http://papers.ssrn.com/sol3/papers.cfm?abstract{\_}id=2428709&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;http://papers.ssrn.com/sol3/papers.cfm?abstract{_}id=2428709&#34;&gt;http://papers.ssrn.com/sol3/papers.cfm?abstract{_}id=2428709&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

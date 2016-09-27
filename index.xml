@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sargent Reading Group Notes</title>
-    <link>http://srg.spencerlyon.com/</link>
+    <link>http://srg.spencerlyon.com/index.xml</link>
     <description>Recent content on Sargent Reading Group Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
@@ -18,7 +18,7 @@
       <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/</guid>
-      <description>&lt;p&gt;&lt;p&gt;An economist, a physicist, and two computer scientists walk into a bar&amp;hellip;&lt;/p&gt;
+      <description>&lt;p&gt;An economist, a physicist, and two computer scientists walk into a bar...&lt;/p&gt;
 &lt;p&gt;This is a computational paper that describes and algorithm featuring an adaptive sparse grid and discuss implementation details on a sophisticated HPC cluster.&lt;/p&gt;
 &lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
 &lt;p&gt;They provide examples of their algorithm and computation using a standard international real business cycle model. This is not the interesting part of the paper, so I will not focus on it here.&lt;/p&gt;
@@ -35,7 +35,7 @@
 &lt;ul&gt;
 &lt;li&gt;Start with the coarsest refinement level &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;l&lt;/em&gt; = 1&lt;/span&gt; for all dimensions. Call the grid G. Choose a maximum refinement level&lt;/li&gt;
 &lt;li&gt;Also Initialize &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;e&lt;/em&gt;&lt;em&gt;w&lt;/em&gt;&lt;/span&gt; to be the empty set&lt;/li&gt;
-&lt;li&gt;While G and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt; are not the same (NOTE: at end of this loop explain the while goes until we are at Lmax or until we don&amp;rsquo;t add refinement points)
+&lt;li&gt;While G and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt; are not the same (NOTE: at end of this loop explain the while goes until we are at Lmax or until we don&#39;t add refinement points)
 &lt;ul&gt;
 &lt;li&gt;For each grid point in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt; \ &lt;em&gt;G&lt;/em&gt;&lt;sub&gt;&lt;em&gt;o&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;l&lt;/em&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt;
 &lt;ul&gt;
@@ -53,9 +53,6 @@
 &lt;p&gt;On just one node of the super-computer, they were able to achieve a 30x speedup for their code by utilizing a GPU and multi-threaded parallelism.&lt;/p&gt;
 &lt;p&gt;They were then able to scale that code from a single node to up to 2048 nodes to achieve a speedup on the order of 10,000x.&lt;/p&gt;
 &lt;p&gt;They compare their algorithm to a non-adaptive sparse grid and find that the log 10 average Euler errors from their algorithm are smaller on average than the sparse grid case, but run time is up 2 to 3 orders of magnitude smaller.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -65,7 +62,7 @@
       <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2016/05/03/farias-saure-weintraub-2012-an-approximate-dynamic-programming-approach-to-solving-dynamic-oligopoly-models/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper builds on the approximate linear programming work of Farias and van Roy that I presented a few weeks ago and applies a version of that technique to a dynamic oligopoly model.&lt;/p&gt;
+      <description>&lt;p&gt;This paper builds on the approximate linear programming work of Farias and van Roy that I presented a few weeks ago and applies a version of that technique to a dynamic oligopoly model.&lt;/p&gt;
 &lt;p&gt;The actual model is not novel to this research, so I will spend most of my time talking about the algorithm.&lt;/p&gt;
 &lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
 &lt;ul&gt;
@@ -118,11 +115,8 @@
 &lt;h4 id=&#34;exercise-2-large-model-compare-oe&#34;&gt;Exercise 2: large model, compare OE&lt;/h4&gt;
 &lt;p&gt;They also run a similar experiment for a much larger model where they compare a current state of the art algorithm to their proposed algorithm.&lt;/p&gt;
 &lt;p&gt;They find that the aggregates are always within 13% of one another, but often within 5%.&lt;/p&gt;
-&lt;p&gt;As the state of the art is also an approximation, this doesn&amp;rsquo;t say much more than that both algorithms appear to approximate a similar thing.&lt;/p&gt;
-&lt;p&gt;They comment that the runtime for a version of the model with 20 incumbents is a couple of hours. Unfortunately they don&amp;rsquo;t elaborate on the difference in runtime between the algorithms.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;As the state of the art is also an approximation, this doesn&#39;t say much more than that both algorithms appear to approximate a similar thing.&lt;/p&gt;
+&lt;p&gt;They comment that the runtime for a version of the model with 20 incumbents is a couple of hours. Unfortunately they don&#39;t elaborate on the difference in runtime between the algorithms.&lt;/p&gt;
 </description>
     </item>
     
@@ -159,7 +153,7 @@
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-product-switching-in-a-model-of-learning/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper documents facts about Brazilian manufacturing firms that switch their bundle of exported products over time. The author then builds a Melitz-style trade model that attempts to explain these facts.&lt;/p&gt;
+      <description>&lt;p&gt;This paper documents facts about Brazilian manufacturing firms that switch their bundle of exported products over time. The author then builds a Melitz-style trade model that attempts to explain these facts.&lt;/p&gt;
 &lt;h2 id=&#34;empirics&#34;&gt;Empirics&lt;/h2&gt;
 &lt;p&gt;The author uses data product level data on Brazilian manufacturing firms to document several stylized facts.&lt;/p&gt;
 &lt;ul&gt;
@@ -168,7 +162,7 @@
 &lt;li&gt;The proportion of exporters who do product switching falls with age in export market&lt;/li&gt;
 &lt;li&gt;The frequency with which exporters engage in product switching falls with age&lt;/li&gt;
 &lt;li&gt;The exit rate of product switching firms is lower than aggregate exit rate for all ages of exporter.&lt;/li&gt;
-&lt;li&gt;Conditional on an exporter adding new products, over &amp;frac12; of exporter products are added products&lt;/li&gt;
+&lt;li&gt;Conditional on an exporter adding new products, over 1/2 of exporter products are added products&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
 &lt;p&gt;The model in this paper extends Melitz (2003) in two ways:&lt;/p&gt;
@@ -176,7 +170,7 @@
 &lt;li&gt;Consumers have firm specific demand shocks in their consumption aggregator&lt;/li&gt;
 &lt;li&gt;Firms of a particular brand produce a finite, discrete number of products&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Here&amp;rsquo;s the main points of the model:&lt;/p&gt;
+&lt;p&gt;Here&#39;s the main points of the model:&lt;/p&gt;
 &lt;h3 id=&#34;consumers&#34;&gt;Consumers&lt;/h3&gt;
 &lt;p&gt;In each of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries, there is a representative consumer that has log preferences over an aggregate consumption good.&lt;/p&gt;
 &lt;p&gt;The aggregate good is a CES aggregated bundle of firm goods from all &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries. Each firm good is hit with a time-varying, firm-and-import-country-specific demand shock.&lt;/p&gt;
@@ -184,13 +178,13 @@
 &lt;p&gt;Consumers inelastically supply a country specific fixed labor each period and earn labor income from firms. They also own firms in their country and retain all profits.&lt;/p&gt;
 &lt;p&gt;Consumers take prices and wages as given maximize the utility of consuming the aggregate good subject to total expenditures being equal to labor income plus firm profits.&lt;/p&gt;
 &lt;p&gt;The output of the consumer problem is a demand function for each product from each firm in each country.&lt;/p&gt;
-&lt;p&gt;This demand function is a function of the consumer&amp;rsquo;s income, the current demand shock for the firm and prices. Crucially, it can be inverted to give prices as a function of quantity and the demand shock.&lt;/p&gt;
+&lt;p&gt;This demand function is a function of the consumer&#39;s income, the current demand shock for the firm and prices. Crucially, it can be inverted to give prices as a function of quantity and the demand shock.&lt;/p&gt;
 &lt;h3 id=&#34;firms&#34;&gt;Firms&lt;/h3&gt;
-&lt;p&gt;Firm&amp;rsquo;s differ in their ability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt; to produce all their products. This ability or productivity is constant over time and across products and is drawn from a Pareto distribution.&lt;/p&gt;
-&lt;p&gt;The demand shock in the consumer&amp;rsquo;s CES aggregator is the sum of a constant firm specific component and a mean zero normally distributed iid shock drawn each period. The firm specific constant component is drawn from a normal distribution with known (to the firm) mean and variance. The prior beliefs of every firm are that the firm specific demand shock is drawn from its true distribution. Because signals and priors are normal, posterior beliefs are also normal and sufficient statistics are the mean and variance of the firm specific component.&lt;/p&gt;
-&lt;p&gt;Firms choose the quantity of each product to be sold in each country, &lt;em&gt;before&lt;/em&gt; seeing the value of the demand shock for their firm in a given period. Consumers&amp;rsquo; see this quantity and use their optimality conditions to declare the price they are willing to pay for the good. The firm observes this prices, which can be manipulated to reveal the current level of the demand shock. This acts as a signal about the firm specific constant component of the demand shock. Firms are Bayesian and update their beliefs about this component each period after observing the demand shock.&lt;/p&gt;
+&lt;p&gt;Firm&#39;s differ in their ability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt; to produce all their products. This ability or productivity is constant over time and across products and is drawn from a Pareto distribution.&lt;/p&gt;
+&lt;p&gt;The demand shock in the consumer&#39;s CES aggregator is the sum of a constant firm specific component and a mean zero normally distributed iid shock drawn each period. The firm specific constant component is drawn from a normal distribution with known (to the firm) mean and variance. The prior beliefs of every firm are that the firm specific demand shock is drawn from its true distribution. Because signals and priors are normal, posterior beliefs are also normal and sufficient statistics are the mean and variance of the firm specific component.&lt;/p&gt;
+&lt;p&gt;Firms choose the quantity of each product to be sold in each country, &lt;em&gt;before&lt;/em&gt; seeing the value of the demand shock for their firm in a given period. Consumers&#39; see this quantity and use their optimality conditions to declare the price they are willing to pay for the good. The firm observes this prices, which can be manipulated to reveal the current level of the demand shock. This acts as a signal about the firm specific constant component of the demand shock. Firms are Bayesian and update their beliefs about this component each period after observing the demand shock.&lt;/p&gt;
 &lt;p&gt;Firms face fixed per-period cost of selling into each country. These costs increase with the number of products produced.&lt;/p&gt;
-&lt;p&gt;Conditional on entering into a specific market, each period firms choose the number of products to be sold into the market as well as a quantity of each of these goods to maximize the expected value of their one period profits. Firm&amp;rsquo;s operate in monopolistically competitive markets, so they understand how their quantity decision will impact the market clearing price. However, they do not know the current value of the demand shock, so they form expectations of the price using their current beliefs about the firm specific demand shock. The output of this problem is a quantity for each product as well as an expected profit for each profit.&lt;/p&gt;
+&lt;p&gt;Conditional on entering into a specific market, each period firms choose the number of products to be sold into the market as well as a quantity of each of these goods to maximize the expected value of their one period profits. Firm&#39;s operate in monopolistically competitive markets, so they understand how their quantity decision will impact the market clearing price. However, they do not know the current value of the demand shock, so they form expectations of the price using their current beliefs about the firm specific demand shock. The output of this problem is a quantity for each product as well as an expected profit for each profit.&lt;/p&gt;
 &lt;p&gt;Firms continue to add products until the expected profits from adding more varieties (taking into account the fixed costs) are negative.&lt;/p&gt;
 &lt;p&gt;Finally, firms face an entry and exit decision. A firm with productivity &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt; has as state variables the sufficient statistics for their beliefs regarding the firm specific demand shock. They then choose whether or not to enter each market using the expected profit functions we just discussed.&lt;/p&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
@@ -200,13 +194,10 @@
 &lt;li&gt;The quantity adjustment in response to seeing another signal about the demand shock is positive when the posterior mean is sufficiently high and negative when it is lower. The cutoff is a function of the prior mean and variance and the variance of the signal.&lt;/li&gt;
 &lt;li&gt;Profits scale with quantities, so many high signals expands quantities and profits, and causes firms to add new products. A sequence of low signals has the opposite effect: lower quantities and profits leading to dropping products.&lt;/li&gt;
 &lt;li&gt;Firms posterior precision increases deterministically, meaning asymptotically firms perfectly learn the firm specific component of the demand shocks. This generates age effects in quantity decisions and profits, which in turn generate age effects in adding and dropping products that match the data.&lt;/li&gt;
-&lt;li&gt;If trade costs are lowered, the quantity of all current products is expanded. This is &lt;em&gt;not&lt;/em&gt; supported empirically. In the data, lower trade costs tend to have firms specialize more &amp;ndash; meaning they increase qualities of their most profitable products and scale back on quantities of marginal products.&lt;/li&gt;
+&lt;li&gt;If trade costs are lowered, the quantity of all current products is expanded. This is &lt;em&gt;not&lt;/em&gt; supported empirically. In the data, lower trade costs tend to have firms specialize more -- meaning they increase qualities of their most profitable products and scale back on quantities of marginal products.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;quantitative-results&#34;&gt;Quantitative results&lt;/h3&gt;
 &lt;p&gt;A brief quantitative section is given. The main message is that the model generates more modest values of the number of exporters that engage in product switching, the age dependent survival rate of exporters, and the age dependence of product switching. This suggests that the learning mechanism in the model is significant and supported by the data, but not sufficient to fully explain product switching behavior of Brazilian firms.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -278,10 +269,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. --&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The key insight the authors have that make this algorithm tractable is the following:&lt;/p&gt;
-&lt;p&gt;Actors have to update a small number of parameters compared to the number of states. So the critic doesn&amp;rsquo;t need to form an approximation over the entire domain of Q, but rather a special projection of the Q onto the space spanned by the actor&amp;rsquo;s parameter vector.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Actors have to update a small number of parameters compared to the number of states. So the critic doesn&amp;rsquo;t need to form an approximation over the entire domain of Q, but rather a special projection of the Q onto the space spanned by the actor&amp;rsquo;s parameter vector.&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -291,57 +279,54 @@ strategy, whereas a randomized stationary is like a mixed strategy. --&gt;
       <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2016/04/12/busoniu-deschutter-babuska2010-approximate-dynamic-programming-and-reinforcement-learning/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper provides an overview of various solution concepts that belong to the families of approximate dynamic programming and reinforcement learning.&lt;/p&gt;
+      <description>&lt;p&gt;This paper provides an overview of various solution concepts that belong to the families of approximate dynamic programming and reinforcement learning.&lt;/p&gt;
 &lt;p&gt;I will discuss an alternative representation of a dynamic programming that is often used in this literature and provide an overview of some solution methods that are common with this representation.&lt;/p&gt;
 &lt;h2 id=&#34;basics-q-functions&#34;&gt;Basics: Q-functions&lt;/h2&gt;
 &lt;p&gt;In economics, the standard representation of a dynamic programming problem is to define a recursive function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; that maps from a state space into the real line. Today I will call &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; function. The &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; function describes the value of being in a particular state.&lt;/p&gt;
 &lt;p&gt;Consider an alternative function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; that maps from the state-action space, into the real line. I will call this the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function. The &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function describes the value of being in a particular state and choosing a particular action.&lt;/p&gt;
-&lt;p&gt;As we do with the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;-function, we can express the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function recursively using Bellman&amp;rsquo;s principle of optimality. The recursive form of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function is&lt;/p&gt;
+&lt;p&gt;As we do with the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;-function, we can express the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function recursively using Bellman&#39;s principle of optimality. The recursive form of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function is&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Q&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;, &lt;em&gt;x&lt;/em&gt;)=&lt;em&gt;E&lt;/em&gt;&lt;sub&gt;&lt;em&gt;s&lt;/em&gt;′∼&lt;em&gt;f&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;, &lt;em&gt;x&lt;/em&gt;, ⋅)&lt;/sub&gt;[&lt;em&gt;r&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;,&lt;em&gt;x&lt;/em&gt;,&lt;em&gt;s&lt;/em&gt;′)+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;em&gt;Q&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;′,&lt;em&gt;x&lt;/em&gt;′)]&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;We can make some basic comparisons between &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; by studying their recursive representations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Parameteric representations (i.e. splines or other interpolands) of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; are more expensive than representations of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; is defined over the state-action space instead of just the state space.&lt;/li&gt;
 &lt;li&gt;Computing the maximization on the right hand side of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; is easier than the max on the RHS of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;. This is because the expectation is &lt;em&gt;outside&lt;/em&gt; the max in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;, but inside the max for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The Bellman operator associated with the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function is a contraction mapping under the same conditions that Bellman operator associated &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; is a contraction mapping. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;&amp;rsquo;s operator is a contraction mapping, the operators&amp;rsquo; unique fixed point &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt; is the optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function.&lt;/p&gt;
-&lt;p&gt;The optimal policy can be easily computed from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;: &lt;span class=&#34;math inline&#34;&gt;$h^* (s) = \underset{x}{\text{argmax}} Q^* (s, x)$&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;-function can be obtained from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;: &lt;span class=&#34;math inline&#34;&gt;$V^&lt;/em&gt; = \underset{x}{\max} Q^* (s, x)$&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Bellman operator associated with the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function is a contraction mapping under the same conditions that Bellman operator associated &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; is a contraction mapping. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;&#39;s operator is a contraction mapping, the operators&#39; unique fixed point &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt; is the optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function.&lt;/p&gt;
+&lt;p&gt;The optimal policy can be easily computed from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;: &lt;span class=&#34;math inline&#34;&gt;$h^* (s) = \underset{x}{\text{argmax}} Q^* (s, x)$&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;-function can be obtained from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;: &lt;span class=&#34;math inline&#34;&gt;$V^* = \underset{x}{\max} Q^* (s, x)$&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;computing-q&#34;&gt;Computing Q&lt;/h2&gt;
-&lt;p&gt;We see that if we can find &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;, we can get the value and policy functions we care about as economists. I want to briefly describe a few flavors of algorithms that can be used to compute &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We see that if we can find &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;, we can get the value and policy functions we care about as economists. I want to briefly describe a few flavors of algorithms that can be used to compute &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;q-learning&#34;&gt;Q-learning&lt;/h3&gt;
-&lt;p&gt;Q-learning is classified as an online, model-free algorithm. This means you can update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt; whenever new data becomes available. Economists would classify this as a simulation algorithm.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s the basics:&lt;/p&gt;
+&lt;p&gt;Q-learning is classified as an online, model-free algorithm. This means you can update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt; whenever new data becomes available. Economists would classify this as a simulation algorithm.&lt;/p&gt;
+&lt;p&gt;Here&#39;s the basics:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Start with any initial guess for the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function&lt;/li&gt;
 &lt;li&gt;Then on each iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;:
 &lt;ul&gt;
-&lt;li&gt;Given the state action pair on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;th iteration (&lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;), the observation of the period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and the state iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&amp;hellip; update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; using: &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)=(1 − &lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;,&lt;em&gt;u&lt;/em&gt;′))&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Given the state action pair on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;th iteration (&lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;), the observation of the period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and the state iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;...&lt;/li&gt;
+&lt;li&gt;... update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; using: &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)=(1 − &lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;,&lt;em&gt;u&lt;/em&gt;′))&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Notice that the right hand side is a convex combination of the current guess of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function and the right hand side of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function operator. This is very similar to standard value function iteration, but has the main advantage of not having any expectations.&lt;/p&gt;
 &lt;p&gt;This can be applied to any model for which you have a transition function that defines the state today as a function of the state and action yesterday and a random innovation from a distribution you can sample. Many economic models fit into this framework.&lt;/p&gt;
-&lt;p&gt;When the action space is continuous, you need do a modest alteration of the basic algorithm to ensure asymptotic convergence to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;When the action space is continuous, you need do a modest alteration of the basic algorithm to ensure asymptotic convergence to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;approximate-q-iteration&#34;&gt;Approximate Q-iteration&lt;/h3&gt;
 &lt;p&gt;One strength of this literature is the number of different ways of reducing the dimensionality of a dynamic programming problem.&lt;/p&gt;
 &lt;p&gt;Approximate Q-iteration is one example of this type of algorithm. Here instead of operating on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function directly, we instead operate on a parameterized approximation of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function.&lt;/p&gt;
 &lt;p&gt;This can be done using linear dependence on coefficients (splines, Chebyshev polynomials) or non-linear parametric approximations (neural nets).&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ll focus on the linearly parametrized version here. We will form an approximation &lt;span class=&#34;math inline&#34;&gt;$\hat{Q}(s, x) = \sum_{l=1}^n \phi_l(s, x) \theta&lt;em&gt;l = \Phi\theta$&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;We&#39;ll focus on the linearly parametrized version here. We will form an approximation &lt;span class=&#34;math inline&#34;&gt;$\hat{Q}(s, x) = \sum_{l=1}^n \phi_l(s, x) \theta_l = \Phi\theta$&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;We and talk about a variant of the Q-learning we previously discussed that uses gradient information to update the coefficient vector.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s the basic idea:&lt;/p&gt;
+&lt;p&gt;Here&#39;s the basic idea:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Start with any guess of coefficients &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;Then on each iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;:
 &lt;ul&gt;
-&lt;li&gt;Given the state action pair on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;th iteration (&lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;), the observation of the period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and the state iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&amp;hellip; update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt; using: &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\theta&lt;/em&gt;{i+1} = \theta_i + \alpha_i \left[r&lt;em&gt;i + \beta \max&lt;/em&gt;{x&amp;rsquo;} \hat{Q}&lt;em&gt;i(s&lt;/em&gt;{i+1}, x&amp;rsquo;)  - \hat{Q}_i(s_i, x_i)\right] \frac{\partial}{\partial \theta_i} \hat{Q}_i(s_i, x_i)$$&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Given the state action pair on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;th iteration (&lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;), the observation of the period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and the state iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;...&lt;/li&gt;
+&lt;li&gt;... update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt; using: &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\theta_{i+1} = \theta_i + \alpha_i \left[r_i + \beta \max_{x&#39;} \hat{Q}_i(s_{i+1}, x&#39;)  - \hat{Q}_i(s_i, x_i)\right] \frac{\partial}{\partial \theta_i} \hat{Q}_i(s_i, x_i)$$&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;In the linear parameterization world we are in this becomes &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt; = &lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; + &lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;[&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;(&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;,&lt;em&gt;x&lt;/em&gt;′)&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)−&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;,&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;]&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;As this is a Q-learning algorithm, the same computational benefits arise here, but now we additionally have the benefit of a potentially vastly reduced computational problem depending on the state-action space the choice of basis functions.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -351,47 +336,44 @@ strategy, whereas a randomized stationary is like a mixed strategy. --&gt;
       <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper was published in Operations Research and as such they use a different notation and jargon than economists. I&amp;rsquo;ll present some of their main results, but in a language and notation that is familiar to me.&lt;/p&gt;
+      <description>&lt;p&gt;This paper was published in Operations Research and as such they use a different notation and jargon than economists. I&#39;ll present some of their main results, but in a language and notation that is familiar to me.&lt;/p&gt;
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
 &lt;p&gt;Consider a typical dynamic programming problem faced by an economic agent, which we summarize by the following Bellman equation:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$V(x) = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E V(x&amp;rsquo;)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$V(x) = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E V(x&#39;)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Now define the natural operator associated with the Bellman, which we call &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$T v = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E v(x&amp;rsquo;)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$T v = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E v(x&#39;)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;For ease of presentation we will directly assume that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is a contraction mapping and that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; belongs to the set of bounded and continuous functions.&lt;/p&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt; be the optimal value function. Under our assumptions &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; is the unique fixed point of Bellman&amp;rsquo;s equation.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt; be the optimal value function. Under our assumptions &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt; is the unique fixed point of Bellman&#39;s equation.&lt;/p&gt;
 &lt;h2 id=&#34;mathematical-programs&#34;&gt;Mathematical programs&lt;/h2&gt;
 &lt;p&gt;Under our assumptions, the operator &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is monotonic.&lt;/p&gt;
-&lt;p&gt;This means that for any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; we have &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Also &lt;span class=&#34;math inline&#34;&gt;∀&lt;em&gt;v&lt;/em&gt;&lt;em&gt;s&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;This means that for any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; we have &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Also &lt;span class=&#34;math inline&#34;&gt;∀&lt;em&gt;v&lt;/em&gt;&lt;em&gt;s&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Typically this property of our contraction mapping is used to show that value function iteration will converge for any initial guess of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;. Today we will use it in a slightly different way.&lt;/p&gt;
 &lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; be any vector of all positive elements. Consider the mathematical program defined by&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&amp;rsquo;v \
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&#39;v \\
 s.t. &amp;amp; \quad v \ge T v
 \end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;By the monotonicity of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; it is easy to see that any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; satisfying the constraint must be at least as big at &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;By the monotonicity of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; it is easy to see that any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; satisfying the constraint must be at least as big at &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Then notice that the objective is to minimize the inner product between a strictly positive vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; and the choice &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;These two facts mean that the unique solution to the programming problem is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;These two facts mean that the unique solution to the programming problem is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;linear-program&#34;&gt;Linear program&lt;/h2&gt;
 &lt;p&gt;I told you that we would use linear programming, but notice that the constraint is nonlinear because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is nonlinear.&lt;/p&gt;
 &lt;p&gt;However, if we stare at the definition of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; for long enough we will notice that if we consider the constraint &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; state by state, (e.g. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)≥&lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)&lt;/span&gt;) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.&lt;/p&gt;
-&lt;p&gt;This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman&amp;rsquo;s equation for that state and control. The program looks as follows:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&amp;rsquo;v \
-s.t. &amp;amp; \quad v(x) \ge u(x,c) + \beta \sum_{x&amp;rsquo;} P(x&amp;rsquo;| x,c)v(x&amp;rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}&lt;em&gt;x
+&lt;p&gt;This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman&#39;s equation for that state and control. The program looks as follows:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&#39;v \\
+s.t. &amp;amp; \quad v(x) \ge u(x,c) + \beta \sum_{x&#39;} P(x&#39;| x,c)v(x&#39;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x
 \end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;curse-of-dimensionality&#34;&gt;Curse of dimensionality&lt;/h2&gt;
 &lt;p&gt;This linear program has an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; dimensional state with an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt; * &lt;em&gt;A&lt;/em&gt;&lt;/span&gt; dimensional constraint matrix. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; are large, this problem can quickly become subject to the curse of dimensionality.&lt;/p&gt;
 &lt;p&gt;The authors of this paper propose approximate linear programming as a way to resolve this issue.&lt;/p&gt;
 &lt;p&gt;Specifically they choose to represent &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; as the product of a basis matrix and a vector of coefficients &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;They then write down a linear program&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&amp;rsquo;\Phi r \
-s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} P(x&amp;rsquo;| x,c) \Phi r(x&amp;rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x
+&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&#39;\Phi r \\
+s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x&#39;} P(x&#39;| x,c) \Phi r(x&#39;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x
 \end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Notice now that we have swapped out a vector of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt;, for a vector with length equal to the number of columns in the basis matrix. This is something that we have control over, thus we can choose the &amp;quot;size&amp;quot; of this problem. Thus the objective is smaller, but the number of constraints is exactly the same.&lt;/p&gt;
 &lt;p&gt;However, if we choose each column of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Φ&lt;/em&gt;&lt;/span&gt; to have finite support (i.e. we use splines), most constraints become inactive and the large constraint matrix becomes sparse.&lt;/p&gt;
 &lt;p&gt;The remainder of the paper, and its main contribution, is to bound the error we are subject to by solving the approximate linear program instead of the exact linear program.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -401,7 +383,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
       <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper presents a stochastic simulation method for solving dynamic economic models.&lt;/p&gt;
+      <description>&lt;p&gt;This paper presents a stochastic simulation method for solving dynamic economic models.&lt;/p&gt;
 &lt;p&gt;The ideas in this paper lean on a literature sometimes known as approximate dynamic programming and can enable us to solve models with many state variables and non-convexities in objectives and constraints.&lt;/p&gt;
 &lt;p&gt;My intent is to summarize the core theoretical ideas behind the algorithm.&lt;/p&gt;
 &lt;h2 id=&#34;main-idea-post-decision-states&#34;&gt;Main idea: Post decision states&lt;/h2&gt;
@@ -425,7 +407,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)=&lt;em&gt;E&lt;/em&gt;[&lt;em&gt;m&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/sub&gt;&lt;em&gt;u&lt;/em&gt;(&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;β&lt;/em&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)|&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;].&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Notice that the expectation is &lt;em&gt;outside&lt;/em&gt; the max operator, meaning that the maximization problem is deterministic.&lt;/p&gt;
 &lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
-&lt;p&gt;Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I&amp;rsquo;ll discuss how I&amp;rsquo;d change it later.&lt;/p&gt;
+&lt;p&gt;Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I&#39;ll discuss how I&#39;d change it later.&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Setup
 &lt;ul&gt;
@@ -436,11 +418,11 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Iterations
 &lt;ul&gt;
-&lt;li&gt;Construct a time series of Exogenous states for t=1, 2, &amp;hellip;, T&lt;/li&gt;
-&lt;li&gt;For time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; = 1, 2, &amp;hellip;, &lt;em&gt;T&lt;/em&gt;&lt;/span&gt; perform the following 3 steps:
+&lt;li&gt;Construct a time series of Exogenous states for t=1, 2, ..., T&lt;/li&gt;
+&lt;li&gt;For time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; = 1, 2, ..., &lt;em&gt;T&lt;/em&gt;&lt;/span&gt; perform the following 3 steps:
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Choose controls &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; to maximize the term inside the expectation on the RHS of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; − 1)&lt;/span&gt;. To do this we need to using the value function from the previous iteration for the future value function&lt;/li&gt;
-&lt;li&gt;Compute the expectation implicitly by updating the guess of the value function using a convex combination of the previous iteration&amp;rsquo;s value function and the value computed above&lt;/li&gt;
+&lt;li&gt;Compute the expectation implicitly by updating the guess of the value function using a convex combination of the previous iteration&#39;s value function and the value computed above&lt;/li&gt;
 &lt;li&gt;Using the chosen controls and realization of exogenous state, apply the endogenous transition equation to iterate the endogenous state forward one period&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -453,14 +435,11 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;h3 id=&#34;comments-on-the-algorithm&#34;&gt;Comments on the algorithm&lt;/h3&gt;
 &lt;p&gt;Here are a few comments about the algorithm:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Because the expectation operator is outside the max operator, we don&amp;rsquo;t have to spend time computing expectations when solving the optimization problem in each period of the simulation. This speeds up computation quite a bit.&lt;/li&gt;
+&lt;li&gt;Because the expectation operator is outside the max operator, we don&#39;t have to spend time computing expectations when solving the optimization problem in each period of the simulation. This speeds up computation quite a bit.&lt;/li&gt;
 &lt;li&gt;Expectations are computed implicitly when we update our guess for the post-decision state value function&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;My compliant&lt;/strong&gt; I think it is incorrect to re-generate a time series of exogenous states on each iteration. Doing so will not allow the algorithm to ever converge as the updated value function in iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; is dependent on the randomness from the exogenous simulation in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Using the same simulated time series for exogenous states in every iteration (as in other simulation algorithms in the literature) will allow this algorithm to converge; subject to a particular exogenous path. To ensure that the solution is accurate for the underlying data generating process and not just the simulation you use, make sure that the length of the time series is large.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -508,10 +487,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;The distribution is characterized by a well known PDE &amp;ndash; it is often very straightforward to solve&lt;/li&gt;
 &lt;li&gt;There is an established literature for solving HJB equations. The authors are able to leverage theoretical results (Barles and Souganidis (1991)) that guarantee the convergence of their finite difference scheme.&lt;/li&gt;
 &lt;li&gt;Borrowing constraint is completely handled via a boundary condition &amp;ndash; something that already required for solving the PDEs, not something additional you need to build the algorithm around.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -521,7 +497,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2016/03/01/costinot-rodriguez-werning-2016-micro-to-macro-optimal-trade-policy-with-firm-heterogeneity/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper extends the Meltiz framework to allow for optimal tariff policies.&lt;/p&gt;
+      <description>&lt;p&gt;This paper extends the Meltiz framework to allow for optimal tariff policies.&lt;/p&gt;
 &lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
 &lt;p&gt;This model extends a two country Melitz framework in two ways:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
@@ -537,7 +513,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;p&gt;Each firm takes in labor and produces consumption good. Labor demand for each firm is affine in the quantity produced. The slope and intercept coefficients can be arbitrary functions of productivity.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Markets&lt;/strong&gt; Firms sell their goods in a monopolistically competitive market.&lt;/p&gt;
 &lt;h3 id=&#34;taxes&#34;&gt;Taxes&lt;/h3&gt;
-&lt;p&gt;We will consider a cost structure where each firm can potentially face both an import tariff in the consumer&amp;rsquo;s country and an export subsidy in the firm&amp;rsquo;s country. Note that a negative tariff acts like an import subsidy and a negative export subsidy acts like an export tax.&lt;/p&gt;
+&lt;p&gt;We will consider a cost structure where each firm can potentially face both an import tariff in the consumer&#39;s country and an export subsidy in the firm&#39;s country. Note that a negative tariff acts like an import subsidy and a negative export subsidy acts like an export tax.&lt;/p&gt;
 &lt;p&gt;All tax revenues are rebated lump sum to the consumer in the country where the revenues are collected.&lt;/p&gt;
 &lt;h3 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h3&gt;
 &lt;p&gt;We will consider a decentralized equilibrium in which&lt;/p&gt;
@@ -545,13 +521,13 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;consumers maximize their utility subject to their budget constraint&lt;/li&gt;
 &lt;li&gt;firms choose their output to maximize their profits taking their residual demand curves a given&lt;/li&gt;
 &lt;li&gt;firms optimally choose to enter domestic and export markets, based on productivity and costs&lt;/li&gt;
-&lt;li&gt;The government&amp;rsquo;s budget is balanced in each country (all tax revenues are rebated to HH)&lt;/li&gt;
+&lt;li&gt;The government&#39;s budget is balanced in each country (all tax revenues are rebated to HH)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
 &lt;p&gt;I felt the solution technique was interesting.&lt;/p&gt;
 &lt;p&gt;The authors consider a special case of the model just described where the government in country &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;/span&gt; is strategic and the the government in country &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;/span&gt; is passive.&lt;/p&gt;
-&lt;p&gt;This means that the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;/span&gt; government chooses tariffs and subsidies to maximize home consumer&amp;rsquo;s utility, whereas all taxes and subsidies in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;/span&gt; are zero.&lt;/p&gt;
-&lt;p&gt;The home government&amp;rsquo;s problem is written as a planning problem where the planner chooses taxes, subsidies, prices, and quantities.&lt;/p&gt;
+&lt;p&gt;This means that the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;H&lt;/em&gt;&lt;/span&gt; government chooses tariffs and subsidies to maximize home consumer&#39;s utility, whereas all taxes and subsidies in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;/span&gt; are zero.&lt;/p&gt;
+&lt;p&gt;The home government&#39;s problem is written as a planning problem where the planner chooses taxes, subsidies, prices, and quantities.&lt;/p&gt;
 &lt;h3 id=&#34;planning-problems&#34;&gt;Planning problems&lt;/h3&gt;
 &lt;p&gt;To solve this model the authors use a three step procedure:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
@@ -568,14 +544,14 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;The problem faces the same issues as before, but is also additively separable in the control, so it can be solved using a similar Lagrangian approach&lt;/li&gt;
 &lt;li&gt;The solution to this problem is also unique and characterized in closed form&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Solve the problem of optimally choosing &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;em&gt;F&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;F&lt;/em&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; to maximize the home consumer&amp;rsquo;s utility, subject to the constrains on aggregate quantities implied by aggregating the results of the previous two micro problems
+&lt;li&gt;Solve the problem of optimally choosing &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;H&lt;/em&gt;&lt;em&gt;F&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;F&lt;/em&gt;&lt;em&gt;H&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; to maximize the home consumer&#39;s utility, subject to the constrains on aggregate quantities implied by aggregating the results of the previous two micro problems
 &lt;ul&gt;
 &lt;li&gt;The solution is again unique and characterized in closed form&lt;/li&gt;
 &lt;li&gt;The key output of this problem is that the optimal behavior can be characterized only by manipulating the terms of trade. This will be important for implementing this solution using taxes in the next section.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
-&lt;p&gt;With the solution to the decentralized planner&amp;rsquo;s problem in hand, the authors then describe how to implement this equilibrium using a variety of possible tariff and subsidy schemes.&lt;/p&gt;
+&lt;p&gt;With the solution to the decentralized planner&#39;s problem in hand, the authors then describe how to implement this equilibrium using a variety of possible tariff and subsidy schemes.&lt;/p&gt;
 &lt;p&gt;I will focus on the equilibrium with a fully flexible tax system that allows the home government to choose tariffs and subsidies for each producer/consumer pair.&lt;/p&gt;
 &lt;p&gt;The results can be summarized as follows:&lt;/p&gt;
 &lt;ul&gt;
@@ -593,9 +569,6 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;p&gt;The way to implement his feature of the first-best equilibrium using taxes, is to have tariffs scale one for one with the profitability of the firms whose export profit constraint binds.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;The two extensions of the Melitz model (heterogenous trade costs and market specific CES parameters) generated one main departure from the Melitz equilibrium: an optimal one-sided tariff and subsidy policy that discriminates against low productivity foreign exporters.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -691,10 +664,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;ul&gt;
 &lt;li&gt;The exit of inexperienced exports is lower. This is driven both by having low &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; sellers not try to learn about foreign demand and by no learning based exit.&lt;/li&gt;
 &lt;li&gt;To overcome this and still match seller exit rates, exogenous separation probability doubles from 0.26 to 0.52.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -801,10 +771,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;The probability that a bank has foreign assets/liabilities and net FDI increase with the size of domestic business and efficiency.&lt;/li&gt;
 &lt;li&gt;Larger banks also hold more foreign assets and liabilities.&lt;/li&gt;
 &lt;li&gt;Fixed costs are a key component to foreign operations of banks. Only larger banks can overcome the fixed costs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -874,10 +841,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;Modeling implication: Considering the dynamic components of the export entry decision are crucial to get Melitz flavor models to match the data.&lt;/li&gt;
 &lt;li&gt;Policy implications: Changes in option values (perhaps due to changes in expectations about future market conditions) can induce large changes in exporter decisions, even when short run profits are unchanged.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The second finding suggests that policies that wish to induce changes in export market participation should aim to adjust the expectation about future market conditions (e.g. expected changes in real interest rates) &lt;em&gt;or&lt;/em&gt; directly subsidize the export fixed costs (sunk and/or fixed).&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;The second finding suggests that policies that wish to induce changes in export market participation should aim to adjust the expectation about future market conditions (e.g. expected changes in real interest rates) &lt;em&gt;or&lt;/em&gt; directly subsidize the export fixed costs (sunk and/or fixed).&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -938,10 +902,7 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;/ul&gt;
 &lt;p&gt;Why does trade cause less productive firms to exit?&lt;/p&gt;
 &lt;p&gt;You might think it is because domestic firms now face more competition from foreign ones. This heightened competition would lower prices, making it unprofitable for low productivity firms to remain in the market. Because of the assumption of monopolistic competition and CES consumer preferences, optimal prices do not respond to the number of competing varieties.&lt;/p&gt;
-&lt;p&gt;What actually does happen is entirely carried about in the labor market. The short description is that more productive firms now have access to more consumers, which makes them want to produce more, for which they need to hire more labor, which drives labor demand up, this increases the real wage, which makes it so less productive firms can no longer compete in the labor market.&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;What actually does happen is entirely carried about in the labor market. The short description is that more productive firms now have access to more consumers, which makes them want to produce more, for which they need to hire more labor, which drives labor demand up, this increases the real wage, which makes it so less productive firms can no longer compete in the labor market.&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1006,9 +967,11 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;The concavity of preferences amplifies the response of employment: the model with CRRA parameter set to &lt;span class=&#34;math inline&#34;&gt;5&lt;/span&gt; has an employment response 6 times larger than the model with linear preferences&lt;/li&gt;
 &lt;li&gt;On the job human capital accumulation makes the response to employment larger and more persistent&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Kehoe2015&#34;&gt;
+&lt;p&gt;Kehoe, Patrick, Virgiliu Midrigan, and Elena Pastorino. 2015. “Discount Rates , Learning by Doing and Employment Fluctuations,” no. October.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

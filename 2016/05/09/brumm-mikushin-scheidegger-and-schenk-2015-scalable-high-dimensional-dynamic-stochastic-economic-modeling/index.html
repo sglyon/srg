@@ -62,7 +62,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -161,7 +161,7 @@
 </header>
 
   <div class="container content">
-  <p><p>An economist, a physicist, and two computer scientists walk into a bar&hellip;</p>
+  <p>An economist, a physicist, and two computer scientists walk into a bar...</p>
 <p>This is a computational paper that describes and algorithm featuring an adaptive sparse grid and discuss implementation details on a sophisticated HPC cluster.</p>
 <h2 id="model">Model</h2>
 <p>They provide examples of their algorithm and computation using a standard international real business cycle model. This is not the interesting part of the paper, so I will not focus on it here.</p>
@@ -178,7 +178,7 @@
 <ul>
 <li>Start with the coarsest refinement level <span class="math inline"><em>l</em> = 1</span> for all dimensions. Call the grid G. Choose a maximum refinement level</li>
 <li>Also Initialize <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span> and <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span> to be the empty set</li>
-<li>While G and <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span> are not the same (NOTE: at end of this loop explain the while goes until we are at Lmax or until we don&rsquo;t add refinement points)
+<li>While G and <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span> are not the same (NOTE: at end of this loop explain the while goes until we are at Lmax or until we don't add refinement points)
 <ul>
 <li>For each grid point in <span class="math inline"><em>G</em> \ <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span>
 <ul>
@@ -196,9 +196,6 @@
 <p>On just one node of the super-computer, they were able to achieve a 30x speedup for their code by utilizing a GPU and multi-threaded parallelism.</p>
 <p>They were then able to scale that code from a single node to up to 2048 nodes to achieve a speedup on the order of 10,000x.</p>
 <p>They compare their algorithm to a non-adaptive sparse grid and find that the log 10 average Euler errors from their algorithm are smaller on average than the sparse grid case, but run time is up 2 to 3 orders of magnitude smaller.</p>
-<div id="refs" class="references"></p>
-
-<p></div></p>
 
 </div>
 

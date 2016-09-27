@@ -62,7 +62,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -161,7 +161,7 @@
 </header>
 
   <div class="container content">
-  <p><p>This paper presents a stochastic simulation method for solving dynamic economic models.</p>
+  <p>This paper presents a stochastic simulation method for solving dynamic economic models.</p>
 <p>The ideas in this paper lean on a literature sometimes known as approximate dynamic programming and can enable us to solve models with many state variables and non-convexities in objectives and constraints.</p>
 <p>My intent is to summarize the core theoretical ideas behind the algorithm.</p>
 <h2 id="main-idea-post-decision-states">Main idea: Post decision states</h2>
@@ -185,7 +185,7 @@
 <p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)=<em>E</em>[<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>)+<em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>].</span><br /></p>
 <p>Notice that the expectation is <em>outside</em> the max operator, meaning that the maximization problem is deterministic.</p>
 <h2 id="algorithm">Algorithm</h2>
-<p>Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I&rsquo;ll discuss how I&rsquo;d change it later.</p>
+<p>Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I'll discuss how I'd change it later.</p>
 <ol style="list-style-type: decimal">
 <li>Setup
 <ul>
@@ -196,11 +196,11 @@
 </ul></li>
 <li>Iterations
 <ul>
-<li>Construct a time series of Exogenous states for t=1, 2, &hellip;, T</li>
-<li>For time <span class="math inline"><em>t</em> = 1, 2, &hellip;, <em>T</em></span> perform the following 3 steps:
+<li>Construct a time series of Exogenous states for t=1, 2, ..., T</li>
+<li>For time <span class="math inline"><em>t</em> = 1, 2, ..., <em>T</em></span> perform the following 3 steps:
 <ol style="list-style-type: decimal">
 <li>Choose controls <span class="math inline"><em>c</em><sub><em>t</em></sub></span> to maximize the term inside the expectation on the RHS of <span class="math inline"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><em>t</em> − 1)</span>. To do this we need to using the value function from the previous iteration for the future value function</li>
-<li>Compute the expectation implicitly by updating the guess of the value function using a convex combination of the previous iteration&rsquo;s value function and the value computed above</li>
+<li>Compute the expectation implicitly by updating the guess of the value function using a convex combination of the previous iteration's value function and the value computed above</li>
 <li>Using the chosen controls and realization of exogenous state, apply the endogenous transition equation to iterate the endogenous state forward one period</li>
 </ol></li>
 </ul></li>
@@ -213,14 +213,11 @@
 <h3 id="comments-on-the-algorithm">Comments on the algorithm</h3>
 <p>Here are a few comments about the algorithm:</p>
 <ul>
-<li>Because the expectation operator is outside the max operator, we don&rsquo;t have to spend time computing expectations when solving the optimization problem in each period of the simulation. This speeds up computation quite a bit.</li>
+<li>Because the expectation operator is outside the max operator, we don't have to spend time computing expectations when solving the optimization problem in each period of the simulation. This speeds up computation quite a bit.</li>
 <li>Expectations are computed implicitly when we update our guess for the post-decision state value function</li>
 </ul>
 <p><strong>My compliant</strong> I think it is incorrect to re-generate a time series of exogenous states on each iteration. Doing so will not allow the algorithm to ever converge as the updated value function in iteration <span class="math inline"><em>n</em></span> is dependent on the randomness from the exogenous simulation in period <span class="math inline"><em>n</em></span>.</p>
 <p>Using the same simulated time series for exogenous states in every iteration (as in other simulation algorithms in the literature) will allow this algorithm to converge; subject to a particular exogenous path. To ensure that the solution is accurate for the underlying data generating process and not just the simulation you use, make sure that the length of the time series is large.</p>
-<div id="refs" class="references"></p>
-
-<p></div></p>
 
 </div>
 

@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -136,7 +136,10 @@
   <p class="container content">
   
   
-    An economist, a physicist, and two computer scientists walk into a bar&hellip; This is a computational paper that describes and algorithm featuring an adaptive sparse grid and discuss implementation details on a sophisticated HPC cluster. Model They provide examples of their algorithm and computation using a standard international real business cycle model. This is not the interesting part of the paper, so I will not focus on it here. Computation Adaptive Sparse Grids The first main contribution of this paper is to introduce economists to a specialized flavor of function approximation.
+    An economist, a physicist, and two computer scientists walk into a bar...
+This is a computational paper that describes and algorithm featuring an adaptive sparse grid and discuss implementation details on a sophisticated HPC cluster.
+Model They provide examples of their algorithm and computation using a standard international real business cycle model. This is not the interesting part of the paper, so I will not focus on it here.
+Computation Adaptive Sparse Grids The first main contribution of this paper is to introduce economists to a specialized flavor of function approximation.
   
 
 
@@ -165,7 +168,9 @@
   <p class="container content">
   
   
-    This paper builds on the approximate linear programming work of Farias and van Roy that I presented a few weeks ago and applies a version of that technique to a dynamic oligopoly model. The actual model is not novel to this research, so I will spend most of my time talking about the algorithm. Model The model is set in discrete time and multiple firms compete in a single good market over an infinite horizon.
+    This paper builds on the approximate linear programming work of Farias and van Roy that I presented a few weeks ago and applies a version of that technique to a dynamic oligopoly model.
+The actual model is not novel to this research, so I will spend most of my time talking about the algorithm.
+Model  The model is set in discrete time and multiple firms compete in a single good market over an infinite horizon.
   
 
 
@@ -194,7 +199,9 @@
   <p class="container content">
   
   
-    This is a mostly empirical paper that tries to decompose exporter persistence into sunk cost and learning components. Model Let firms be indexed by i. Firms have two state variables: productivity zi, t that follows an AR(1) process and export experience Ai, t. In Ai, t is the number of consecutive periods a firm has exported coming into period t. Without microfoudations, Timoshenko assumes that per-period sales are the Melitz result, multiplied by a function g of export experience: $S(z, A) = g(A) E P^{\sigma-1} \left( \frac{\sigma}{\sigma-1} \frac{\tau w}{\exp(z)} \right)^{1-\sigma}$ If a firm chooses to export, profits are given by π(z, A)=S(z, A)/σ less a sunk market-entry cost if A = 0.
+    This is a mostly empirical paper that tries to decompose exporter persistence into sunk cost and learning components.
+Model Let firms be indexed by i. Firms have two state variables: productivity zi, t that follows an AR(1) process and export experience Ai, t. In Ai, t is the number of consecutive periods a firm has exported coming into period t.
+Without microfoudations, Timoshenko assumes that per-period sales are the Melitz result, multiplied by a function g of export experience:
   
 
 
@@ -223,7 +230,9 @@
   <p class="container content">
   
   
-    This paper documents facts about Brazilian manufacturing firms that switch their bundle of exported products over time. The author then builds a Melitz-style trade model that attempts to explain these facts. Empirics The author uses data product level data on Brazilian manufacturing firms to document several stylized facts. 72% of continuing exporters alter their product mix every year (add new exported products or drop existing exported products) 83% of all Brazilian exports come from these product switching firms The proportion of exporters who do product switching falls with age in export market The frequency with which exporters engage in product switching falls with age The exit rate of product switching firms is lower than aggregate exit rate for all ages of exporter.
+    This paper documents facts about Brazilian manufacturing firms that switch their bundle of exported products over time. The author then builds a Melitz-style trade model that attempts to explain these facts.
+Empirics The author uses data product level data on Brazilian manufacturing firms to document several stylized facts.
+ 72% of continuing exporters alter their product mix every year (add new exported products or drop existing exported products) 83% of all Brazilian exports come from these product switching firms The proportion of exporters who do product switching falls with age in export market The frequency with which exporters engage in product switching falls with age The exit rate of product switching firms is lower than aggregate exit rate for all ages of exporter.
   
 
 
@@ -252,7 +261,9 @@
   <p class="container content">
   
   
-    Background When a Markov decision process (MDP) is formulated as a dynamic programming problem, the reinforcement learning literature proposes are two classic classes of algorithms to solve them. Let&rsquo;s briefly review these types of algorithms and point out strengths and weaknesses of each. 1: Actor only methods We can think of an actor as a fictitious character that operates on a policy rule. When I talk about the performance of an actor, I mean the value of following a policy.
+    Background When a Markov decision process (MDP) is formulated as a dynamic programming problem, the reinforcement learning literature proposes are two classic classes of algorithms to solve them. Let&rsquo;s briefly review these types of algorithms and point out strengths and weaknesses of each.
+1: Actor only methods We can think of an actor as a fictitious character that operates on a policy rule.
+When I talk about the performance of an actor, I mean the value of following a policy.
   
 
 
@@ -281,7 +292,9 @@
   <p class="container content">
   
   
-    This paper provides an overview of various solution concepts that belong to the families of approximate dynamic programming and reinforcement learning. I will discuss an alternative representation of a dynamic programming that is often used in this literature and provide an overview of some solution methods that are common with this representation. Basics: Q-functions In economics, the standard representation of a dynamic programming problem is to define a recursive function V that maps from a state space into the real line.
+    This paper provides an overview of various solution concepts that belong to the families of approximate dynamic programming and reinforcement learning.
+I will discuss an alternative representation of a dynamic programming that is often used in this literature and provide an overview of some solution methods that are common with this representation.
+Basics: Q-functions In economics, the standard representation of a dynamic programming problem is to define a recursive function V that maps from a state space into the real line.
   
 
 
@@ -310,7 +323,11 @@
   <p class="container content">
   
   
-    This paper was published in Operations Research and as such they use a different notation and jargon than economists. I&rsquo;ll present some of their main results, but in a language and notation that is familiar to me. Background Consider a typical dynamic programming problem faced by an economic agent, which we summarize by the following Bellman equation: $$V(x) = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E V(x&rsquo;)$$ Now define the natural operator associated with the Bellman, which we call T: $$T v = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E v(x&rsquo;)$$ For ease of presentation we will directly assume that T is a contraction mapping and that v belongs to the set of bounded and continuous functions.
+    This paper was published in Operations Research and as such they use a different notation and jargon than economists. I'll present some of their main results, but in a language and notation that is familiar to me.
+Background Consider a typical dynamic programming problem faced by an economic agent, which we summarize by the following Bellman equation:
+
+$$V(x) = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E V(x')$$
+Now define the natural operator associated with the Bellman, which we call T:
   
 
 
@@ -339,7 +356,10 @@
   <p class="container content">
   
   
-    This paper presents a stochastic simulation method for solving dynamic economic models. The ideas in this paper lean on a literature sometimes known as approximate dynamic programming and can enable us to solve models with many state variables and non-convexities in objectives and constraints. My intent is to summarize the core theoretical ideas behind the algorithm. Main idea: Post decision states Notation: classic Bellman equation Consider a stationary economic model where at time t the state is summarized by a vector st of endogenous state variables and a vector xt of exogenous state variables.
+    This paper presents a stochastic simulation method for solving dynamic economic models.
+The ideas in this paper lean on a literature sometimes known as approximate dynamic programming and can enable us to solve models with many state variables and non-convexities in objectives and constraints.
+My intent is to summarize the core theoretical ideas behind the algorithm.
+Main idea: Post decision states Notation: classic Bellman equation Consider a stationary economic model where at time t the state is summarized by a vector st of endogenous state variables and a vector xt of exogenous state variables.
   
 
 
@@ -368,7 +388,10 @@
   <p class="container content">
   
   
-    This paper looks at the class of equations used to represent and solve heterogenous agent models in continuous time and presents a solution approach that is efficient and tractable. Model A few models were presented in the paper. Here we&rsquo;ll take the simplest one: a continuous time version of the Huggett economy. In this economy there are a continuum of individuals that are heterogeneous in their wealth and income. Individuals value streams of consumption using CRRA preferences and a constant discount factor ρ.
+    This paper looks at the class of equations used to represent and solve heterogenous agent models in continuous time and presents a solution approach that is efficient and tractable.
+Model A few models were presented in the paper. Here we&rsquo;ll take the simplest one: a continuous time version of the Huggett economy.
+In this economy there are a continuum of individuals that are heterogeneous in their wealth and income.
+Individuals value streams of consumption using CRRA preferences and a constant discount factor ρ.
   
 
 
@@ -397,7 +420,9 @@
   <p class="container content">
   
   
-    This paper extends the Meltiz framework to allow for optimal tariff policies. Model This model extends a two country Melitz framework in two ways: Allows for heterogeneity in variable and fixed costs. This will be a policy instrument where governments can set firm specific tariffs The representative consumer in each country has a constant elasticity of substitution across all varieties procued within a country, but that elasticity can differ across countries.
+    This paper extends the Meltiz framework to allow for optimal tariff policies.
+Model This model extends a two country Melitz framework in two ways:
+Allows for heterogeneity in variable and fixed costs. This will be a policy instrument where governments can set firm specific tariffs The representative consumer in each country has a constant elasticity of substitution across all varieties procued within a country, but that elasticity can differ across countries.
   
 
 

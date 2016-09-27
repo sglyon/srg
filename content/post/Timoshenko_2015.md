@@ -48,7 +48,4 @@
 </ul>
 <h3 id="quantitative-results">Quantitative results</h3>
 <p>A brief quantitative section is given. The main message is that the model generates more modest values of the number of exporters that engage in product switching, the age dependent survival rate of exporters, and the age dependence of product switching. This suggests that the learning mechanism in the model is significant and supported by the data, but not sufficient to fully explain product switching behavior of Brazilian firms.</p>
-<div id="refs" class="references">
-
-</div>
 

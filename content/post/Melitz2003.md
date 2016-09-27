@@ -29,10 +29,7 @@
 <p>To close the economy, we also must consider a free entry condition. This condition says that the average value of entering net of entry costs must be zero.</p>
 <h4 id="equilibrium">Equilibrium</h4>
 <p>There exists a unique equilibrium in this model in which aggregate variables are constant across time. This equilibrium can be understood by a single figure:</p>
-<div class="figure">
-<img src="/Users/sglyon/Research/SargentReadingGroup/images/melitz_eqm.png" alt="Melitz equilibrium" />
-<p class="caption">Melitz equilibrium</p>
-</div>
+<!-- ![Melitz equilibrium](/Users/sglyon/Research/SargentReadingGroup/images/melitz_eqm.png) -->
 <p>Consider <span class="math inline"><em>φ</em></span> on the horizontal axis and firm profits on the vertical axis. Then we put two lines in this space:</p>
 <ol style="list-style-type: decimal">
 <li>The &quot;zero profit cutoff&quot;, which characterizes average profits as a function of the cutoff productivity. This will be a downward sloping line</li>
@@ -59,7 +56,4 @@
 <p>Why does trade cause less productive firms to exit?</p>
 <p>You might think it is because domestic firms now face more competition from foreign ones. This heightened competition would lower prices, making it unprofitable for low productivity firms to remain in the market. Because of the assumption of monopolistic competition and CES consumer preferences, optimal prices do not respond to the number of competing varieties.</p>
 <p>What actually does happen is entirely carried about in the labor market. The short description is that more productive firms now have access to more consumers, which makes them want to produce more, for which they need to hire more labor, which drives labor demand up, this increases the real wage, which makes it so less productive firms can no longer compete in the labor market.</p>
-<div id="refs" class="references">
-
-</div>
 

@@ -73,7 +73,4 @@
 <li><p>They then extend their baseline recursive model by allowing for a different home bias parameter for consumption and investment goods and by introducing the concept of vintage captial, or that captial becomes more productive over time. With these changes they at least partially resolve all 5 concerns above, without significant departures in other areas.</p></li>
 <li><p>They then do sensitivity analysis and conclude.</p></li>
 </ul>
-<div id="refs" class="references">
-
-</div>
 

@@ -43,7 +43,4 @@
 <li>There is an established literature for solving HJB equations. The authors are able to leverage theoretical results (Barles and Souganidis (1991)) that guarantee the convergence of their finite difference scheme.</li>
 <li>Borrowing constraint is completely handled via a boundary condition -- something that already required for solving the PDEs, not something additional you need to build the algorithm around.</li>
 </ul>
-<div id="refs" class="references">
-
-</div>
 

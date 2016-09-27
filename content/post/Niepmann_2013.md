@@ -101,7 +101,4 @@
 <li>Larger banks also hold more foreign assets and liabilities.</li>
 <li>Fixed costs are a key component to foreign operations of banks. Only larger banks can overcome the fixed costs.</li>
 </ul>
-<div id="refs" class="references">
-
-</div>
 

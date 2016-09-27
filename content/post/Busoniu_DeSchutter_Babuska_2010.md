@@ -52,7 +52,4 @@
 </ul></li>
 </ul>
 <p>As this is a Q-learning algorithm, the same computational benefits arise here, but now we additionally have the benefit of a potentially vastly reduced computational problem depending on the state-action space the choice of basis functions.</p>
-<div id="refs" class="references">
-
-</div>
 

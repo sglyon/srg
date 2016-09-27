@@ -76,7 +76,4 @@
 <p>The way to implement his feature of the first-best equilibrium using taxes, is to have tariffs scale one for one with the profitability of the firms whose export profit constraint binds.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>The two extensions of the Melitz model (heterogenous trade costs and market specific CES parameters) generated one main departure from the Melitz equilibrium: an optimal one-sided tariff and subsidy policy that discriminates against low productivity foreign exporters.</p>
-<div id="refs" class="references">
-
-</div>
 

@@ -89,7 +89,4 @@
 <p>Let's consider the main results for each experiment</p>
 <h2 id="signals-about-tfp">Signals about TFP</h2>
 <p>In experiment with TFP shocks, the log of TFP of each island is modeled as the sum of an aggregate productivity shock common across all islands and an island specific idiosyncratic shock.</p>
-<div id="refs" class="references">
-
-</div>
 

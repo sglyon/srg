@@ -65,7 +65,4 @@
 <li>Policy implications: Changes in option values (perhaps due to changes in expectations about future market conditions) can induce large changes in exporter decisions, even when short run profits are unchanged.</li>
 </ol>
 <p>The second finding suggests that policies that wish to induce changes in export market participation should aim to adjust the expectation about future market conditions (e.g. expected changes in real interest rates) <em>or</em> directly subsidize the export fixed costs (sunk and/or fixed).</p>
-<div id="refs" class="references">
-
-</div>
 

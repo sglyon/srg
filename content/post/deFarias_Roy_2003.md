@@ -42,7 +42,4 @@ s.t. &amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x'} P(x'| x,c) \Phi r(x') \q
 <p>Notice now that we have swapped out a vector of length <span class="math inline"><em>S</em></span>, for a vector with length equal to the number of columns in the basis matrix. This is something that we have control over, thus we can choose the &quot;size&quot; of this problem. Thus the objective is smaller, but the number of constraints is exactly the same.</p>
 <p>However, if we choose each column of <span class="math inline"><em>Φ</em></span> to have finite support (i.e. we use splines), most constraints become inactive and the large constraint matrix becomes sparse.</p>
 <p>The remainder of the paper, and its main contribution, is to bound the error we are subject to by solving the approximate linear program instead of the exact linear program.</p>
-<div id="refs" class="references">
-
-</div>
 

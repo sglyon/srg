@@ -66,7 +66,4 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 </ul>
 <p>The key insight the authors have that make this algorithm tractable is the following:</p>
 <p>Actors have to update a small number of parameters compared to the number of states. So the critic doesn't need to form an approximation over the entire domain of Q, but rather a special projection of the Q onto the space spanned by the actor's parameter vector.</p>
-<div id="refs" class="references">
-
-</div>
 

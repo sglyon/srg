@@ -91,7 +91,4 @@
 <li>The exit of inexperienced exports is lower. This is driven both by having low <span class="math inline"><em>θ</em><sup><em>f</em></sup></span> sellers not try to learn about foreign demand and by no learning based exit.</li>
 <li>To overcome this and still match seller exit rates, exogenous separation probability doubles from 0.26 to 0.52.</li>
 </ul>
-<div id="refs" class="references">
-
-</div>
 

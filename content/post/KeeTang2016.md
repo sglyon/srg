@@ -1,5 +1,5 @@
 ---
-'date': '2015-11-10'
+'date': '2016-09-27'
 'title': 'Kee:2016ej (Trade adjustment dynamics and the welfare gains from trade)'
 ---
 

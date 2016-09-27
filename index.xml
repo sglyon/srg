@@ -9,8 +9,54 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Mon, 09 May 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Kee:2016ej (Trade adjustment dynamics and the welfare gains from trade)</title>
+      <link>http://srg.spencerlyon.com/2016/09/27/kee2016ej-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/09/27/kee2016ej-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</guid>
+      <description>&lt;p&gt;&lt;p&gt;A mostly empirical paper that examines the inputs used by Chinese firms to produce exported goods.&lt;/p&gt;
+&lt;h2 id=&#34;dvar&#34;&gt;DVAR&lt;/h2&gt;
+&lt;p&gt;The empirical analysis in this paper is centered around a variable named DVA, which stands for domestic value added in exports.&lt;/p&gt;
+&lt;p&gt;To derive DVA, we start with total revenue. The authors break total revenue into the sum of&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;profits&lt;/li&gt;
+&lt;li&gt;labor costs&lt;/li&gt;
+&lt;li&gt;capital costs&lt;/li&gt;
+&lt;li&gt;materials from domestic sources&lt;/li&gt;
+&lt;li&gt;materials from foreign sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Because intermediate good producers can get their inputs from China or foreign sources, the domestic and foreign materials sources are decomposed into Chinese and non-Chinese components.&lt;/p&gt;
+&lt;p&gt;DVA is then defined as the sum of&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;profits&lt;/li&gt;
+&lt;li&gt;labor costs&lt;/li&gt;
+&lt;li&gt;capital costs&lt;/li&gt;
+&lt;li&gt;Chinese component of materials from domestic sources&lt;/li&gt;
+&lt;li&gt;Chinese component of materials from foreign sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The authors restrict their analysis to processing exporters, which means exporters who do not sell any of their final good in domestic markets. With this restriction the value of total exports is equal to total revenue. In this case DVA can be written as total exports less cost of imported materials plus and adjustment to account for foreign content materials from domestic materials.&lt;/p&gt;
+&lt;p&gt;This is the form of DVA that is used throughout the paper. The important takeaway is that DAV is increasing in total exports and decreasing in cost of imported materials.&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;The authors use Chinese customs data that includes all exporting firms from 2000-2007. They apply three criterion to narrow down this universe to the final data set used in their analyses:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Look at only processing firms&lt;/li&gt;
+&lt;li&gt;Look at firms that operate in a single industry (difficult to decompose share of imports and exports within a firm across industries)&lt;/li&gt;
+&lt;li&gt;Look at firms that aren&amp;rsquo;t &amp;quot;too extreme&amp;quot; in their importing and exporting behavior (an extreme exporter is a firm that imports strictly more than it exports &amp;ndash; selling the additional imported goods to other domestic producers)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In all analyses they normalize DVA by total exports for each firm. The resulting variable is named DVAR.&lt;/p&gt;
+&lt;h2 id=&#34;main-findings&#34;&gt;Main findings&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ll talk about 3 main findings:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Aggregate DVAR increased from near 45% to 55% from 2000 to 2007. This finding is also robust across industries, where 15 reported industries showed a similar evolution&lt;/li&gt;
+&lt;li&gt;The increase in DVAR is driven by firms actively substituting imported materials for domestic materials, not by rising domestic production costs (e.g. labor and capital costs). This has policy implications. They do some regressions that show that changes in import tariffs for domestic, non-processing firms &amp;ndash; firms who sell input goods to the firms in our sample &amp;ndash; and rising FDI liberalization made significant contributions to rising DVAR.&lt;/li&gt;
+&lt;li&gt;Restricting the analysis to processing exporters is not a bad estimate of total behavior. Recent work has used input-output tables to document facts about aggregate DVAR movement. The numbers reported here (using transactions level data, but only for processing firms) accounts for almost all the aggregate change.&lt;/li&gt;
+&lt;/ol&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Brumm, Mikushin, Scheidegger and Schenk (2015) (Scalable high-dimensional dynamic stochastic economic modeling)</title>
@@ -903,75 +949,6 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x&#39;} P(x&#39;| x,c) \
 &lt;p&gt;Why does trade cause less productive firms to exit?&lt;/p&gt;
 &lt;p&gt;You might think it is because domestic firms now face more competition from foreign ones. This heightened competition would lower prices, making it unprofitable for low productivity firms to remain in the market. Because of the assumption of monopolistic competition and CES consumer preferences, optimal prices do not respond to the number of competing varieties.&lt;/p&gt;
 &lt;p&gt;What actually does happen is entirely carried about in the labor market. The short description is that more productive firms now have access to more consumers, which makes them want to produce more, for which they need to hire more labor, which drives labor demand up, this increases the real wage, which makes it so less productive firms can no longer compete in the labor market.&lt;/p&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Kehoe2015 (Discount Rates , Learning by Doing and Employment Fluctuations)</title>
-      <link>http://srg.spencerlyon.com/2015/12/08/kehoe2015-discount-rates--learning-by-doing-and-employment-fluctuations/</link>
-      <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2015/12/08/kehoe2015-discount-rates--learning-by-doing-and-employment-fluctuations/</guid>
-      <description>&lt;!-- My notes
-
-- Model the economy as families of individuals. There is perfect risk sharing within a family.
-- Individuals within a family can be employed or gain income income through home production
-- Families also own firms and gain income from firm profits -- because firms are owned by families, firms and families discount the future at the same rate
-- Individuals (workers) choose employment status to maximize the present discount value of working.
-    - If they choose to be employed they earn a state dependent wage, if not they earn a constant referred to as home production.
-    - Workers have a productivity level $z$
---&gt;
-
-&lt;p&gt;&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;The model is a search and matching model in the flavor of DPM, with a few modifications.&lt;/p&gt;
-&lt;h3 id=&#34;consumers&#34;&gt;Consumers&lt;/h3&gt;
-&lt;p&gt;There are a continuum of identical consumers that have the following characteristics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;They face both idiosyncratic and aggregate risk (both productivity shocks that are AR(1) in logs)&lt;/li&gt;
-&lt;li&gt;Have a constant hazard probability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;ϕ&lt;/em&gt;&lt;/span&gt; of dying each period&lt;/li&gt;
-&lt;li&gt;Are organized into families that pool all idiosyncratic risk and exhibit perfect idiosyncratic risk sharing within the family&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The family problem:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Maximize the expected, discounted lifetime utility from consumption, where utility is CRRA in consumption and separable over time&lt;/li&gt;
-&lt;li&gt;Subject to a budget constraint that equates per period consumption and one-period ahead savings to security holding payoffs plus total income, plus profits from their family owns&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The individual employment problem:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Given aggregate and idiosyncratic productivity levels, the individual chooses wether or not to work in order to maximize the present value of income
-&lt;ul&gt;
-&lt;li&gt;If the individual chooses to be employed, they earn the market wage. Otherwise, they provide a constant household production to the family&lt;/li&gt;
-&lt;li&gt;Human capital (idiosyncratic risk) follows and AR(1) in logs, but with different processes depending on employment status. Specifically, human capital is, on average, increasing for employed workers and decreasing for unemployed workers.&lt;/li&gt;
-&lt;li&gt;This makes the employment decision dynamic as it not only impacts current period income, but also future productivity&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;firms&#34;&gt;Firms&lt;/h3&gt;
-&lt;p&gt;Firms pay a vacancy cost to form a match with individuals, then produce according to individual and aggregate productivity when matched, and redistribute divided to the family of the worker.&lt;/p&gt;
-&lt;p&gt;Matches persist between periods, but can be destroyed by an exogenous shock with constant probability, or by either individuals or firms if the match is no longer profitable (possible because wages are because home production is constant while labor income is a function of stochastic productivity)&lt;/p&gt;
-&lt;h3 id=&#34;matching-bargaining-and-surplus&#34;&gt;Matching, Bargaining, and Surplus&lt;/h3&gt;
-&lt;p&gt;The authors assume a standard Cobb-Douglass style aggregate matching technology&lt;/p&gt;
-&lt;p&gt;Wages are renegotiated each period and are set by a generalized Nash bargaining protocol&lt;/p&gt;
-&lt;p&gt;The dynamics of the match surplus drives incentives for firms and individuals. Using the value functions of individuals and firms it can be written as the sum of two components:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;A standard term that is the discounted sum of the difference of production from employed and unemployed workers&lt;/li&gt;
-&lt;li&gt;A new second term that captures the benefit from human capital accumulation for employed workers over unemployed individuals&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;key-results&#34;&gt;Key Results&lt;/h2&gt;
-&lt;p&gt;The working paper only solves the model without aggregate shocks. There is an experiment where aggregate productivity unexpectedly drops 1% below its steady state level and then deterministically returns to the steady state.&lt;/p&gt;
-&lt;p&gt;The main findings are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Employment drops, and this drop is much more persistent than the drop in productivity
-&lt;ul&gt;
-&lt;li&gt;Most of this drop can be attributed to a drop in the market tightness (vacancies/unemployed)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The concavity of preferences amplifies the response of employment: the model with CRRA parameter set to &lt;span class=&#34;math inline&#34;&gt;5&lt;/span&gt; has an employment response 6 times larger than the model with linear preferences&lt;/li&gt;
-&lt;li&gt;On the job human capital accumulation makes the response to employment larger and more persistent&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Kehoe2015&#34;&gt;
-&lt;p&gt;Kehoe, Patrick, Virgiliu Midrigan, and Elena Pastorino. 2015. “Discount Rates , Learning by Doing and Employment Fluctuations,” no. October.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

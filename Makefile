@@ -9,4 +9,4 @@ publish :
 	ghp-import -n -p public
 
 update :
-	cd ../SargentReadingGroup && $(MAKE) clean_hugo && $(MAKE) hugo
+	cd ../SargentReadingGroup && $(MAKE) hugo

@@ -13,6 +13,56 @@
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Amiti:2014ez (Importers, Exporters, and Exchange Rate Disconnect.)</title>
+      <link>http://srg.spencerlyon.com/2016/09/27/amiti2014ez-importers-exporters-and-exchange-rate-disconnect./</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/09/27/amiti2014ez-importers-exporters-and-exchange-rate-disconnect./</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper aims to explain the low exchange rate pass-through for exporters. Exchange rate pass-through is the response in export prices to movement in the exchange rate.&lt;/p&gt;
+&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
+&lt;p&gt;The theoretical model is not the focus of the authors&amp;rsquo; analysis in this paper. They write down a fairly complicated model, derive some of the equilibrium conditions, then use the implications of the equilibrium conditions as testable predictions they take to the data.&lt;/p&gt;
+&lt;p&gt;I will attempt to summarize only the portions of the model that are necessary for understanding the testable predictions.&lt;/p&gt;
+&lt;p&gt;The model is made up of two main components:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;An oligopolistic competition model of variable markups following Atkeson and Burstein (2008). There are a continuum of sectors, each with a finite number of firms. Good are combined at the sector level using a CES technology. Then sector outputs are combined using another CES technology before being consumed by a representative household in each country. Household&amp;rsquo;s have preferences over the final consumption good and the labor they supply to firms.&lt;/li&gt;
+&lt;li&gt;A model of the firm&amp;rsquo;s choice to import intermediate inputs at a fixed cost as in Halpern, Koren, and Szeidl (2011). Firms use a CRS Cobb-Douglass production function to combine a continuum of inputs. Each input is the CES aggregation of a domestic and foreign variety of the input. Foreign varieties have a multiplicative productivity advantage in the CES aggregator. Firms pay a firm specific fixed cost for each input variety they choose to import. Inputs are by sorted total productivity factor (combination of effect at the CES and Cobb Douglass levels), which together with the fixed costs makes the import policy have the form of a cutoff rule.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The oligopolistic competition portion of the model generates the fact that firms set prices at a constant markup over marginal cost. Furthermore, the markup is fully characterized by production function parameters and the firm&amp;rsquo;s market share at the sector-destination level.&lt;/p&gt;
+&lt;p&gt;The intermediate input importing part of the model results in firms with larger total input costs or smaller fixed cost of importing have a larger import intensity. (defined as fraction of total variable costs spend on importing)&lt;/p&gt;
+&lt;p&gt;Finally, the main theoretical result of the paper is that in any general equilibrium in this framework, the first-order approximation of the elasticity of destination-specific firm prices to the exchange rate (e.g. exchange-rate pass through) is affine in the importing intensity and market share.&lt;/p&gt;
+&lt;h1 id=&#34;data&#34;&gt;Data&lt;/h1&gt;
+&lt;p&gt;The main data used in the paper is from the National Bank of Belgium. It consists of a comprehensive panel of Belgian trade flows by firm at the product (CN 8 digit level). It includes exports by destination and imports by source country. This is combined with firm-level characteristics from the Belgian Business Registry. Data is measured annually between 2000 and 2008.&lt;/p&gt;
+&lt;p&gt;The authors run a number of regressions. In each of them, the dependent variable is the log change in a firm&amp;rsquo;s export price of a good to a country. This is computed as the difference in the log of export value over export quantity.&lt;/p&gt;
+&lt;p&gt;A key variable from the theory is the sector-destination-time market share of each firm. This is computed in the data as the total value exported by a firm to a destination divided by the total value exported from to that destination from the sector.&lt;/p&gt;
+&lt;p&gt;The final key variable in the theory is the import intensity of the firm. This is defined as the total value of all non-euro zone imports over total variable costs.&lt;/p&gt;
+&lt;p&gt;The authors also use data on the exchange rate and change in marginal costs.&lt;/p&gt;
+&lt;h1 id=&#34;stylized-facts&#34;&gt;Stylized Facts&lt;/h1&gt;
+&lt;p&gt;The data reveal a number of stylized facts about Belgian importers and exporters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Import intensive firms (firms whose import intensity is above the median level of 4.2%) operate at a much larger scale than non import intensive firms.&lt;/li&gt;
+&lt;li&gt;Import intensity is skewed towards zero, but has wide support and high dispersion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
+&lt;p&gt;The main empirical findings are summarized by the results of regressing the log change in export price on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Change in exchange rate&lt;/li&gt;
+&lt;li&gt;Lagged import intensity&lt;/li&gt;
+&lt;li&gt;Lagged market share&lt;/li&gt;
+&lt;li&gt;Interactions between change in exchange rate and both import intensity and market share&lt;/li&gt;
+&lt;li&gt;Firm, destination fixed effects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using variants of this specification, they document the following results:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Including only the change in exchange rate and dummies, they find that exchange rate pass through (change in prices in response to change in exchange rate) is roughly 80%.&lt;/li&gt;
+&lt;li&gt;Adding the interaction between the change in exchange rate and import intensity reveals that a 10 percent higher import intensity leads to a 6 percent lower pass-through. This is consistent with the model where pass- through is decreasing in import intensity.&lt;/li&gt;
+&lt;li&gt;Controlling for changes in marginal costs causes the coefficient on the interaction of the exchange rate and import intensity to be cut in &amp;frac12;, but remain statistically significant at the 1% level. The coefficient on changes in marginal cost is almost twice as large as the import intensity term. This suggests that marginal cost is an important channel through which import intensity affects pass-through, but there is significant residual that operates through other channels. The theory indicates that the other channel is the markup channel.&lt;/li&gt;
+&lt;li&gt;Regressing change in prices on changes in the exchange rate and interactions between import intensity and market share shows that both interaction terms have significant coefficients at the 1% level. Under the results of this regression, a small non-importer will have 96% pass through. A non-importing large firm with 75% market share will have pass-through of 73%. If additionally this large firm has an import intensity of 38%, the pas-through drops to 55%. This shows that variation in import intensity and market share explain a vast range of the variation in pass-through across firms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ### Demand and Markups The authors consider a firm producing a differentiated good, within a particular sector, for a destination market, at a time t. Each firm is one of a finite number of producers within a sector (oligopolistic competition). Firm outputs are combined into sector level goods using a CES technology. These sector level outputs are again combined with a CES technology (different elasticity of substitution) before being consumed by a representative household. In this environment, the firm-sector-destination-time demand for a good is a function of: 1\. Relative preference (quality) for the firm 2\. The firm&#39;s price index 3\. The sector&#39;s price index 4\. The sector&#39;s demand shift (taken as given by the firm). Firm&#39;s end up charging a constant markup over marginal cost. The markup is fully characterized by CES elasticity parameters and the sector-destination-time market share for the firm. One of 3 main theoretical results, that is tested empirically, is that the markup and _elasticity of the markup with respect to firm price index_ are both increasing in market share. NOTE: From here to the end of this section is _really_ old Consumers of the good have nested CES preferences over the differentiated goods. A There are two countries (home and foreign) in the economy. We&#39;ll consider the domestic country; the economic environment in the foreign country is analogous. In each country there is a representative consumer that supplies labor to firms and has preferences over labor and a consumption good. The consumption good is produced by a competitive firm with CES technology over a continuum of sector-level outputs. Sector level goods are constructed using the output of a finite number of firm specific goods. These firms each produce a distinct good and operate in an oligopolistically com ### Production and Imported Inputs Production factors for differentiated goods producers are labor and an aggregated intermediate _input_. The intermediate _input_ is build by aggregating a continuum of intermediate _goods_ using a Cobb-Douglass technology. Each type of intermediate _good_ is the CES aggregation of imperfectly substitutable domestic and foreign _varieties_. A firm pays a firm specific fixed sunk cost (in labor units) to import each of the foreign varieties of the intermediate _good_. In the end, the firm has a total variable cost that is a function of: - Cost index for a non-importing firm - Cost reduction factor from importing - Firm productivity - Firm output Because of the variety-specific fixed costs, firms will not choose to import all goods. If goods are ordered according to the productivity-enhancement they provide, there will be a cutoff for which goods are imported by each firm. The import share for a firm is defined as the fraction of total variable costs that come from importing foreign varieties. --&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Kee:2016ej (Trade adjustment dynamics and the welfare gains from trade)</title>
       <link>http://srg.spencerlyon.com/2016/09/27/kee2016ej-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</link>
       <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
@@ -888,67 +938,6 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x&#39;} P(x&#39;| x,c) \
 &lt;li&gt;Policy implications: Changes in option values (perhaps due to changes in expectations about future market conditions) can induce large changes in exporter decisions, even when short run profits are unchanged.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The second finding suggests that policies that wish to induce changes in export market participation should aim to adjust the expectation about future market conditions (e.g. expected changes in real interest rates) &lt;em&gt;or&lt;/em&gt; directly subsidize the export fixed costs (sunk and/or fixed).&lt;/p&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Melitz 2003 (The impact of trade on intra-industry reallocations and aggregate industry productivity)</title>
-      <link>http://srg.spencerlyon.com/2016/02/02/melitz-2003-the-impact-of-trade-on-intra-industry-reallocations-and-aggregate-industry-productivity/</link>
-      <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/02/02/melitz-2003-the-impact-of-trade-on-intra-industry-reallocations-and-aggregate-industry-productivity/</guid>
-      <description>&lt;p&gt;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;An early paper that introduced a now common framework for thinking about firm entry, export decision, and exit in trade models.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;ll describe the model in two stages:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;A closed economy version of the model with a single country&lt;/li&gt;
-&lt;li&gt;An open economy version with many similar countries&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;closed-economy&#34;&gt;Closed economy&lt;/h3&gt;
-&lt;h4 id=&#34;consumers&#34;&gt;Consumers&lt;/h4&gt;
-&lt;p&gt;There is a representative consumer with CES a utility function over a continuum of goods. The elasticity of substitution between any two goods is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;σ&lt;/em&gt; &amp;gt; 1&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;We can apply Dixit Stiglitz type analysis to model this consumer&amp;rsquo;s choice as choosing only the aggregate, with an associated price. The demand an expenditure on individual varieties is then a function of the aggregated consumption good, aggregate price, and variety prices.&lt;/p&gt;
-&lt;h4 id=&#34;firms&#34;&gt;Firms&lt;/h4&gt;
-&lt;p&gt;There is a continuum of firms, who each produce a single variety demanded by the consumer. Production is a function of only labor, which is inelastically supplied at an aggregate level of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Technology is characterized by a cost function with constant marginal costs and a fixed overhead cost. This results in labor being an affine function in quantity: &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;l&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt; + &lt;em&gt;q&lt;/em&gt;/&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt;. Here &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt; characterizes the productivity of the firm. Higher productivity is interpreted as producing an identical variety at a lower marginal cost. This allows us to distinguish firms not by the variety they produce, but by their productivity.&lt;/p&gt;
-&lt;p&gt;Optimal pricing is the standard constant markup over marginal cost.&lt;/p&gt;
-&lt;p&gt;Firm revenue and profits can also be expressed in terms of the aggregate expenditure and price from the consumer problem.&lt;/p&gt;
-&lt;p&gt;Results are that more productive firms are have higher output and revenues, charge a lower price, and earn more profits than less productive firms.&lt;/p&gt;
-&lt;h4 id=&#34;firm-entry-and-exit&#34;&gt;Firm entry and exit&lt;/h4&gt;
-&lt;p&gt;There is an unbounded pool of ex ante identical prospective entrants into the industry. Each firm must pay a fixed entry cost (labor units) to draw a productivity from a distribution &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;. This productivity remains constant throughout the life of the firm.&lt;/p&gt;
-&lt;p&gt;After receiving its productivity draw a firm can either exit immediately or begin producing. Once a firm decides to produce, there is an exogenous probability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;δ&lt;/em&gt;&lt;/span&gt; that the firm will be forced to exit.&lt;/p&gt;
-&lt;p&gt;Because there are no changes in productivity, the firm&amp;rsquo;s entry decision is static and characterized by a cutoff threshold &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt;. At &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; a firm is indifferent between entering or not. All firms who draw &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt; &amp;gt; &lt;em&gt;φ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;&lt;/span&gt; choose to enter; others exit. These firms all earn non-negative profits in equilibrium.&lt;/p&gt;
-&lt;p&gt;To close the economy, we also must consider a free entry condition. This condition says that the average value of entering net of entry costs must be zero.&lt;/p&gt;
-&lt;h4 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h4&gt;
-&lt;p&gt;There exists a unique equilibrium in this model in which aggregate variables are constant across time. This equilibrium can be understood by a single figure:&lt;/p&gt;
-&lt;!-- ![Melitz equilibrium](/Users/sglyon/Research/SargentReadingGroup/images/melitz_eqm.png) --&gt;
-&lt;p&gt;Consider &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;/span&gt; on the horizontal axis and firm profits on the vertical axis. Then we put two lines in this space:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;The &amp;quot;zero profit cutoff&amp;quot;, which characterizes average profits as a function of the cutoff productivity. This will be a downward sloping line&lt;/li&gt;
-&lt;li&gt;The free entry condition: expresses average profits as an increasing function of cutoff productivity&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Melitz proves that these lines always intersect exactly once, and the intersection is at the point (&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;$\bar{\pi}$&lt;/span&gt;).&lt;/p&gt;
-&lt;h3 id=&#34;open-economy&#34;&gt;Open economy&lt;/h3&gt;
-&lt;p&gt;Now consider a world where there are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; additional countries, identical to the one we have been studying, with which our country can trade. In order to trade internationally, each country must pay a fixed cost to enter the export market and a variable trade cost (iceberg cost) per unit of export. These export costs are symmetric.&lt;/p&gt;
-&lt;h4 id=&#34;equilibrium-1&#34;&gt;Equilibrium&lt;/h4&gt;
-&lt;p&gt;Equilibrium in this setup is very similar to before. The exogenous environment for individual firms remains unchanged. Symmetric export costs imply that a firm will either choose to export to all foreign countries, or no foreign countries.&lt;/p&gt;
-&lt;p&gt;Again, because a firm&amp;rsquo;s productivity is unchanged after the initial draw, the entry and export decisions are static and each is characterized by a cutoff. The entry cutoff is the same as before. The export cutoff &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;φ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;&lt;/sup&gt;?&lt;em&gt;φ&lt;/em&gt;&lt;sup&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; is characterized by the productivity that sets profits from foreign markets to zero.&lt;/p&gt;
-&lt;h3 id=&#34;impact-of-trade&#34;&gt;Impact of trade&lt;/h3&gt;
-&lt;p&gt;We will consider one experiment. Suppose a country initially starts in autarky and then is opened to trade.&lt;/p&gt;
-&lt;p&gt;When this happens, the zero profit condition curve (downward sloping one) will shift up and the entry cutoff and average firm profits will both increase. Some firms who did enter in autarky will be forced to exit. Furthermore, only firms with productivity above the export cutoff will enter the export market.&lt;/p&gt;
-&lt;p&gt;This will have a number of effects on equilibrium aggregates:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The number of domestic firms decreases (cutoff higher)&lt;/li&gt;
-&lt;li&gt;Domestic consumers have access to foreign varieties.
-&lt;ul&gt;
-&lt;li&gt;Typically this leads consumers to have access to more total varieties. Thus, consumer welfare rises as does aggregate firm profits because of the higher average productivity.&lt;/li&gt;
-&lt;li&gt;When trade costs are high, opening the economy might lead to a net &lt;em&gt;decrease&lt;/em&gt; in the varieties available to consumers (reducing welfare). However, Melitz shows that even in this case the welfare gain from higher average productivity dominates this welfare loss.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Why does trade cause less productive firms to exit?&lt;/p&gt;
-&lt;p&gt;You might think it is because domestic firms now face more competition from foreign ones. This heightened competition would lower prices, making it unprofitable for low productivity firms to remain in the market. Because of the assumption of monopolistic competition and CES consumer preferences, optimal prices do not respond to the number of competing varieties.&lt;/p&gt;
-&lt;p&gt;What actually does happen is entirely carried about in the labor market. The short description is that more productive firms now have access to more consumers, which makes them want to produce more, for which they need to hire more labor, which drives labor demand up, this increases the real wage, which makes it so less productive firms can no longer compete in the labor market.&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     

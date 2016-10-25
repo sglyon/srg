@@ -9,8 +9,37 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 18 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Baley:2016wr (Firm uncertainty cycles and the propagation of nominal shocks)</title>
+      <link>http://srg.spencerlyon.com/2016/10/25/baley2016wr-firm-uncertainty-cycles-and-the-propagation-of-nominal-shocks/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/10/25/baley2016wr-firm-uncertainty-cycles-and-the-propagation-of-nominal-shocks/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This paper develops a model with menu costs for adjusting prices and imperfect information about idiosyncratic productivity shocks. They conduct monetary policy experiments and conclude that the distribution of firm level uncertainty is important for the propagation of monetary shocks.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;In this model time is continuous. There is a representative consumer, a continuum of monopolistically competitive firms, and a monetary authority.&lt;/p&gt;
+&lt;p&gt;In the baseline model, the monetary authority keeps the money supply fixed at its initial level.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The representative consumer&lt;/strong&gt; has log preferences over consumption and money holdings, with linear disutility from labor. The household discounts the future at a constant rate r. Consumption is the CES aggregation of firm specific goods, each multiplied by a firm specific quality shock. The lifetime budget constraint of the consumer says that the value of consumption expenditures plus the cost of holding money, less labor earnings and firm profits is no greater than the initial money supply.&lt;/p&gt;
+&lt;p&gt;There are a continuum of &lt;strong&gt;firms&lt;/strong&gt; who each product and sell their product in a monopolistically competitive market. Each firm has access to a linear technology that produces one unit of output for each unit of labor, divided by the stochastic quality of the good (meaning a higher quality good requires more labor to produce).&lt;/p&gt;
+&lt;p&gt;This is the same quality that appears in the CES aggregator for consumption. The log of the quality shock follows a jump-diffusion process, without drift. This means that &lt;code&gt;da(z) = sigma1 dW + sigma2 u dQ&lt;/code&gt;, where W is a Weiner process and u Q is a poisson process with standard normal innovations. It is assumed that sigma1 is much smaller than sigma2, such that when the poisson process jumps there is a large shock to the quality of the firm&amp;rsquo;s product.&lt;/p&gt;
+&lt;p&gt;Firms do not observe the quality directly and cannot learn about it using wage costs. The only information they receive about their quality is a noisy signal and the information about when the poisson process jumps. The evolution of the signal follows &lt;code&gt;ds = a dt + gamma dZ&lt;/code&gt;, where Z is another independent Weiner process.&lt;/p&gt;
+&lt;p&gt;Firm prices are subject nominal rigidities in which firms can only change their price if they pay a fixed menu cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The flow profit to a firm is given by the demand for the good, multiplied by the price less the wage bill.&lt;/p&gt;
+&lt;p&gt;Firms use the discount rate of the household (because households own firms) and seek to maximize the expected discounted profit streams by choosing a sequence of prices and stopping times for price adjustments. When firms adjust prices, it is optimal to set them to a constant markup over marginal costs. Each period the firm does not adjust its price, there is a gap between the optimal markup in a frictionless economy (i.e. without both price and information frictions) and the markup being used by the firm. The equilibrium flow of profits can be expressed as minus a constant times this markup gap.&lt;/p&gt;
+&lt;p&gt;Because firms cannot directly observe the quality of their goods, they do not know the true value of the markup gap each period. Instead, they use the signals about the quality shock to form a signal extraction problem. A main contribution of the paper is the extension of the Kalman-Bucy filter to the environment where the hidden state follows a jump-diffusion process. One key output of the system of filtering equations is that innovations in the estimate of the markup gap are more volatile when there is high uncertainty about the estimate &amp;ndash; e.g. when the variance of the estimate is high. An implication of this is that when uncertainty is high, firms place higher weight on their signals than they do on the current estimate when updating beliefs. In this scenario, the learning rate is higher, but also noisier.&lt;/p&gt;
+&lt;p&gt;The optimal stopping time for firms is characterized by an inaction region &amp;ndash; as long as the filtered estimate for the markup gap is within certain bounds, the firm does not update prices. Once the price touches one of the borders, it immediately adjusts prices to set the estimated markup gap to zero.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Here are some key results about the steady state equilibrium of this economy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The filtering equation for updating uncertainty (the variance of the state estimate) produces cycles of uncertainty for the firm. There is a deterministic component that causes uncertainty to fall to it&amp;rsquo;s minimum level (the volatility of the diffusion component of quality shocks) and a stochastic component that causes it to rise whenever Poisson process jumps. The time series for a simulated path has a saw-tooth pattern where sharp increases are followed by gradual declines in uncertainty.&lt;/li&gt;
+&lt;li&gt;In times when uncertainty is high, the innovations to the filtered estimate of the markup gap are more volatile. This generates cycles in firm markup behavior where in times of high uncertainty firms choose to update prices more frequently. These cycles in uncertainty and pricing behavior are idiosyncratic because they are driven by idiosyncratic evolution of Brownian Motion and Poisson processes.&lt;/li&gt;
+&lt;li&gt;The idiosyncratic cycles allow the authors to look at how the &lt;em&gt;distribution&lt;/em&gt; of uncertainty relates to the response to monetary shocks. To do this they perform an experiment where the monetary authority does a one-time un-anticipated increase in the money supply by a known amount. When the monetary shock occurs, estimates of the markup gap are updated immediately. But, a firm&amp;rsquo;s price will only get update when its estimate leaves its inaction region. As long as some firms&amp;rsquo; estimates remain in the inaction region, aggregate output will be different from its post-shock steady state value. As a summary statistic, they compute the total output effect, which is the integral over all time of the output gap relative to the steady state. They find that in the economy with information frictions, the output effect is larger up to 7 times larger and has a half life up to 5.3 times longer half life than in the perfect information economy. In this sense the authors claim that the distribution of firm level uncertainty is an important consideration when trying to evaluate the effects of monetary policy actions.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Ikegami:2016ek (Poverty Traps and the Social Protection Paradox)</title>
@@ -737,102 +766,6 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x&#39;} P(x&#39;| x,c) \
 &lt;p&gt;The way to implement his feature of the first-best equilibrium using taxes, is to have tariffs scale one for one with the profitability of the firms whose export profit constraint binds.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;The two extensions of the Melitz model (heterogenous trade costs and market specific CES parameters) generated one main departure from the Melitz equilibrium: an optimal one-sided tariff and subsidy policy that discriminates against low productivity foreign exporters.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Eaton, Eslava, Jinkins, Krizan, Tybout (2014) (A search and learning model of export dynamics)</title>
-      <link>http://srg.spencerlyon.com/2016/02/16/eaton-eslava-jinkins-krizan-tybout-2014-a-search-and-learning-model-of-export-dynamics/</link>
-      <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/02/16/eaton-eslava-jinkins-krizan-tybout-2014-a-search-and-learning-model-of-export-dynamics/</guid>
-      <description>&lt;p&gt;&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-&lt;p&gt;A primarily empirical paper that studies how allowing exporting firms to learn about demand for their product impacts firm dynamics in a Melitz style trade model.&lt;/p&gt;
-&lt;h2 id=&#34;data-and-stylized-facts&#34;&gt;Data and stylized facts&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s start with the data.&lt;/p&gt;
-&lt;p&gt;The data set used in this paper describes all imports by US buyers from Colombian exporters from 1992-2009. The source is the U.S. Census Bureau’s Longitudinal Foreign Trade Transactions Database (LFTTD).&lt;/p&gt;
-&lt;p&gt;Using this data, the authors report the following stylized facts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;About 80% of Colombian exporter/US importer matches are 1-1, meaning the Colombian firm has no other US buyers and the US firm only buys from a single Colombian firm.&lt;/li&gt;
-&lt;li&gt;About 70% of matches dissolve after one period. There are several additional features behind this fact:
-&lt;ul&gt;
-&lt;li&gt;If a match does survive the into a second period, there is a significantly higher chance it will survive into the third (about 50%). This trend continues as the duration of the match increases.&lt;/li&gt;
-&lt;li&gt;The survival probability of a new match increases with first year sales volume.&lt;/li&gt;
-&lt;li&gt;These facts suggest that there are many Colombian firms who merely &amp;quot;test the US waters&amp;quot; and export a small volume, find the conditions unfavorable, and exit. This might suggest these firms are trying to learn about foreign demand.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;Now let&amp;rsquo;s turn to the theoretical model. The model is set in continuous time and will feature Columbian firms who sell domestically and to US importers.&lt;/p&gt;
-&lt;h3 id=&#34;firm-pricing-problem&#34;&gt;Firm pricing problem&lt;/h3&gt;
-&lt;p&gt;Each Colombian firm competes monopolistically and seeks to maximize total profits. The details of the pricing problem solved by the firms are not given, but rather the authors jump to the Melitz result: prices are set to a constant markup over marginal costs. In this setting the profits of a firm can be written as a multiplicative function of three components:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;A macroeconomic state that is common to all firms&lt;/li&gt;
-&lt;li&gt;Firm productivity&lt;/li&gt;
-&lt;li&gt;A time-varying match specific demand shifter&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;relationships&#34;&gt;Relationships&lt;/h3&gt;
-&lt;p&gt;At each instant in time the seller maintains relationships with an endogenous number of buyers. These relationships are the product of a search process that will be outlined shortly. The matches dissolve exogenously at a constant rate &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;δ&lt;/em&gt;&lt;/span&gt; or if the seller no longer finds it profitable to pay a constant fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;/span&gt; to maintain the relationship.&lt;/p&gt;
-&lt;p&gt;If the match is kept alive, it may be hit by one of three events:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;With a constant hazard &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;λ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; the buyer places another order&lt;/li&gt;
-&lt;li&gt;With a hazard &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;X&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; the macro state will jump to a new level&lt;/li&gt;
-&lt;li&gt;With a hazard &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;y&lt;/em&gt;&lt;em&gt;y&lt;/em&gt;′&lt;/sub&gt;&lt;sup&gt;&lt;em&gt;Y&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; the match specific demand shifter will jump to a new level&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;As the shocks to macro and idiosyncratic states are Markov, the stopping time characterizing when one event occurs is distributed exponentially. This allows the authors to write the firms expected profit recursively and obtain expectations in closed form.&lt;/p&gt;
-&lt;h3 id=&#34;learning&#34;&gt;Learning&lt;/h3&gt;
-&lt;p&gt;Sellers conduct search in domestic and foreign markets. When searching in a particular market &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;, sellers understand that a constant fraction &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; of potential buys will form a match.&lt;/p&gt;
-&lt;p&gt;Each seller draws &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; before meeting with any clients and the draws remain fixed over time. All draws of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt; come independently from a beta distribution.&lt;/p&gt;
-&lt;p&gt;Sellers are assumed to have met with many domestic firms and know &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;. They will; however, have to learn about &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; by meeting with many firms.&lt;/p&gt;
-&lt;p&gt;For a given level of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;, the probability that a random sample of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; potential foreign buyers will result in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; matches is distributed binomally.&lt;/p&gt;
-&lt;p&gt;The beta and binomial distributions form a conjugate pair, so after &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; are realized, the posterior for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; is known in closed form.&lt;/p&gt;
-&lt;h3 id=&#34;search&#34;&gt;Search&lt;/h3&gt;
-&lt;p&gt;The final component of the model is the search problem. Each seller will continuously choose a market specific hazard rate &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; with which they meet with a potential buyer. At the moment of the meeting, the firm pays a flow cost of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/sup&gt;, &lt;em&gt;a&lt;/em&gt;)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt; is still the number of successful previous matches.&lt;/p&gt;
-&lt;p&gt;The search problem for a firm with a specific productivity and matching efficiency can be written recursively with states being &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; and the macro state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;. The expectations in this recursive formulation are again over the stopping time of seller events, which means they can also be written in closed form.&lt;/p&gt;
-&lt;p&gt;The optimal search hazard rate for each firm in both markets can be characterized in closed form.&lt;/p&gt;
-&lt;h2 id=&#34;empirical-model&#34;&gt;Empirical Model&lt;/h2&gt;
-&lt;p&gt;To implement this model empirically, the authors impose the following additional structure:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A specific form for the search cost function&lt;/li&gt;
-&lt;li&gt;Distributions for all exogenous states (seller productivity, and macro/micro states) are all assumed.&lt;/li&gt;
-&lt;li&gt;The data is uninformative regarding the rate of time discount for sellers and the demand elasticity, so values for these parameters are directly assumed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The distribution of the states is a set of independent Ehrenfest diffusion processes. This process is special because it converges to the well known Ornstein-Uhlenbeck process as the spacing between grid points in the state space converges to zero&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;estimation&#34;&gt;Estimation&lt;/h2&gt;
-&lt;p&gt;Estimation is broken into 2 stages:&lt;/p&gt;
-&lt;h3 id=&#34;estimating-the-jump-process-for-macro-states&#34;&gt;Estimating the jump process for macro states&lt;/h3&gt;
-&lt;p&gt;They proxy &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; in each market as real expenditures on manufacturing goods in that country. Their distributional assumption for the macro states allow them summarize the distribution in terms of a jump size and hazard rate.&lt;/p&gt;
-&lt;h3 id=&#34;indirect-inference&#34;&gt;Indirect inference&lt;/h3&gt;
-&lt;p&gt;The rest of the estimation happens via indirect inference on the closed form results form the theoretical model.&lt;/p&gt;
-&lt;p&gt;The parameters are estimated to minimize distance between moments generated by the model and corresponding moments in the data. The data features that are targeted include&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Distribution of home and foreign sales&lt;/li&gt;
-&lt;li&gt;Distribution of clients across exporters&lt;/li&gt;
-&lt;li&gt;Sales per client, conditioned on the number of clients&lt;/li&gt;
-&lt;li&gt;An autoregression of log domestic sales&lt;/li&gt;
-&lt;li&gt;Transition probabilities in the number of clients&lt;/li&gt;
-&lt;li&gt;Exporter exit hazard by duration in foreign market&lt;/li&gt;
-&lt;li&gt;Match death probabilities and match sales&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;basic-results&#34;&gt;Basic results&lt;/h3&gt;
-&lt;p&gt;There are many parameters, so I won&amp;rsquo;t enumerate how well the model does at targeting each parameter. The overall results are that the estimates match the signs of all empirical moments and the magnitude of most.&lt;/p&gt;
-&lt;p&gt;Some interpretation of the coefficients is helpful:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mature (5+ years) matches fail with a probability of 40%, but the estimated exogenous separation rate is only 27%. This suggests that the idiosyncratic demand shift shocks impact long-run match survival.&lt;/li&gt;
-&lt;li&gt;On average, the success rate of matches is 0.18. However, the standard deviation of this estimate is 0.176, suggesting that there is significant room for learning.&lt;/li&gt;
-&lt;li&gt;Network effects are very strong. This is summarized by the search cost falling sharply as the number of successful matches rises.&lt;/li&gt;
-&lt;li&gt;Finally, the estimation also suggests that the network effects are strongest for sellers getting their first successful match (suggests that search costs are concave in the number of matches).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;experiments&#34;&gt;Experiments&lt;/h2&gt;
-&lt;p&gt;The authors then do a few experiments to further probe the model.&lt;/p&gt;
-&lt;h3 id=&#34;no-learning-model&#34;&gt;No-learning model&lt;/h3&gt;
-&lt;p&gt;They first consider a no learning model where firms are assumed to know both &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;h&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; with certainty at the onset of the model.&lt;/p&gt;
-&lt;p&gt;The main impact of this model restriction is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The exit of inexperienced exports is lower. This is driven both by having low &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sup&gt;&lt;em&gt;f&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt; sellers not try to learn about foreign demand and by no learning based exit.&lt;/li&gt;
-&lt;li&gt;To overcome this and still match seller exit rates, exogenous separation probability doubles from 0.26 to 0.52.&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
 </description>
     </item>
     

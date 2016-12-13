@@ -9,8 +9,113 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 01 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Lustig, Zhang, and Hartman-Glaser (2016) (Capital Share Dynamics When Firms Insure Managers)</title>
+      <link>http://srg.spencerlyon.com/2016/12/13/lustig-zhang-and-hartman-glaser-2016-capital-share-dynamics-when-firms-insure-managers/</link>
+      <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/12/13/lustig-zhang-and-hartman-glaser-2016-capital-share-dynamics-when-firms-insure-managers/</guid>
+      <description>&lt;p&gt;This paper uses Compustat data to document that the aggregate capital share of income and average capital share of income have diverged over the last 20 years. Specifically, the average capital share has fallen while the aggregate share has risen.&lt;/p&gt;
+&lt;p&gt;They then write down a model that uses changes in firm level volatility of productivity to generate similar dynamics in general equilibrium.&lt;/p&gt;
+&lt;p&gt;The model is interesting in its own right. It features a 2 sided limited commitment contracting problem. The agent has all bargaining power ex ante, but after the principal faces idiosyncratic shocks he ends up with capturing almost all aggregate rents ex post.&lt;/p&gt;
+&lt;p&gt;This is related to a new literature on carefully modeling large firms in order to understand aggregates.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;The model is set in continuous time.&lt;/p&gt;
+&lt;p&gt;Unit measure of ex ante identical firms. Each firm has an idiosyncratic time-varying productivity. Firms are owned by risk neutral investors (or shareholders) and operated by skilled managers. Firms rent physical capital and employ unskilled labor to produce using a decreasing returns to scale production technology.&lt;/p&gt;
+&lt;p&gt;Firm productivity evolves as a geometric brownian motion that is subject to a negative poisson shock. If productivity reaches a strictly positive minimum value (determined in equilibrium), or if poisson process jumps, the firm exits immediately. There is a competitive fringe of potential entrants. When an investor creates a new firm they pay a fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;P&lt;/em&gt;&lt;/span&gt;. Each period firms enter until the expected value of entering is equal to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;P&lt;/em&gt;&lt;/span&gt; (free entry). After entering the initial productivity level is drawn from a Pareto distribution.&lt;/p&gt;
+&lt;p&gt;When a firm is formed, but before initial productivity is realized, the investor is matched with a risk adverse manager and the investor offers a long term contract. The contract is a sequence of payments to be made to the manager at each instant. The manager has convex preferences over this sequence of payments and discounts the future at a constant rate. The manager can choose to accept or reject the proposed contract. Upon rejection the manager is immediately matched with a new potential entrant.&lt;/p&gt;
+&lt;p&gt;Both parties are free to terminate the contract at any time. If the manager walks away from the firm, he will receive some outside option that is determined in equilibrium. The investor will choose to continue operations as long there is a positive net present value. The investor faces an optimal stopping time problem that characterizes when the firm is abandoned. The abandonment problem is to maximize the present discounted value of profits less managerial payments from the current period until the random stopping time, subject to the constraint that the manager doesn&#39;t walk away. The constraint sets the NPV of managerial payments plus post-stopping value equal to the outside option. This constraint is always binding, so WLOG the authors restrict attention to contracts that gives the manager a fixed payment until the firm exits.&lt;/p&gt;
+&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
+&lt;p&gt;The authors use this model to describe how to match the facts about the capital share of income. The main mechanism is that an increase in the volatility parameter in the productivity process will do two main things:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;raise the real option value of waiting to abandon for firms with low productivity. This results in a decrease in the lower productivity threshold at which firms exit&lt;/li&gt;
+&lt;li&gt;Increase the number of firms with very high productivity.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In other words, higher volatility in innovations to productivity creates fat tails in the distribution of productivity across firms.&lt;/p&gt;
+&lt;p&gt;The average capital share of income is computed as the integral of profits less managerial payments divided by profits over all firms.&lt;/p&gt;
+&lt;p&gt;The aggregate capital share of income is computed as the integral of profits less managerial payments over all firms divided by the integral of profits over all firms.&lt;/p&gt;
+&lt;p&gt;The fat right tail will put more mass on the extremely productive firms who are earning profits far above the managerial payments. This drives up the aggregate capital share of income.&lt;/p&gt;
+&lt;p&gt;On the other hand, the additional mass of low productivity firms will bring the average capital share of income down.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Timoshenko (2015) (Learning, prices, and firm dynamics)</title>
+      <link>http://srg.spencerlyon.com/2016/12/06/timoshenko-2015-learning-prices-and-firm-dynamics/</link>
+      <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/12/06/timoshenko-2015-learning-prices-and-firm-dynamics/</guid>
+      <description>&lt;p&gt;The authors of this paper use firm level data on Portuguese manufacturing firms and documents two new novel facts about the joint evolution of firm performance and prices:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Within product categories, firms with longer tenure in export markets tend to export larger quantities at similar prices&lt;/li&gt;
+&lt;li&gt;Older or more experienced exporters tend to import more expensive inputs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The authors then write down a model that can match these facts&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;Time is discrete, there are N countries. Each country is populated by a unit mass of infinitely lived consumers. There re two sectors in each economy: a final goods sector and an intermediate inputs sector. The final goods sector is populated by a mass of monopolistically competitive firms that each supply a differentiated variety of varying quality. The intermediate inputs sector is perfectly competitive and operates with a CRS production technology.&lt;/p&gt;
+&lt;p&gt;Consumers have log preferences over a CES aggregation of final goods. Within the CES aggregator final good has a multiplicative term representing the firm chosen quality of the good as well as a multiplicative preference shock term. This is idiosyncratic across firms.&lt;/p&gt;
+&lt;p&gt;TODO: DESCRIBE WHAT THE STRUCTURE IS.&lt;/p&gt;
+&lt;h4 id=&#34;intermediate-sector&#34;&gt;intermediate sector&lt;/h4&gt;
+&lt;p&gt;Perfect competition leads to price being equal to marginal cost&lt;/p&gt;
+&lt;h4 id=&#34;final-goods&#34;&gt;final goods&lt;/h4&gt;
+&lt;p&gt;Static problem: choose good quality and quantity based on expected profits in each economy.&lt;/p&gt;
+&lt;p&gt;Entry problem: given result of static problem, firms choose each period which markets to enter. If they enter they pay a fixed cost per market.&lt;/p&gt;
+&lt;p&gt;For each market the firm serves, they observe the equilibrium price that cleared the market for their good. They invert this price to uncover what the demand shock was in that period. They use this demand shock as a noisy signal though which they update their beliefs about the distribution of demand shocks they face.&lt;/p&gt;
+&lt;h4 id=&#34;eqm&#34;&gt;eqm&lt;/h4&gt;
+&lt;p&gt;They show that this model can generate dynamics that match the two empirical facts from before.&lt;/p&gt;
+&lt;h2 id=&#34;counterfactual&#34;&gt;Counterfactual&lt;/h2&gt;
+&lt;p&gt;They also do a very brief counterfactual exercise where they consider the welfare implications of imposing a minimum quality standard on all exported goods. They find that this limit decreases welfare. The mechanism is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;quality standard raises productivity threshold for entry into export market&lt;/li&gt;
+&lt;li&gt;The decline in number of exporters reduces competition in each market, raising prices&lt;/li&gt;
+&lt;li&gt;Another effect is less foreign firms allows for more low efficiency domestic firms to enter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is also an impact on the intensive margin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;firms close to the productivity threshold (small or young) will face a binding quality constraint&lt;/li&gt;
+&lt;li&gt;in order to export these firms must comply and in order to do so they need to pick which quality intermediate inputs.&lt;/li&gt;
+&lt;li&gt;higher quality inputs requires more labor&lt;/li&gt;
+&lt;li&gt;This leads in a reallocation of resources among exporters toward young and small firms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TODO FILL THIS IN!!!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hess:2000wh (Risk sharing by households within and across regions and industries. (Hess, Shin; 2000))</title>
+      <link>http://srg.spencerlyon.com/2016/11/22/hess2000wh-risk-sharing-by-households-within-and-across-regions-and-industries.-hess-shin-2000/</link>
+      <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/11/22/hess2000wh-risk-sharing-by-households-within-and-across-regions-and-industries.-hess-shin-2000/</guid>
+      <description>&lt;p&gt;&lt;p&gt;The goal of this paper is to test the degree of risk sharing across regions and industries in the US.&lt;/p&gt;
+&lt;p&gt;The rough outline is to write down a simple model they use to motivate an empirical specification, then test if that specification holds in the data.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;There are H households that each live in one of R regions and work within one of I industries. Each period, households receive an endowment of the consumption good and are able to trade in complete state contingent markets. Households have time-separable CRRA preferences that are subject to multiplicative preference shocks.&lt;/p&gt;
+&lt;p&gt;The authors formulate the social planner&amp;rsquo;s problem for the entire economy. The first order condition for each household equates the Lagrange multiplier on the resource constraint to the Pareto weight times marginal utility of consumption.&lt;/p&gt;
+&lt;p&gt;They then take logs, sum across all households, and take first differences to obtain a key equation that says household log consumption growth is equal to aggregate log consumption growth plus the difference in deviations of individual preference shocks from the average preference shock times a scale factor.&lt;/p&gt;
+&lt;p&gt;There are two key things to understand about this relationship:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;There is perfect within period risk sharing across households as their consumption is independent of their endowment.&lt;/li&gt;
+&lt;li&gt;There is also intertemporal consumption smoothing because the innovation to permanent income is the same across households because it is linked to aggregate consumption growth. When solving the planner&amp;rsquo;s problem it is difficult to write down the permanent income process, but that&amp;rsquo;s how it works.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;They also consider market structures where there is perfect risk sharing only within a region or within an industry, but not across these groups. They solve for allocations in the within-group risk sharing economy using a social planner problem, just like before. The only difference is that the new planners only consider the agents in one group.&lt;/p&gt;
+&lt;p&gt;The optimality conditions are identical and that important equation relates individual consumption growth to group-wise aggregate consumption growth and preference shocks is the same. If you then aggregate these within-group conditions across the groups you arrive at the same condition we got at the end of the economy-wide planner&amp;rsquo;s problem, with the addition of one extra term. This term is a risk adjusted difference in group and economy Lagrange multipliers.&lt;/p&gt;
+&lt;p&gt;In order to derive the equation they use as the main specification for the empirical exercises, they need to remove these unobservable Lagrange multipliers. To do this they return one more time to optimality conditions for the different planners and manipulate them to write the difference in Lagrange multipliers as the difference in group and economy level consumption growth.&lt;/p&gt;
+&lt;h2 id=&#34;empirics&#34;&gt;Empirics&lt;/h2&gt;
+&lt;p&gt;The final equation they end up taking to the data is that individual log consumption growth is equal to the sum of aggregate log consumption growth, the difference between regional and aggregate consumption growth, the difference between industry and aggregate consumption growth, controls for changes in preferences, and individual income growth.&lt;/p&gt;
+&lt;p&gt;They use data from the PSID to run regressions on this model. The theory suggests that if there is complete risk sharing across regions and industries, that the coefficients on those terms should be zero. They find that these coefficients are significantly different from zero, suggesting that a large fraction of wealth is incompletely shared across regions and industries.&lt;/p&gt;
+&lt;!-- The LHS of the economy wide and group specific equations is individual
+consumption growth, which allows them to write the difference between economy
+level and within group aggregate consumption as a statement about individual
+preference shocks. Applying a law of large numbers will cause these individual
+deviations from aggregate preference shocks to aggregate out and the
+implication is that economy wide an within group consumption growth should be
+the same. --&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Adam:2011ix (Adam, K., &amp; Marcet, A. (2011). Internal rationality, imperfect market knowledge and asset prices)</title>
@@ -538,176 +643,6 @@ strategy, whereas a randomized stationary is like a mixed strategy. --&gt;
 &lt;/ul&gt;
 &lt;p&gt;The key insight the authors have that make this algorithm tractable is the following:&lt;/p&gt;
 &lt;p&gt;Actors have to update a small number of parameters compared to the number of states. So the critic doesn&amp;rsquo;t need to form an approximation over the entire domain of Q, but rather a special projection of the Q onto the space spanned by the actor&amp;rsquo;s parameter vector.&lt;/p&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Busoniu, DeSchutter, Babuska(2010) (Approximate dynamic programming and reinforcement learning)</title>
-      <link>http://srg.spencerlyon.com/2016/04/12/busoniu-deschutter-babuska2010-approximate-dynamic-programming-and-reinforcement-learning/</link>
-      <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/04/12/busoniu-deschutter-babuska2010-approximate-dynamic-programming-and-reinforcement-learning/</guid>
-      <description>&lt;p&gt;This paper provides an overview of various solution concepts that belong to the families of approximate dynamic programming and reinforcement learning.&lt;/p&gt;
-&lt;p&gt;I will discuss an alternative representation of a dynamic programming that is often used in this literature and provide an overview of some solution methods that are common with this representation.&lt;/p&gt;
-&lt;h2 id=&#34;basics-q-functions&#34;&gt;Basics: Q-functions&lt;/h2&gt;
-&lt;p&gt;In economics, the standard representation of a dynamic programming problem is to define a recursive function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; that maps from a state space into the real line. Today I will call &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; function. The &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; function describes the value of being in a particular state.&lt;/p&gt;
-&lt;p&gt;Consider an alternative function &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; that maps from the state-action space, into the real line. I will call this the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function. The &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function describes the value of being in a particular state and choosing a particular action.&lt;/p&gt;
-&lt;p&gt;As we do with the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;-function, we can express the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function recursively using Bellman&#39;s principle of optimality. The recursive form of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function is&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Q&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;, &lt;em&gt;x&lt;/em&gt;)=&lt;em&gt;E&lt;/em&gt;&lt;sub&gt;&lt;em&gt;s&lt;/em&gt;′∼&lt;em&gt;f&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;, &lt;em&gt;x&lt;/em&gt;, ⋅)&lt;/sub&gt;[&lt;em&gt;r&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;,&lt;em&gt;x&lt;/em&gt;,&lt;em&gt;s&lt;/em&gt;′)+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;em&gt;Q&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;′,&lt;em&gt;x&lt;/em&gt;′)]&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;We can make some basic comparisons between &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; by studying their recursive representations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Parameteric representations (i.e. splines or other interpolands) of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; are more expensive than representations of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; is defined over the state-action space instead of just the state space.&lt;/li&gt;
-&lt;li&gt;Computing the maximization on the right hand side of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; is easier than the max on the RHS of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;. This is because the expectation is &lt;em&gt;outside&lt;/em&gt; the max in &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;, but inside the max for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The Bellman operator associated with the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function is a contraction mapping under the same conditions that Bellman operator associated &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt; is a contraction mapping. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;&#39;s operator is a contraction mapping, the operators&#39; unique fixed point &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt; is the optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function.&lt;/p&gt;
-&lt;p&gt;The optimal policy can be easily computed from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;: &lt;span class=&#34;math inline&#34;&gt;$h^* (s) = \underset{x}{\text{argmax}} Q^* (s, x)$&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;/span&gt;-function can be obtained from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;: &lt;span class=&#34;math inline&#34;&gt;$V^* = \underset{x}{\max} Q^* (s, x)$&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;computing-q&#34;&gt;Computing Q&lt;/h2&gt;
-&lt;p&gt;We see that if we can find &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;, we can get the value and policy functions we care about as economists. I want to briefly describe a few flavors of algorithms that can be used to compute &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;q-learning&#34;&gt;Q-learning&lt;/h3&gt;
-&lt;p&gt;Q-learning is classified as an online, model-free algorithm. This means you can update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt; whenever new data becomes available. Economists would classify this as a simulation algorithm.&lt;/p&gt;
-&lt;p&gt;Here&#39;s the basics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Start with any initial guess for the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function&lt;/li&gt;
-&lt;li&gt;Then on each iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;:
-&lt;ul&gt;
-&lt;li&gt;Given the state action pair on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;th iteration (&lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;), the observation of the period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and the state iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;...&lt;/li&gt;
-&lt;li&gt;... update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; using: &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)=(1 − &lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;,&lt;em&gt;u&lt;/em&gt;′))&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Notice that the right hand side is a convex combination of the current guess of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; function and the right hand side of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function operator. This is very similar to standard value function iteration, but has the main advantage of not having any expectations.&lt;/p&gt;
-&lt;p&gt;This can be applied to any model for which you have a transition function that defines the state today as a function of the state and action yesterday and a random innovation from a distribution you can sample. Many economic models fit into this framework.&lt;/p&gt;
-&lt;p&gt;When the action space is continuous, you need do a modest alteration of the basic algorithm to ensure asymptotic convergence to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;approximate-q-iteration&#34;&gt;Approximate Q-iteration&lt;/h3&gt;
-&lt;p&gt;One strength of this literature is the number of different ways of reducing the dimensionality of a dynamic programming problem.&lt;/p&gt;
-&lt;p&gt;Approximate Q-iteration is one example of this type of algorithm. Here instead of operating on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function directly, we instead operate on a parameterized approximation of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt;-function.&lt;/p&gt;
-&lt;p&gt;This can be done using linear dependence on coefficients (splines, Chebyshev polynomials) or non-linear parametric approximations (neural nets).&lt;/p&gt;
-&lt;p&gt;We&#39;ll focus on the linearly parametrized version here. We will form an approximation &lt;span class=&#34;math inline&#34;&gt;$\hat{Q}(s, x) = \sum_{l=1}^n \phi_l(s, x) \theta_l = \Phi\theta$&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;We and talk about a variant of the Q-learning we previously discussed that uses gradient information to update the coefficient vector.&lt;/p&gt;
-&lt;p&gt;Here&#39;s the basic idea:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Start with any guess of coefficients &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Then on each iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;:
-&lt;ul&gt;
-&lt;li&gt;Given the state action pair on the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;th iteration (&lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;), the observation of the period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; return &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and the state iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;...&lt;/li&gt;
-&lt;li&gt;... update your guess for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt; using: &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\theta_{i+1} = \theta_i + \alpha_i \left[r_i + \beta \max_{x&#39;} \hat{Q}_i(s_{i+1}, x&#39;)  - \hat{Q}_i(s_i, x_i)\right] \frac{\partial}{\partial \theta_i} \hat{Q}_i(s_i, x_i)$$&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;In the linear parameterization world we are in this becomes &lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt; = &lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; + &lt;em&gt;α&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;[&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;+&lt;em&gt;β&lt;/em&gt;max&lt;sub&gt;&lt;em&gt;x&lt;/em&gt;′&lt;/sub&gt;(&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt; + 1&lt;/sub&gt;,&lt;em&gt;x&lt;/em&gt;′)&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)−&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;,&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;em&gt;θ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;]&lt;em&gt;Φ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As this is a Q-learning algorithm, the same computational benefits arise here, but now we additionally have the benefit of a potentially vastly reduced computational problem depending on the state-action space the choice of basis functions.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>de Farias &amp; van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)</title>
-      <link>http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/</link>
-      <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/</guid>
-      <description>&lt;p&gt;This paper was published in Operations Research and as such they use a different notation and jargon than economists. I&#39;ll present some of their main results, but in a language and notation that is familiar to me.&lt;/p&gt;
-&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-&lt;p&gt;Consider a typical dynamic programming problem faced by an economic agent, which we summarize by the following Bellman equation:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$V(x) = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E V(x&#39;)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Now define the natural operator associated with the Bellman, which we call &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$T v = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E v(x&#39;)$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;For ease of presentation we will directly assume that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is a contraction mapping and that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; belongs to the set of bounded and continuous functions.&lt;/p&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt; be the optimal value function. Under our assumptions &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt; is the unique fixed point of Bellman&#39;s equation.&lt;/p&gt;
-&lt;h2 id=&#34;mathematical-programs&#34;&gt;Mathematical programs&lt;/h2&gt;
-&lt;p&gt;Under our assumptions, the operator &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is monotonic.&lt;/p&gt;
-&lt;p&gt;This means that for any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; we have &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Also &lt;span class=&#34;math inline&#34;&gt;∀&lt;em&gt;v&lt;/em&gt;&lt;em&gt;s&lt;/em&gt;&lt;em&gt;t&lt;/em&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≤ &lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Typically this property of our contraction mapping is used to show that value function iteration will converge for any initial guess of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;. Today we will use it in a slightly different way.&lt;/p&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; be any vector of all positive elements. Consider the mathematical program defined by&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&#39;v \\
-s.t. &amp;amp; \quad v \ge T v
-\end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;By the monotonicity of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; it is easy to see that any &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; satisfying the constraint must be at least as big at &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Then notice that the objective is to minimize the inner product between a strictly positive vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;/span&gt; and the choice &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;These two facts mean that the unique solution to the programming problem is &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;linear-program&#34;&gt;Linear program&lt;/h2&gt;
-&lt;p&gt;I told you that we would use linear programming, but notice that the constraint is nonlinear because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is nonlinear.&lt;/p&gt;
-&lt;p&gt;However, if we stare at the definition of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; for long enough we will notice that if we consider the constraint &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt; ≥ &lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; state by state, (e.g. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)≥&lt;em&gt;T&lt;/em&gt;&lt;em&gt;v&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)&lt;/span&gt;) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.&lt;/p&gt;
-&lt;p&gt;This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman&#39;s equation for that state and control. The program looks as follows:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&#39;v \\
-s.t. &amp;amp; \quad v(x) \ge u(x,c) + \beta \sum_{x&#39;} P(x&#39;| x,c)v(x&#39;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x
-\end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;curse-of-dimensionality&#34;&gt;Curse of dimensionality&lt;/h2&gt;
-&lt;p&gt;This linear program has an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; dimensional state with an &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt; * &lt;em&gt;A&lt;/em&gt;&lt;/span&gt; dimensional constraint matrix. When &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; are large, this problem can quickly become subject to the curse of dimensionality.&lt;/p&gt;
-&lt;p&gt;The authors of this paper propose approximate linear programming as a way to resolve this issue.&lt;/p&gt;
-&lt;p&gt;Specifically they choose to represent &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;v&lt;/em&gt;&lt;/span&gt; as the product of a basis matrix and a vector of coefficients &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;They then write down a linear program&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;$$\begin{aligned}&amp;amp;\underset{V}{\min} c&#39;\Phi r \\
-s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x&#39;} P(x&#39;| x,c) \Phi r(x&#39;) \quad \forall x \in X \; \forall c \in \mathcal{A}_x
-\end{aligned}$$&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Notice now that we have swapped out a vector of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt;, for a vector with length equal to the number of columns in the basis matrix. This is something that we have control over, thus we can choose the &amp;quot;size&amp;quot; of this problem. Thus the objective is smaller, but the number of constraints is exactly the same.&lt;/p&gt;
-&lt;p&gt;However, if we choose each column of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;Φ&lt;/em&gt;&lt;/span&gt; to have finite support (i.e. we use splines), most constraints become inactive and the large constraint matrix becomes sparse.&lt;/p&gt;
-&lt;p&gt;The remainder of the paper, and its main contribution, is to bound the error we are subject to by solving the approximate linear program instead of the exact linear program.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hull (2015) (Approximate dynamic programming with post-decision states as a solution method for dynamic economic models)</title>
-      <link>http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/</link>
-      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/</guid>
-      <description>&lt;p&gt;This paper presents a stochastic simulation method for solving dynamic economic models.&lt;/p&gt;
-&lt;p&gt;The ideas in this paper lean on a literature sometimes known as approximate dynamic programming and can enable us to solve models with many state variables and non-convexities in objectives and constraints.&lt;/p&gt;
-&lt;p&gt;My intent is to summarize the core theoretical ideas behind the algorithm.&lt;/p&gt;
-&lt;h2 id=&#34;main-idea-post-decision-states&#34;&gt;Main idea: Post decision states&lt;/h2&gt;
-&lt;h3 id=&#34;notation-classic-bellman-equation&#34;&gt;Notation: classic Bellman equation&lt;/h3&gt;
-&lt;p&gt;Consider a stationary economic model where at time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; the state is summarized by a vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; of endogenous state variables and a vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; of exogenous state variables.&lt;/p&gt;
-&lt;p&gt;The optimization problem of an agent is often summarized by a Bellman equation of the form&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)=&lt;em&gt;m&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/sub&gt;&lt;em&gt;u&lt;/em&gt;(&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;β&lt;/em&gt;&lt;em&gt;E&lt;/em&gt;[&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;)]&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;subject to&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;), &lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; ∈ &lt;em&gt;Γ&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;), &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt; = &lt;em&gt;g&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;ϵ&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;post-decision-state-value-function&#34;&gt;Post-decision state value function&lt;/h3&gt;
-&lt;p&gt;Note that that the transition function for the endogenous state takes &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and emits &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt;. We can think of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;&lt;/span&gt; being chosen at the end of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;, meaning after the controls &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; have been decided.&lt;/p&gt;
-&lt;p&gt;In the standard (or pre-decision) Bellman equation, we have that the state at time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; is the endogenous state defined at the end of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt; and the exogenous state realized at the start of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;We will now consider a different representation of the state vector that couples the endogenous state defined at the end of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt; with the exogenous state realized at the start of period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt;. That is we will consider &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;&lt;/span&gt;, which is known as the post-decision state at time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)&lt;/span&gt; be the value of having post-decision state &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;&lt;/span&gt; in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt;. This is the maximum expected, discounted utility an agent can achieve after controls have been selected in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Because &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;&lt;/span&gt; is not chosen until &lt;em&gt;after&lt;/em&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;&lt;/span&gt; is realized, we know that &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)&lt;/span&gt; is equal to the expectation of the maximum expected, discounted utility the agent will receive after &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; arrives. That is, we can write&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)=&lt;em&gt;E&lt;/em&gt;[&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)|&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;],&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)&lt;/span&gt; is the pre-decision Bellman equation.&lt;/p&gt;
-&lt;p&gt;It follows that we can write&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)=&lt;em&gt;m&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/sub&gt; + &lt;em&gt;β&lt;/em&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;).&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;These equations can be manipulated to produce the recursive form of the post-decision state Bellman equation:&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;span class=&#34;math display&#34;&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;)=&lt;em&gt;E&lt;/em&gt;[&lt;em&gt;m&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/sub&gt;&lt;em&gt;u&lt;/em&gt;(&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)+&lt;em&gt;β&lt;/em&gt;&lt;em&gt;V&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; + 1&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;)|&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt; − 1&lt;/sub&gt;].&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Notice that the expectation is &lt;em&gt;outside&lt;/em&gt; the max operator, meaning that the maximization problem is deterministic.&lt;/p&gt;
-&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
-&lt;p&gt;Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I&#39;ll discuss how I&#39;d change it later.&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Setup
-&lt;ul&gt;
-&lt;li&gt;Discretize endogenous state space&lt;/li&gt;
-&lt;li&gt;Choose a simulation length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Choose initial endogenous and exogenous states&lt;/li&gt;
-&lt;li&gt;Construct an initial guess for the value function at the discritized endogenous and exogenous states.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Iterations
-&lt;ul&gt;
-&lt;li&gt;Construct a time series of Exogenous states for t=1, 2, ..., T&lt;/li&gt;
-&lt;li&gt;For time &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt; = 1, 2, ..., &lt;em&gt;T&lt;/em&gt;&lt;/span&gt; perform the following 3 steps:
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Choose controls &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;c&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; to maximize the term inside the expectation on the RHS of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;V&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;em&gt;t&lt;/em&gt; − 1)&lt;/span&gt;. To do this we need to using the value function from the previous iteration for the future value function&lt;/li&gt;
-&lt;li&gt;Compute the expectation implicitly by updating the guess of the value function using a convex combination of the previous iteration&#39;s value function and the value computed above&lt;/li&gt;
-&lt;li&gt;Using the chosen controls and realization of exogenous state, apply the endogenous transition equation to iterate the endogenous state forward one period&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Convergence:
-&lt;ul&gt;
-&lt;li&gt;Check a convergence criterion that compares the discretized value function across multiple iterations.&lt;/li&gt;
-&lt;li&gt;If converged, return the discretized value function and run a regression on the time series to obtain a policy function from the time series of controls&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;comments-on-the-algorithm&#34;&gt;Comments on the algorithm&lt;/h3&gt;
-&lt;p&gt;Here are a few comments about the algorithm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Because the expectation operator is outside the max operator, we don&#39;t have to spend time computing expectations when solving the optimization problem in each period of the simulation. This speeds up computation quite a bit.&lt;/li&gt;
-&lt;li&gt;Expectations are computed implicitly when we update our guess for the post-decision state value function&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;My compliant&lt;/strong&gt; I think it is incorrect to re-generate a time series of exogenous states on each iteration. Doing so will not allow the algorithm to ever converge as the updated value function in iteration &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; is dependent on the randomness from the exogenous simulation in period &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Using the same simulated time series for exogenous states in every iteration (as in other simulation algorithms in the literature) will allow this algorithm to converge; subject to a particular exogenous path. To ensure that the solution is accurate for the underlying data generating process and not just the simulation you use, make sure that the length of the time series is large.&lt;/p&gt;
 </description>
     </item>
     

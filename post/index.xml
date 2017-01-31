@@ -9,8 +9,46 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 13 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Y Yedid-Levi, S Haller, and D Fitzgerald (2017) (How Exporters Grow)</title>
+      <link>http://srg.spencerlyon.com/2017/01/31/y-yedid-levi-s-haller-and-d-fitzgerald-2017-how-exporters-grow/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/01/31/y-yedid-levi-s-haller-and-d-fitzgerald-2017-how-exporters-grow/</guid>
+      <description>&lt;p&gt;The authors of this paper use confidential Irish data to document 4 novel facts about the lifecycle of exporting firms and then combine two existing modeling pieces to builds a partial equilibrium model that can reconcile the reported facts.&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;The authors use two confidential micro data sets from Ireland:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The Irish census of industrial production&lt;/li&gt;
+&lt;li&gt;Irish custom records&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;They are able to link the datasets to build a panel dataset at the firm-product-destination market level.&lt;/p&gt;
+&lt;h2 id=&#34;empirics&#34;&gt;Empirics&lt;/h2&gt;
+&lt;p&gt;The main empirical exercise is to determine how one of log revenue, log quantity, or log price varies with both the firm-product duration in a particular market and the length of a firm-product-market export spell. The export spell is defined as the number of consecutive periods a firm exports a particular product to a particular market. Note that in the regressions this is a constant number for the entire spell, while the export tenure rises from 1 to the duration of the spell.&lt;/p&gt;
+&lt;p&gt;The authors also control for destination market fixed effects and firm-product-year fixed effects.&lt;/p&gt;
+&lt;p&gt;There are 4 key results from the estimation:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Quantities grow dramatically in the first five years of successful export spells, defined as spells that last at least seven years. This growth is statistically significant up to a horizon of four years and is not driven purely by part-year effects in the first year (i.e. there is economically and statistically significant growth between years 2 and 4).&lt;/li&gt;
+&lt;li&gt;Within successful export spells, there are no statistically or economically significant dynamics in prices.&lt;/li&gt;
+&lt;li&gt;Higher initial quantities predict longer export spells: for spells lasting between one and four years, all pairwise comparisons of initial quantities are statistically different.&lt;/li&gt;
+&lt;li&gt;Initial prices do not predict export spell length.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The authors do a number of robustness checks and report that the results are qualitatively unchanged when the data is cut differently or other controls are used.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;I now turn to the model. The use of the model is not as interesting or enlightening as the components themselves, so I will focus my discussion on why they made the assumptions they did.&lt;/p&gt;
+&lt;p&gt;The authors make a quick note that common supply-side tricks for generating revenue and size dynamics (productivity shocks, capital adjustment costs, capacity or financial constraints, market-specific cost shocks, etc.) have a difficult time generating the observed dynamics in quantity without introducing dynamics in prices. For this reason they choose to focus on demand-side features that can generate dynamics.&lt;/p&gt;
+&lt;p&gt;They choose two of the more common demand side bells and whistles to include in their model:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Learning about unobserved idiosyncratic shocks.&lt;/li&gt;
+&lt;li&gt;Consumer capital: firms build up a consumer base that deprecates over time and add consumers by direct investment in marketing or other costly acquisition methods.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After estimating the model with simulated method of moments (targeting moments about revenues and quantities over export spells), the authors show that the model can match all 4 of the key facts.&lt;/p&gt;
+&lt;p&gt;They also show that both learning and consumer capital are necessary in their framework. To do this they remove one at a time, re-estimate the model, and show that the model generates price dynamics.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lustig, Zhang, and Hartman-Glaser (2016) (Capital Share Dynamics When Firms Insure Managers)</title>
@@ -571,78 +609,6 @@ the same. --&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;quantitative-results&#34;&gt;Quantitative results&lt;/h3&gt;
 &lt;p&gt;A brief quantitative section is given. The main message is that the model generates more modest values of the number of exporters that engage in product switching, the age dependent survival rate of exporters, and the age dependence of product switching. This suggests that the learning mechanism in the model is significant and supported by the data, but not sufficient to fully explain product switching behavior of Brazilian firms.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Konda and Tsitsiklis (2003) (Actor-critic Algorithms)</title>
-      <link>http://srg.spencerlyon.com/2016/04/19/konda-and-tsitsiklis-2003-actor-critic-algorithms/</link>
-      <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/04/19/konda-and-tsitsiklis-2003-actor-critic-algorithms/</guid>
-      <description>&lt;p&gt;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-&lt;p&gt;When a Markov decision process (MDP) is formulated as a dynamic programming problem, the reinforcement learning literature proposes are two classic classes of algorithms to solve them. Let&amp;rsquo;s briefly review these types of algorithms and point out strengths and weaknesses of each.&lt;/p&gt;
-&lt;h4 id=&#34;actor-only-methods&#34;&gt;1: Actor only methods&lt;/h4&gt;
-&lt;p&gt;We can think of an actor as a fictitious character that operates on a policy rule.&lt;/p&gt;
-&lt;p&gt;When I talk about the performance of an actor, I mean the value of following a policy.&lt;/p&gt;
-&lt;p&gt;These methods are often implemented by estimating the gradient of the performance of an actor using simulation.&lt;/p&gt;
-&lt;p&gt;There are two main issues with these &amp;quot;policy iteration&amp;quot;-esque algorithms:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Gradient estimators can have high variance&lt;/li&gt;
-&lt;li&gt;As the policy changes, a new gradient is estimated independently. This means there is no sense of learning from past data.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;critic-only-methods&#34;&gt;2: Critic only methods&lt;/h4&gt;
-&lt;p&gt;We can think of a critic operating on either a Q or V value function.&lt;/p&gt;
-&lt;p&gt;These methods rely exclusively on value function approximation and try to learn the solution to Bellman&amp;rsquo;s equation.&lt;/p&gt;
-&lt;p&gt;The main issues with critic only methods are:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;They are indirect in that they do not try to optimize directly over the policy space&lt;/li&gt;
-&lt;li&gt;Even with an accurate approximation of the value function, results that guarantee the near-optimality of the corresponding policy are difficult to guarantee.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;main-idea&#34;&gt;Main idea&lt;/h2&gt;
-&lt;p&gt;This paper suggests two actor-critic hybrid methods that aim to maintain the best features of each algorithm, while overcoming the shortcomings mentioned above.&lt;/p&gt;
-&lt;p&gt;The main idea behind the algorithms is that the critic uses a linearly parameterized approximation scheme and simulation to learn a value function. The actor then uses the learned information to update parameters on the policy function in a direction of performance improvement.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Aside to tie back to econ&lt;/em&gt;: This feels like modified policy iteration or Howard&amp;rsquo;s improvement algorithm, but it is different in a few ways:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;There is a learning element to these algorithms, which means we don&amp;rsquo;t have to compute expectations explicitly.&lt;/li&gt;
-&lt;li&gt;We will be learning Q functions, which describe the value of being in a state and taking any feasible action (instead of the V function that describes the value of being in a state and choosing the optimal action).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;
-&lt;!-- The algorithms are presented in terms of identifying a randomized stationary
-policy. We typically think of a policy function as assigning a unique action to
-each state. A randomized stationary policy attaches a probability distribution
-over actions to each state. In some sense a standard policy is like a pure
-strategy, whereas a randomized stationary is like a mixed strategy. --&gt;
-&lt;p&gt;The presentation is very technical and relies on assumptions that aren&amp;rsquo;t necessarily applicable to the models we write down, so I won&amp;rsquo;t the paper exactly as it was written. Instead, I will sketch the algorithm and explain the key insight the authors have that makes the algorithm tractable.&lt;/p&gt;
-&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
-&lt;p&gt;We will represent the critic using three variables:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A coefficient vector of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; that describe a linear parametrization of Q in terms of basis functions.&lt;/li&gt;
-&lt;li&gt;A scalar &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;/span&gt; that represents the average value of following the actor&amp;rsquo;s policy&lt;/li&gt;
-&lt;li&gt;A vector of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; that represents Sutton&amp;rsquo;s eligibility trace. This vector is used to form a bridge between fixed point methods and Monte Carlo methods&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The actor is represented by a suitable parametric representation of the policy function.&lt;/p&gt;
-&lt;h3 id=&#34;algo&#34;&gt;Algo&lt;/h3&gt;
-&lt;p&gt;In order to understand the algorithm, I need to provide two related definitions. A &lt;strong&gt;temporal difference&lt;/strong&gt; is the difference between the current approximation of a variable and a realization of that variable. In other words it is the error in our approximation for a particular sample.&lt;/p&gt;
-&lt;p&gt;We say we &lt;em&gt;update&lt;/em&gt; parameters or approximations using a &lt;strong&gt;temporal difference&lt;/strong&gt; if the new approximation is the sum of the current approximation and a scaled temporal difference.&lt;/p&gt;
-&lt;p&gt;The algorithm &lt;em&gt;roughly&lt;/em&gt; proceeds as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Initialize the actor and critic&lt;/li&gt;
-&lt;li&gt;Perform one step updates of the actor and critic as follows:
-&lt;ul&gt;
-&lt;li&gt;Because we learn Q, we enter a time period with a particular state and action in hand&lt;/li&gt;
-&lt;li&gt;The actor will dictate a new action and we need to simulate a new state, potentially given that action&lt;/li&gt;
-&lt;li&gt;The critic&amp;rsquo;s parameters are updated according to:
-&lt;ul&gt;
-&lt;li&gt;Average value of policy: temporal difference update (using flow implied by state and action)&lt;/li&gt;
-&lt;li&gt;Coefficient vector for Q: temporal difference update, scaled by eligibility trace&lt;/li&gt;
-&lt;li&gt;Eligibility trace:&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The actor&amp;rsquo;s parameter vector is updated using a gradient approach that resembles Newton&amp;rsquo;s method. It takes into account updates to the actor&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The key insight the authors have that make this algorithm tractable is the following:&lt;/p&gt;
-&lt;p&gt;Actors have to update a small number of parameters compared to the number of states. So the critic doesn&amp;rsquo;t need to form an approximation over the entire domain of Q, but rather a special projection of the Q onto the space spanned by the actor&amp;rsquo;s parameter vector.&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     

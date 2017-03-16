@@ -2,8 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://srg.spencerlyon.com/</loc>
-    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
+    <loc>http://srg.spencerlyon.com/2017/03/07/galle-rodriguez-clare-and--yi-2015-slicing-the-pie-quantifying-the-aggregate-and-distributional-effects-of-trade/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/2017/02/28/autor-dorn-and-hanson-2016-the-china-shock-learning-from-labor-market-adjustment-to-large-changes-in-trade/</loc>
+    <lastmod>2017-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/2017/02/21/barrot-loualiche-plosser-sauvangnat-2016-import-competition-and-household-debt/</loc>
+    <lastmod>2017-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/2017/02/14/benhabib-perla-tonetti-2017-reconciling-models-of-diffusion-and-innovation-a-theory-of-the-productivity-distribution-and-technology-frontier./</loc>
+    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/2017/02/07/faber-fally-2017-firm-heterogeneity-in-consumption-baskets----evidence-from-home-and-store-scanner-data./</loc>
+    <lastmod>2017-02-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -24,6 +44,11 @@
   <url>
     <loc>http://srg.spencerlyon.com/2016/11/22/hess2000wh-risk-sharing-by-households-within-and-across-regions-and-industries.-hess-shin-2000/</loc>
     <lastmod>2016-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/2016/11/01/adam2011ix-adam-k.--marcet-a.-2011.-internal-rationality-imperfect-marketknowledge-and-asset-prices/</loc>
+    <lastmod>2016-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -152,11 +177,6 @@
   </url>
   
   <url>
-    <loc>http://srg.spencerlyon.com/2015/11/10/alessandria2014-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</loc>
-    <lastmod>2015-11-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://srg.spencerlyon.com/2015/11/03/jermann2012-macroeconomic-effects-of-financial-shocks/</loc>
     <lastmod>2015-11-03T00:00:00+00:00</lastmod>
   </url>
@@ -193,6 +213,28 @@
   
   <url>
     <loc>http://srg.spencerlyon.com/1/01/01/</loc>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/post/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/topics/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

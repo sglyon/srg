@@ -9,8 +9,59 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 07 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Apr 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Greenland, Lopresti, McHenry (2016) (Import Competition and Internal Migration)</title>
+      <link>http://srg.spencerlyon.com/2017/04/25/greenland-lopresti-mchenry-2016-import-competition-and-internal-migration/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/04/25/greenland-lopresti-mchenry-2016-import-competition-and-internal-migration/</guid>
+      <description>&lt;p&gt;This is a purely empirical paper that tries to determine the degree to which there was worker relocation across regions in the US in response to the Chinese trade shock.&lt;/p&gt;
+&lt;p&gt;Many recent papers have documented negative regional labor market consequences in regions that specialize in industries that are more exposed to Chinese trade competition. Among these results are higher unemployment, lower wages, and lower labor force participation rates. Furthermore, evidence has been presented showing that there was little to no contemporaneous worker migration out of exposed regions.&lt;/p&gt;
+&lt;p&gt;The main finding of this paper is that regions at the 75th percentile of import exposure had population growth 2.1% lower than regions at the 25th percentile of exposure. Additionally, the majority of these migrations occurred between 7 and 10 years &lt;em&gt;after&lt;/em&gt; the onset of the China import shock.&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;The story is that before 2001 China was paying the normal trade relation tariffs, but on a potentially temporary basis. This is the tariff rate paid amongst all WTO nations. Each year the US congress would vote to decide if China would be granted the same tariff rates in the next year, or if they would rise above the WTO levels. This created uncertainty for Chinese firms about future costs. In 2001 congress decided to give China WTO tariff rates permanently, thus resolving the uncertainty. The data shows a sharp uptick in US imports from China, suggesting that many firms chose to enter in response to lower uncertainty.&lt;/p&gt;
+&lt;p&gt;The authors leverage this fact to construct their measure of import exposure to Chinese trade across regions in the US. Specifically, for each industry (not region) they construct a tariff gap, which is the difference between potential non-WTO tariff rates and WTO tariff rates within the industry. The next step is to map this into a regional measure, at the commuting zone level. A commuting zone is a notion of local economy, constructed so that it if an individual lives in a commuting zone, it is very likely that their day to day job is also in the commuting zone. To construct a regional tariff gap they compute an industry-labor-share weighed average of the tariff gap across all industries that operate in each commute zone.&lt;/p&gt;
+&lt;p&gt;The authors then use data from the US census to construct population totals in each commute zone.&lt;/p&gt;
+&lt;p&gt;The authors also do some work at the individual level using data from the National Education Longitudinal Study, but the results are secondary to the ones presented at the aggregate level, so I will not talk about them here.&lt;/p&gt;
+&lt;!-- The final main source of data comes From the National Education Longitudinal
+Study of 1988 and 2002. This data set constructs a nationally-representative
+sample of 10th graders, providing information in location, demographics, and
+educational outcomes. 10 years after the initial survey, there is a follow-up
+survey that reports the location of main residence for all the original
+participants. This allows the authors to track the migration patterns at the
+individual level, with additional data on demographics and educational outcomes. --&gt;
+&lt;h2 id=&#34;regression-model&#34;&gt;Regression Model&lt;/h2&gt;
+&lt;p&gt;The main results of the paper are regression outcomes from regressing the 10-year change in log population in a commute zone on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;an interaction between the tariff gap in the commute zone and an indicator for whether or not the time period is after 2001,&lt;/li&gt;
+&lt;li&gt;Time invariant regional controls, interacted with the post-WTO rates indicator&lt;/li&gt;
+&lt;li&gt;A time fixed effect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Without the inclusion of the regional control variables, the regression predicts a small and statistically insignificant change in population in response to an interquartile shift in the tariff gap.&lt;/p&gt;
+&lt;p&gt;However, with the inclusion of the regional controls, the regression predicts that the interquartile effect of tariff gap on population growth is 2.1% -- significant at the 1% level. To me, this suggests that the controls that are included in the regression are &lt;em&gt;crucial&lt;/em&gt; for obtaining the results. Unfortunately the lack of a theoretical model means that the choice of which control variables are included is ad-hoc. A useful extension or follow up to this work would be to build a model that allows regional migration in response to trade shocks and let the model be informative about which control variables should be included.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;FWIW the controls they included were the pre-1990 cz pop growth trend, share of population under 25 years old, share of population accounted for by minority groups&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;temporal-structure-of-migration&#34;&gt;Temporal structure of migration&lt;/h3&gt;
+&lt;p&gt;Because these regressions were run using data between 1988-1998 and then 2002-2012, the results suggest only that within an 11 year window after China was granted permanent WTO tariff rates did this migration occur. The authors want to be able to answer the question &amp;quot;when in this 11 year window did the movement of workers happen?&amp;quot;&lt;/p&gt;
+&lt;p&gt;To do this they use data data the US population migration data from the IRS. This data set uses the tax filings from individuals to determine, year to year, how many individuals moved from one county to another based on their primary residence.&lt;/p&gt;
+&lt;p&gt;They use this data to regress the annual log change in commute zone population on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 to 12 year changes in the tariff gap interacted with a post 2001 indicator&lt;/li&gt;
+&lt;li&gt;time invariant regional controls, interacted with the post 2001 indicator&lt;/li&gt;
+&lt;li&gt;A commute zone fixed effect&lt;/li&gt;
+&lt;li&gt;A time fixed effect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The identification is weak of all 13 time-lag parameters, so they constrain the model so that the coefficients to evolve smoothly over time according to a cubic function.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To do this they say that the point estimate for the lag l coefficient is equal to a cubic polynomial in l. They then construct 4 auxiliary variables that are the sum of lagged changes from 0 to 12 of the tariff gap times post 2001 dummy times the number of lags to the [0, 1, 2, 3] (that&#39;s where they get 4 variables). They then replace the 13 lag terms with these 4 auxiliary variables and estimate coefficients on just the 4 parameters.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This reduces the number of parameters from 13 to 4. Model predictions are largely unchanged, but identification is much sharper. Their results predict that about 20% of the total effect happens within one year of the trade shock, with a significant portion happening at a lag of 7 or more years (they don&#39;t give numbers...).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Galle, Rodriguez-Clare, and  Yi (2015) (Slicing the pie: Quantifying the aggregate and distributional effects of trade)</title>
@@ -2468,53 +2519,6 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;In times when uncertainty is high, the innovations to the filtered estimate of the markup gap are more volatile. This generates cycles in firm markup behavior where in times of high uncertainty firms choose to update prices more frequently. These cycles in uncertainty and pricing behavior are idiosyncratic because they are driven by idiosyncratic evolution of Brownian Motion and Poisson processes.&lt;/li&gt;
 &lt;li&gt;The idiosyncratic cycles allow the authors to look at how the &lt;em&gt;distribution&lt;/em&gt; of uncertainty relates to the response to monetary shocks. To do this they perform an experiment where the monetary authority does a one-time un-anticipated increase in the money supply by a known amount. When the monetary shock occurs, estimates of the markup gap are updated immediately. But, a firm&amp;rsquo;s price will only get update when its estimate leaves its inaction region. As long as some firms&amp;rsquo; estimates remain in the inaction region, aggregate output will be different from its post-shock steady state value. As a summary statistic, they compute the total output effect, which is the integral over all time of the output gap relative to the steady state. They find that in the economy with information frictions, the output effect is larger up to 7 times larger and has a half life up to 5.3 times longer half life than in the perfect information economy. In this sense the authors claim that the distribution of firm level uncertainty is an important consideration when trying to evaluate the effects of monetary policy actions.&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ikegami:2016ek (Poverty Traps and the Social Protection Paradox)</title>
-      <link>http://srg.spencerlyon.com/2016/10/18/ikegami2016ek-poverty-traps-and-the-social-protection-paradox/</link>
-      <pubDate>Tue, 18 Oct 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/10/18/ikegami2016ek-poverty-traps-and-the-social-protection-paradox/</guid>
-      <description>&lt;p&gt;This paper presents and analyzes a stylized model of poverty traps in developing economies.&lt;/p&gt;
-&lt;h2 id=&#34;baseline-model&#34;&gt;Baseline model&lt;/h2&gt;
-&lt;p&gt;In the baseline model there are a finite number of agents.&lt;/p&gt;
-&lt;p&gt;Agent&#39;s are characterized by a constant level of innate ability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;α&lt;/em&gt;&lt;/span&gt; and an evolving stock of capital &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Each period, agents choose which of two DRS production technologies they wish to operate in that period. Switching technologies is costless. Both technologies have innate ability multiplied by physical capital raised to a power less than one. The more productive technology has a higher exponent, but requires payment of a fixed cost to operate.&lt;/p&gt;
-&lt;p&gt;Agent&#39;s have CRRA preferences over consumption.&lt;/p&gt;
-&lt;p&gt;Agents choose consumption and technology each period to maximize the expected discounted value of lifetime utility from consumption, subject to a few constraints:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Consumption can be no more than capital stock plus production output&lt;/li&gt;
-&lt;li&gt;The capital stock is always non-negative&lt;/li&gt;
-&lt;li&gt;Next period capital stock is the unconsumed portion of resources multiplied by an asset shock less depreciation. When this shock is less than unity, some capital is destroyed. The shocks are drawn iid from a known distribution.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;model-solution&#34;&gt;Model Solution&lt;/h2&gt;
-&lt;p&gt;The dynamics induced by agents&#39; optimal behavior can be understood by considering two interacting effects.&lt;/p&gt;
-&lt;p&gt;First, the choice of production technology is governed by a cutoff rule for capital as a function of innate ability. If an agent&#39;s capital stock is above this threshold, they will attempt to accumulate capital so that they can employ the high productivity technology. Otherwise the agent will only pursue the low technology and accumulate the relatively smaller stock of capital needed to operate that technology optimally.&lt;/p&gt;
-&lt;p&gt;Second, the state space can be partitioned into three regions along the innate ability dimension&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;The unskilled worker region, where regardless of the amount of capital agents always find it optimal to use the low productivity technology. For each innate ability level, there is a unique optimal capital stock to target. Poverty is defined as having capital stock equal to this level.&lt;/li&gt;
-&lt;li&gt;A high skill region where for all levels of capital agents prefer to operate the high productivity technology.&lt;/li&gt;
-&lt;li&gt;An intermediate region where depending on the current capital stock and sequence of asset shocks, agents may choose to operate either technology.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;These regions define two forms of poverty trap:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Low skill agents who will always be in poverty&lt;/li&gt;
-&lt;li&gt;Middle skill agents who are vulnerable to being pushed into poverty if they receive sufficiently unfavorable asset shocks.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;policy&#34;&gt;Policy&lt;/h2&gt;
-&lt;p&gt;The authors use this framework to analyze a few competing forms of government intervention. They analyze the effectiveness of each policy using a simulation experiment. In each experiment they randomly initialize 300 agents to be 25% in the low and high skill region and 50% in the intermediate region. The capital stock is initialized by independent draws from uniform distribution on [0, 10]. They they simulate the model forward under a given policy for 50 periods and track the distribution of agents.&lt;/p&gt;
-&lt;p&gt;As a baseline, we first consider autarky, or no government transfer program. The results of the simulation are a clear increase in the poverty level relative to the initial conditions. At the start, about 60% of the population chose to operate the high productivity technology. At then end of the simulation this has dropped to 40%.&lt;/p&gt;
-&lt;p&gt;The first policy considered is a progressive policy that targets the poorest agents in the population. All agents below the poverty level are given a transfer that brings them exactly to the poverty line. If there are insufficient government funds, each agent is given a share of total government resources proportional to their distance from the poverty line. Agents do not anticipate the transfers. The results of simulating in this environment are qualitatively identical to autarky.&lt;/p&gt;
-&lt;p&gt;The second policy targets the middle skill agents near the cutoff rule for switching between production technologies. Specifically, if an agent starts the period in the high technology region and recipes a poor enough asset shock to move to the low region -- the government provides a transfer that brings the agent exactly back to the cutoff level. Again the transfer is unanticipated. The simulation results here are quite different. Aggregate output rises by 10% and poverty falls from 55% to 25% -- meaning 75% of agents operate the high productivity technology.&lt;/p&gt;
-&lt;p&gt;The difference between these two policies brings up an ethical issue regarding which subset of agents government policies should target. The authors provide some discussion, but leave it as an open ended question.&lt;/p&gt;
-&lt;p&gt;The final experiment also targets the middle skill agents near the cutoff, but this time the transfers are anticipated. The anticipation brings about two competing moral hazard forces:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;The positive force is that when agents know they will receive a transfer if their investment is subject to poor shocks, they choose to invest more.&lt;/li&gt;
-&lt;li&gt;The negative force is that agents would like to remain as close to the cutoff as possible so they can get the transfer more often.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The results of the simulation under these conditions falls between the two previous examples. The authors don&#39;t report numbers, so I can&#39;t be precise. However, from the figures the main takeaway is that agents in the middle skill region who are close to the production cutoff are now much less likely to end up operating the low productivity technology in the long run.&lt;/p&gt;
 </description>
     </item>
     

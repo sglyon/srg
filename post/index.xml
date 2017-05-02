@@ -9,8 +9,66 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 25 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 May 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Autor, Dorn, Hanson, and Song (2014) (Trade Adjustment: Worker Level Evidence)</title>
+      <link>http://srg.spencerlyon.com/2017/05/02/autor-dorn-hanson-and-song-2014-trade-adjustment-worker-level-evidence/</link>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/05/02/autor-dorn-hanson-and-song-2014-trade-adjustment-worker-level-evidence/</guid>
+      <description>&lt;p&gt;Empirical paper that tries to determine labor market response to China trade shock at the individual level. It is a complement to the authors&#39; China Syndrome paper that answers similar questions at the regional level.&lt;/p&gt;
+&lt;h2 id=&#34;stylized-facts&#34;&gt;Stylized facts&lt;/h2&gt;
+&lt;p&gt;To prompt their research, the authors list a number of recent stylized facts concerning China&#39;s impact on US labor markets. They are that greater import exposure results in&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Higher rates of plant exit and more rapid declines in plant employment&lt;/li&gt;
+&lt;li&gt;Larger decreases in manufacturing employment&lt;/li&gt;
+&lt;li&gt;Increases in unemployment and labor force non-participation rates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These facts have been verified or reproduced at the industry and regional level, but the gap that this paper seeks to fill is what are the associated facts at the individual level.&lt;/p&gt;
+&lt;p&gt;Specifically, the authors state their purpose as seeking to capture the changes in earnings and employments that workers in exposed industries encountered when adjusting to the trade shock.&lt;/p&gt;
+&lt;h2 id=&#34;theory&#34;&gt;Theory&lt;/h2&gt;
+&lt;p&gt;This paper does not do rigorous theoretical work, but they do paint the picture of the type of model they had in mind when they came up with their empirical specification. This is the setting.&lt;/p&gt;
+&lt;p&gt;Consider an economy with two sectors -- one that is directly exposed to trade shocks and one that is not. In the long run, but not necessarily the short run, labor is between sectors such that long run wages are equalized across sectors for similarly skilled workers.&lt;/p&gt;
+&lt;p&gt;Suppose that foreign productivity growth causes demand for the home country&#39;s traded sector to fall. That sector begins contracting immediately, reducing their demand for labor which depresses wages. Depending on the degree of frictions to labor mobility, the transition of workers from the exposed sector to the unexposed sector may take time. Along this transition path, wages in the exposed sector will be below wages in the non-exposed sector. Summing worker earnings over the pre-shock, shock, and post-shock periods; cumulative income for workers initially employed in the exposed sector will be lower than workers who started in the other sector.&lt;/p&gt;
+&lt;p&gt;These effects on cumulative earnings and the associated worker turnover across employees, sectors, and even regions, are the focus of the empirical study in this paper.&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;To do their analysis, the authors use data in the period 1988-2007. The data come from from a few sources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The annual Employee-Employer File from the social security administration. This contains a randomly selected 1% of US workers and provides annual earnings, employer ID number, and SIC code for each job a worker held. This data is augmented with demographic data on each individual, also using data from the social security administration.&lt;/li&gt;
+&lt;li&gt;The County Business Patterns from the IRS provide aggregate estimates of employment by industry and county. This is used because the 1% sample does not have enough data to accurately portray the regional industry structure in the US&lt;/li&gt;
+&lt;li&gt;Comtrade data is used to give an estimate of imports and exports at the HS-10 level. This data is aggregated to the industry level to be consistent with the other data used in this study.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;empirical-model&#34;&gt;Empirical model&lt;/h2&gt;
+&lt;p&gt;The main empirical model is a linear regression model that regresses&lt;/p&gt;
+&lt;p&gt;the cumulative earnings for a worker on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the change in import penetration from 1991-2007&lt;/li&gt;
+&lt;li&gt;the level of import penetration in 1991&lt;/li&gt;
+&lt;li&gt;demographic controls for the individual&lt;/li&gt;
+&lt;li&gt;industry specific controls that capture the economic conditions in each industry in 1991.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Their definition of industry import penetration is the change in imports from China over their time horizon divided by initial industry absorption, which they define as industry shipments, plus imports, less exports.&lt;/p&gt;
+&lt;p&gt;To address concerns that changes in import penetration are driven by a mixture of supply side effects in China &lt;em&gt;and&lt;/em&gt; demand side shocks in the US, the authors instrument this variable using the same data from other high-income countries. The assumption with this instrument is high-income countries are similar exposed to growth in Chinese imports and that demand side shocks between the US and other high income countries are not correlated.&lt;/p&gt;
+&lt;p&gt;The main results are that there is a significant, negative effect of increased import penetration on individual cumulative earnings. More precisely, if we consider a worker in the 75% percentile of import penetration (about 7.3%) to a worker in the 25th percentile, the model predicts 20% lower cumulative earnings between 1991 and 2007.&lt;/p&gt;
+&lt;p&gt;These results are robust to alternative measures of worker earnings and the inclusion or exclusion of various control variables.&lt;/p&gt;
+&lt;h3 id=&#34;worker-mobility&#34;&gt;Worker mobility&lt;/h3&gt;
+&lt;p&gt;The other main empirical exercise is an attempt to determine the degree of worker mobility in response to the change in import penetration. The use of social security data enables tracking individuals over time to see the industry of their employer as well as their county of residence.&lt;/p&gt;
+&lt;p&gt;Here they run their same regression on different subsets of the data at a time:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;employees who stayed at the same firm for the entirety of the sample&lt;/li&gt;
+&lt;li&gt;Employees who moved to another firm in the same industry&lt;/li&gt;
+&lt;li&gt;Employees who moved to a firm in a different industry, within the manufacturing sector&lt;/li&gt;
+&lt;li&gt;Workers who left manufacturing altogether&lt;/li&gt;
+&lt;li&gt;Workers who moved to a firm that didn&#39;t have a registered industry (mostly new firms that the SSA didn&#39;t update their records to account for industry)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They find that workers who stayed at highly exposed firms suffered the largest decline in earnings. Workers who shifted firms did better. Others who shifted industries within manufacturing actually saw an increase in wages. Workers who left manufacturing suffered losses comparable to those who shifted firms within the same industry.&lt;/p&gt;
+&lt;p&gt;They interpret these findings as suggesting that workers who started at firms in highly exposed industries experience both reduced earnings at their initial employers and lower income from firms in the same industry.&lt;/p&gt;
+&lt;p&gt;They find that the negative effects on workers at firms in exposed industry is only partially offset by gains from workers in non-exposed industries. Their main explanation for this is that workers who leave an exposed firm seem to end up working at a different exposed firm.&lt;/p&gt;
+&lt;p&gt;They also try to see if exposed workers offset the losses from trade via geographic mobility. Their results show little to no evidence of this happening within the their sample.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Greenland, Lopresti, McHenry (2016) (Import Competition and Internal Migration)</title>
@@ -2490,35 +2548,6 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;/ul&gt;
 &lt;p&gt;These facts together cause the price dividend ratio to fluctuate around its rational expectation value. This allows the model to explain the observed volatility and serial correlation of the PD ratio (facts 1 and 2). This behavior also causes stock returns to be more volatile than dividend growth; which explains fact 3. Finally, serial correlation and mean-reversion in the PD ratio give rise to excess return predictability -- fact 4 (NOTE: the notion of predictability is explained in another paper by Cochrane that I didn&#39;t study).&lt;/p&gt;
 &lt;p&gt;The model still fails, however to generate a high enough risk premium. In order to match this fact, they authors have to adjust risk aversion. They do so by cranking up the CRRA parameter. I believe that using recursive preferences and adjusting the inter temporal elasticity of substitution is another way to generate excess returns without resorting to very high levels of risk aversion.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Baley:2016wr (Firm uncertainty cycles and the propagation of nominal shocks)</title>
-      <link>http://srg.spencerlyon.com/2016/10/25/baley2016wr-firm-uncertainty-cycles-and-the-propagation-of-nominal-shocks/</link>
-      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/10/25/baley2016wr-firm-uncertainty-cycles-and-the-propagation-of-nominal-shocks/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper develops a model with menu costs for adjusting prices and imperfect information about idiosyncratic productivity shocks. They conduct monetary policy experiments and conclude that the distribution of firm level uncertainty is important for the propagation of monetary shocks.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;In this model time is continuous. There is a representative consumer, a continuum of monopolistically competitive firms, and a monetary authority.&lt;/p&gt;
-&lt;p&gt;In the baseline model, the monetary authority keeps the money supply fixed at its initial level.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The representative consumer&lt;/strong&gt; has log preferences over consumption and money holdings, with linear disutility from labor. The household discounts the future at a constant rate r. Consumption is the CES aggregation of firm specific goods, each multiplied by a firm specific quality shock. The lifetime budget constraint of the consumer says that the value of consumption expenditures plus the cost of holding money, less labor earnings and firm profits is no greater than the initial money supply.&lt;/p&gt;
-&lt;p&gt;There are a continuum of &lt;strong&gt;firms&lt;/strong&gt; who each product and sell their product in a monopolistically competitive market. Each firm has access to a linear technology that produces one unit of output for each unit of labor, divided by the stochastic quality of the good (meaning a higher quality good requires more labor to produce).&lt;/p&gt;
-&lt;p&gt;This is the same quality that appears in the CES aggregator for consumption. The log of the quality shock follows a jump-diffusion process, without drift. This means that &lt;code&gt;da(z) = sigma1 dW + sigma2 u dQ&lt;/code&gt;, where W is a Weiner process and u Q is a poisson process with standard normal innovations. It is assumed that sigma1 is much smaller than sigma2, such that when the poisson process jumps there is a large shock to the quality of the firm&amp;rsquo;s product.&lt;/p&gt;
-&lt;p&gt;Firms do not observe the quality directly and cannot learn about it using wage costs. The only information they receive about their quality is a noisy signal and the information about when the poisson process jumps. The evolution of the signal follows &lt;code&gt;ds = a dt + gamma dZ&lt;/code&gt;, where Z is another independent Weiner process.&lt;/p&gt;
-&lt;p&gt;Firm prices are subject nominal rigidities in which firms can only change their price if they pay a fixed menu cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;θ&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;The flow profit to a firm is given by the demand for the good, multiplied by the price less the wage bill.&lt;/p&gt;
-&lt;p&gt;Firms use the discount rate of the household (because households own firms) and seek to maximize the expected discounted profit streams by choosing a sequence of prices and stopping times for price adjustments. When firms adjust prices, it is optimal to set them to a constant markup over marginal costs. Each period the firm does not adjust its price, there is a gap between the optimal markup in a frictionless economy (i.e. without both price and information frictions) and the markup being used by the firm. The equilibrium flow of profits can be expressed as minus a constant times this markup gap.&lt;/p&gt;
-&lt;p&gt;Because firms cannot directly observe the quality of their goods, they do not know the true value of the markup gap each period. Instead, they use the signals about the quality shock to form a signal extraction problem. A main contribution of the paper is the extension of the Kalman-Bucy filter to the environment where the hidden state follows a jump-diffusion process. One key output of the system of filtering equations is that innovations in the estimate of the markup gap are more volatile when there is high uncertainty about the estimate &amp;ndash; e.g. when the variance of the estimate is high. An implication of this is that when uncertainty is high, firms place higher weight on their signals than they do on the current estimate when updating beliefs. In this scenario, the learning rate is higher, but also noisier.&lt;/p&gt;
-&lt;p&gt;The optimal stopping time for firms is characterized by an inaction region &amp;ndash; as long as the filtered estimate for the markup gap is within certain bounds, the firm does not update prices. Once the price touches one of the borders, it immediately adjusts prices to set the estimated markup gap to zero.&lt;/p&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;p&gt;Here are some key results about the steady state equilibrium of this economy:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The filtering equation for updating uncertainty (the variance of the state estimate) produces cycles of uncertainty for the firm. There is a deterministic component that causes uncertainty to fall to it&amp;rsquo;s minimum level (the volatility of the diffusion component of quality shocks) and a stochastic component that causes it to rise whenever Poisson process jumps. The time series for a simulated path has a saw-tooth pattern where sharp increases are followed by gradual declines in uncertainty.&lt;/li&gt;
-&lt;li&gt;In times when uncertainty is high, the innovations to the filtered estimate of the markup gap are more volatile. This generates cycles in firm markup behavior where in times of high uncertainty firms choose to update prices more frequently. These cycles in uncertainty and pricing behavior are idiosyncratic because they are driven by idiosyncratic evolution of Brownian Motion and Poisson processes.&lt;/li&gt;
-&lt;li&gt;The idiosyncratic cycles allow the authors to look at how the &lt;em&gt;distribution&lt;/em&gt; of uncertainty relates to the response to monetary shocks. To do this they perform an experiment where the monetary authority does a one-time un-anticipated increase in the money supply by a known amount. When the monetary shock occurs, estimates of the markup gap are updated immediately. But, a firm&amp;rsquo;s price will only get update when its estimate leaves its inaction region. As long as some firms&amp;rsquo; estimates remain in the inaction region, aggregate output will be different from its post-shock steady state value. As a summary statistic, they compute the total output effect, which is the integral over all time of the output gap relative to the steady state. They find that in the economy with information frictions, the output effect is larger up to 7 times larger and has a half life up to 5.3 times longer half life than in the perfect information economy. In this sense the authors claim that the distribution of firm level uncertainty is an important consideration when trying to evaluate the effects of monetary policy actions.&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -9,8 +9,31 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 02 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ljungqvist and Sargent (2011) (A Labor Supply Elasticity Accord?.)</title>
+      <link>http://srg.spencerlyon.com/2017/09/12/ljungqvist-and-sargent-2011-a-labor-supply-elasticity-accord./</link>
+      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/09/12/ljungqvist-and-sargent-2011-a-labor-supply-elasticity-accord./</guid>
+      <description>&lt;p&gt;Here Ljungqvist and Sargent explain both sides of a long debated issue regarding labor supply elasticity (percent change in labor supply divided by percent change in wages) and then describe a relatively new idea that has the potential to reconcile the opposing views. The main argument from the micro-and-labor-economics camp is that the labor supply elasticity is quite low for individuals in the work force. On the other hand, macroeconomists typically say that the aggregate labor supply elasticity is large.&lt;/p&gt;
+&lt;p&gt;The classic way to reconcile these two seemingly opposing viewpoints is to allow labor supply to respond sharply on the &lt;em&gt;extensive&lt;/em&gt; margin. This will allow workers to continue to have a small elasticity while they are working, but as individuals move in and out of work more freely the aggregate labor supply elasticity is driven up.&lt;/p&gt;
+&lt;p&gt;The benchmark way to model this flavor of environment is to follow Rogerson and use employment lotteries with perfect, competitive insurance markets for unemployment. The basic idea is that households are composed of families. Each family will choose a probability with which each of its members works in that period. If the realization of the lottery is positive, that individual supplies full labor to the market and receives wages. If the realization is negative they supply zero labor. The family then purchases an insurance claim that pays a specified amount of the consumption good if a member of the family receives a bad outcome from the employment lottery. The insurance market is competitive, which results in all agents having equal consumption after lotteries have been realized and insurance claims paid out. In this setting agents who work supply the maximum amount of labor regardless of the wage, meaning the micro labor supply elasticity is small. However as wages change, households will adjust the probability that each family member works, causing there to be some elasticity on the extensive margin.&lt;/p&gt;
+&lt;p&gt;This is commonly referred to as an aggregation theory. Micro economists have issue with this particular aggregation theory because they cannot find evidence that these sort of employment lotteries exist.&lt;/p&gt;
+&lt;p&gt;Ljungqvist and Sargent then go on to explain a new way of thinking that seeks to unify the rhetoric regarding labor supply elasticity. The main idea is that instead of thinking about the labor supply choice as a lottery played out amongst family members in a household, we can think of it as an individual making a binary labor supply decision at every instant of their life. One natural interpretation of this type of setting is that there is a lifecycle component to the model, where after some date agents enter retirement and do not supply labor any more, regardless of the wage. The fraction of the lifetime spent working has been termed the career length of the individual.&lt;/p&gt;
+&lt;p&gt;It turns out that for an interior solution for labor supply probability in the Rogerson model is identical to interior solutions for career length, when the discount factor equals the market rate of return in a deterministic setting. This means that same results for micro and macro labor supply elasticity that held in the Rogerson setting continue to hold in this lifecycle model. There are two last points I&#39;ll make about this:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;This type of aggregation theory has been better received by labor economists. They consider the career length choice more plausible than the employment lottery choice.&lt;/li&gt;
+&lt;li&gt;This does not settle the debate about whether the macro (aggregate) labor supply elasticity should be large or small: the theory could support either argument.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Recall that I said the lifecycle career-length choice was equivalent to the employment probability lottery, at &lt;em&gt;interior&lt;/em&gt; solutions. The behavior is somewhat different at the corners.&lt;/p&gt;
+&lt;p&gt;For our discussion we can think of an agent being on corner solution as an agent who is incentivized to retire at a certain age. If a large portion of the workers in an economy are on a corner, then when wages move the aggregate response in labor supply will be dampened (people can&#39;t come out of retirement)) and the aggregate labor supply elasticity will be low. On the contrary, if there are relatively few agents at the corner, the aggregate labor supply elasticity will be high.&lt;/p&gt;
+&lt;p&gt;The measure of agents at a corner will be crucially impacted by the government policies regarding targeted retirement age, retirement benefits or payments, and how they are financed.&lt;/p&gt;
+&lt;p&gt;Ljungqvist and Sargent conclude by suggesting that a promising area for new research will look at how to reform taxation and disability/retirement payments to minimize the deadweight loss associated with distorting the labor supply decision through taxes.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Autor, Dorn, Hanson, and Song (2014) (Trade Adjustment: Worker Level Evidence)</title>
@@ -2506,48 +2529,6 @@ s.t. &amp;amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum&lt;/em&gt;{x&amp;rsquo;} 
 &lt;li&gt;All agents know which agent is marginal each period &lt;em&gt;and&lt;/em&gt; what the marginal agent&amp;rsquo;s discount factor and probability measure are. This allows all agents to write down the same infinite sum, that coincides with the equilibrium part.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Adam:2016hd (Adam, K., &amp; Marcet, A. &amp; Nicolini J. (2016). Stock Market Volatility and Learning.)</title>
-      <link>http://srg.spencerlyon.com/2016/11/01/adam2016hd-adam-k.--marcet-a.--nicolini-j.-2016.-stock-market-volatility-and-learning./</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/11/01/adam2016hd-adam-k.--marcet-a.--nicolini-j.-2016.-stock-market-volatility-and-learning./</guid>
-      <description>&lt;p&gt;Builds on the internal rationality framework from last week to build a model of asset pricing that can explain 5 facts that have puzzled the literature at one time or another.&lt;/p&gt;
-&lt;h2 id=&#34;facts&#34;&gt;Facts&lt;/h2&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Standard deviation of price dividend ratio is very high (about 1/2 the mean of the PD ratio)&lt;/li&gt;
-&lt;li&gt;First-order quarterly autocorrelation of PD ratio is vary high&lt;/li&gt;
-&lt;li&gt;Standard deviation of stock returns is almost 4 times as large as standard deviation of dividend growth&lt;/li&gt;
-&lt;li&gt;PD ratio is good long run predictor of stock returns&lt;/li&gt;
-&lt;li&gt;Equity premium puzzle: return on risky stocks is too high relative to bonds for standard models&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;There is a unit mass of infinitely lived investors, endowed with one unit of a stock that can be traded in a competitive market and that pays a per period dividend D in units of a perishable consumption good. The log growth rate of dividends follows an AR(1).&lt;/p&gt;
-&lt;p&gt;Agents also receive a stochastic endowment of the consumption good. The feasibility constraint requires that consumption be equal to dividends plus the endowment. Following the consumption-based asset pricing literature they choose to model the consumption process directly instead of the income process. The log growth of consumption is also an AR(1). The innovations in consumption growth and dividend growth are correlated with coefficient equal to 0.2 (estimated in the data).&lt;/p&gt;
-&lt;p&gt;In addition to trading shares of the dividend yielding risky asset, agents can also trade in a one period risk free bond.&lt;/p&gt;
-&lt;p&gt;All agents discount the future at the same, constant rate.&lt;/p&gt;
-&lt;p&gt;The objective of each consumer is to choose sequences of functions that map histories of observed prices, dividends, and endowments into consumption, stock holdings, and bond holdings to maximize the expected discounted utility of consumption; subject to a budget constraint that equates expenditure on consumption and stock and bond purchases to dividends, the endowment and bond returns.&lt;/p&gt;
-&lt;p&gt;Each agent is allowed to have subjective beliefs over the joint evolution of prices, dividends, and endowments. Agents behave fully rationally, given these beliefs. The only difference between the setup here and the classic setup is that agents form beliefs over prices instead of being assumed to have a mapping between histories of dividends and endowments into current prices. These subjective beliefs will be updated over time and are crucial for the model to explain the facts in the data.&lt;/p&gt;
-&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
-&lt;p&gt;The agents first order necessary conditions for stocks and bonds are standard.&lt;/p&gt;
-&lt;p&gt;A key equilibrium result is the pricing function that relates current dividends and expected price and dividend growth into current prices.&lt;/p&gt;
-&lt;p&gt;This function is that prices today are equal to risk adjusted expected dividend growth, divided by one minus risk adjusted expected price growth, times the discount factor, times dividends. It is crucial that todays price is increasing the divided flow, risk-adjusted expectations about dividend growth, and risk-adjusted expectations about price growth.&lt;/p&gt;
-&lt;p&gt;Under the rational expectations hypothesis, the expectation of both of these growth rates is constant. This results in growth rate of prices to exactly equal the growth rate of dividends. It is for this reason that the standard rational expectations model fails to match the first 4 facts I gave before. The model also generates a low risk premium, so it misses all 5 facts.&lt;/p&gt;
-&lt;p&gt;However, when beliefs are subjective the expected risk-adjusted growth rates are not constant over time. The authors argue that the important component of their model is fluctuations in the expectation of price growth. To test this, they assume that investors use the true probability measure for divided growth, but hold subjective beliefs over price growth. This is the same as assuming agents still cannot map perfectly from dividend and endowment realizations into prices.&lt;/p&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;p&gt;The baseline parameterization of the proposed model is able to quantitatively match all the facts except the risk premium. In this model the CRRA parameter is set to 5. If they allow this to float to 80, they are also able to match the risk premium fact.&lt;/p&gt;
-&lt;p&gt;The question is, how does it happen?&lt;/p&gt;
-&lt;p&gt;The key mechanism is a feedback loop between expectations about price growth and the realization of price growth. Here&#39;s a rough sketch of how it works&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Expected price growth exhibits both momentum and mean reversion to the rational expectants &amp;quot;fundamental level&amp;quot; of prices&lt;/li&gt;
-&lt;li&gt;This momentum means that beliefs have a tendency to increase further following an initial increase whenever beliefs are at or below their fundamental value.&lt;/li&gt;
-&lt;li&gt;Mean reversion means that beliefs can&#39;t stay away from the rational expectations level forever.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These facts together cause the price dividend ratio to fluctuate around its rational expectation value. This allows the model to explain the observed volatility and serial correlation of the PD ratio (facts 1 and 2). This behavior also causes stock returns to be more volatile than dividend growth; which explains fact 3. Finally, serial correlation and mean-reversion in the PD ratio give rise to excess return predictability -- fact 4 (NOTE: the notion of predictability is explained in another paper by Cochrane that I didn&#39;t study).&lt;/p&gt;
-&lt;p&gt;The model still fails, however to generate a high enough risk premium. In order to match this fact, they authors have to adjust risk aversion. They do so by cranking up the CRRA parameter. I believe that using recursive preferences and adjusting the inter temporal elasticity of substitution is another way to generate excess returns without resorting to very high levels of risk aversion.&lt;/p&gt;
 </description>
     </item>
     

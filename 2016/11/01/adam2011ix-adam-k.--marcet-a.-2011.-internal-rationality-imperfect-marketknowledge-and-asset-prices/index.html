@@ -59,7 +59,7 @@ knowledge and asset prices
     },
     "datePublished": "2016-11-01",
     "description": "",
-    "wordCount": 29863
+    "wordCount": 29850
   }
 </script>
 
@@ -161,7 +161,7 @@ knowledge and asset prices
 
   
   &middot; Read in about 141 min
-  &middot; (29863 Words)
+  &middot; (29850 Words)
   <br>
   
 
@@ -402,7 +402,7 @@ knowledge and asset prices
 <h1 id="experiments-1">Experiments</h1>
 <p>Definitions:</p>
 <p><br /><span class="math display"><em>Σ</em> ≡ Var(log<em>Y</em>−log<em>Y</em><sup><em></sup>)</span><br /></p>
-<p><br /><span class="math display">$$\sigma \equiv \text{Var} \left( \log \tilde{y}_{it}  - \log \tilde{Y}_t\right)$$</span><br /></p>
+<p><br /><span class="math display"><em>σ</em> ≡ Var(log<em>ỹ</em><sub><em>i</em><em>t</em></sub>−log<em>Ỹ</em><sub><em>t</em></sub>)</span><br /></p>
 <p><br /><span class="math display">$$\Delta \equiv \frac{E[Y]}{Y/Y^</em>}$$</span><br /></p>
 <p><br /><span class="math display">$$\Lambda \equiv \Sigma + \frac{1}{1 -\alpha} \sigma$$</span><br /></p>
 <p>In the experiments the authors do, they consider how welfare changes with the precision of the signals.</p>
@@ -585,9 +585,9 @@ knowledge and asset prices
 <p><br /><span class="math display">$$\forall A \subset \mathcal{A}, \forall a \in A, \quad \text{prob} \left{a \in \mathcal{N} | \text{card} A \cap N = n\right} = \frac{n}{ \text{card} A}$$</span><br /></p>
 <p>Parameters are such that agent 1 doesn’t exit in period 1<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
 <h2 id="equilibrium-concept">Equilibrium concept</h2>
-<p>Let <span class="math inline"><em>d</em><sub><em>t</em></sub> ∈ {<em>S</em>, <em>E</em>}</span> be agent 1’s decision to stay or exit at time <span class="math inline">1</span>. If <span class="math inline"><em>d</em><sub><em>t</em></sub> = <em>E</em></span>, then <span class="math inline">$A_t = a_t = \tilde{b}(a_t) \emptyset$</span>. There are three types of history:</p>
+<p>Let <span class="math inline"><em>d</em><sub><em>t</em></sub> ∈ {<em>S</em>, <em>E</em>}</span> be agent 1’s decision to stay or exit at time <span class="math inline">1</span>. If <span class="math inline"><em>d</em><sub><em>t</em></sub> = <em>E</em></span>, then <span class="math inline"><em>A</em><sub><em>t</em></sub> = <em>a</em><sub><em>t</em></sub> = <em>b̃</em>(<em>a</em><sub><em>t</em></sub>)∅</span>. There are three types of history:</p>
 <ol style="list-style-type: decimal">
-<li><span class="math inline">ℋ<sup>1</sup></span> are histories of the form <span class="math inline">$h^1 = \left{d_1, A_1, a_1, \tilde{b}(a<em>1), \dots, d</em>{t-1}, A<em>{t-1}, a</em>{t-1} \tilde{b}(a_{t-1}) \right}$</span> and correspond to agent 1’s information set at his decision node in period <span class="math inline"><em>t</em></span></li>
+<li><span class="math inline">ℋ<sup>1</sup></span> are histories of the form <span class="math inline"><em>h</em><sup>1</sup> = {<em>d</em><sub>1</sub>,<em>A</em><sub>1</sub>,<em>a</em><sub>1</sub>,<em>b̃</em>(<em>a</em><sub>1</sub>),…,<em>d</em><sub><em>t</em> − 1</sub>,<em>A</em><sub><em>t</em> − 1</sub>,<em>a</em><sub><em>t</em> − 1</sub><em>b̃</em>(<em>a</em><sub><em>t</em> − 1</sub>)}</span> and correspond to agent 1’s information set at his decision node in period <span class="math inline"><em>t</em></span></li>
 <li><span class="math inline">ℋ<sup>2|1</sup></span> histories are <span class="math inline"><em>h</em><sup>1</sup> ⊔ {<em>d</em><sub><em>t</em></sub>, <em>A</em><sub><em>t</em></sub>}</span> are agent 1’s information at agent 2’s decision node in period <span class="math inline"><em>t</em></span>.</li>
 <li><span class="math inline">ℋ<sup>2</sup></span> histories are <span class="math inline"><em>h</em><sup>2|1</sup> ⊔ 𝒩</span> are agent 2’s information set at his decision node in period <span class="math inline"><em>t</em></span>.</li>
 </ol>
@@ -596,7 +596,7 @@ knowledge and asset prices
 <h1 id="equilibrium-analysis">Equilibrium Analysis</h1>
 <h2 id="complete-information-benchmark">Complete information benchmark</h2>
 <p>Consider a benchmark model of full information where agent 1 also knows agent 2’s cost function. In all Pareto efficient equilibria of this game, player 1 never chooses to exit.</p>
-<p>Because the payoff to agent 1 is bounded above, value functions for player 1 and player 2 are bounded. Denote the highest possible value function for agent 2 in the perfect information game as <span class="math inline">$\bar{V}_2$</span>. This will be used in later analysis.</p>
+<p>Because the payoff to agent 1 is bounded above, value functions for player 1 and player 2 are bounded. Denote the highest possible value function for agent 2 in the perfect information game as <span class="math inline"><em>V̄</em><sub>2</sub></span>. This will be used in later analysis.</p>
 <h2 id="asymmetric-information-model">Asymmetric information model</h2>
 <p>In the asymmetric information model, agent 1 learns which actions are productive. In the early stages of the game, monitoring is imperfect (agent 1 doesn’t know for sure if he got zero payoffs because agent 2 chose an unproductive action, or if a productive action failed.) As agent 1 learns, the game transitions to perfect monitoring.</p>
 <p>An interesting feature of the asymmetric information model is that along this path to perfect monitoring, inefficient punishment (exit by player 1) is rational and on the equilibrium path.</p>
@@ -947,7 +947,7 @@ knowledge and asset prices
 <p>The Brownian motion will be three dimensional, where dimensions correspond to independent shocks directly to consumption itself, consumption growth <span class="math inline"><em>x</em><sub>1</sub></span>, and stochastic volatility <span class="math inline"><em>x</em><sub>2</sub></span></p>
 <p>Multiplicative functionals take a specific form:</p>
 <ul>
-<li>The drift is affine in deviations of <span class="math inline"><em>x</em><sub>1</sub></span> and <span class="math inline"><em>x</em><sub>2</sub></span> from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (<span class="math inline">$\beta(x) = \bar{\beta}_0 + \bar{\beta}_t \cdot (x_1 - \iota_1) + \bar{\beta}_2 (x_t - \iota_2)$</span>)</li>
+<li>The drift is affine in deviations of <span class="math inline"><em>x</em><sub>1</sub></span> and <span class="math inline"><em>x</em><sub>2</sub></span> from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (<span class="math inline"><em>β</em>(<em>x</em>)=<em>β̄</em><sub>0</sub> + <em>β̄</em><sub><em>t</em></sub> ⋅ (<em>x</em><sub>1</sub> − <em>ι</em><sub>1</sub>)+<em>β̄</em><sub>2</sub>(<em>x</em><sub><em>t</em></sub> − <em>ι</em><sub>2</sub>)</span>)</li>
 <li>The volatility is the square root of <span class="math inline"><em>x</em><sub>2</sub></span> times a constant vector <span class="math inline">$(\alpha(x) = \sqrt{x_2} \bar{\alpha}$</span>).</li>
 </ul>
 <p>Consumption growth is modeled directly as a multiplicative functional.</p>
@@ -1539,7 +1539,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <li>The “zero profit cutoff”, which characterizes average profits as a function of the cutoff productivity. This will be a downward sloping line</li>
 <li>The free entry condition: expresses average profits as an increasing function of cutoff productivity</li>
 </ol>
-<p>Melitz proves that these lines always intersect exactly once, and the intersection is at the point (<span class="math inline"><em>φ</em><sup></em></sup></span>, <span class="math inline">$\bar{\pi}$</span>).</p>
+<p>Melitz proves that these lines always intersect exactly once, and the intersection is at the point (<span class="math inline"><em>φ</em><sup></em></sup></span>, <span class="math inline"><em>π̄</em></span>).</p>
 <h3 id="open-economy">Open economy</h3>
 <p>Now consider a world where there are <span class="math inline"><em>n</em></span> additional countries, identical to the one we have been studying, with which our country can trade. In order to trade internationally, each country must pay a fixed cost to enter the export market and a variable trade cost (iceberg cost) per unit of export. These export costs are symmetric.</p>
 <h4 id="equilibrium-7">Equilibrium</h4>

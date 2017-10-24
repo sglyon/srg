@@ -9,8 +9,182 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Asturias, Hur, Kehoe, and Ruhl (2017) (Firm Entry and Exit and Aggregate Growth.)</title>
+      <link>http://srg.spencerlyon.com/2017/10/24/asturias-hur-kehoe-and-ruhl-2017-firm-entry-and-exit-and-aggregate-growth./</link>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/10/24/asturias-hur-kehoe-and-ruhl-2017-firm-entry-and-exit-and-aggregate-growth./</guid>
+      <description>&lt;p&gt;This goal of this paper is to better understand how firm entry and exit interact with aggregate productivity growth.&lt;/p&gt;
+&lt;h2 id=&#34;empirical-finding&#34;&gt;Empirical finding&lt;/h2&gt;
+&lt;p&gt;The authors main empirical finding is that the contribution to aggregate productivity growth from new firms is larger in periods of high productivity growth than in periods of low productivity growth.&lt;/p&gt;
+&lt;p&gt;This finding is established using data on all manufacturing plants in Chile from 1995 to 2006 and in Korea for 1992-1997, 2001-2006, and 2009-2014. The authors argue that these two countries are good candidates for studying their question because over the data coverage period, both countries experienced stretches of low and high growth in GDP per worker.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;The authors then then build a model that can deliver this new fact and use the model as a laboratory for doing counterfactual experiments.&lt;/p&gt;
+&lt;p&gt;The model is in the spirit of Hopenhayn (!992). The economy is and has three distinguishing features:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The distribution from which potential entrants draw their efficiencies exogenously improves each period&lt;/li&gt;
+&lt;li&gt;The efficiency of incumbent firms improves both through an exogenous process and through spillovers with the rest of the economy&lt;/li&gt;
+&lt;li&gt;Firm entry and exit are endogenous&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;details&#34;&gt;Details&lt;/h2&gt;
+&lt;p&gt;Infinite horizon, discrete time.&lt;/p&gt;
+&lt;p&gt;Representative household that inelastically supplies one unit of labor to firms. The household is paid a wage by the firms and receives aggregate dividends paid out by all firms. They also have access to a non-state contingent one period bond. They choose a sequence of consumption and bond holdings to maximize the present discounted value of lifetime log consumption, subject to a period by period budget constraint, a no-Ponzi condition, and an initial supply of bond holdings.&lt;/p&gt;
+&lt;p&gt;In each period potential entrants must pay a fixed cost to draw an efficiency parameter from a Pareto distribution. The scale parameter of this distribution indexes how easily new firms can adopt the frontier technology. Because household own firms, this cost is paid by the household. After observing the efficiency draw, the firm chooses whether to operate or stay out of the economy. The mass of potential entrants is characterized by a free entry condition, such that the expected value of paying the cost to make a new productivity draw is exactly equal to the fixed cost.&lt;/p&gt;
+&lt;p&gt;An operating firm, either incumbent or new entrant, produces using a DRS production technology in labor. The firms pay a fixed operating cost in each period of operation. Firms choose labor demand to maximize output, less wage payments and the fixed cost.&lt;/p&gt;
+&lt;p&gt;Operating firms exogenously exit with a constant probability each period. They also choose to exit endogenously if their value function ever becomes negative. Their efficiency in the next period will be equal to current period efficiency multiplied by a constant and the average efficiency growth in the economy, raised to a power that controls the degree of spillover in the economy. If this parameter is sufficiently less than 1 (sufficiency determined as a function of the constant term), the growth rate of incumbent efficiency is lower than the growth rate of new entrant efficiency. The calibrated value of the technology growth parameters satisfy this condition.&lt;/p&gt;
+&lt;p&gt;The exit decision is characterized by a cutoff level of efficiency, such that all firms below the cutoff optimally choose to exit. Because incumbent firms grow more slowly than new firms, all firms eventually exit and in each period firms of every age will exit.&lt;/p&gt;
+&lt;p&gt;The authors consider a balanced growth path equilibrium where where wages, GDP, consumption, dividends, and the cutoff threshold all grow at the same rate.&lt;/p&gt;
+&lt;h2 id=&#34;calibration&#34;&gt;Calibration&lt;/h2&gt;
+&lt;p&gt;The authors assume that the two fixed costs are equal to an underlying value multiplied by one plus a policy parameter. They say that the underlying value captures the status of technology.&lt;/p&gt;
+&lt;p&gt;They calibrate the model using US data under the assumption that the two policy parameters in the fixed costs are equal to zero and that the scale parameter in the Pareto distribution is equal to 1. These restrictions imply that there are no distortions in the economy.&lt;/p&gt;
+&lt;p&gt;They essentially use SMM to match moments they obtain from census Bureau data, but I won&#39;t go into more calibration details right now.&lt;/p&gt;
+&lt;h2 id=&#34;reform&#34;&gt;Reform&lt;/h2&gt;
+&lt;p&gt;Within the calibrated model they do three counterfactual experiments, each corresponding to one form of policy reform. The three reforms are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Lowering the fixed cost for potential entrants to make a productivity draw&lt;/li&gt;
+&lt;li&gt;Lowering the fixed operating cost&lt;/li&gt;
+&lt;li&gt;Lowering the barriers for new firms to adopt the frontier technology (the Pareto distribution scale parameter)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In each case they alter the corresponding parameter until the growth of output is 15% lower than the baseline value. They then do an experiment where they return the parameter to the no-distortion level and watch what happens in the transition to the original balanced growth path.&lt;/p&gt;
+&lt;p&gt;The results they find when lowering either the fixed entry cost or the barrier to new firm adoption of frontier technology are quantitatively similar. In each case, the policy reform increases the expected value of potential entrants, which leads to a permanent increase in the mass of potential entrants. This leads to more entry, which increases labor demand, causing wages to rise. Higher wages cause low efficiency firms to exit, leading to a more efficient cohort of firms in the economy.&lt;/p&gt;
+&lt;p&gt;The results are different when they consider lowering the fixed operating cost. The lower operating cost allows less efficient firms to enter and choose not to exit. The larger mass of firms increases output in the economy, but causes aggregate productivity to fall because less-efficient firms are able to continue producing.&lt;/p&gt;
+&lt;h2 id=&#34;tie-back-to-data&#34;&gt;Tie back to data&lt;/h2&gt;
+&lt;p&gt;To conclude, I will show how the authors tie the results of these counterfactual experiments back to their main empirical finding. Recall the finding: the share of aggregate productivity growth accounted for by new entrants is larger in periods of high output growth.&lt;/p&gt;
+&lt;p&gt;In the model, periods of low growth are the balanced growth paths whereas the high growth periods happen on the transition from the distortionary economy to the distortion free economy. Along the transition the share of aggregate productivity growth accounted for by entrants is much larger than it is while on the balanced growth path.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lee and Yi (2017) (Global Value Chains and Inequality with Endogenous Labor Supply)</title>
+      <link>http://srg.spencerlyon.com/2017/10/17/lee-and-yi-2017-global-value-chains-and-inequality-with-endogenous-labor-supply/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/10/17/lee-and-yi-2017-global-value-chains-and-inequality-with-endogenous-labor-supply/</guid>
+      <description>&lt;p&gt;The goal of this paper is to use the modeling concept of Global value chains to analyze the international impact of a lowering of trade costs.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;Most of the paper is about describing the model. It is too complicated to explain in full in just 5 minutes, so I will discuss some of the key features so we can understand the results.&lt;/p&gt;
+&lt;p&gt;The model is static.&lt;/p&gt;
+&lt;p&gt;There are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries that are symmetric in technology, but will have different parameter values in the calibrated model.&lt;/p&gt;
+&lt;p&gt;Within each country there are a finite number of sectors.&lt;/p&gt;
+&lt;p&gt;Within each sector there is a continuum of final goods. Each final good is the output of a global value chain of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;J&lt;/em&gt;&lt;/span&gt;. This means that each final good goes through &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;J&lt;/em&gt;&lt;/span&gt; stages of production before becoming a final good. Stages can happen in any of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries.&lt;/p&gt;
+&lt;p&gt;Within each sector, the continuum of final goods within each sector is aggregated using a CES technology. Sector aggregates are combined via a Cobb Douglass technology. The output of Cobb-Douglass aggregator is used for household consumption or as an intermediate input in production.&lt;/p&gt;
+&lt;p&gt;The technology at each stage combines 4 inputs:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;country-sector-stage idiosyncratic productivity&lt;/li&gt;
+&lt;li&gt;labor from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;O&lt;/em&gt;&lt;/span&gt; occupations,&lt;/li&gt;
+&lt;li&gt;the output of this good&#39;s previous stage,&lt;/li&gt;
+&lt;li&gt;the Cobb-Douglass aggregated good.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Labor is supplied by a continuum of workers that are of one of a finite number of types. Within each worker type, each worker has idiosyncratic productivity across occupations and sectors. Workers inelastically supply all their labor endowment to the sector and occupation that yields them the highest return.&lt;/p&gt;
+&lt;p&gt;The main outcome of the model is a nested system of comparative advantage. There is comparative advantage at the country level and the worker level.&lt;/p&gt;
+&lt;p&gt;At the country level, comparative advantage is driven by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Country-stage specific occupation weights in the production function&lt;/li&gt;
+&lt;li&gt;Country-sector-stage distribution of productivity&lt;/li&gt;
+&lt;li&gt;Country-stage weight on previous stage output&lt;/li&gt;
+&lt;li&gt;Country-sector importance of the Cobb-Douglass aggregated good&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the worker level, comparative advantage is driven by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Type-sector-occupation distribution of productivity. This has two components:
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;A type-sector-occupation component that captures between-worker-type comparative advantage&lt;/li&gt;
+&lt;li&gt;A type specific component that captures within-worker-type variation in comparative advantage&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My takeaway from the model section is that the model is very rich and if it can be estimated effectively, could shed some light on the structure of comparative advantage in the global economy as well as provide a laboratory through which we can study the network effects of changes in trade costs.&lt;/p&gt;
+&lt;h2 id=&#34;calibration&#34;&gt;Calibration&lt;/h2&gt;
+&lt;p&gt;... which brings me to the calibration.&lt;/p&gt;
+&lt;p&gt;They choose to calibrate a model with&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5 worker types based on education&lt;/li&gt;
+&lt;li&gt;3 Countries: US, China, rest of world&lt;/li&gt;
+&lt;li&gt;5 occupations based on skill and routineness&lt;/li&gt;
+&lt;li&gt;2 production stages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;set some of the CES parameters exogenously&lt;/li&gt;
+&lt;li&gt;Use the world input and output database to calibrate iceberg trade costs to match moments on aggregate trade flows by sector&lt;/li&gt;
+&lt;li&gt;Estimate parameters of the worker productivity distribution using data from the American Consumer Survey for 2000&lt;/li&gt;
+&lt;li&gt;Calibrate production parameters to match moments describing absorption of final and intermediate goods to similar moments in the data, computed from the world input output database for 200&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the end, their calibration suggests that China has a comparative advantage in manufacturing and stage two production, while the US has an advantage in high-skilled occupations in the services sector and stage one production.&lt;/p&gt;
+&lt;h2 id=&#34;counter-factual&#34;&gt;Counter factual&lt;/h2&gt;
+&lt;p&gt;With the calibrated model, they do a counter factual where trade costs between China and the US and between China and the rest of the world fall by 50%.&lt;/p&gt;
+&lt;p&gt;They report changes in the mass of sector-level aggregated goods that are entirely produced in one country. For China and the rest of the world, the mass of these goods falls sharply in all sectors. This indicates that lower trade costs allow for better sector-level specialization. On the other hand, for the US only manufacturing falls sharply while agriculture and mining fall by a small amount and services actually go up. The reason for these results is that the US already had a very strong comparative advantage in services, so it wasn&#39;t allocating many workers to agriculture or mining.&lt;/p&gt;
+&lt;p&gt;They also report changes in labor supply allocations across country, education level, and job type. They find in China, the movement for low educated workers is to move out of low skill jobs in services into low skill jobs in manufacturing. For highly educated workers the movement is from high skill jobs in services to high skill jobs in manufacturing. In the US the flows are a mirror: low education workers move from low skill jobs in manufacturing to low skill jobs in services and high education workers move from high skill jobs in manufacturing to high skill jobs in services.&lt;/p&gt;
+&lt;p&gt;In the end the results are quite predictable and in line with intuition. To me this is a positive as it helps me believe their very complicated model a little bit more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lee and Yi (2017) (Global Value Chains and Inequality with Endogenous Labor Supply)</title>
+      <link>http://srg.spencerlyon.com/2017/10/17/lee-and-yi-2017-global-value-chains-and-inequality-with-endogenous-labor-supply/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/10/17/lee-and-yi-2017-global-value-chains-and-inequality-with-endogenous-labor-supply/</guid>
+      <description>&lt;p&gt;The goal of this paper is to use the modeling concept of Global value chains to analyze the international impact of a lowering of trade costs.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;Most of the paper is about describing the model. It is too complicated to explain in full in just 5 minutes, so I will discuss some of the key features so we can understand the results.&lt;/p&gt;
+&lt;p&gt;The model is static.&lt;/p&gt;
+&lt;p&gt;There are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries that are symmetric in technology, but will have different parameter values in the calibrated model.&lt;/p&gt;
+&lt;p&gt;Within each country there are a finite number of sectors.&lt;/p&gt;
+&lt;p&gt;Within each sector there is a continuum of final goods. Each final good is the output of a global value chain of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;J&lt;/em&gt;&lt;/span&gt;. This means that each final good goes through &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;J&lt;/em&gt;&lt;/span&gt; stages of production before becoming a final good. Stages can happen in any of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries.&lt;/p&gt;
+&lt;p&gt;Within each sector, the continuum of final goods within each sector is aggregated using a CES technology. Sector aggregates are combined via a Cobb Douglass technology. The output of Cobb-Douglass aggregator is used for household consumption or as an intermediate input in production.&lt;/p&gt;
+&lt;p&gt;The technology at each stage combines 4 inputs:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;country-sector-stage idiosyncratic productivity&lt;/li&gt;
+&lt;li&gt;labor from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;O&lt;/em&gt;&lt;/span&gt; occupations,&lt;/li&gt;
+&lt;li&gt;the output of this good&#39;s previous stage,&lt;/li&gt;
+&lt;li&gt;the Cobb-Douglass aggregated good.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Labor is supplied by a continuum of workers that are of one of a finite number of types. Within each worker type, each worker has idiosyncratic productivity across occupations and sectors. Workers inelastically supply all their labor endowment to the sector and occupation that yields them the highest return.&lt;/p&gt;
+&lt;p&gt;The main outcome of the model is a nested system of comparative advantage. There is comparative advantage at the country level and the worker level.&lt;/p&gt;
+&lt;p&gt;At the country level, comparative advantage is driven by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Country-stage specific occupation weights in the production function&lt;/li&gt;
+&lt;li&gt;Country-sector-stage distribution of productivity&lt;/li&gt;
+&lt;li&gt;Country-stage weight on previous stage output&lt;/li&gt;
+&lt;li&gt;Country-sector importance of the Cobb-Douglass aggregated good&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the worker level, comparative advantage is driven by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Type-sector-occupation distribution of productivity. This has two components:
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;A type-sector-occupation component that captures between-worker-type comparative advantage&lt;/li&gt;
+&lt;li&gt;A type specific component that captures within-worker-type variation in comparative advantage&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My takeaway from the model section is that the model is very rich and if it can be estimated effectively, could shed some light on the structure of comparative advantage in the global economy as well as provide a laboratory through which we can study the network effects of changes in trade costs.&lt;/p&gt;
+&lt;h2 id=&#34;calibration&#34;&gt;Calibration&lt;/h2&gt;
+&lt;p&gt;... which brings me to the calibration.&lt;/p&gt;
+&lt;p&gt;They choose to calibrate a model with&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5 worker types based on education&lt;/li&gt;
+&lt;li&gt;3 Countries: US, China, rest of world&lt;/li&gt;
+&lt;li&gt;5 occupations based on skill and routineness&lt;/li&gt;
+&lt;li&gt;2 production stages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;set some of the CES parameters exogenously&lt;/li&gt;
+&lt;li&gt;Use the world input and output database to calibrate iceberg trade costs to match moments on aggregate trade flows by sector&lt;/li&gt;
+&lt;li&gt;Estimate parameters of the worker productivity distribution using data from the American Consumer Survey for 2000&lt;/li&gt;
+&lt;li&gt;Calibrate production parameters to match moments describing absorption of final and intermediate goods to similar moments in the data, computed from the world input output database for 200&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the end, their calibration suggests that China has a comparative advantage in manufacturing and stage two production, while the US has an advantage in high-skilled occupations in the services sector and stage one production.&lt;/p&gt;
+&lt;h2 id=&#34;counter-factual&#34;&gt;Counter factual&lt;/h2&gt;
+&lt;p&gt;With the calibrated model, they do a counter factual where trade costs between China and the US and between China and the rest of the world fall by 50%.&lt;/p&gt;
+&lt;p&gt;They report changes in the mass of sector-level aggregated goods that are entirely produced in one country. For China and the rest of the world, the mass of these goods falls sharply in all sectors. This indicates that lower trade costs allow for better sector-level specialization. On the other hand, for the US only manufacturing falls sharply while agriculture and mining fall by a small amount and services actually go up. The reason for these results is that the US already had a very strong comparative advantage in services, so it wasn&#39;t allocating many workers to agriculture or mining.&lt;/p&gt;
+&lt;p&gt;They also report changes in labor supply allocations across country, education level, and job type. They find in China, the movement for low educated workers is to move out of low skill jobs in services into low skill jobs in manufacturing. For highly educated workers the movement is from high skill jobs in services to high skill jobs in manufacturing. In the US the flows are a mirror: low education workers move from low skill jobs in manufacturing to low skill jobs in services and high education workers move from high skill jobs in manufacturing to high skill jobs in services.&lt;/p&gt;
+&lt;p&gt;In the end the results are quite predictable and in line with intuition. To me this is a positive as it helps me believe their very complicated model a little bit more.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Heathcote, Storesletten, and Violante (2017) (Optimal tax progressivity: An analytical framework)</title>
@@ -536,111 +710,6 @@ setting, the adoption policy
 &lt;/ol&gt;
 &lt;p&gt;After estimating the model with simulated method of moments (targeting moments about revenues and quantities over export spells), the authors show that the model can match all 4 of the key facts.&lt;/p&gt;
 &lt;p&gt;They also show that both learning and consumer capital are necessary in their framework. To do this they remove one at a time, re-estimate the model, and show that the model generates price dynamics.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lustig, Zhang, and Hartman-Glaser (2016) (Capital Share Dynamics When Firms Insure Managers)</title>
-      <link>http://srg.spencerlyon.com/2016/12/13/lustig-zhang-and-hartman-glaser-2016-capital-share-dynamics-when-firms-insure-managers/</link>
-      <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/12/13/lustig-zhang-and-hartman-glaser-2016-capital-share-dynamics-when-firms-insure-managers/</guid>
-      <description>&lt;p&gt;This paper uses Compustat data to document that the aggregate capital share of income and average capital share of income have diverged over the last 20 years. Specifically, the average capital share has fallen while the aggregate share has risen.&lt;/p&gt;
-&lt;p&gt;They then write down a model that uses changes in firm level volatility of productivity to generate similar dynamics in general equilibrium.&lt;/p&gt;
-&lt;p&gt;The model is interesting in its own right. It features a 2 sided limited commitment contracting problem. The agent has all bargaining power ex ante, but after the principal faces idiosyncratic shocks he ends up with capturing almost all aggregate rents ex post.&lt;/p&gt;
-&lt;p&gt;This is related to a new literature on carefully modeling large firms in order to understand aggregates.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;The model is set in continuous time.&lt;/p&gt;
-&lt;p&gt;Unit measure of ex ante identical firms. Each firm has an idiosyncratic time-varying productivity. Firms are owned by risk neutral investors (or shareholders) and operated by skilled managers. Firms rent physical capital and employ unskilled labor to produce using a decreasing returns to scale production technology.&lt;/p&gt;
-&lt;p&gt;Firm productivity evolves as a geometric brownian motion that is subject to a negative poisson shock. If productivity reaches a strictly positive minimum value (determined in equilibrium), or if poisson process jumps, the firm exits immediately. There is a competitive fringe of potential entrants. When an investor creates a new firm they pay a fixed cost &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;P&lt;/em&gt;&lt;/span&gt;. Each period firms enter until the expected value of entering is equal to &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;P&lt;/em&gt;&lt;/span&gt; (free entry). After entering the initial productivity level is drawn from a Pareto distribution.&lt;/p&gt;
-&lt;p&gt;When a firm is formed, but before initial productivity is realized, the investor is matched with a risk adverse manager and the investor offers a long term contract. The contract is a sequence of payments to be made to the manager at each instant. The manager has convex preferences over this sequence of payments and discounts the future at a constant rate. The manager can choose to accept or reject the proposed contract. Upon rejection the manager is immediately matched with a new potential entrant.&lt;/p&gt;
-&lt;p&gt;Both parties are free to terminate the contract at any time. If the manager walks away from the firm, he will receive some outside option that is determined in equilibrium. The investor will choose to continue operations as long there is a positive net present value. The investor faces an optimal stopping time problem that characterizes when the firm is abandoned. The abandonment problem is to maximize the present discounted value of profits less managerial payments from the current period until the random stopping time, subject to the constraint that the manager doesn&#39;t walk away. The constraint sets the NPV of managerial payments plus post-stopping value equal to the outside option. This constraint is always binding, so WLOG the authors restrict attention to contracts that gives the manager a fixed payment until the firm exits.&lt;/p&gt;
-&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
-&lt;p&gt;The authors use this model to describe how to match the facts about the capital share of income. The main mechanism is that an increase in the volatility parameter in the productivity process will do two main things:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;raise the real option value of waiting to abandon for firms with low productivity. This results in a decrease in the lower productivity threshold at which firms exit&lt;/li&gt;
-&lt;li&gt;Increase the number of firms with very high productivity.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In other words, higher volatility in innovations to productivity creates fat tails in the distribution of productivity across firms.&lt;/p&gt;
-&lt;p&gt;The average capital share of income is computed as the integral of profits less managerial payments divided by profits over all firms.&lt;/p&gt;
-&lt;p&gt;The aggregate capital share of income is computed as the integral of profits less managerial payments over all firms divided by the integral of profits over all firms.&lt;/p&gt;
-&lt;p&gt;The fat right tail will put more mass on the extremely productive firms who are earning profits far above the managerial payments. This drives up the aggregate capital share of income.&lt;/p&gt;
-&lt;p&gt;On the other hand, the additional mass of low productivity firms will bring the average capital share of income down.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Timoshenko (2015) (Learning, prices, and firm dynamics)</title>
-      <link>http://srg.spencerlyon.com/2016/12/06/timoshenko-2015-learning-prices-and-firm-dynamics/</link>
-      <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/12/06/timoshenko-2015-learning-prices-and-firm-dynamics/</guid>
-      <description>&lt;p&gt;The authors of this paper use firm level data on Portuguese manufacturing firms and documents two new novel facts about the joint evolution of firm performance and prices:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Within product categories, firms with longer tenure in export markets tend to export larger quantities at similar prices&lt;/li&gt;
-&lt;li&gt;Older or more experienced exporters tend to import more expensive inputs&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The authors then write down a model that can match these facts&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;Time is discrete, there are N countries. Each country is populated by a unit mass of infinitely lived consumers. There re two sectors in each economy: a final goods sector and an intermediate inputs sector. The final goods sector is populated by a mass of monopolistically competitive firms that each supply a differentiated variety of varying quality. The intermediate inputs sector is perfectly competitive and operates with a CRS production technology.&lt;/p&gt;
-&lt;p&gt;Consumers have log preferences over a CES aggregation of final goods. Within the CES aggregator final good has a multiplicative term representing the firm chosen quality of the good as well as a multiplicative preference shock term. This is idiosyncratic across firms.&lt;/p&gt;
-&lt;p&gt;TODO: DESCRIBE WHAT THE STRUCTURE IS.&lt;/p&gt;
-&lt;h4 id=&#34;intermediate-sector&#34;&gt;intermediate sector&lt;/h4&gt;
-&lt;p&gt;Perfect competition leads to price being equal to marginal cost&lt;/p&gt;
-&lt;h4 id=&#34;final-goods&#34;&gt;final goods&lt;/h4&gt;
-&lt;p&gt;Static problem: choose good quality and quantity based on expected profits in each economy.&lt;/p&gt;
-&lt;p&gt;Entry problem: given result of static problem, firms choose each period which markets to enter. If they enter they pay a fixed cost per market.&lt;/p&gt;
-&lt;p&gt;For each market the firm serves, they observe the equilibrium price that cleared the market for their good. They invert this price to uncover what the demand shock was in that period. They use this demand shock as a noisy signal though which they update their beliefs about the distribution of demand shocks they face.&lt;/p&gt;
-&lt;h4 id=&#34;eqm&#34;&gt;eqm&lt;/h4&gt;
-&lt;p&gt;They show that this model can generate dynamics that match the two empirical facts from before.&lt;/p&gt;
-&lt;h2 id=&#34;counterfactual&#34;&gt;Counterfactual&lt;/h2&gt;
-&lt;p&gt;They also do a very brief counterfactual exercise where they consider the welfare implications of imposing a minimum quality standard on all exported goods. They find that this limit decreases welfare. The mechanism is as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;quality standard raises productivity threshold for entry into export market&lt;/li&gt;
-&lt;li&gt;The decline in number of exporters reduces competition in each market, raising prices&lt;/li&gt;
-&lt;li&gt;Another effect is less foreign firms allows for more low efficiency domestic firms to enter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There is also an impact on the intensive margin:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;firms close to the productivity threshold (small or young) will face a binding quality constraint&lt;/li&gt;
-&lt;li&gt;in order to export these firms must comply and in order to do so they need to pick which quality intermediate inputs.&lt;/li&gt;
-&lt;li&gt;higher quality inputs requires more labor&lt;/li&gt;
-&lt;li&gt;This leads in a reallocation of resources among exporters toward young and small firms.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;TODO FILL THIS IN!!!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hess:2000wh (Risk sharing by households within and across regions and industries. (Hess, Shin; 2000))</title>
-      <link>http://srg.spencerlyon.com/2016/11/22/hess2000wh-risk-sharing-by-households-within-and-across-regions-and-industries.-hess-shin-2000/</link>
-      <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2016/11/22/hess2000wh-risk-sharing-by-households-within-and-across-regions-and-industries.-hess-shin-2000/</guid>
-      <description>&lt;p&gt;&lt;p&gt;The goal of this paper is to test the degree of risk sharing across regions and industries in the US.&lt;/p&gt;
-&lt;p&gt;The rough outline is to write down a simple model they use to motivate an empirical specification, then test if that specification holds in the data.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;There are H households that each live in one of R regions and work within one of I industries. Each period, households receive an endowment of the consumption good and are able to trade in complete state contingent markets. Households have time-separable CRRA preferences that are subject to multiplicative preference shocks.&lt;/p&gt;
-&lt;p&gt;The authors formulate the social planner&amp;rsquo;s problem for the entire economy. The first order condition for each household equates the Lagrange multiplier on the resource constraint to the Pareto weight times marginal utility of consumption.&lt;/p&gt;
-&lt;p&gt;They then take logs, sum across all households, and take first differences to obtain a key equation that says household log consumption growth is equal to aggregate log consumption growth plus the difference in deviations of individual preference shocks from the average preference shock times a scale factor.&lt;/p&gt;
-&lt;p&gt;There are two key things to understand about this relationship:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;There is perfect within period risk sharing across households as their consumption is independent of their endowment.&lt;/li&gt;
-&lt;li&gt;There is also intertemporal consumption smoothing because the innovation to permanent income is the same across households because it is linked to aggregate consumption growth. When solving the planner&amp;rsquo;s problem it is difficult to write down the permanent income process, but that&amp;rsquo;s how it works.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;They also consider market structures where there is perfect risk sharing only within a region or within an industry, but not across these groups. They solve for allocations in the within-group risk sharing economy using a social planner problem, just like before. The only difference is that the new planners only consider the agents in one group.&lt;/p&gt;
-&lt;p&gt;The optimality conditions are identical and that important equation relates individual consumption growth to group-wise aggregate consumption growth and preference shocks is the same. If you then aggregate these within-group conditions across the groups you arrive at the same condition we got at the end of the economy-wide planner&amp;rsquo;s problem, with the addition of one extra term. This term is a risk adjusted difference in group and economy Lagrange multipliers.&lt;/p&gt;
-&lt;p&gt;In order to derive the equation they use as the main specification for the empirical exercises, they need to remove these unobservable Lagrange multipliers. To do this they return one more time to optimality conditions for the different planners and manipulate them to write the difference in Lagrange multipliers as the difference in group and economy level consumption growth.&lt;/p&gt;
-&lt;h2 id=&#34;empirics&#34;&gt;Empirics&lt;/h2&gt;
-&lt;p&gt;The final equation they end up taking to the data is that individual log consumption growth is equal to the sum of aggregate log consumption growth, the difference between regional and aggregate consumption growth, the difference between industry and aggregate consumption growth, controls for changes in preferences, and individual income growth.&lt;/p&gt;
-&lt;p&gt;They use data from the PSID to run regressions on this model. The theory suggests that if there is complete risk sharing across regions and industries, that the coefficients on those terms should be zero. They find that these coefficients are significantly different from zero, suggesting that a large fraction of wealth is incompletely shared across regions and industries.&lt;/p&gt;
-&lt;!-- The LHS of the economy wide and group specific equations is individual
-consumption growth, which allows them to write the difference between economy
-level and within group aggregate consumption as a statement about individual
-preference shocks. Applying a law of large numbers will cause these individual
-deviations from aggregate preference shocks to aggregate out and the
-implication is that economy wide an within group consumption growth should be
-the same. --&gt;&lt;/p&gt;
 </description>
     </item>
     

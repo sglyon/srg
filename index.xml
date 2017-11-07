@@ -9,8 +9,72 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 24 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>De Loecker and Eeckhout (2017) (The Rise of Market Power and the Macroeconomic Implications)</title>
+      <link>http://srg.spencerlyon.com/2017/11/07/de-loecker-and-eeckhout-2017-the-rise-of-market-power-and-the-macroeconomic-implications/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/11/07/de-loecker-and-eeckhout-2017-the-rise-of-market-power-and-the-macroeconomic-implications/</guid>
+      <description>&lt;p&gt;&lt;p&gt;This is a &amp;quot;facts&amp;quot; paper that documents some facts about the distribution of market power over time and then talks about some macroeconomic implications of the change in market power. To talk about some of these facts, they need to write down a very simple model.&lt;/p&gt;
+&lt;h2 id=&#34;facts&#34;&gt;Facts&lt;/h2&gt;
+&lt;h3 id=&#34;data&#34;&gt;Data&lt;/h3&gt;
+&lt;p&gt;They use firm-level Compustat data from 1950-2014. The data includes all publicly traded firms over that time horizon. They comment that while this clearly does not include all firms, it does capture most of subset of firms relative for their study (large firms are usually public, and they are the ones with significant market power).&lt;/p&gt;
+&lt;p&gt;They talk at length about how their approach to measuring markups is different from the most commonly used approach. They say that researchers typically rely on assumptions about consumer behavior, profit maximization, and firm competition structure in order to measure markups. Instead in this paper they take a &amp;quot;production approach&amp;quot; that relies on balance-sheet input and output data for firms.&lt;/p&gt;
+&lt;p&gt;In order to use this approach the authors make the following assumptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The production technology is Cobb-Douglass in capital and a variable input, with industry specific productivity&lt;/li&gt;
+&lt;li&gt;Industry productivity follows an AR(1) in logs with Gaussian innovations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The implementation happens in three stages:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Regress output on variable inputs, capital inputs, and one more term that is a non-parametric function of these two inputs. Unfortunately I couldn&amp;rsquo;t understand exactly what this term was from the text. Hopefully a future draft will be more clear.&lt;/li&gt;
+&lt;li&gt;Given the third, non-parametric term, they are able to recover the implied productivity. With this in hand they regress&lt;/li&gt;
+&lt;li&gt;Given the residuals from the productivity regression, they use a moment condition that says the expectation of time t productivity innovations and time t-1 variable inputs must be zero. In other words time t-1 choices can&amp;rsquo;t depend on time t shocks. This gives them a function for output elasticity, which they can express directly as markups&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The main findings of the paper are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Average markups were fairly constant before 1980, but have been steadily and sharply increasing since then (from 20% above MC to 67% between 1980 and&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2014&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;The distribution of markups has been changing. The median markup (and all percentiles below) has been relatively constant over the whole sample. On the other hand the 90th percentile of markup rises from 40% in 1980 to 160% in&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2014&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;There is not a strong compositional pattern across industries and most of the increase in markups occurs within industries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They check these facts using aggregate data on all firms from the IRS as well as an aggregate they construct from the Compustat data and find similar patterns.&lt;/p&gt;
+&lt;h2 id=&#34;macro-implications&#34;&gt;Macro implications&lt;/h2&gt;
+&lt;p&gt;They discuss 7 different macro implications. I won&amp;rsquo;t have time to talk about them in detail, but I will list them here so you know what is in the paper and you can look back yourself if you are interested.&lt;/p&gt;
+&lt;p&gt;The following macro implications are established only using their data:&lt;/p&gt;
+&lt;!-- mytn is &#39;more than you need&#39; --&gt;
+&lt;ul&gt;
+&lt;li&gt;Decline in labor share (mtyn: labor share tracks inverse markup, and markups are rising)&lt;/li&gt;
+&lt;li&gt;Decline in capital share (mtyn: labor share tracks inverse markup, and markups are rising)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following macro implications required them to specify a model of market structure and demand:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;mtyn: the model is P(Q) = c + lambda h(Q), where lambda indexes degree of compeition in model (lambda=1 is monopoly and lambda=0 is perfect compeition). Markups are then 1 + lambda h(Q) / c. Markups rise if lambda rises, h(Q) rises, or c falls. They consider what happens when lambda rises.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Decline in low skill wages (mtyn: given wages and productivity, aggregate labor demand is decreasing in market power and individual labor demand is increasing in market power (mkt power = 1/number of firms. Aggregate statement reflects that production falls as # firms falls.) Furthermore, if there are CRS, then w and L fall with mkt power)&lt;/li&gt;
+&lt;li&gt;Decline in labor force participation (mtyn: this is supply side of fall in aggregate labor demand as market power rises. This is partially offset by a sharp increase in female labor participation rates post 1960)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These last implications required them all for firm specific productivity shocks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Decline in labor market flows (mtyn: driven by imperfect competition meaning we aren&amp;rsquo;t on productivity or output frontier)&lt;/li&gt;
+&lt;li&gt;Decline in migration rates (mtyn: same mechanism as labor market flows)&lt;/li&gt;
+&lt;li&gt;Slowdown in aggregate output (mtyn: this happens to coincide with the increase in market power, tough they don&amp;rsquo;t offer causal analysis)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Asturias, Hur, Kehoe, and Ruhl (2017) (Firm Entry and Exit and Aggregate Growth.)</title>
@@ -672,44 +736,6 @@ setting, the adoption policy
 &lt;p&gt;TODO&lt;/p&gt;
 &lt;h2 id=&#34;counter-factuals&#34;&gt;counter factuals&lt;/h2&gt;
 &lt;p&gt;SEE NOTES IN PDF&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Y Yedid-Levi, S Haller, and D Fitzgerald (2017) (How Exporters Grow)</title>
-      <link>http://srg.spencerlyon.com/2017/01/31/y-yedid-levi-s-haller-and-d-fitzgerald-2017-how-exporters-grow/</link>
-      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2017/01/31/y-yedid-levi-s-haller-and-d-fitzgerald-2017-how-exporters-grow/</guid>
-      <description>&lt;p&gt;The authors of this paper use confidential Irish data to document 4 novel facts about the lifecycle of exporting firms and then combine two existing modeling pieces to builds a partial equilibrium model that can reconcile the reported facts.&lt;/p&gt;
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-&lt;p&gt;The authors use two confidential micro data sets from Ireland:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;The Irish census of industrial production&lt;/li&gt;
-&lt;li&gt;Irish custom records&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;They are able to link the datasets to build a panel dataset at the firm-product-destination market level.&lt;/p&gt;
-&lt;h2 id=&#34;empirics&#34;&gt;Empirics&lt;/h2&gt;
-&lt;p&gt;The main empirical exercise is to determine how one of log revenue, log quantity, or log price varies with both the firm-product duration in a particular market and the length of a firm-product-market export spell. The export spell is defined as the number of consecutive periods a firm exports a particular product to a particular market. Note that in the regressions this is a constant number for the entire spell, while the export tenure rises from 1 to the duration of the spell.&lt;/p&gt;
-&lt;p&gt;The authors also control for destination market fixed effects and firm-product-year fixed effects.&lt;/p&gt;
-&lt;p&gt;There are 4 key results from the estimation:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Quantities grow dramatically in the first five years of successful export spells, defined as spells that last at least seven years. This growth is statistically significant up to a horizon of four years and is not driven purely by part-year effects in the first year (i.e. there is economically and statistically significant growth between years 2 and 4).&lt;/li&gt;
-&lt;li&gt;Within successful export spells, there are no statistically or economically significant dynamics in prices.&lt;/li&gt;
-&lt;li&gt;Higher initial quantities predict longer export spells: for spells lasting between one and four years, all pairwise comparisons of initial quantities are statistically different.&lt;/li&gt;
-&lt;li&gt;Initial prices do not predict export spell length.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The authors do a number of robustness checks and report that the results are qualitatively unchanged when the data is cut differently or other controls are used.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;I now turn to the model. The use of the model is not as interesting or enlightening as the components themselves, so I will focus my discussion on why they made the assumptions they did.&lt;/p&gt;
-&lt;p&gt;The authors make a quick note that common supply-side tricks for generating revenue and size dynamics (productivity shocks, capital adjustment costs, capacity or financial constraints, market-specific cost shocks, etc.) have a difficult time generating the observed dynamics in quantity without introducing dynamics in prices. For this reason they choose to focus on demand-side features that can generate dynamics.&lt;/p&gt;
-&lt;p&gt;They choose two of the more common demand side bells and whistles to include in their model:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Learning about unobserved idiosyncratic shocks.&lt;/li&gt;
-&lt;li&gt;Consumer capital: firms build up a consumer base that deprecates over time and add consumers by direct investment in marketing or other costly acquisition methods.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;After estimating the model with simulated method of moments (targeting moments about revenues and quantities over export spells), the authors show that the model can match all 4 of the key facts.&lt;/p&gt;
-&lt;p&gt;They also show that both learning and consumer capital are necessary in their framework. To do this they remove one at a time, re-estimate the model, and show that the model generates price dynamics.&lt;/p&gt;
 </description>
     </item>
     

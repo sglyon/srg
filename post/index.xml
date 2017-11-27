@@ -9,8 +9,106 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>McGratten (2017) (Intangible Capital and Measured Productivity)</title>
+      <link>http://srg.spencerlyon.com/2017/11/28/mcgratten-2017-intangible-capital-and-measured-productivity/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/11/28/mcgratten-2017-intangible-capital-and-measured-productivity/</guid>
+      <description>&lt;p&gt;McGratten starts by saying that firms invest almost as much in intangible capital as they do physical capital, but that intangible capital is not reported in GDP. This severely understates the actual change in output. She sees this as one way in which we can see a rise in labor and investment coincide with relatively little increase in measured total factor productivity.&lt;/p&gt;
+&lt;p&gt;The goal of the paper is to build a multi-sector general equilibrium model that incorporates intangible capital and investment. Multiple sectors are needed to account for the distribution of intangible investment rates across industries.&lt;/p&gt;
+&lt;p&gt;She then uses data from the BEA input/output tables, which account directly for intellectual property products as part of investment, not as intermediate inputs.&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;p&gt;Discrete time. Infinite horizon&lt;/p&gt;
+&lt;p&gt;Representative household supplies labor to firms, owns the firms, and receives dividends from firms.&lt;/p&gt;
+&lt;p&gt;A government funds exogenous spending requirements by levying taxes on households and firms.&lt;/p&gt;
+&lt;h3 id=&#34;firms&#34;&gt;Firms&lt;/h3&gt;
+&lt;p&gt;Firms produce final goods for government and household consumption as well as intermediate goods used as inputs by other firms. The only randomness in the economy is stochastic shocks to firm productivity.&lt;/p&gt;
+&lt;p&gt;Each firm in the economy produces both tangible and intangible goods and services using Cobb-Douglass technologies in tangible capital, intangible capital, intermediate inputs, labor hours, with a sector-specific labor augmenting productivity shock. All inputs chosen separately for the two output types, except for intangible capital which is assumed to be non-rival and the same stock of intangibles is used in both production processes. Input shares vary across sectors.&lt;/p&gt;
+&lt;p&gt;Firms choose sequences of investment and labor to maximize the expected present discounted value of dividend payments to owners, subject to government taxes on all operating profits and taxes on owned tangible capital.&lt;/p&gt;
+&lt;p&gt;The log of the sector level productivity shocks are the sum of a sector-specific component and an aggregate component. Each of the components follows an AR(1) process in logs. All innovations are independent of one another except for possible autocorrelation to sector-specific innovations.&lt;/p&gt;
+&lt;p&gt;Sector level outputs are combined into a final consumption good with a CES aggregation technology.&lt;/p&gt;
+&lt;h3 id=&#34;government&#34;&gt;Government&lt;/h3&gt;
+&lt;p&gt;The government raises income via taxes and uses the aggregate firm output to finance exogenous expenditures. All excess revenue is rebated back to households as a lump sum transfer.&lt;/p&gt;
+&lt;h3 id=&#34;households&#34;&gt;Households&lt;/h3&gt;
+&lt;p&gt;Households own shares of the firm from each sector. The population of households grows at a fixed rate each period.&lt;/p&gt;
+&lt;p&gt;Households have time-separable, concave preferences over both consumption of the aggregate good and leisure.&lt;/p&gt;
+&lt;p&gt;Taxes are paid on consumption purchases, labor earnings, and dividends.&lt;/p&gt;
+&lt;p&gt;Household&#39;s choose sequences of sector-level consumption and labor supply to maximize the expected PDV of lifetime utility, subject to a budget constraint equating net-of-taxes consumption spending plus purchases of shares of firms, to next of tax labor income, net-of-taxes dividend receipts, and a lump sum transfer.&lt;/p&gt;
+&lt;p&gt;They choose sequences of consumption and labor supply to maximize the expected present discounted value of utility subject to a budget constraint that equates net-of-tax consumption expenditures and total&lt;/p&gt;
+&lt;p&gt;Households have a time-separable period utility function in terms of consumption and leisure. The population of households grows at a fixed rate each period. They choose consumption, leisure, and shares of firms in each sector&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;An approximate solution is found by log-linearizing.&lt;/p&gt;
+&lt;p&gt;The state vector includes the logged and de-trended aggregate contribution to productivity, a constant, and sector specific terms for all of tangible capital, intangible capital, and productivity for both tangible and intangible outputs.&lt;/p&gt;
+&lt;p&gt;The solution is summarized by a law of motion for this state variable that reads, the state variable tomorrow is a matrix times the state variable today, plus another matrix times the vector of innovations.&lt;/p&gt;
+&lt;h2 id=&#34;estimation&#34;&gt;Estimation&lt;/h2&gt;
+&lt;p&gt;McGratten uses the 2007 benchmark BEA input/output tables to parameterize income and cost shares and data from the BEA and BLS to estimate processes for sectoral productivity processes. Other parameters are related to preferences, taxes, growth rates, and depreciation and she claims they are not critical for her main results.&lt;/p&gt;
+&lt;p&gt;I don&#39;t have time to work through the details of her estimation, but the main points are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Shares of sector-level intermediates used in production can be computed directly in the model and mapped into the IO table data&lt;/li&gt;
+&lt;li&gt;Investment expenditure shares can be computed directly in the model and are mapped into detailed BEA investment data.&lt;/li&gt;
+&lt;li&gt;Capital income shares are parameters in the Cobb-Douglass production function and are chosen by iteratively adjusting the parameters and solving the model until total expenditure shares on tangible and intangible capital match the data.&lt;/li&gt;
+&lt;li&gt;The productivity process is estimated by using the approximate log-linear solution model as a state-space system on which the Kalman filter is applied. The observed variables used in this step are sector-level aggregates for output and hours per-capita.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;The main results are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The model is successful in generating large fluctuations in aggregate hours and a significant co-movement in sectoral hours in line with the data. A one sector model, or models without intangible capital fail to do this. Note that this result was achieved using a model with only productivity shocks and without using labor supply data in the calibration.&lt;/li&gt;
+&lt;li&gt;A variance decomposition of the aggregates used in the Kalman filter shows that the sectoral level productivity shocks and the input-output linkages across sectors are important in explaining aggregate time series.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;McGratten starts by saying that firms invest almost as much in intangible capital as they do physical capital, but that intangible capital is not reported in GDP. This severely understates the actual change in output. She sees this as one way in which we can see a rise in labor and investment coincide with relatively little increase in measured total factor productivity.&lt;/p&gt;
+&lt;p&gt;The goal of the paper is to build a multi-sector general equilibrium model that incorporates intangible capital and investment. Multiple sectors are needed to account for the distribution of intangible investment rates across industries.&lt;/p&gt;
+&lt;p&gt;She then uses data from the BEA input/output tables, which account directly for software, R&amp;amp;D, and similar items as part of investment, not as intermediate inputs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hall 1999 (The stock market and capital accumulation.)</title>
+      <link>http://srg.spencerlyon.com/2017/11/14/hall-1999-the-stock-market-and-capital-accumulation./</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/11/14/hall-1999-the-stock-market-and-capital-accumulation./</guid>
+      <description>&lt;p&gt;In this paper Hall seeks to quantify the price and stock of capital in the economy from 1960 to 2000 using data from the stock market.&lt;/p&gt;
+&lt;p&gt;To do this he proposes the following simple model.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discrete time, infinite horizon&lt;/li&gt;
+&lt;li&gt;Constant returns to scale production&lt;/li&gt;
+&lt;li&gt;All produciton inputs except capital adjust frictionlessly&lt;/li&gt;
+&lt;li&gt;Adjustment to capital stock can be fully adjusted in the long run (no long run rents)&lt;/li&gt;
+&lt;li&gt;Factor markets are competitive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this setting firm profits is equal to capital times the product of capital, where the product of capital depends on non-capital production inputs.&lt;/p&gt;
+&lt;p&gt;Each period the firm pays out profits, less capital investment and adjustment costs to shareholders as dividends.&lt;/p&gt;
+&lt;p&gt;The value of the firm is the present discounted value of all dividend payments&lt;/p&gt;
+&lt;p&gt;Capital stock depreciates at a constant rate each period.&lt;/p&gt;
+&lt;p&gt;A firm’s problem is to choose a sequence of investment levels to maximize the present discounted value of all shareholder payouts, subject to capital stock depreciation and quadratic adjustment costs. The Lagrange multiplier on the time t capital accumulation equation is the shadow price of capital.&lt;/p&gt;
+&lt;p&gt;Under the assumptions in the model, the following is true:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Security (stock) price of firm = value of firm = PDV of future dividends = shadow value (price) of firm’s capital times stock of capital&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The last part of that equivalence chain is the most surprising, but most useful in this context.&lt;/p&gt;
+&lt;p&gt;Hall uses this condition as well as the first order condition for firm investment as two equations in terms of time t-1 capital stock and time t security price in order to solve for the two unknowns: time t capital stock and time t shadow price. Thus, if Hall makes an assumption about the initial level of the capital stock and data on stock prices, he can use his mini-theory to trace out time series of capital stock and price.&lt;/p&gt;
+&lt;p&gt;Using the Flow of Funds Accounts data set from the Fed Board, he follows exactly this procedure. The data contain balance sheet information for all non-farm and non-financial US corporations.&lt;/p&gt;
+&lt;p&gt;His main findings&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Application of a simple empirical test that the security price of a firm represents the present value of future payouts to shareholders seems to hold across his dataset. He summarizes his findings by saying “I see nothing in the data that demonstrates a systematic failure of the standard valuation principle – that the value of the stock market is the present value of future cash payouts to shareholders”&lt;/li&gt;
+&lt;li&gt;Results for the quantity and price of capital were dependent on the quadratic adjustment cost parameter. He took a lower and upper bound of values for this parameter from the related literature.
+&lt;ul&gt;
+&lt;li&gt;For low adjustment costs, prices remained fairly constant over the whole sample, but the quantity rose steadily – especially after 1980.&lt;/li&gt;
+&lt;li&gt;For high Over the time horizon, the quantity increased smoothly across the whole sample and most of the variation in the value of the capital stock came from movements in the shadow price.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The stock of capital implied by the low and high adjustment cost parameterizations forms a fairly uniform band around the value of capital inferred from data on capital investment.&lt;/li&gt;
+&lt;li&gt;Tobin’s q (ratio of value of a firm to the reproduction cost of its plant and equipment rose sharply from 1980 to 2000 (From 0.5 to approximately 3.5). Under the hypothesis that the securities markets reveal the value of the firm, this could happen if there were large persistent movements of the price of installed capital, or if the firm accumulated significant quantities of intangible capital.
+&lt;ul&gt;
+&lt;li&gt;Earlier evidence refutes the idea that there were large movements in the price of capital, making the story of firms accumulating intangible capital more likely.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hall’s main takeaway is that under the expectations of rational securities markets, the evidence he uncovered on prices and stocks of physical capital point to a large increase of intangible capital that added value to firms.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>De Loecker and Eeckhout (2017) (The Rise of Market Power and the Macroeconomic Implications)</title>
@@ -667,75 +765,6 @@ recent models. --&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;strategy&#34;&gt;Strategy&lt;/h1&gt;
 &lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Benhabib, Perla, Tonetti (2017) (Reconciling Models of Diffusion and Innovation: A Theory of the Productivity Distribution and Technology Frontier.)</title>
-      <link>http://srg.spencerlyon.com/2017/02/14/benhabib-perla-tonetti-2017-reconciling-models-of-diffusion-and-innovation-a-theory-of-the-productivity-distribution-and-technology-frontier./</link>
-      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2017/02/14/benhabib-perla-tonetti-2017-reconciling-models-of-diffusion-and-innovation-a-theory-of-the-productivity-distribution-and-technology-frontier./</guid>
-      <description>&lt;p&gt;&lt;p&gt;The main contribution of this paper is to provide a model where technology adoption and innovation interact to determine the equilibrium characteristics of the economy.&lt;/p&gt;
-&lt;p&gt;They end up using a model where adoption an the rate of innovation are both choice variables for the firm, but describe the main mechanisms and intuitions where only adoption is a control variable and innovation is stochastic. The qualitative results from both models are the same, so I to will use the simpler model with exogenous innovation.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;Continuous time, infinite horizon.&lt;/p&gt;
-&lt;p&gt;A continuum of firms produce a homogenous good. Firms are indexed by their productivity and their innovation ability. The production technology is equal to productivity. Innovation ability can either be high or low. Whenever innovation ability is high, productivity grows at a constant rate. When ability is low, there is no productivity growth. Transitions between high and low ability states occur randomly at a fixed rate.&lt;/p&gt;
-&lt;p&gt;Each period a firm has the option to adpot a new technology. When adoption takes place, innovation ability is reset to be low and productivity is drawn from the current distribution of productivity in the economy. Firms disount the future at a constant rate and choose only whether or not to adpot a new technology.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Consumers&lt;/strong&gt; All the firms in the economy are owned by a representative consumer who has log preferences over aggregate consumption and discounts the future at a constant rate. The consumer makes no decisions and just serves as a way to measure welfare.&lt;/p&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;p&gt;The authors describe a balanced growth path equilibrium. Dividing by the growth rate of the economy allows us to think of this in terms of a stationary equilibrium.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ll describe the main results in question and answer form.&lt;/p&gt;
-&lt;h3 id=&#34;growth-rates&#34;&gt;Growth rates&lt;/h3&gt;
-&lt;p&gt;First, does the optimal adoption policy influence the long run growth rate of the economy?&lt;/p&gt;
-&lt;p&gt;Answer:&lt;/p&gt;
-&lt;p&gt;It depends on how the option value adoption impacts the incentive to innovate. The policy dictates that firms at the bottom of the productivity distribution will adopt a new techonlogy and get a higher productivity. Firms in the upper tail of the productivity distribution will not choose to adopt a new technology. The growth rate of the economy is intimately related to the constant rate of innovation for high ability firms.&lt;/p&gt;
-&lt;p&gt;The key margin governing whether or not the adoption policy influences the long run growth rate of the economy is how high the option value of adopting is for medimum to high productivity firms.&lt;/p&gt;
-&lt;p&gt;In calibrations of the model where the distribution of productivity is infinite or unbounded, the productivity difference between frontier firms and potential adopters is very large &amp;ndash; giving almost no option value for high productivity firms. This means that the long run growth rate will not&lt;br /&gt;
-be impacted by adoption. However, if the support of productivity is bounded, then the option value is non-trivial, so adoption rates will determine growth rates.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s more poignant in models where innovation rates are endogenous, but we kinda have a discrete version of that right now where firms can choose to adopt, which means they voluntarily leave the innovation state (and might get a draw that puts them back in it).&lt;/p&gt;
-&lt;h3 id=&#34;productivity-distribution-shape&#34;&gt;Productivity distribution shape&lt;/h3&gt;
-&lt;p&gt;Next, how do adoption and innovation shape the stationary distribution of productivity?&lt;/p&gt;
-&lt;p&gt;Along a balanced growth path, high innovative, high productivity firms will push the productivity frontier. This lengthens the right tail of the productivity distribution.&lt;/p&gt;
-&lt;p&gt;Adoption, on the other hand, is done by firms in the low end of the productivity distribution and acts as a way to redistribute these firms back towards the center of the distribution. Thus, adoption causes the distribution of productivity to contract and become more peaked.&lt;/p&gt;
-&lt;p&gt;The overall shape of stationary distribution of de-trended productivity will be determined by how these forces compete.&lt;/p&gt;
-&amp;lt;!&amp;mdash;
-In calibrations where the support
-of productivity is infinite, there are a continuum of equilibria featuring
-fat-tails in the productivity distribution indexed by the thickness of the
-tail (for each shape paramater there is an equilibrium growth rate strictly
-greater than the innovation rate).&lt;/p&gt;
-
-&lt;p&gt;When the support of z is unbounded, but finite, there is a unique equilibrium
-where the growth rate of the economy is equal to the innovation rate. In this
-setting, the adoption policy
-&amp;ndash;&amp;gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Faber, Fally (2017) (Firm Heterogeneity in Consumption Baskets -- Evidence from Home and Store Scanner Data.)</title>
-      <link>http://srg.spencerlyon.com/2017/02/07/faber-fally-2017-firm-heterogeneity-in-consumption-baskets----evidence-from-home-and-store-scanner-data./</link>
-      <pubDate>Tue, 07 Feb 2017 00:00:00 +0000</pubDate>
-      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
-      <guid>http://srg.spencerlyon.com/2017/02/07/faber-fally-2017-firm-heterogeneity-in-consumption-baskets----evidence-from-home-and-store-scanner-data./</guid>
-      <description>&lt;p&gt;This paper considers the relation between of firm size heterogeneity and income dispersion. Using two large panel data sets, they document a number of empirical facts about the link between these forms of heterogeneity, then build a model combining non-homothetic preferences for consumers and a Metliz&#39; style production environment that can match the facts.&lt;/p&gt;
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-&lt;p&gt;Kilts Nielsen consumer panel and retail scanner data..&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;weekly upc code level data from households and firms&lt;/li&gt;
-&lt;li&gt;contains prices and quantities&lt;/li&gt;
-&lt;li&gt;also demographic info about households: discrete income binning, location&lt;/li&gt;
-&lt;li&gt;Metadata about stores: brands they sell, location&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;empirical-finding&#34;&gt;Empirical finding&lt;/h2&gt;
-&lt;p&gt;Main empirical finding is that wealthier households spend a higher share of consumption expenditure on goods from large firms. The relationship is monotonic across the income distribution. Finding is robust across level of aggregation (product level, product module level, aggregate spending, etc.) and time frame (6 month windows or across entire sample)&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;TODO&lt;/p&gt;
-&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
-&lt;p&gt;TODO&lt;/p&gt;
-&lt;h2 id=&#34;counter-factuals&#34;&gt;counter factuals&lt;/h2&gt;
-&lt;p&gt;SEE NOTES IN PDF&lt;/p&gt;
 </description>
     </item>
     

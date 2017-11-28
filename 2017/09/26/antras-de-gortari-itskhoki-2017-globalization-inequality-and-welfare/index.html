@@ -168,10 +168,10 @@
 <p>The tasks performed by all agents are imperfect substitutes and are combined in the production of an aggregate, final consumption good using a CES aggregator.</p>
 <p>Labor income is taxed according to a tax schedule that is log linear in individual production. There are no assets, so consumption each period is equal to after-tax income. The exponent on individual production indexes the progressivity of the tax system.</p>
 <p>The government that collects taxes to finance exogenous government expenditures that are a constant share of total output. Government expenditures do not show up in individual utility The government runs a balanced budget each period.</p>
-<p>Individuals choose labor supply to solve a static utility maximization problem. The authors have closed form solutions for both optimal after-tax earnings and individual utility -- both indexed by the individual ability level.</p>
+<p>Individuals choose labor supply to solve a static utility maximization problem. The authors have closed form solutions for both optimal after-tax earnings and individual utility – both indexed by the individual ability level.</p>
 <h2 id="measuring-welfare">Measuring welfare</h2>
 <p>The authors review two classic approaches to measuring welfare and then propose a new, third approach that mixes the previous two.</p>
-<p>We don't have time to review the former methods that serve as building blocks, so I'll just describe the novel method proposed and used by the authors.</p>
+<p>We don’t have time to review the former methods that serve as building blocks, so I’ll just describe the novel method proposed and used by the authors.</p>
 <!-- The first is known as the Kaldor-Hicks compensation principle. The idea is that
 for a pair of policies (call one the baseline and the other the alternative),
 the researcher will compute a compensating or equivalent variation to
@@ -200,12 +200,12 @@ economy and a function of expected earnings under the proposed distribution and
 social welfare function parameters. The second term is referred to as the
 _welfarist inequality correction_ by the authors. -->
 <p>The core idea behind their approach has two components:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The government uses the progressive tax system to redistribute earnings across agents of differing ability levels. A more progressive tax system has two effects: (1) it compresses the after-tax income distribution, reducing inequality and (2) it distorts the labor supply decision, especially for high ability workers. This impacts aggregate income. This tradeoff captures costly-redistribution.</li>
 <li>A CRRA-like social welfare function is used to map from the set of individual utilities into a single value for social welfare. The parameter in this function is not a risk aversion parameter in this setting, but rather an inequality aversion parameter.</li>
 </ol>
 <p>In the setting described above, the value for social welfare can be written as the product of three terms:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The counterfactual level of welfare in an economy with zero tax progressivity and zero inequality aversion</li>
 <li>A costly-redistribution correction that is a function of the elasticity of taxable realized income to the marginal tax rate</li>
 <li>A welfarist correction that is a function of the inequality aversion parameter in the social welfare function and expected disposable income under a given policy.</li>
@@ -215,15 +215,15 @@ _welfarist inequality correction_ by the authors. -->
 <p>The authors look at some US data over the period 1979-2007 through their model. After calibration, their joint analysis of model and data leaves them with the following takeaways:</p>
 <ul>
 <li>Tax progressivity steadily fell over the sample</li>
-<li>The costly redistribution correction has risen over time -- meaning it is getting closer to 1 and depressing aggregate welfare <em>less</em>.</li>
+<li>The costly redistribution correction has risen over time – meaning it is getting closer to 1 and depressing aggregate welfare <em>less</em>.</li>
 <li>The welfarist correction fell sharply over the sample</li>
 </ul>
 <h2 id="trade">Trade</h2>
 <p>Their main goal was to measure welfare in a setting with distiortionary redistribution and trade. To turn their model into a trade model they simply make <span class="math inline"><em>N</em></span> exact copies of the closed economy described above. Agents can supply their task to any country they want, but must pay costs to do so. There are both fixed costs that rise exponentially with the number of countries supplied and an iceberg cost meaning that only a fraction individual output reaches a foreign destination.</p>
 <p>They make a few other assumptions to ensure that all countries are symmetric.</p>
 <p>There are three main changes induced by opening the economy to trade:</p>
-<ol style="list-style-type: decimal">
-<li>Aggregate output rises -- the CES aggregator likes to have more varieties and now in addition to domestic inputs, there are foreign inputs.</li>
+<ol type="1">
+<li>Aggregate output rises – the CES aggregator likes to have more varieties and now in addition to domestic inputs, there are foreign inputs.</li>
 <li>Welfare of <em>all agents</em> increases. This happens because the greater number of varieties lowers the price of the final good and all agents are able to consume more.</li>
 <li>Realized income inequality rises. This happens becuase the increase in realized income is not symmetric over the individual ability distribution. Only agents with high ability find it optimal to pay the costs to export their variety, so they end up with a larger increase in income than relatively less able agents.</li>
 </ol>

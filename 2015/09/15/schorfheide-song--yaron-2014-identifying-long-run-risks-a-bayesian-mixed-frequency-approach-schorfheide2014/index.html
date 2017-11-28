@@ -163,7 +163,7 @@
   <div class="container content">
   <p><h1 id="outline">Outline</h1>
 <p>This is paper is more empirical than theoretical.</p>
-<p>Theoretical contributions are to specify more flexible stochastic environment than in other long run risk models a la <span class="citation">Bansal et al. (2007)</span></p>
+<p>Theoretical contributions are to specify more flexible stochastic environment than in other long run risk models a la <span class="citation" data-cites="Bansal2007">Bansal et al. (2007)</span></p>
 <p>Empirical contributions are</p>
 <ul>
 <li>form a linear approximation of the stochastic environment to apply state space methods within an MCMC algorithm</li>
@@ -174,7 +174,7 @@
 <li>Background: consumption data is available at varying frequencies and varying degrees of of measurement error. The authors want to use all data available to identify innovations in consumption and dividend growth as well as asset returns.</li>
 <li>They will build a simple representative agent exchange economy that includes short and long run components to consumption growth and stochastic volatility</li>
 <li>Will use semi-linearized solutions to this model to define a non-linear state space system</li>
-<li>Use a Gibbs sampler to characterize posterior of parameter distribution &ndash; characterizing consumption growth innovations</li>
+<li>Use a Gibbs sampler to characterize posterior of parameter distribution – characterizing consumption growth innovations</li>
 <li>They compare results of this posterior to moments in the data</li>
 </ul>
 <h1 id="model">Model</h1>
@@ -220,7 +220,7 @@
 </ul>
 <h2 id="bayesian-inference">Bayesian Inference</h2>
 <p>The authors use a Gibbs sampling scheme to draw from the posterior of the parameter vector of the non-linear state space system. They split the parameters into two blocks:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>stochastic volatility levels | all other parameters</li>
 <li>all other parameters | stochastic volatility levels</li>
 </ol>
@@ -232,7 +232,7 @@
 <p>A common result with particle filters is that their accuracy and stability degrade with the number of parameters. Isolating the non-linearity allows the authors to applying the Kalman filter to compute the exact conditional likelihood for the majority of the parameters. This substantially reduces the error inherent in large scale particle filters.</p>
 <h1 id="results">Results</h1>
 <p>They run the MCMC algorithm on three versions of the model:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Without rate of time preference shocks and only using consumption and divided growth data (they drop the risk free rate and market returns from the measurement equation)</li>
 <li>Without rate of time preference shocks and using consumption and divided growth data as well as market returns and the risk free rate</li>
 <li>With rate of time preference shocks and using consumption and divided growth data as well as market returns and the risk free rate</li>
@@ -240,7 +240,7 @@
 <p>Key empirical results:</p>
 <p>Common across all three versions:</p>
 <ul>
-<li>Strong evidence for a persistent component to consumption growth (robust to sample used &ndash; i.e. pre/post 1959 and all). Shown in high correlation coefficient in AR(1) for x</li>
+<li>Strong evidence for a persistent component to consumption growth (robust to sample used – i.e. pre/post 1959 and all). Shown in high correlation coefficient in AR(1) for x</li>
 <li>Strong evidence for all three independent forms of stochastic volatility</li>
 </ul>
 <p>Differences when including return data:</p>

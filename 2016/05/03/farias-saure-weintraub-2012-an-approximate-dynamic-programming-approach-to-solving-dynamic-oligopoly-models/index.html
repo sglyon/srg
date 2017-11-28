@@ -171,7 +171,7 @@
 <li>The maximum number of incumbent firms is fixed at N. Each period there are <span class="math inline"><em>N</em> − <em>s</em><em>u</em><em>m</em>(<em>s</em>)</span> possible entrants. Entrants do not produce or earn profits in the first period.</li>
 <li>Incumbents choose an investment level that determines the probability of remaining in the same state, or moving up or down one step to a neighboring state in the next period.</li>
 <li>Each period the following events occur in this order:
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Incumbent firms draw a random sell-off cost and decide if they want to exit. If they stay, they make investment decisions.</li>
 <li>Each potential entrant draws a random entry cost and makes entry decision</li>
 <li>Incumbent firms compete in spot market and receive prices</li>
@@ -186,7 +186,7 @@
 </ul>
 <h2 id="computation">Computation</h2>
 <h3 id="naive-algorithm">Naive algorithm</h3>
-<p>To understand the contribution of this paper, it is helpful to have a basic understanding of a naive &quot;brute force&quot; algorithm.</p>
+<p>To understand the contribution of this paper, it is helpful to have a basic understanding of a naive “brute force” algorithm.</p>
 <p>The naive algorithm presented here is iterating on a best response operator and proceeds as follows:</p>
 <ul>
 <li>Choose some initial investment, exit, and entry policy</li>
@@ -200,7 +200,7 @@
 <p>This algorithm is robust, but has one major drawback: the curse of dimensionality. For in a model with 20 incumbents and 20 individual states, there are over a thousand billion states that must be iterated over when computing the best response.</p>
 <h3 id="approximate-dynamic-programming-algorithm">Approximate dynamic programming algorithm</h3>
 <p>The authors of this paper make 4 modifications to the naive algorithm:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>They form the linear program version of the dynamic programming problem to solve for the best response</li>
 <li>They apply approximate linear programming approach of de Farias and van Roy to reduce the number of variables the solver must find</li>
 <li>They use constraint sampling to only enforce a subset of the constraints of the linear program</li>
@@ -214,8 +214,8 @@
 <h4 id="exercise-2-large-model-compare-oe">Exercise 2: large model, compare OE</h4>
 <p>They also run a similar experiment for a much larger model where they compare a current state of the art algorithm to their proposed algorithm.</p>
 <p>They find that the aggregates are always within 13% of one another, but often within 5%.</p>
-<p>As the state of the art is also an approximation, this doesn't say much more than that both algorithms appear to approximate a similar thing.</p>
-<p>They comment that the runtime for a version of the model with 20 incumbents is a couple of hours. Unfortunately they don't elaborate on the difference in runtime between the algorithms.</p>
+<p>As the state of the art is also an approximation, this doesn’t say much more than that both algorithms appear to approximate a similar thing.</p>
+<p>They comment that the runtime for a version of the model with 20 incumbents is a couple of hours. Unfortunately they don’t elaborate on the difference in runtime between the algorithms.</p>
 
 </div>
 

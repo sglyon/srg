@@ -164,7 +164,7 @@
   <p>This paper extends the Meltiz framework to allow for optimal tariff policies.</p>
 <h2 id="model">Model</h2>
 <p>This model extends a two country Melitz framework in two ways:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Allows for heterogeneity in variable and fixed costs. This will be a policy instrument where governments can set firm specific tariffs</li>
 <li>The representative consumer in each country has a constant elasticity of substitution across all varieties procued within a country, but that elasticity can differ across countries.</li>
 </ol>
@@ -177,7 +177,7 @@
 <p>Each firm takes in labor and produces consumption good. Labor demand for each firm is affine in the quantity produced. The slope and intercept coefficients can be arbitrary functions of productivity.</p>
 <p><strong>Markets</strong> Firms sell their goods in a monopolistically competitive market.</p>
 <h3 id="taxes">Taxes</h3>
-<p>We will consider a cost structure where each firm can potentially face both an import tariff in the consumer's country and an export subsidy in the firm's country. Note that a negative tariff acts like an import subsidy and a negative export subsidy acts like an export tax.</p>
+<p>We will consider a cost structure where each firm can potentially face both an import tariff in the consumer’s country and an export subsidy in the firm’s country. Note that a negative tariff acts like an import subsidy and a negative export subsidy acts like an export tax.</p>
 <p>All tax revenues are rebated lump sum to the consumer in the country where the revenues are collected.</p>
 <h3 id="equilibrium">Equilibrium</h3>
 <p>We will consider a decentralized equilibrium in which</p>
@@ -185,16 +185,16 @@
 <li>consumers maximize their utility subject to their budget constraint</li>
 <li>firms choose their output to maximize their profits taking their residual demand curves a given</li>
 <li>firms optimally choose to enter domestic and export markets, based on productivity and costs</li>
-<li>The government's budget is balanced in each country (all tax revenues are rebated to HH)</li>
+<li>The government’s budget is balanced in each country (all tax revenues are rebated to HH)</li>
 </ul>
 <h2 id="solution">Solution</h2>
 <p>I felt the solution technique was interesting.</p>
 <p>The authors consider a special case of the model just described where the government in country <span class="math inline"><em>H</em></span> is strategic and the the government in country <span class="math inline"><em>F</em></span> is passive.</p>
-<p>This means that the <span class="math inline"><em>H</em></span> government chooses tariffs and subsidies to maximize home consumer's utility, whereas all taxes and subsidies in <span class="math inline"><em>F</em></span> are zero.</p>
-<p>The home government's problem is written as a planning problem where the planner chooses taxes, subsidies, prices, and quantities.</p>
+<p>This means that the <span class="math inline"><em>H</em></span> government chooses tariffs and subsidies to maximize home consumer’s utility, whereas all taxes and subsidies in <span class="math inline"><em>F</em></span> are zero.</p>
+<p>The home government’s problem is written as a planning problem where the planner chooses taxes, subsidies, prices, and quantities.</p>
 <h3 id="planning-problems">Planning problems</h3>
 <p>To solve this model the authors use a three step procedure:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Solve the problem of minimizing labor cost, subject to producing <span class="math inline"><em>Q</em><sub><em>H</em><em>H</em></sub></span> units of aggregate consumption for the home consumer and <span class="math inline"><em>Q</em><sub><em>H</em><em>F</em></sub></span> units for the foreign consumer.
 <ul>
 <li>This problem is infinite dimensional (a continuum of firms) and non-smooth (kinks because of fixed costs)</li>
@@ -208,14 +208,14 @@
 <li>The problem faces the same issues as before, but is also additively separable in the control, so it can be solved using a similar Lagrangian approach</li>
 <li>The solution to this problem is also unique and characterized in closed form</li>
 </ul></li>
-<li>Solve the problem of optimally choosing <span class="math inline"><em>Q</em><sub><em>H</em><em>H</em></sub></span>, <span class="math inline"><em>Q</em><sub><em>H</em><em>F</em></sub></span>, and <span class="math inline"><em>Q</em><sub><em>F</em><em>H</em></sub></span> to maximize the home consumer's utility, subject to the constrains on aggregate quantities implied by aggregating the results of the previous two micro problems
+<li>Solve the problem of optimally choosing <span class="math inline"><em>Q</em><sub><em>H</em><em>H</em></sub></span>, <span class="math inline"><em>Q</em><sub><em>H</em><em>F</em></sub></span>, and <span class="math inline"><em>Q</em><sub><em>F</em><em>H</em></sub></span> to maximize the home consumer’s utility, subject to the constrains on aggregate quantities implied by aggregating the results of the previous two micro problems
 <ul>
 <li>The solution is again unique and characterized in closed form</li>
 <li>The key output of this problem is that the optimal behavior can be characterized only by manipulating the terms of trade. This will be important for implementing this solution using taxes in the next section.</li>
 </ul></li>
 </ol>
 <h3 id="implementation">Implementation</h3>
-<p>With the solution to the decentralized planner's problem in hand, the authors then describe how to implement this equilibrium using a variety of possible tariff and subsidy schemes.</p>
+<p>With the solution to the decentralized planner’s problem in hand, the authors then describe how to implement this equilibrium using a variety of possible tariff and subsidy schemes.</p>
 <p>I will focus on the equilibrium with a fully flexible tax system that allows the home government to choose tariffs and subsidies for each producer/consumer pair.</p>
 <p>The results can be summarized as follows:</p>
 <ul>

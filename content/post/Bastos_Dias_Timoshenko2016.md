@@ -4,7 +4,7 @@
 ---
 
 <p>The authors of this paper use firm level data on Portuguese manufacturing firms and documents two new novel facts about the joint evolution of firm performance and prices:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Within product categories, firms with longer tenure in export markets tend to export larger quantities at similar prices</li>
 <li>Older or more experienced exporters tend to import more expensive inputs</li>
 </ol>

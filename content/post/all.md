@@ -23,7 +23,7 @@
 <p>Note that we can consider external rationality as a special case of the model without external rationality. Specifically with external rationality agents are given a probability measure over dividends <em>and</em>, implicitly, a mapping from histories of dividend realizations to prices. Knowledge of this function is <em>not</em> an outcome of agent maximization (i.e. internal rationality), but rather the impact of a set of assumptions the modeler makes about what agents know about how the market operates. Given that economists haven’t found a mapping from dividend streams to prices, it seems reasonable to assume that agents don’t have this mapping either.</p>
 <h3 id="internal-only-to-reh">Internal only to REH</h3>
 <p>We now consider which assumptions are needed to go from the internal rationality only model to the model with both internal and external rationality. That is, we consider assumptions that allow our agents to write the current price as a expected discounted present value of future dividend payments.</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>It is common knowledge that a single agent “sets the price” each period. I call this agent the marginal agent. This allows each agent to use <em>their</em> own beliefs about who is marginal each period to write today’s price as the present discounted value of dividends.</li>
 <li>It is common knowledge that the last term in the infinite sum is zero, when the marginal agent’s beliefs and discount factor are applied each period. This gives agents information about the market in that all agents expect all future marginal agents to expect (and so on…) that prices grow slower than the marginal discount factors. This is a no rational bubbles condition.</li>
 <li>All agents know which agent is marginal each period <em>and</em> what the marginal agent’s discount factor and probability measure are. This allows all agents to write down the same infinite sum, that coincides with the equilibrium part.</li>
@@ -31,7 +31,7 @@
 <hr />
 <p>Builds on the internal rationality framework from last week to build a model of asset pricing that can explain 5 facts that have puzzled the literature at one time or another.</p>
 <h2 id="facts">Facts</h2>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Standard deviation of price dividend ratio is very high (about 1/2 the mean of the PD ratio)</li>
 <li>First-order quarterly autocorrelation of PD ratio is vary high</li>
 <li>Standard deviation of stock returns is almost 4 times as large as standard deviation of dividend growth</li>
@@ -89,7 +89,7 @@
 <p>An equilibrium is defined as allocations for consumers, intermediate good firms and final good firms in both countries as well as export decisions for intermediate good producers such that taking prices as given, the allocations are consistent with agent optimization, the free entry condition holds, market clearing and resource constraints hold.</p>
 <h3 id="results-1">Results</h3>
 <p>Two main calibrations:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Benchmark. Some features
 <ul>
 <li>Low fixed cost for becoming exporter relatively small (3.7% of the cost to enter as new firm)</li>
@@ -129,7 +129,7 @@
 <p>The theoretical model is not the focus of the authors’ analysis in this paper. They write down a fairly complicated model, derive some of the equilibrium conditions, then use the implications of the equilibrium conditions as testable predictions they take to the data.</p>
 <p>I will attempt to summarize only the portions of the model that are necessary for understanding the testable predictions.</p>
 <p>The model is made up of two main components:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>An oligopolistic competition model of variable markups following Atkeson and Burstein (2008). There are a continuum of sectors, each with a finite number of firms. Good are combined at the sector level using a CES technology. Then sector outputs are combined using another CES technology before being consumed by a representative household in each country. Household’s have preferences over the final consumption good and the labor they supply to firms.</li>
 <li>A model of the firm’s choice to import intermediate inputs at a fixed cost as in Halpern, Koren, and Szeidl (2011). Firms use a CRS Cobb-Douglass production function to combine a continuum of inputs. Each input is the CES aggregation of a domestic and foreign variety of the input. Foreign varieties have a multiplicative productivity advantage in the CES aggregator. Firms pay a firm specific fixed cost for each input variety they choose to import. Inputs are by sorted total productivity factor (combination of effect at the CES and Cobb Douglass levels), which together with the fixed costs makes the import policy have the form of a cutoff rule.</li>
 </ol>
@@ -221,12 +221,12 @@
 </ul>
 <h2 id="information">Information</h2>
 <p>A crucial aspect of this model is the information setup. The authors run two experiments:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Fix monopoly markup and let agents receive noisy signals about TFP</li>
 <li>Fix TFP and let agents see noisy signals about markups</li>
 </ol>
 <p>The signal structure mirrors that of Morris and Shin. Each period each island receives two signals:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>A public signal seen by all agents. This signal is the sum of the actual fundamental and a mean zero Gaussian noise term</li>
 <li>A private signal with the same structure, but seen only by the island.</li>
 </ol>
@@ -240,7 +240,7 @@
 <h1 id="experiments-1">Experiments</h1>
 <p>Definitions:</p>
 <p><br /><span class="math display"><em>Σ</em> ≡ Var(log<em>Y</em>−log<em>Y</em><sup>*</sup>)</span><br /></p>
-<p><br /><span class="math display">$$\sigma \equiv \text{Var} \left( \log \tilde{y}_{it}  - \log \tilde{Y}_t\right)$$</span><br /></p>
+<p><br /><span class="math display"><em>σ</em> ≡ Var(log<em>ỹ</em><sub><em>i</em><em>t</em></sub>−log<em>Ỹ</em><sub><em>t</em></sub>)</span><br /></p>
 <p><br /><span class="math display">$$\Delta \equiv \frac{E[Y]}{Y/Y^*}$$</span><br /></p>
 <p><br /><span class="math display">$$\Lambda \equiv \Sigma + \frac{1}{1 -\alpha} \sigma$$</span><br /></p>
 <p>In the experiments the authors do, they consider how welfare changes with the precision of the signals.</p>
@@ -286,7 +286,7 @@
 <h1 id="strategy">Strategy</h1>
 <h1 id="results-4">Results</h1>
 <p>The authors of this paper use firm level data on Portuguese manufacturing firms and documents two new novel facts about the joint evolution of firm performance and prices:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Within product categories, firms with longer tenure in export markets tend to export larger quantities at similar prices</li>
 <li>Older or more experienced exporters tend to import more expensive inputs</li>
 </ol>
@@ -342,7 +342,7 @@
 <li>Solve the system of non-linear equations characterizing the optimal controls at that grid point (note you will need to interpolate over the current guess of the policy function) to obtain a new guess for the policy rule at that point</li>
 <li>If the distance between the old and new guess for the policy at the grid point is greater than some threshold, add the neighboring points at the next refinement level to G_new</li>
 </ul></li>
-<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> + =1</span></li>
+<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> +  = 1</span></li>
 </ul></li>
 <li>Calculate the error for this iteration as the sup norm over the implied policy rule from the current iteration and the previous iteration</li>
 </ul>
@@ -359,7 +359,7 @@
 <p>In economics, the standard representation of a dynamic programming problem is to define a recursive function <span class="math inline"><em>V</em></span> that maps from a state space into the real line. Today I will call <span class="math inline"><em>V</em></span> the <span class="math inline"><em>V</em></span> function. The <span class="math inline"><em>V</em></span> function describes the value of being in a particular state.</p>
 <p>Consider an alternative function <span class="math inline"><em>Q</em></span> that maps from the state-action space, into the real line. I will call this the <span class="math inline"><em>Q</em></span>-function. The <span class="math inline"><em>Q</em></span> function describes the value of being in a particular state and choosing a particular action.</p>
 <p>As we do with the <span class="math inline"><em>V</em></span>-function, we can express the <span class="math inline"><em>Q</em></span>-function recursively using Bellman’s principle of optimality. The recursive form of the <span class="math inline"><em>Q</em></span>-function is</p>
-<p><br /><span class="math display"><em>Q</em>(<em>s</em>, <em>x</em>)=<em>E</em><sub><em>s</em>′∼<em>f</em>(<em>s</em>, <em>x</em>, ⋅)</sub>[<em>r</em>(<em>s</em>,<em>x</em>,<em>s</em>′)+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em>(<em>s</em>′,<em>x</em>′)]</span><br /></p>
+<p><br /><span class="math display"><em>Q</em>(<em>s</em>, <em>x</em>) = <em>E</em><sub><em>s</em>′ ∼ <em>f</em>(<em>s</em>, <em>x</em>,  ⋅ )</sub>[<em>r</em>(<em>s</em>,<em>x</em>,<em>s</em>′)+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em>(<em>s</em>′,<em>x</em>′)]</span><br /></p>
 <p>We can make some basic comparisons between <span class="math inline"><em>Q</em></span> and <span class="math inline"><em>V</em></span> by studying their recursive representations:</p>
 <ul>
 <li>Parameteric representations (i.e. splines or other interpolands) of <span class="math inline"><em>Q</em></span> are more expensive than representations of <span class="math inline"><em>V</em></span> because <span class="math inline"><em>Q</em></span> is defined over the state-action space instead of just the state space.</li>
@@ -378,7 +378,7 @@
 <li>Then on each iteration <span class="math inline"><em>k</em></span>:
 <ul>
 <li>Given the state action pair on the <span class="math inline"><em>i</em></span>th iteration (<span class="math inline">(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)</span>), the observation of the period <span class="math inline"><em>i</em></span> return <span class="math inline"><em>r</em><sub><em>i</em></sub></span>, and the state iteration <span class="math inline"><em>i</em> + 1</span> <span class="math inline"><em>s</em><sub><em>i</em> + 1</sub></span>…</li>
-<li>… update your guess for <span class="math inline"><em>Q</em></span> using: <br /><span class="math display"><em>Q</em><sub><em>i</em> + 1</sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)=(1 − <em>α</em><sub><em>i</em></sub>)<em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)+<em>α</em><sub><em>i</em></sub>(<em>r</em><sub><em>i</em></sub>+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em> + 1</sub>,<em>u</em>′))</span><br /></li>
+<li>… update your guess for <span class="math inline"><em>Q</em></span> using: <br /><span class="math display"><em>Q</em><sub><em>i</em> + 1</sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>) = (1 − <em>α</em><sub><em>i</em></sub>)<em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>) + <em>α</em><sub><em>i</em></sub>(<em>r</em><sub><em>i</em></sub>+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em> + 1</sub>,<em>u</em>′))</span><br /></li>
 </ul></li>
 </ul>
 <p>Notice that the right hand side is a convex combination of the current guess of the <span class="math inline"><em>Q</em></span> function and the right hand side of the <span class="math inline"><em>Q</em></span>-function operator. This is very similar to standard value function iteration, but has the main advantage of not having any expectations.</p>
@@ -421,20 +421,20 @@
 <p>The realizations of the function <span class="math inline"><em>b</em>(<em>a</em>)</span> are drawn from a known distribution <span class="math inline"><em>B</em></span> with compact support and held fixed throughout the game. Agents do not know these realizations ex ante, but share the same prior about the distribution from which they were drawn.</p>
 <p>Agent 1 has an improper uniform prior over which actions are productive. Specifically</p>
 <p><br /><span class="math display">$$\forall A \subset \mathcal{A}, \forall a \in A, \quad \text{prob} \left\{a \in \mathcal{N} | \text{card} A \cap N = n\right\} = \frac{n}{ \text{card} A}$$</span><br /></p>
-<p>Parameters are such that agent 1 doesn’t exit in period 1<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+<p>Parameters are such that agent 1 doesn’t exit in period 1<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <h2 id="equilibrium-concept">Equilibrium concept</h2>
-<p>Let <span class="math inline"><em>d</em><sub><em>t</em></sub> ∈ {<em>S</em>, <em>E</em>}</span> be agent 1’s decision to stay or exit at time <span class="math inline">1</span>. If <span class="math inline"><em>d</em><sub><em>t</em></sub> = <em>E</em></span>, then <span class="math inline">$A_t = a_t = \tilde{b}(a_t) \emptyset$</span>. There are three types of history:</p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">ℋ<sup>1</sup></span> are histories of the form <span class="math inline">$h^1 = \left\{d_1, A_1, a_1, \tilde{b}(a_1), \dots, d_{t-1}, A_{t-1}, a_{t-1} \tilde{b}(a_{t-1}) \right\}$</span> and correspond to agent 1’s information set at his decision node in period <span class="math inline"><em>t</em></span></li>
+<p>Let <span class="math inline"><em>d</em><sub><em>t</em></sub> ∈ {<em>S</em>, <em>E</em>}</span> be agent 1’s decision to stay or exit at time <span class="math inline">1</span>. If <span class="math inline"><em>d</em><sub><em>t</em></sub> = <em>E</em></span>, then <span class="math inline"><em>A</em><sub><em>t</em></sub> = <em>a</em><sub><em>t</em></sub> = <em>b̃</em>(<em>a</em><sub><em>t</em></sub>)∅</span>. There are three types of history:</p>
+<ol type="1">
+<li><span class="math inline">ℋ<sup>1</sup></span> are histories of the form <span class="math inline"><em>h</em><sup>1</sup> = {<em>d</em><sub>1</sub>,<em>A</em><sub>1</sub>,<em>a</em><sub>1</sub>,<em>b̃</em>(<em>a</em><sub>1</sub>),…,<em>d</em><sub><em>t</em> − 1</sub>,<em>A</em><sub><em>t</em> − 1</sub>,<em>a</em><sub><em>t</em> − 1</sub><em>b̃</em>(<em>a</em><sub><em>t</em> − 1</sub>)}</span> and correspond to agent 1’s information set at his decision node in period <span class="math inline"><em>t</em></span></li>
 <li><span class="math inline">ℋ<sup>2|1</sup></span> histories are <span class="math inline"><em>h</em><sup>1</sup> ⊔ {<em>d</em><sub><em>t</em></sub>, <em>A</em><sub><em>t</em></sub>}</span> are agent 1’s information at agent 2’s decision node in period <span class="math inline"><em>t</em></span>.</li>
 <li><span class="math inline">ℋ<sup>2</sup></span> histories are <span class="math inline"><em>h</em><sup>2|1</sup> ⊔ 𝒩</span> are agent 2’s information set at his decision node in period <span class="math inline"><em>t</em></span>.</li>
 </ol>
-<p>A pure strategy for player 1 is <span class="math inline"><em>s</em><sub>1</sub> : ℋ<sup>1</sup> → {<em>S</em>, <em>E</em>}</span>. A pure strategy for player 2 is <span class="math inline"><em>s</em><sub>2</sub> : ℋ<sup>2</sup> → 𝒜</span> such that forall histories <span class="math inline"><em>h</em><sub><em>t</em></sub><sup>2</sup> ∈ ℋ<sup>2</sup></span>, <span class="math inline"><em>s</em><sub>2</sub>(<em>h</em><sub><em>t</em></sub><sup>2</sup>)∈<em>A</em><sub><em>t</em></sub></span>.</p>
+<p>A pure strategy for player 1 is <span class="math inline"><em>s</em><sub>1</sub> : ℋ<sup>1</sup> → {<em>S</em>, <em>E</em>}</span>. A pure strategy for player 2 is <span class="math inline"><em>s</em><sub>2</sub> : ℋ<sup>2</sup> → 𝒜</span> such that forall histories <span class="math inline"><em>h</em><sub><em>t</em></sub><sup>2</sup> ∈ ℋ<sup>2</sup></span>, <span class="math inline"><em>s</em><sub>2</sub>(<em>h</em><sub><em>t</em></sub><sup>2</sup>) ∈ <em>A</em><sub><em>t</em></sub></span>.</p>
 <p>The equilibrium concept is a Pareto efficient perfect Bayesian equilibrium in pure strategies. The strategy profiles form the equilibrium.</p>
 <h1 id="equilibrium-analysis">Equilibrium Analysis</h1>
 <h2 id="complete-information-benchmark">Complete information benchmark</h2>
 <p>Consider a benchmark model of full information where agent 1 also knows agent 2’s cost function. In all Pareto efficient equilibria of this game, player 1 never chooses to exit.</p>
-<p>Because the payoff to agent 1 is bounded above, value functions for player 1 and player 2 are bounded. Denote the highest possible value function for agent 2 in the perfect information game as <span class="math inline">$\bar{V}_2$</span>. This will be used in later analysis.</p>
+<p>Because the payoff to agent 1 is bounded above, value functions for player 1 and player 2 are bounded. Denote the highest possible value function for agent 2 in the perfect information game as <span class="math inline"><em>V̄</em><sub>2</sub></span>. This will be used in later analysis.</p>
 <h2 id="asymmetric-information-model">Asymmetric information model</h2>
 <p>In the asymmetric information model, agent 1 learns which actions are productive. In the early stages of the game, monitoring is imperfect (agent 1 doesn’t know for sure if he got zero payoffs because agent 2 chose an unproductive action, or if a productive action failed.) As agent 1 learns, the game transitions to perfect monitoring.</p>
 <p>An interesting feature of the asymmetric information model is that along this path to perfect monitoring, inefficient punishment (exit by player 1) is rational and on the equilibrium path.</p>
@@ -443,7 +443,7 @@
 <p>A <strong>routine</strong> is a pair of strategies that starting from a particular history <span class="math inline"><em>h</em><sub><em>t</em> + 1</sub><sup>1</sup></span> include only confirmed or unproductive actions in the continuation game.</p>
 <h3 id="optimal-inefficiency">Optimal inefficiency</h3>
 <p>A main result of the paper is that along an equilibrium equilibrium, agent 1’s strategy can include inefficient exit.</p>
-<p>To see why consider a history <span class="math inline"><em>h</em><sub><em>t</em></sub><sup>2|1</sup></span> where <span class="math inline"><em>N</em>′&lt;<em>N</em></span> productive actions have been confirmed.</p>
+<p>To see why consider a history <span class="math inline"><em>h</em><sub><em>t</em></sub><sup>2|1</sup></span> where <span class="math inline"><em>N</em>′ &lt; <em>N</em></span> productive actions have been confirmed.</p>
 <p>Then denote by <span class="math inline">$\underbar{V}_2^{N'}$</span> the value agent 2 gets by selecting a non-productive action in every period along paths where agent 1 never exits.</p>
 <p>Then, if at this history, <span class="math inline">$\delta (\bar{V} - \underbar{V}_2^{N'}) &lt; c$</span>, exit <strong>must</strong> occur with positive probability on the continuation path.</p>
 <p>This inequality means that the cost of choosing a productive action today, is greater than the discounted difference between maximal value in the full information game and the value of always choosing unproductive actions. In other words, given that agent 1 will never exit, agent 2 has no hope to make up losses in value induced by the cost today of choosing a productive action.</p>
@@ -452,7 +452,7 @@
 <p>This paper extends the Meltiz framework to allow for optimal tariff policies.</p>
 <h2 id="model-9">Model</h2>
 <p>This model extends a two country Melitz framework in two ways:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Allows for heterogeneity in variable and fixed costs. This will be a policy instrument where governments can set firm specific tariffs</li>
 <li>The representative consumer in each country has a constant elasticity of substitution across all varieties procued within a country, but that elasticity can differ across countries.</li>
 </ol>
@@ -482,7 +482,7 @@
 <p>The home government’s problem is written as a planning problem where the planner chooses taxes, subsidies, prices, and quantities.</p>
 <h3 id="planning-problems">Planning problems</h3>
 <p>To solve this model the authors use a three step procedure:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Solve the problem of minimizing labor cost, subject to producing <span class="math inline"><em>Q</em><sub><em>H</em><em>H</em></sub></span> units of aggregate consumption for the home consumer and <span class="math inline"><em>Q</em><sub><em>H</em><em>F</em></sub></span> units for the foreign consumer.
 <ul>
 <li>This problem is infinite dimensional (a continuum of firms) and non-smooth (kinks because of fixed costs)</li>
@@ -526,7 +526,7 @@
 <h2 id="model-10">Model</h2>
 <blockquote>
 <p>Assumptions:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Domestic and foreign product markets are monopolistically competitive and segmented. In Melitz we got segmentation from CRS production.</li>
 <li><em>Marginal</em> costs do not respond to output shocks: domestic shocks do not impact optimal export levels</li>
 <li>Firms are heterogeneous in marginal production costs and foreign demand functions (so profits differ)</li>
@@ -577,7 +577,7 @@
 <p>Because the authors estimated a <em>dynamic</em> model, they are able to measure the option value of entering in one period and not having to re-pay sunk costs in the next.</p>
 <p>They find that the option value is the largest component of export value for most producers</p>
 <p>This means at least two things:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Modeling implication: Considering the dynamic components of the export entry decision are crucial to get Melitz flavor models to match the data.</li>
 <li>Policy implications: Changes in option values (perhaps due to changes in expectations about future market conditions) can induce large changes in exporter decisions, even when short run profits are unchanged.</li>
 </ol>
@@ -601,7 +601,7 @@
 <p>Now let’s turn to the theoretical model. The model is set in continuous time and will feature Columbian firms who sell domestically and to US importers.</p>
 <h3 id="firm-pricing-problem">Firm pricing problem</h3>
 <p>Each Colombian firm competes monopolistically and seeks to maximize total profits. The details of the pricing problem solved by the firms are not given, but rather the authors jump to the Melitz result: prices are set to a constant markup over marginal costs. In this setting the profits of a firm can be written as a multiplicative function of three components:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>A macroeconomic state that is common to all firms</li>
 <li>Firm productivity</li>
 <li>A time-varying match specific demand shifter</li>
@@ -609,7 +609,7 @@
 <h3 id="relationships">Relationships</h3>
 <p>At each instant in time the seller maintains relationships with an endogenous number of buyers. These relationships are the product of a search process that will be outlined shortly. The matches dissolve exogenously at a constant rate <span class="math inline"><em>δ</em></span> or if the seller no longer finds it profitable to pay a constant fixed cost <span class="math inline"><em>F</em></span> to maintain the relationship.</p>
 <p>If the match is kept alive, it may be hit by one of three events:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>With a constant hazard <span class="math inline"><em>λ</em><sup><em>b</em></sup></span> the buyer places another order</li>
 <li>With a hazard <span class="math inline"><em>q</em><sub><em>x</em><em>x</em>′</sub><sup><em>X</em></sup></span> the macro state will jump to a new level</li>
 <li>With a hazard <span class="math inline"><em>q</em><sub><em>y</em><em>y</em>′</sub><sup><em>Y</em></sup></span> the match specific demand shifter will jump to a new level</li>
@@ -696,7 +696,7 @@
 <li>The maximum number of incumbent firms is fixed at N. Each period there are <span class="math inline"><em>N</em> − <em>s</em><em>u</em><em>m</em>(<em>s</em>)</span> possible entrants. Entrants do not produce or earn profits in the first period.</li>
 <li>Incumbents choose an investment level that determines the probability of remaining in the same state, or moving up or down one step to a neighboring state in the next period.</li>
 <li>Each period the following events occur in this order:
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Incumbent firms draw a random sell-off cost and decide if they want to exit. If they stay, they make investment decisions.</li>
 <li>Each potential entrant draws a random entry cost and makes entry decision</li>
 <li>Incumbent firms compete in spot market and receive prices</li>
@@ -725,7 +725,7 @@
 <p>This algorithm is robust, but has one major drawback: the curse of dimensionality. For in a model with 20 incumbents and 20 individual states, there are over a thousand billion states that must be iterated over when computing the best response.</p>
 <h3 id="approximate-dynamic-programming-algorithm">Approximate dynamic programming algorithm</h3>
 <p>The authors of this paper make 4 modifications to the naive algorithm:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>They form the linear program version of the dynamic programming problem to solve for the best response</li>
 <li>They apply approximate linear programming approach of de Farias and van Roy to reduce the number of variables the solver must find</li>
 <li>They use constraint sampling to only enforce a subset of the constraints of the linear program</li>
@@ -762,8 +762,8 @@
 <h3 id="state">State</h3>
 <p>State is Markov diffusion: <span class="math inline"><em>d</em><em>X</em><sub><em>t</em></sub> = <em>μ</em>(<em>X</em><sub><em>t</em></sub>)<em>d</em><em>t</em> + <em>σ</em>(<em>X</em><sub><em>t</em></sub>)<em>d</em><em>W</em><sub><em>t</em></sub></span> (<span class="math inline"><em>W</em></span> is standard BM, <span class="math inline"><em>μ</em></span> and <span class="math inline"><em>σ</em></span> may be non-linear.)</p>
 <h3 id="functionals">Functionals</h3>
-<p>Additive functionals: parameterized by state dependent drift <span class="math inline"><em>β</em>(<em>X</em>)</span> and volatility <span class="math inline"><em>α</em>(<em>X</em>)</span> coefficients integrated over time (<span class="math inline"><em>A</em><sub><em>t</em></sub> = ∫<sub>0</sub><sup><em>t</em></sup><em>β</em>(<em>X</em><sub><em>u</em></sub>)<em>d</em><em>u</em> + ∫<sub>0</sub><sup><em>t</em></sup><em>α</em>(<em>X</em><sub><em>u</em></sub>)⋅<em>d</em><em>W</em><sub><em>u</em></sub></span>)</p>
-<p>Multiplicative functionals are also characterized by <span class="math inline">(<em>β</em>, <em>α</em>)</span> and are the exponential of an underlying additive functional (<span class="math inline"><em>M</em> = exp(<em>A</em>)</span>)</p>
+<p>Additive functionals: parameterized by state dependent drift <span class="math inline"><em>β</em>(<em>X</em>)</span> and volatility <span class="math inline"><em>α</em>(<em>X</em>)</span> coefficients integrated over time (<span class="math inline"><em>A</em><sub><em>t</em></sub> = ∫<sub>0</sub><sup><em>t</em></sup><em>β</em>(<em>X</em><sub><em>u</em></sub>)<em>d</em><em>u</em> + ∫<sub>0</sub><sup><em>t</em></sup><em>α</em>(<em>X</em><sub><em>u</em></sub>) ⋅ <em>d</em><em>W</em><sub><em>u</em></sub></span>)</p>
+<p>Multiplicative functionals are also characterized by <span class="math inline">(<em>β</em>, <em>α</em>)</span> and are the exponential of an underlying additive functional (<span class="math inline"><em>M</em> = exp (<em>A</em>)</span>)</p>
 <p>Growth processes of economic interest, e.g. cash flows and consumption, will be modeled as multiplicative functionals.</p>
 <h3 id="perturbations">Perturbations</h3>
 <p>We will perturb the multiplicative functionals in a specific way that allow us to capture the <em>marginal value of exposure risk in a particular direction</em>.</p>
@@ -785,7 +785,7 @@
 <p>The Brownian motion will be three dimensional, where dimensions correspond to independent shocks directly to consumption itself, consumption growth <span class="math inline"><em>x</em><sub>1</sub></span>, and stochastic volatility <span class="math inline"><em>x</em><sub>2</sub></span></p>
 <p>Multiplicative functionals take a specific form:</p>
 <ul>
-<li>The drift is affine in deviations of <span class="math inline"><em>x</em><sub>1</sub></span> and <span class="math inline"><em>x</em><sub>2</sub></span> from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (<span class="math inline">$\beta(x) = \bar{\beta}_0 + \bar{\beta}_t \cdot (x_1 - \iota_1) + \bar{\beta}_2 (x_t - \iota_2)$</span>)</li>
+<li>The drift is affine in deviations of <span class="math inline"><em>x</em><sub>1</sub></span> and <span class="math inline"><em>x</em><sub>2</sub></span> from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (<span class="math inline"><em>β</em>(<em>x</em>) = <em>β̄</em><sub>0</sub> + <em>β̄</em><sub><em>t</em></sub> ⋅ (<em>x</em><sub>1</sub> − <em>ι</em><sub>1</sub>) + <em>β̄</em><sub>2</sub>(<em>x</em><sub><em>t</em></sub> − <em>ι</em><sub>2</sub>)</span>)</li>
 <li>The volatility is the square root of <span class="math inline"><em>x</em><sub>2</sub></span> times a constant vector <span class="math inline">$(\alpha(x) = \sqrt{x_2} \bar{\alpha}$</span>).</li>
 </ul>
 <p>Consumption growth is modeled directly as a multiplicative functional.</p>
@@ -795,7 +795,7 @@
 <p>The cash flow of interest will be the growth of the consumption process (<span class="math inline"><em>C</em><sub><em>t</em></sub>/<em>C</em><sub>0</sub></span>).</p>
 <h4 id="elasticities">Elasticities</h4>
 <p>We consider two types of fundamental elasticities, as well as a third that is a function of the former two. These types are</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Exposure elasticities, where the multiplicative function is consumption</li>
 <li>Value elasticities, where the MF is the price of consumption (consumption times SDF)</li>
 </ol>
@@ -823,7 +823,7 @@
 <p>Both parties are free to terminate the contract at any time. If the manager walks away from the firm, he will receive some outside option that is determined in equilibrium. The investor will choose to continue operations as long there is a positive net present value. The investor faces an optimal stopping time problem that characterizes when the firm is abandoned. The abandonment problem is to maximize the present discounted value of profits less managerial payments from the current period until the random stopping time, subject to the constraint that the manager doesn’t walk away. The constraint sets the NPV of managerial payments plus post-stopping value equal to the outside option. This constraint is always binding, so WLOG the authors restrict attention to contracts that gives the manager a fixed payment until the firm exits.</p>
 <h2 id="equilibrium-4">Equilibrium</h2>
 <p>The authors use this model to describe how to match the facts about the capital share of income. The main mechanism is that an increase in the volatility parameter in the productivity process will do two main things:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>raise the real option value of waiting to abandon for firms with low productivity. This results in a decrease in the lower productivity threshold at which firms exit</li>
 <li>Increase the number of firms with very high productivity.</li>
 </ol>
@@ -833,7 +833,7 @@
 <p>The fat right tail will put more mass on the extremely productive firms who are earning profits far above the managerial payments. This drives up the aggregate capital share of income.</p>
 <p>On the other hand, the additional mass of low productivity firms will bring the average capital share of income down.</p>
 <h1 id="model-16">Model</h1>
-<p>This is two-type agent, continuous time model of financial intermediaries. <span class="citation">He and Krishnamurthy (2013)</span></p>
+<p>This is two-type agent, continuous time model of financial intermediaries. <span class="citation" data-cites="He2013b">He and Krishnamurthy (2013)</span></p>
 <p>Agents are either households or specialists.</p>
 <p>Distinction will be made clear once we understand the market structure</p>
 <h2 id="market-structure">Market structure</h2>
@@ -851,7 +851,7 @@
 </ul>
 <h2 id="technology-how-markets-work">Technology (how markets work)</h2>
 <p>Each period between <span class="math inline"><em>t</em></span> and <span class="math inline"><em>t</em> + <em>d</em><em>t</em></span> is split into 5 mini-periods:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>At <span class="math inline"><em>t</em></span> each specialist is randomly matched with a household to form and intermediary</li>
 <li>Specialists allocate all <span class="math inline"><em>w</em><sub><em>t</em></sub></span> of their wealth to buy equity in intermediary. Households allocate a part, <span class="math inline"><em>H</em><sub><em>t</em></sub></span>, of their wealth to purchase equity</li>
 <li>Specialists take <span class="math inline"><em>w</em><sub><em>t</em></sub> + <em>H</em><sub><em>t</em></sub></span> and allocates all of it between the risk free bond and risky. There are not restrictions in buying or shorting either asset</li>
@@ -881,7 +881,7 @@
 <li>Infinitely lived.</li>
 <li>Operates a single intermediary (represent decision makers of bank, hedge fund, extc.)</li>
 <li>Chooses sequence of consumption and portfolio shares in risky asset (acting as intermediary) to maximize the expected present discounted value of a CRRA utility function of consumption subject to…</li>
-<li>Budget constraint: <span class="math inline"><em>d</em><em>w</em><sub><em>t</em></sub> = −<em>c</em><sub><em>t</em></sub><em>d</em><em>t</em> + <em>w</em><sub><em>t</em></sub><em>r</em><sub><em>t</em></sub><em>d</em><em>t</em> + <em>w</em><sub><em>t</em></sub>(<em>d</em><em>R</em><sub><em>t</em></sub>(<em>α</em><sub><em>t</em></sub><sup><em>I</em></sup>)−<em>r</em><sub><em>t</em></sub><em>d</em><em>t</em>)</span>, where <span class="math inline"><em>α</em><sub><em>t</em></sub><sup><em>I</em></sup></span> is intermediary share in risky asset and <span class="math inline"><em>d</em><em>R</em><sub><em>t</em></sub>(<em>α</em><sub><em>t</em></sub><sup><em>I</em></sup>)</span> is the associated return</li>
+<li>Budget constraint: <span class="math inline"><em>d</em><em>w</em><sub><em>t</em></sub> =  − <em>c</em><sub><em>t</em></sub><em>d</em><em>t</em> + <em>w</em><sub><em>t</em></sub><em>r</em><sub><em>t</em></sub><em>d</em><em>t</em> + <em>w</em><sub><em>t</em></sub>(<em>d</em><em>R</em><sub><em>t</em></sub>(<em>α</em><sub><em>t</em></sub><sup><em>I</em></sup>)−<em>r</em><sub><em>t</em></sub><em>d</em><em>t</em>)</span>, where <span class="math inline"><em>α</em><sub><em>t</em></sub><sup><em>I</em></sup></span> is intermediary share in risky asset and <span class="math inline"><em>d</em><em>R</em><sub><em>t</em></sub>(<em>α</em><sub><em>t</em></sub><sup><em>I</em></sup>)</span> is the associated return</li>
 </ul></li>
 </ul>
 <h1 id="equilibrium-outcomes">Equilibrium outcomes</h1>
@@ -926,7 +926,7 @@
 <h3 id="risk-premium-vs.specialist-wealth">Risk premium vs. specialist wealth</h3>
 <p>Finally, the equilibrium risk premium is increasing in <span class="math inline"><em>α</em><sup><em>i</em></sup></span>.</p>
 <p>Combining these points we see how the model delivers a state dependent risk premium. This result is different from similar results obtained in the literature on two fronts:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>This model has “standard” CRRA utility. Others modify the utility function to introduce state dependence (Campbell &amp; Cochrane (1999), Barberis, Huang, and Santos (2001))</li>
 <li>The relationship between capital (wealth) and the risk premium is very asymmetric: might provide important window for studying crises</li>
 </ol>
@@ -952,7 +952,7 @@
 <p>The authors formulate the social planner’s problem for the entire economy. The first order condition for each household equates the Lagrange multiplier on the resource constraint to the Pareto weight times marginal utility of consumption.</p>
 <p>They then take logs, sum across all households, and take first differences to obtain a key equation that says household log consumption growth is equal to aggregate log consumption growth plus the difference in deviations of individual preference shocks from the average preference shock times a scale factor.</p>
 <p>There are two key things to understand about this relationship:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>There is perfect within period risk sharing across households as their consumption is independent of their endowment.</li>
 <li>There is also intertemporal consumption smoothing because the innovation to permanent income is the same across households because it is linked to aggregate consumption growth. When solving the planner’s problem it is difficult to write down the permanent income process, but that’s how it works.</li>
 </ol>
@@ -976,7 +976,7 @@ the same. -->
 <h3 id="notation-classic-bellman-equation">Notation: classic Bellman equation</h3>
 <p>Consider a stationary economic model where at time <span class="math inline"><em>t</em></span> the state is summarized by a vector <span class="math inline"><em>s</em><sub><em>t</em></sub></span> of endogenous state variables and a vector <span class="math inline"><em>x</em><sub><em>t</em></sub></span> of exogenous state variables.</p>
 <p>The optimization problem of an agent is often summarized by a Bellman equation of the form</p>
-<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)=<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>)+<em>β</em><em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em> + 1</sub>)]</span><br /></p>
+<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>) = <em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>) + <em>β</em><em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em> + 1</sub>)]</span><br /></p>
 <p>subject to</p>
 <p><br /><span class="math display"><em>s</em><sub><em>t</em> + 1</sub> = <em>f</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>, <em>c</em><sub><em>t</em></sub>), <em>c</em><sub><em>t</em></sub> ∈ <em>Γ</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>), <em>x</em><sub><em>t</em> + 1</sub> = <em>g</em>(<em>x</em><sub><em>t</em></sub>, <em>ϵ</em><sub><em>t</em> + 1</sub>)</span><br /></p>
 <h3 id="post-decision-state-value-function">Post-decision state value function</h3>
@@ -985,16 +985,16 @@ the same. -->
 <p>We will now consider a different representation of the state vector that couples the endogenous state defined at the end of period <span class="math inline"><em>t</em> − 1</span> with the exogenous state realized at the start of period <span class="math inline"><em>t</em> − 1</span>. That is we will consider <span class="math inline"><em>s</em><sub><em>t</em></sub></span> and <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span>, which is known as the post-decision state at time <span class="math inline"><em>t</em> − 1</span>.</p>
 <p>Let <span class="math inline"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)</span> be the value of having post-decision state <span class="math inline"><em>s</em><sub><em>t</em></sub></span>, <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span> in period <span class="math inline"><em>t</em> − 1</span>. This is the maximum expected, discounted utility an agent can achieve after controls have been selected in period <span class="math inline"><em>t</em> − 1</span>.</p>
 <p>Because <span class="math inline"><em>c</em><sub><em>t</em> − 1</sub></span> is not chosen until <em>after</em> <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span> is realized, we know that <span class="math inline"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)</span> is equal to the expectation of the maximum expected, discounted utility the agent will receive after <span class="math inline"><em>x</em><sub><em>t</em></sub></span> arrives. That is, we can write</p>
-<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)=<em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>],</span><br /></p>
+<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>) = <em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>],</span><br /></p>
 <p>where <span class="math inline"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)</span> is the pre-decision Bellman equation.</p>
 <p>It follows that we can write</p>
-<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)=<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub> + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>).</span><br /></p>
+<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>) = <em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub> + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>).</span><br /></p>
 <p>These equations can be manipulated to produce the recursive form of the post-decision state Bellman equation:</p>
-<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)=<em>E</em>[<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>)+<em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>].</span><br /></p>
+<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>) = <em>E</em>[<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>) + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>].</span><br /></p>
 <p>Notice that the expectation is <em>outside</em> the max operator, meaning that the maximization problem is deterministic.</p>
 <h2 id="algorithm-1">Algorithm</h2>
 <p>Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I’ll discuss how I’d change it later.</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Setup
 <ul>
 <li>Discretize endogenous state space</li>
@@ -1006,7 +1006,7 @@ the same. -->
 <ul>
 <li>Construct a time series of Exogenous states for t=1, 2, …, T</li>
 <li>For time <span class="math inline"><em>t</em> = 1, 2, ..., <em>T</em></span> perform the following 3 steps:
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Choose controls <span class="math inline"><em>c</em><sub><em>t</em></sub></span> to maximize the term inside the expectation on the RHS of <span class="math inline"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><em>t</em> − 1)</span>. To do this we need to using the value function from the previous iteration for the future value function</li>
 <li>Compute the expectation implicitly by updating the guess of the value function using a convex combination of the previous iteration’s value function and the value computed above</li>
 <li>Using the chosen controls and realization of exogenous state, apply the endogenous transition equation to iterate the endogenous state forward one period</li>
@@ -1042,13 +1042,13 @@ the same. -->
 <p>The dynamics induced by agents’ optimal behavior can be understood by considering two interacting effects.</p>
 <p>First, the choice of production technology is governed by a cutoff rule for capital as a function of innate ability. If an agent’s capital stock is above this threshold, they will attempt to accumulate capital so that they can employ the high productivity technology. Otherwise the agent will only pursue the low technology and accumulate the relatively smaller stock of capital needed to operate that technology optimally.</p>
 <p>Second, the state space can be partitioned into three regions along the innate ability dimension</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The unskilled worker region, where regardless of the amount of capital agents always find it optimal to use the low productivity technology. For each innate ability level, there is a unique optimal capital stock to target. Poverty is defined as having capital stock equal to this level.</li>
 <li>A high skill region where for all levels of capital agents prefer to operate the high productivity technology.</li>
 <li>An intermediate region where depending on the current capital stock and sequence of asset shocks, agents may choose to operate either technology.</li>
 </ol>
 <p>These regions define two forms of poverty trap:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Low skill agents who will always be in poverty</li>
 <li>Middle skill agents who are vulnerable to being pushed into poverty if they receive sufficiently unfavorable asset shocks.</li>
 </ol>
@@ -1059,14 +1059,14 @@ the same. -->
 <p>The second policy targets the middle skill agents near the cutoff rule for switching between production technologies. Specifically, if an agent starts the period in the high technology region and recipes a poor enough asset shock to move to the low region – the government provides a transfer that brings the agent exactly back to the cutoff level. Again the transfer is unanticipated. The simulation results here are quite different. Aggregate output rises by 10% and poverty falls from 55% to 25% – meaning 75% of agents operate the high productivity technology.</p>
 <p>The difference between these two policies brings up an ethical issue regarding which subset of agents government policies should target. The authors provide some discussion, but leave it as an open ended question.</p>
 <p>The final experiment also targets the middle skill agents near the cutoff, but this time the transfers are anticipated. The anticipation brings about two competing moral hazard forces:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The positive force is that when agents know they will receive a transfer if their investment is subject to poor shocks, they choose to invest more.</li>
 <li>The negative force is that agents would like to remain as close to the cutoff as possible so they can get the transfer more often.</li>
 </ol>
 <p>The results of the simulation under these conditions falls between the two previous examples. The authors don’t report numbers, so I can’t be precise. However, from the figures the main takeaway is that agents in the middle skill region who are close to the production cutoff are now much less likely to end up operating the low productivity technology in the long run.</p>
 <h1 id="outline">Outline</h1>
 <p>The authors of this paper do 3 main things:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Describe a particular class of Dynamic economic games</li>
 <li>Describe two algorithms for computing Markov perfect equilibria of those games</li>
 <li>Give two detailed, non-trivial examples of how to apply the algorithms to games in this class</li>
@@ -1096,14 +1096,14 @@ the same. -->
 <ul>
 <li>For each state <span class="math inline"><em>d</em> ∈ <em>D</em><sub><em>M</em></sub></span>
 <ul>
-<li>Compute all MPE of the subgame starting from <span class="math inline"><em>s</em> = <em>d</em> × <em>x</em>,  ∀<em>x</em> ∈ <em>X</em></span>, taking as given optimal strategies already computed in subgroups <span class="math inline"><em>j</em> &gt; <em>i</em></span></li>
+<li>Compute all MPE of the subgame starting from <span class="math inline"><em>s</em> = <em>d</em> × <em>x</em>, ∀<em>x</em> ∈ <em>X</em></span>, taking as given optimal strategies already computed in subgroups <span class="math inline"><em>j</em> &gt; <em>i</em></span></li>
 <li>If multiple such equilibria exist, use some deterministic equilibrium selection rule to choose a unique MPE</li>
 </ul></li>
 </ul></li>
 <li>When the recursion terminates, the selected equilibria from each subgame are joined to form the MPE of the original game.</li>
 </ul>
 <p>To understand how the State Recursion Algorithm works, consider two simple examples:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Let the only directional state variable be time. Then SRA is equivalent to familiar backwards time recursion:
 <ul>
 <li>start in the terminal period, solve the model for each state in that period</li>
@@ -1119,7 +1119,7 @@ the same. -->
 </ol>
 <p>From the second example we can see how SRA is a generalization of backwards time recursion: the state can include variables other than time and have a stochastic law of motion between groups.</p>
 <p>The SRA algorithm makes 2 assumptions:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>That we know how to solve for an MPE starting from each element in <span class="math inline"><em>D</em></span></li>
 <li>That we have a deterministic equilibrium selection rule in mind</li>
 </ol>
@@ -1144,7 +1144,7 @@ the same. -->
 </ul></li>
 </ul>
 <p>Timing in each period is in three stages:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Firms choose investment, labor, dividend payments, and issue new bonds.
 <ul>
 <li>Because all these payments happen at the start of the period firms raise within period working capital through an intra-period loan.</li>
@@ -1213,7 +1213,7 @@ the same. -->
 <p>This is the form of DVA that is used throughout the paper. The important takeaway is that DAV is increasing in total exports and decreasing in cost of imported materials.</p>
 <h2 id="data-4">Data</h2>
 <p>The authors use Chinese customs data that includes all exporting firms from 2000-2007. They apply three criterion to narrow down this universe to the final data set used in their analyses:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Look at only processing firms</li>
 <li>Look at firms that operate in a single industry (difficult to decompose share of imports and exports within a firm across industries)</li>
 <li>Look at firms that aren’t “too extreme” in their importing and exporting behavior (an extreme exporter is a firm that imports strictly more than it exports – selling the additional imported goods to other domestic producers)</li>
@@ -1221,7 +1221,7 @@ the same. -->
 <p>In all analyses they normalize DVA by total exports for each firm. The resulting variable is named DVAR.</p>
 <h2 id="main-findings">Main findings</h2>
 <p>I’ll talk about 3 main findings:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Aggregate DVAR increased from near 45% to 55% from 2000 to 2007. This finding is also robust across industries, where 15 reported industries showed a similar evolution</li>
 <li>The increase in DVAR is driven by firms actively substituting imported materials for domestic materials, not by rising domestic production costs (e.g. labor and capital costs). This has policy implications. They do some regressions that show that changes in import tariffs for domestic, non-processing firms – firms who sell input goods to the firms in our sample – and rising FDI liberalization made significant contributions to rising DVAR.</li>
 <li>Restricting the analysis to processing exporters is not a bad estimate of total behavior. Recent work has used input-output tables to document facts about aggregate DVAR movement. The numbers reported here (using transactions level data, but only for processing firms) accounts for almost all the aggregate change.</li>
@@ -1265,7 +1265,7 @@ the same. -->
 <p>The authors assume a standard Cobb-Douglass style aggregate matching technology</p>
 <p>Wages are renegotiated each period and are set by a generalized Nash bargaining protocol</p>
 <p>The dynamics of the match surplus drives incentives for firms and individuals. Using the value functions of individuals and firms it can be written as the sum of two components:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>A standard term that is the discounted sum of the difference of production from employed and unemployed workers</li>
 <li>A new second term that captures the benefit from human capital accumulation for employed workers over unemployed individuals</li>
 </ol>
@@ -1287,7 +1287,7 @@ the same. -->
 <p>When I talk about the performance of an actor, I mean the value of following a policy.</p>
 <p>These methods are often implemented by estimating the gradient of the performance of an actor using simulation.</p>
 <p>There are two main issues with these “policy iteration”-esque algorithms:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Gradient estimators can have high variance</li>
 <li>As the policy changes, a new gradient is estimated independently. This means there is no sense of learning from past data.</li>
 </ol>
@@ -1295,7 +1295,7 @@ the same. -->
 <p>We can think of a critic operating on either a Q or V value function.</p>
 <p>These methods rely exclusively on value function approximation and try to learn the solution to Bellman’s equation.</p>
 <p>The main issues with critic only methods are:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>They are indirect in that they do not try to optimize directly over the policy space</li>
 <li>Even with an accurate approximation of the value function, results that guarantee the near-optimality of the corresponding policy are difficult to guarantee.</li>
 </ol>
@@ -1303,7 +1303,7 @@ the same. -->
 <p>This paper suggests two actor-critic hybrid methods that aim to maintain the best features of each algorithm, while overcoming the shortcomings mentioned above.</p>
 <p>The main idea behind the algorithms is that the critic uses a linearly parameterized approximation scheme and simulation to learn a value function. The actor then uses the learned information to update parameters on the policy function in a direction of performance improvement.</p>
 <p><em>Aside to tie back to econ</em>: This feels like modified policy iteration or Howard’s improvement algorithm, but it is different in a few ways:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>There is a learning element to these algorithms, which means we don’t have to compute expectations explicitly.</li>
 <li>We will be learning Q functions, which describe the value of being in a state and taking any feasible action (instead of the V function that describes the value of being in a state and choosing the optimal action).</li>
 </ol>
@@ -1347,7 +1347,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>An early paper that introduced a now common framework for thinking about firm entry, export decision, and exit in trade models.</p>
 <h2 id="model-20">Model</h2>
 <p>I’ll describe the model in two stages:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>A closed economy version of the model with a single country</li>
 <li>An open economy version with many similar countries</li>
 </ol>
@@ -1370,11 +1370,11 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>There exists a unique equilibrium in this model in which aggregate variables are constant across time. This equilibrium can be understood by a single figure:</p>
 <!-- ![Melitz equilibrium](/Users/sglyon/Research/SargentReadingGroup/images/melitz_eqm.png) -->
 <p>Consider <span class="math inline"><em>φ</em></span> on the horizontal axis and firm profits on the vertical axis. Then we put two lines in this space:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The “zero profit cutoff”, which characterizes average profits as a function of the cutoff productivity. This will be a downward sloping line</li>
 <li>The free entry condition: expresses average profits as an increasing function of cutoff productivity</li>
 </ol>
-<p>Melitz proves that these lines always intersect exactly once, and the intersection is at the point (<span class="math inline"><em>φ</em><sup>*</sup></span>, <span class="math inline">$\bar{\pi}$</span>).</p>
+<p>Melitz proves that these lines always intersect exactly once, and the intersection is at the point (<span class="math inline"><em>φ</em><sup>*</sup></span>, <span class="math inline"><em>π̄</em></span>).</p>
 <h3 id="open-economy">Open economy</h3>
 <p>Now consider a world where there are <span class="math inline"><em>n</em></span> additional countries, identical to the one we have been studying, with which our country can trade. In order to trade internationally, each country must pay a fixed cost to enter the export market and a variable trade cost (iceberg cost) per unit of export. These export costs are symmetric.</p>
 <h4 id="equilibrium-7">Equilibrium</h4>
@@ -1408,7 +1408,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>Because agents are heterogeneous, a state variable in this economy is the joint distribution of agents across wealth and income.</p>
 <h2 id="theoretical-contributions">Theoretical contributions</h2>
 <p>The authors make various theoretical contributions. We’ll review those before moving on to the described solution approach.</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Agents in this economy are never borrowing constrained on the interior of the wealth state space. This means that the distribution is smooth everywhere, except possibly at the constraint. Very not true in discrete time. (multiple mass points in discrete economy). Also very easy to implement as they the only place the borrowing constraint enters the problem is in boundary conditions for the system of PDEs.</li>
 <li>In the stationary equilibrium (constant <span class="math inline"><em>r</em></span>), agents hit the constraint at a rate the authors characterize analytically</li>
 <li>An analytic characterization of the shape of both tails of the wealth distribution. Difficult to do in discrete time</li>
@@ -1417,12 +1417,12 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 </ol>
 <h2 id="solution-method">Solution method</h2>
 <p>The economy we discussed above (and a class of other economies) can be boiled down to a coupled system of two PDEs:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>An HJB equation that describes the optimization behavior of agents</li>
 <li>A Kolmogorov Forward (or Fokker Plank) equation that describes the evolution of the distribution of agents</li>
 </ol>
 <p>Here’s the main steps of the algorithm they describe to compute the stationary equilibrium of the model:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Given an interest rate, solve the HJB equation using a finite difference method (details below). Output is a savings rate function for each type</li>
 <li>Given the savings rules, solve the Kolmogorov Forward equation for the distribution</li>
 <li>Given the distribution, aggregate the savings rule and check the equilibrium (market clearing) condition(s).</li>
@@ -1438,7 +1438,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>This introduces heterogenous banks into a general equilibrium trade model in the flavor of Melitz. There are also empirical exercises that show that the model can generate some features of German banking data.</p>
 <h2 id="model-22">Model</h2>
 <p>We will describe the model in two stages:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Closed economy, where we will characterize economic setting and the optimization problem of each agent.</li>
 <li>Open economy, where combine 2 closed economies and allow them to trade</li>
 </ol>
@@ -1448,11 +1448,11 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <li>A continuum of capitalists of measure <span class="math inline"><em>K</em></span>. Capitalists can choose to become bankers or depositors.
 <ul>
 <li>A banker has two roles (the optimization problem will be described later):
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Channel capital from depositors to firms and</li>
 <li>Monitor the firms they lend to. Bankers earn a return <span class="math inline"><em>R</em></span> on all capital they lend to firms (their own, plus that collected from depositors)</li>
 </ol></li>
-<li>A depositor lends their capital endowment to banks and earn a return <span class="math inline"><em>R</em><sup><em>D</em></sup> &lt; =<em>R</em></span> on their investment. <span class="math inline"><em>R</em><sup><em>D</em></sup></span> is an equilibrium object. Preferences dictate that they then consume all that they have</li>
+<li>A depositor lends their capital endowment to banks and earn a return <span class="math inline"><em>R</em><sup><em>D</em></sup> &lt;  = <em>R</em></span> on their investment. <span class="math inline"><em>R</em><sup><em>D</em></sup></span> is an equilibrium object. Preferences dictate that they then consume all that they have</li>
 </ul></li>
 <li>A continuum of potential entrepreneurs that run firms.
 <ul>
@@ -1491,14 +1491,14 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>Bankers can choose to raise deposits at home and abroad as well as invest in domestic or foreign firms.</p>
 <p>International bankers face an variable “iceberg” costs where their return is a fraction less than one of what a banker from the foreign country would earn. Also payout costs to foreign depositors are a fraction higher than similar costs for domestic depositors.</p>
 <p>Operating internationally also has associated fixed costs that come in 3 varieties:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>There is one fixed cost associated with becoming an international lender</li>
 <li>Another (higher) fixed cost for bankers who with to borrow across the border</li>
 <li>A third (highest) fixed cost associated with foreign direct investment where a banker establishes a foreign affiliate and then interacts through the affiliate and faces no variable costs.</li>
 </ol>
 <h3 id="equilibrium-9">Equilibrium</h3>
 <p>Equilibrium behavior in this model is similar in spirit to the equilibrium of Melitz: lower cost bankers will</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Take on higher fixed costs</li>
 <li>Have a larger throughput (lend to more firms)</li>
 <li>Earn higher profits</li>
@@ -1534,7 +1534,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 </ul>
 <h1 id="outline-1">Outline</h1>
 <p>This is paper is more empirical than theoretical.</p>
-<p>Theoretical contributions are to specify more flexible stochastic environment than in other long run risk models a la <span class="citation">Bansal et al. (2007)</span></p>
+<p>Theoretical contributions are to specify more flexible stochastic environment than in other long run risk models a la <span class="citation" data-cites="Bansal2007">Bansal et al. (2007)</span></p>
 <p>Empirical contributions are</p>
 <ul>
 <li>form a linear approximation of the stochastic environment to apply state space methods within an MCMC algorithm</li>
@@ -1591,7 +1591,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 </ul>
 <h2 id="bayesian-inference">Bayesian Inference</h2>
 <p>The authors use a Gibbs sampling scheme to draw from the posterior of the parameter vector of the non-linear state space system. They split the parameters into two blocks:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>stochastic volatility levels | all other parameters</li>
 <li>all other parameters | stochastic volatility levels</li>
 </ol>
@@ -1603,7 +1603,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>A common result with particle filters is that their accuracy and stability degrade with the number of parameters. Isolating the non-linearity allows the authors to applying the Kalman filter to compute the exact conditional likelihood for the majority of the parameters. This substantially reduces the error inherent in large scale particle filters.</p>
 <h1 id="results-9">Results</h1>
 <p>They run the MCMC algorithm on three versions of the model:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Without rate of time preference shocks and only using consumption and divided growth data (they drop the risk free rate and market returns from the measurement equation)</li>
 <li>Without rate of time preference shocks and using consumption and divided growth data as well as market returns and the risk free rate</li>
 <li>With rate of time preference shocks and using consumption and divided growth data as well as market returns and the risk free rate</li>
@@ -1643,7 +1643,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 </ul>
 <h2 id="model-24">Model</h2>
 <p>The model in this paper extends Melitz (2003) in two ways:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Consumers have firm specific demand shocks in their consumption aggregator</li>
 <li>Firms of a particular brand produce a finite, discrete number of products</li>
 </ol>
@@ -1678,7 +1678,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>The authors of this paper use confidential Irish data to document 4 novel facts about the lifecycle of exporting firms and then combine two existing modeling pieces to builds a partial equilibrium model that can reconcile the reported facts.</p>
 <h2 id="data-5">Data</h2>
 <p>The authors use two confidential micro data sets from Ireland:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The Irish census of industrial production</li>
 <li>Irish custom records</li>
 </ol>
@@ -1687,7 +1687,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>The main empirical exercise is to determine how one of log revenue, log quantity, or log price varies with both the firm-product duration in a particular market and the length of a firm-product-market export spell. The export spell is defined as the number of consecutive periods a firm exports a particular product to a particular market. Note that in the regressions this is a constant number for the entire spell, while the export tenure rises from 1 to the duration of the spell.</p>
 <p>The authors also control for destination market fixed effects and firm-product-year fixed effects.</p>
 <p>There are 4 key results from the estimation:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Quantities grow dramatically in the first five years of successful export spells, defined as spells that last at least seven years. This growth is statistically significant up to a horizon of four years and is not driven purely by part-year effects in the first year (i.e. there is economically and statistically significant growth between years 2 and 4).</li>
 <li>Within successful export spells, there are no statistically or economically significant dynamics in prices.</li>
 <li>Higher initial quantities predict longer export spells: for spells lasting between one and four years, all pairwise comparisons of initial quantities are statistically different.</li>
@@ -1698,7 +1698,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <p>I now turn to the model. The use of the model is not as interesting or enlightening as the components themselves, so I will focus my discussion on why they made the assumptions they did.</p>
 <p>The authors make a quick note that common supply-side tricks for generating revenue and size dynamics (productivity shocks, capital adjustment costs, capacity or financial constraints, market-specific cost shocks, etc.) have a difficult time generating the observed dynamics in quantity without introducing dynamics in prices. For this reason they choose to focus on demand-side features that can generate dynamics.</p>
 <p>They choose two of the more common demand side bells and whistles to include in their model:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Learning about unobserved idiosyncratic shocks.</li>
 <li>Consumer capital: firms build up a consumer base that deprecates over time and add consumers by direct investment in marketing or other costly acquisition methods.</li>
 </ol>
@@ -1760,7 +1760,7 @@ setting, the adoption policy
 <p>The list accounts for 83.5% of all world trade in that time span. The main country missing from the list is China, for which the authors only had access to yearly data.</p>
 <h2 id="qualitative-description-of-main-findings">Qualitative description of main findings</h2>
 <p>The authors report 8 main findings:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The correlation between real exchange rate and the price ratio is on average just above 0.5</li>
 <li>The volatility of relative prices is about 2/3 the volatility of the real exchange rate</li>
 <li>The relative price accounts for about 1/3 of the variance in the real exchange rate</li>
@@ -1777,7 +1777,7 @@ setting, the adoption policy
 <ul>
 <li>Two channels:</li>
 </ul>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>productivity channel says move from low productivity to high productivity country</li>
 <li>risk-sharing channel says move from low marginal utility (MU) to high MU country</li>
 </ol>
@@ -1804,7 +1804,7 @@ setting, the adoption policy
 <ul>
 <li>EZ prefs provide two “risk” motivators over additive preferences</li>
 </ul>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>A preference for early (more common) or late resolution of uncertainty casues the variance of future Value function to impact current welfare (early resolution means higher variance -&gt; lower welfare)</p></li>
 <li><p>Extra term appears in SDF (relative to additive case) (future utility over its certainty equivalent) appears. Why does this matter? Creates a risk-sharing channel to impact flow of resources. How? Two things: first, with EZ prefs there is a 1-to-1 map between lifetime wealth and the value function; and second, SDF is used to price risk, so now there is a link between lifetime wealth and risk adjustments. In this model lifetime wealth changed by long run news (positive news about long run productivity =&gt; higher lifetime welath =&gt; higher value function =&gt; lower marginal value =&gt; planner moves resources toward other, high marginal value agent.)</p></li>
 </ol>
@@ -1818,11 +1818,11 @@ setting, the adoption policy
 </ul>
 <h1 id="conclusion-3">Conclusion</h1>
 <ul>
-<li><p>Paper provides empirical evidence for G7 countries that short-and-long-term productivity news have differing effects on capital flows (short <span class="math inline">↑⇒</span> captial in . long <span class="math inline">↑⇒</span> capital out)</p></li>
+<li><p>Paper provides empirical evidence for G7 countries that short-and-long-term productivity news have differing effects on capital flows (short <span class="math inline"> ↑ ⇒</span> captial in . long <span class="math inline"> ↑ ⇒</span> capital out)</p></li>
 <li><p>They start with a classic BKK model (two agents, two goods, CRRA utility, constant volatility, persistent shocks to productivity, frictionless trade across countries). Here there is one main channel that prompts resource flows: productivity. So good news about either long run or short run productivity growth will cause resources to flow into that country.</p></li>
 <li><p>They also present an almost identical version of the model, the only change being endowing agents with Epstein Zin recursive preferences instead of additive preferences. In addition to the productivity channel inherited from the BKK structure, the EZ preferences bring a risk-channel or motive for resource allocation. This motive can be seen by considering 3 related things:</p></li>
 </ul>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Under EZ preferneces there is a 1-to-1 mapping between lifetime wealth and the value function.</li>
 <li>In the planner’s version of this problem, the parteto weights are monotonic in the ratio of SDFs.</li>
 <li>The SDF under EZ preferences has an additional term that involves future utility and its certainty equivalent. When agents have a preference for early resolution of unceratinty (common parameterization), this extra term causes the SDF to fall as the future value function increases.</li>
@@ -1833,7 +1833,7 @@ setting, the adoption policy
 <li>They present some empirical results showing that their model does better than the standard BKK model at matching moments from international data.</li>
 <li>They still fall short on 5 main fronts. Their problems were:</li>
 </ul>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>investment is too smooth (not volatile enough)</li>
 <li>correlation between domestic and foreign investment growth is negative (risk sharing result – planner moves resources to less productive country, part of that is used in that country’s investment)</li>
 <li>Risk premium is too small</li>
@@ -1866,7 +1866,7 @@ s.t. &amp; \quad v \ge T v
 <p>These two facts mean that the unique solution to the programming problem is <span class="math inline"><em>v</em><sup>*</sup></span>.</p>
 <h2 id="linear-program">Linear program</h2>
 <p>I told you that we would use linear programming, but notice that the constraint is nonlinear because <span class="math inline"><em>T</em></span> is nonlinear.</p>
-<p>However, if we stare at the definition of <span class="math inline"><em>T</em></span> for long enough we will notice that if we consider the constraint <span class="math inline"><em>v</em> ≥ <em>T</em><em>v</em></span> state by state, (e.g. <span class="math inline"><em>v</em>(<em>x</em>)≥<em>T</em><em>v</em>(<em>x</em>)</span>) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.</p>
+<p>However, if we stare at the definition of <span class="math inline"><em>T</em></span> for long enough we will notice that if we consider the constraint <span class="math inline"><em>v</em> ≥ <em>T</em><em>v</em></span> state by state, (e.g. <span class="math inline"><em>v</em>(<em>x</em>) ≥ <em>T</em><em>v</em>(<em>x</em>)</span>) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.</p>
 <p>This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman’s equation for that state and control. The program looks as follows:</p>
 <p><br /><span class="math display">$$\begin{aligned}&amp;\underset{V}{\min} c'v \\
 s.t. &amp; \quad v(x) \ge u(x,c) + \beta \sum_{x'} P(x'| x,c)v(x') \quad \forall x \in X \; \forall c \in \mathcal{A}_x
@@ -1893,21 +1893,21 @@ s.t. &amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x'} P(x'| x,c) \Phi r(x') \q
 <p>The similarity of these findings despite the very different data sets is encouraging.</p>
 <h2 id="new-contributions">New contributions</h2>
 <p>In addition to replicating the results from MRS, KMV have 3 main findings:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>They show that the interaction between the fall in local house prices and the size of initial leverage is not statistically significant, after controlling for the direct impact of house price changes.</li>
 <li>They separate the price and quantity components in the fall in consumption expenditure during the great recession. They construct a proxy measure of the quantity of household expenditure by aggregating quantity sold from all stores at the product level, and then multiplying by an average price for the product. When this is used as the dependent variable in the regression, elasticities are approximately 20% lower.</li>
 <li>They use the Diary Survey of the Consumer Expenditure Survey to estimate the elasticity of total non-durable goods and survives to the counter part found in the Kilts Nielsen dataset. They obtain an elasticity between 0.7 and 0.9, meaning that their estimated consumption to household share of wealth elasticity should be lowered by approximately 20% when applied to <em>all</em> non-durable goods and services.</li>
 </ol>
 <h2 id="intro-4">Intro</h2>
 <p>The authors did some empirical work with data on Columbian firms to arrive at two stlyized facts about new exporters (firms who recently began exporting):</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>On average, entrant exporters are smaller than long-time exporters</li>
 <li>The probability of exiting the export market falls with tenure</li>
 </ol>
 <p>The goal of the paper is to write a model that can match the data on these two dimensions.</p>
 <h2 id="model-27">Model</h2>
 <p>Partial equilibrium version of the model I presented last week. There will be three varaints:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>A baseline model similar to Melitz</li>
 <li>A model that perturbs the baseline by making foreign demand grow with tenure in export market. This is called the delayed demand model</li>
 <li>A model that perturbs the delayed demand model by making the fixed entry cost stochastic, rather than constant</li>
@@ -1962,10 +1962,10 @@ s.t. &amp; \quad \Phi r(x) \ge u(x,c) + \beta \sum_{x'} P(x'| x,c) \Phi r(x') \q
 <p>He, Zhiguo, and Arvind Krishnamurthy. 2013. “Intermediary Asset Pricing.” <em>American Economic Review</em> 103(2): 732–70. <a href="http://pubs.aeaweb.org/doi/abs/10.1257/aer.103.2.732 papers3://publication/doi/10.1257/aer.103.2.732" class="uri">http://pubs.aeaweb.org/doi/abs/10.1257/aer.103.2.732 papers3://publication/doi/10.1257/aer.103.2.732</a>.</p>
 </div>
 </div>
-<div class="footnotes">
+<section class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>In the first period agent 1 makes his decision based solely on his prior. If he chooses to exit, he learns nothing, and next period must make his decision with the same information. Because we look for pure strategy equilibria, he will make the same decision forever and the game will be trivial.<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p>In the first period agent 1 makes his decision based solely on his prior. If he chooses to exit, he learns nothing, and next period must make his decision with the same information. Because we look for pure strategy equilibria, he will make the same decision forever and the game will be trivial.<a href="#fnref1" class="footnote-back">↩</a></p></li>
 </ol>
-</div>
+</section>
 

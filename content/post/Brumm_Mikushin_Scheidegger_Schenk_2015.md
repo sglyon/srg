@@ -4,7 +4,7 @@
   dynamic stochastic economic modeling)'
 ---
 
-<p>An economist, a physicist, and two computer scientists walk into a bar...</p>
+<p>An economist, a physicist, and two computer scientists walk into a bar…</p>
 <p>This is a computational paper that describes and algorithm featuring an adaptive sparse grid and discuss implementation details on a sophisticated HPC cluster.</p>
 <h2 id="model">Model</h2>
 <p>They provide examples of their algorithm and computation using a standard international real business cycle model. This is not the interesting part of the paper, so I will not focus on it here.</p>
@@ -21,14 +21,14 @@
 <ul>
 <li>Start with the coarsest refinement level <span class="math inline"><em>l</em> = 1</span> for all dimensions. Call the grid G. Choose a maximum refinement level</li>
 <li>Also Initialize <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span> and <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span> to be the empty set</li>
-<li>While G and <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span> are not the same (NOTE: at end of this loop explain the while goes until we are at Lmax or until we don't add refinement points)
+<li>While G and <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span> are not the same (NOTE: at end of this loop explain the while goes until we are at Lmax or until we don’t add refinement points)
 <ul>
 <li>For each grid point in <span class="math inline"><em>G</em> \ <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em></span>
 <ul>
 <li>Solve the system of non-linear equations characterizing the optimal controls at that grid point (note you will need to interpolate over the current guess of the policy function) to obtain a new guess for the policy rule at that point</li>
 <li>If the distance between the old and new guess for the policy at the grid point is greater than some threshold, add the neighboring points at the next refinement level to G_new</li>
 </ul></li>
-<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> + =1</span></li>
+<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> +  = 1</span></li>
 </ul></li>
 <li>Calculate the error for this iteration as the sup norm over the implied policy rule from the current iteration and the previous iteration</li>
 </ul>

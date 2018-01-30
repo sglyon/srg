@@ -27,7 +27,7 @@
 </ul></li>
 <li>Preferences for firms and workers are not considered here, as the economy will have a representative agent on the mainland.</li>
 </ul>
-<p>So let's turn to the mainland:</p>
+<p>So let’s turn to the mainland:</p>
 <ul>
 <li>Inhabited by a continuum of identical consumers</li>
 <li>Each consumer is tied to a single firm and a single worker <em>on every island</em>
@@ -41,7 +41,7 @@
 <ul>
 <li>Inner most level: goods produced by all firms on an island are aggregated into an island final good.
 <ul>
-<li>This aggregator is subject to markup or cost-push shocks (i.e. the exponent in the aggregator is a random variable)</li>
+<li>This aggregator is subject to markup or cost-push shocks (i.e. the exponent in the aggregator is a random variable)</li>
 </ul></li>
 <li>The island final goods are then aggregated into the final consumption good.</li>
 </ul></li>
@@ -60,12 +60,12 @@
 </ul>
 <h2 id="information">Information</h2>
 <p>A crucial aspect of this model is the information setup. The authors run two experiments:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Fix monopoly markup and let agents receive noisy signals about TFP</li>
 <li>Fix TFP and let agents see noisy signals about markups</li>
 </ol>
 <p>The signal structure mirrors that of Morris and Shin. Each period each island receives two signals:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>A public signal seen by all agents. This signal is the sum of the actual fundamental and a mean zero Gaussian noise term</li>
 <li>A private signal with the same structure, but seen only by the island.</li>
 </ol>
@@ -79,14 +79,14 @@
 <h1 id="experiments">Experiments</h1>
 <p>Definitions:</p>
 <p><br /><span class="math display"><em>Σ</em> ≡ Var(log<em>Y</em>−log<em>Y</em><sup>*</sup>)</span><br /></p>
-<p><br /><span class="math display">$$\sigma \equiv \text{Var} \left( \log \tilde{y}_{it}  - \log \tilde{Y}_t\right)$$</span><br /></p>
+<p><br /><span class="math display"><em>σ</em> ≡ Var(log<em>ỹ</em><sub><em>i</em><em>t</em></sub>−log<em>Ỹ</em><sub><em>t</em></sub>)</span><br /></p>
 <p><br /><span class="math display">$$\Delta \equiv \frac{E[Y]}{Y/Y^*}$$</span><br /></p>
 <p><br /><span class="math display">$$\Lambda \equiv \Sigma + \frac{1}{1 -\alpha} \sigma$$</span><br /></p>
 <p>In the experiments the authors do, they consider how welfare changes with the precision of the signals.</p>
 <p>Welfare is decomposed into the product of two functions, each taking one argument.</p>
 <p>The first function is a strictly concave function of <span class="math inline"><em>Δ</em></span></p>
 <p>The second function is strictly decreasing in the sum of volatility of the aggregate output gap and the cross-sectional dispersion of local output gaps (<span class="math inline"><em>Λ</em></span>).</p>
-<p>Let's consider the main results for each experiment</p>
+<p>Let’s consider the main results for each experiment</p>
 <h2 id="signals-about-tfp">Signals about TFP</h2>
 <p>In experiment with TFP shocks, the log of TFP of each island is modeled as the sum of an aggregate productivity shock common across all islands and an island specific idiosyncratic shock.</p>
 

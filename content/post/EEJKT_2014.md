@@ -7,7 +7,7 @@
 <h1 id="overview">Overview</h1>
 <p>A primarily empirical paper that studies how allowing exporting firms to learn about demand for their product impacts firm dynamics in a Melitz style trade model.</p>
 <h2 id="data-and-stylized-facts">Data and stylized facts</h2>
-<p>Let's start with the data.</p>
+<p>Let’s start with the data.</p>
 <p>The data set used in this paper describes all imports by US buyers from Colombian exporters from 1992-2009. The source is the U.S. Census Bureau’s Longitudinal Foreign Trade Transactions Database (LFTTD).</p>
 <p>Using this data, the authors report the following stylized facts:</p>
 <ul>
@@ -16,14 +16,14 @@
 <ul>
 <li>If a match does survive the into a second period, there is a significantly higher chance it will survive into the third (about 50%). This trend continues as the duration of the match increases.</li>
 <li>The survival probability of a new match increases with first year sales volume.</li>
-<li>These facts suggest that there are many Colombian firms who merely &quot;test the US waters&quot; and export a small volume, find the conditions unfavorable, and exit. This might suggest these firms are trying to learn about foreign demand.</li>
+<li>These facts suggest that there are many Colombian firms who merely “test the US waters” and export a small volume, find the conditions unfavorable, and exit. This might suggest these firms are trying to learn about foreign demand.</li>
 </ul></li>
 </ul>
 <h2 id="model">Model</h2>
-<p>Now let's turn to the theoretical model. The model is set in continuous time and will feature Columbian firms who sell domestically and to US importers.</p>
+<p>Now let’s turn to the theoretical model. The model is set in continuous time and will feature Columbian firms who sell domestically and to US importers.</p>
 <h3 id="firm-pricing-problem">Firm pricing problem</h3>
 <p>Each Colombian firm competes monopolistically and seeks to maximize total profits. The details of the pricing problem solved by the firms are not given, but rather the authors jump to the Melitz result: prices are set to a constant markup over marginal costs. In this setting the profits of a firm can be written as a multiplicative function of three components:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>A macroeconomic state that is common to all firms</li>
 <li>Firm productivity</li>
 <li>A time-varying match specific demand shifter</li>
@@ -31,7 +31,7 @@
 <h3 id="relationships">Relationships</h3>
 <p>At each instant in time the seller maintains relationships with an endogenous number of buyers. These relationships are the product of a search process that will be outlined shortly. The matches dissolve exogenously at a constant rate <span class="math inline"><em>δ</em></span> or if the seller no longer finds it profitable to pay a constant fixed cost <span class="math inline"><em>F</em></span> to maintain the relationship.</p>
 <p>If the match is kept alive, it may be hit by one of three events:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>With a constant hazard <span class="math inline"><em>λ</em><sup><em>b</em></sup></span> the buyer places another order</li>
 <li>With a hazard <span class="math inline"><em>q</em><sub><em>x</em><em>x</em>′</sub><sup><em>X</em></sup></span> the macro state will jump to a new level</li>
 <li>With a hazard <span class="math inline"><em>q</em><sub><em>y</em><em>y</em>′</sub><sup><em>Y</em></sup></span> the match specific demand shifter will jump to a new level</li>
@@ -74,7 +74,7 @@
 <li>Match death probabilities and match sales</li>
 </ul>
 <h3 id="basic-results">Basic results</h3>
-<p>There are many parameters, so I won't enumerate how well the model does at targeting each parameter. The overall results are that the estimates match the signs of all empirical moments and the magnitude of most.</p>
+<p>There are many parameters, so I won’t enumerate how well the model does at targeting each parameter. The overall results are that the estimates match the signs of all empirical moments and the magnitude of most.</p>
 <p>Some interpretation of the coefficients is helpful:</p>
 <ul>
 <li>Mature (5+ years) matches fail with a probability of 40%, but the estimated exogenous separation rate is only 27%. This suggests that the idiosyncratic demand shift shocks impact long-run match survival.</li>

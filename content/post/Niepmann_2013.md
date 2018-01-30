@@ -7,7 +7,7 @@
 <p>This introduces heterogenous banks into a general equilibrium trade model in the flavor of Melitz. There are also empirical exercises that show that the model can generate some features of German banking data.</p>
 <h2 id="model">Model</h2>
 <p>We will describe the model in two stages:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Closed economy, where we will characterize economic setting and the optimization problem of each agent.</li>
 <li>Open economy, where combine 2 closed economies and allow them to trade</li>
 </ol>
@@ -17,11 +17,11 @@
 <li>A continuum of capitalists of measure <span class="math inline"><em>K</em></span>. Capitalists can choose to become bankers or depositors.
 <ul>
 <li>A banker has two roles (the optimization problem will be described later):
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Channel capital from depositors to firms and</li>
 <li>Monitor the firms they lend to. Bankers earn a return <span class="math inline"><em>R</em></span> on all capital they lend to firms (their own, plus that collected from depositors)</li>
 </ol></li>
-<li>A depositor lends their capital endowment to banks and earn a return <span class="math inline"><em>R</em><sup><em>D</em></sup> &lt; =<em>R</em></span> on their investment. <span class="math inline"><em>R</em><sup><em>D</em></sup></span> is an equilibrium object. Preferences dictate that they then consume all that they have</li>
+<li>A depositor lends their capital endowment to banks and earn a return <span class="math inline"><em>R</em><sup><em>D</em></sup> &lt;  = <em>R</em></span> on their investment. <span class="math inline"><em>R</em><sup><em>D</em></sup></span> is an equilibrium object. Preferences dictate that they then consume all that they have</li>
 </ul></li>
 <li>A continuum of potential entrepreneurs that run firms.
 <ul>
@@ -49,25 +49,25 @@
 <li>Firm production is realized</li>
 <li>Rents are paid to banks and workers</li>
 <li>Banks pay creditors at a rate <span class="math inline"><em>R</em><sup><em>d</em></sup></span> (all depositors earn the same rate), keeping the rest</li>
-<li>Workers, depositors, and bankers then consume everything they are left with (note all consumption must come out of produced good -- i.e. do not value capital or labor for consumption)</li>
+<li>Workers, depositors, and bankers then consume everything they are left with (note all consumption must come out of produced good – i.e. do not value capital or labor for consumption)</li>
 </ul>
 <h3 id="equilibrium">Equilibrium</h3>
 <p>In equilibrium there is free entry to become a banker. This boils down to having a cutoff in monitoring costs that says all capitalists with monitoring cost above the cutoff become depositors while all others become bankers.</p>
 <p>The second equilibrium condition is that all capital in the economy is used in production.</p>
 <p>These two conditions admit a semi-analytical solution for the cutoff monitoring cost and rate of return paid to depositors <span class="math inline"><em>R</em><sup><em>d</em></sup></span>.</p>
 <h2 id="open-economy">Open economy</h2>
-<p>In the open economy there are two countries that typically differ in endowment of capital and labor as well as distribution over monitoring costs. Workers, firms, and depositors only operate within their home country -- bankers are allowed to interact across the border.</p>
+<p>In the open economy there are two countries that typically differ in endowment of capital and labor as well as distribution over monitoring costs. Workers, firms, and depositors only operate within their home country – bankers are allowed to interact across the border.</p>
 <p>Bankers can choose to raise deposits at home and abroad as well as invest in domestic or foreign firms.</p>
-<p>International bankers face an variable &quot;iceberg&quot; costs where their return is a fraction less than one of what a banker from the foreign country would earn. Also payout costs to foreign depositors are a fraction higher than similar costs for domestic depositors.</p>
+<p>International bankers face an variable “iceberg” costs where their return is a fraction less than one of what a banker from the foreign country would earn. Also payout costs to foreign depositors are a fraction higher than similar costs for domestic depositors.</p>
 <p>Operating internationally also has associated fixed costs that come in 3 varieties:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>There is one fixed cost associated with becoming an international lender</li>
 <li>Another (higher) fixed cost for bankers who with to borrow across the border</li>
 <li>A third (highest) fixed cost associated with foreign direct investment where a banker establishes a foreign affiliate and then interacts through the affiliate and faces no variable costs.</li>
 </ol>
 <h3 id="equilibrium-1">Equilibrium</h3>
 <p>Equilibrium behavior in this model is similar in spirit to the equilibrium of Melitz: lower cost bankers will</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Take on higher fixed costs</li>
 <li>Have a larger throughput (lend to more firms)</li>
 <li>Earn higher profits</li>

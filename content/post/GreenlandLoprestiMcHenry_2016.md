@@ -26,12 +26,12 @@ individual level, with additional data on demographics and educational outcomes.
 <li>A time fixed effect</li>
 </ul>
 <p>Without the inclusion of the regional control variables, the regression predicts a small and statistically insignificant change in population in response to an interquartile shift in the tariff gap.</p>
-<p>However, with the inclusion of the regional controls, the regression predicts that the interquartile effect of tariff gap on population growth is 2.1% -- significant at the 1% level. To me, this suggests that the controls that are included in the regression are <em>crucial</em> for obtaining the results. Unfortunately the lack of a theoretical model means that the choice of which control variables are included is ad-hoc. A useful extension or follow up to this work would be to build a model that allows regional migration in response to trade shocks and let the model be informative about which control variables should be included.</p>
+<p>However, with the inclusion of the regional controls, the regression predicts that the interquartile effect of tariff gap on population growth is 2.1% – significant at the 1% level. To me, this suggests that the controls that are included in the regression are <em>crucial</em> for obtaining the results. Unfortunately the lack of a theoretical model means that the choice of which control variables are included is ad-hoc. A useful extension or follow up to this work would be to build a model that allows regional migration in response to trade shocks and let the model be informative about which control variables should be included.</p>
 <blockquote>
 <p>FWIW the controls they included were the pre-1990 cz pop growth trend, share of population under 25 years old, share of population accounted for by minority groups</p>
 </blockquote>
 <h3 id="temporal-structure-of-migration">Temporal structure of migration</h3>
-<p>Because these regressions were run using data between 1988-1998 and then 2002-2012, the results suggest only that within an 11 year window after China was granted permanent WTO tariff rates did this migration occur. The authors want to be able to answer the question &quot;when in this 11 year window did the movement of workers happen?&quot;</p>
+<p>Because these regressions were run using data between 1988-1998 and then 2002-2012, the results suggest only that within an 11 year window after China was granted permanent WTO tariff rates did this migration occur. The authors want to be able to answer the question “when in this 11 year window did the movement of workers happen?”</p>
 <p>To do this they use data data the US population migration data from the IRS. This data set uses the tax filings from individuals to determine, year to year, how many individuals moved from one county to another based on their primary residence.</p>
 <p>They use this data to regress the annual log change in commute zone population on</p>
 <ul>
@@ -42,7 +42,7 @@ individual level, with additional data on demographics and educational outcomes.
 </ul>
 <p>The identification is weak of all 13 time-lag parameters, so they constrain the model so that the coefficients to evolve smoothly over time according to a cubic function.</p>
 <blockquote>
-<p>To do this they say that the point estimate for the lag l coefficient is equal to a cubic polynomial in l. They then construct 4 auxiliary variables that are the sum of lagged changes from 0 to 12 of the tariff gap times post 2001 dummy times the number of lags to the [0, 1, 2, 3] (that's where they get 4 variables). They then replace the 13 lag terms with these 4 auxiliary variables and estimate coefficients on just the 4 parameters.</p>
+<p>To do this they say that the point estimate for the lag l coefficient is equal to a cubic polynomial in l. They then construct 4 auxiliary variables that are the sum of lagged changes from 0 to 12 of the tariff gap times post 2001 dummy times the number of lags to the [0, 1, 2, 3] (that’s where they get 4 variables). They then replace the 13 lag terms with these 4 auxiliary variables and estimate coefficients on just the 4 parameters.</p>
 </blockquote>
-<p>This reduces the number of parameters from 13 to 4. Model predictions are largely unchanged, but identification is much sharper. Their results predict that about 20% of the total effect happens within one year of the trade shock, with a significant portion happening at a lag of 7 or more years (they don't give numbers...).</p>
+<p>This reduces the number of parameters from 13 to 4. Model predictions are largely unchanged, but identification is much sharper. Their results predict that about 20% of the total effect happens within one year of the trade shock, with a significant portion happening at a lag of 7 or more years (they don’t give numbers…).</p>
 

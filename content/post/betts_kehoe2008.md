@@ -10,7 +10,7 @@
 <p>At the time of writing the paper, there were two main modes of thought for thinking about real exchange rate movements</p>
 <ul>
 <li>Traditional view: all movements in bilateral real exchange rate between two countries are due to fluctuations in the bilateral relative price of non-traded to traded goods.</li>
-<li>New Open Economy Macroeconomics view (the &quot;new view&quot;): models that segment traded goods, allowing for deviations in the law of one price and have nominal rigidities that support these deviations. This means that purely monetary shocks to nominal exchange rates have persistent impact on prices and thus the real exchange rate. There is no distinction between traded and non-traded goods.</li>
+<li>New Open Economy Macroeconomics view (the “new view”): models that segment traded goods, allowing for deviations in the law of one price and have nominal rigidities that support these deviations. This means that purely monetary shocks to nominal exchange rates have persistent impact on prices and thus the real exchange rate. There is no distinction between traded and non-traded goods.</li>
 </ul>
 <p>An influential 1999 paper by Engel found evidence that we should abandon the traditional view and ignore the distinction between traded and non-traded goods.</p>
 <p>This paper finds empirical evidence that suggests a substantial link between real exchange rates and relative prices of non-traded to traded goods.</p>
@@ -18,15 +18,15 @@
 <p>The real exchange rate can be written as the product of a nominal exchange rate and a ratio of price indices.</p>
 <p>If we multiply and divide by a price index for only traded goods for each country, we can decompose this product into two pieces:</p>
 <ul>
-<li>Nominal exchange rate times relative price of traded goods -- we call this the bilateral real exchange rate of traded goods</li>
-<li>Overall price index ratio divided by traded good price index ratio -- this is a ratio of one country relative price indices. This is the price ratio of non-traded vs traded goods mentioned earlier.</li>
+<li>Nominal exchange rate times relative price of traded goods – we call this the bilateral real exchange rate of traded goods</li>
+<li>Overall price index ratio divided by traded good price index ratio – this is a ratio of one country relative price indices. This is the price ratio of non-traded vs traded goods mentioned earlier.</li>
 </ul>
 <h2 id="data">Data</h2>
 <p>The authors use data on 50 countries: all the countries they could find quarterly real exchange rate and price data for over the period 1980 through 2005.</p>
 <p>The list accounts for 83.5% of all world trade in that time span. The main country missing from the list is China, for which the authors only had access to yearly data.</p>
 <h2 id="qualitative-description-of-main-findings">Qualitative description of main findings</h2>
 <p>The authors report 8 main findings:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The correlation between real exchange rate and the price ratio is on average just above 0.5</li>
 <li>The volatility of relative prices is about 2/3 the volatility of the real exchange rate</li>
 <li>The relative price accounts for about 1/3 of the variance in the real exchange rate</li>

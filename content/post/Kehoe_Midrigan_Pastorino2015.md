@@ -42,7 +42,7 @@
 <p>The authors assume a standard Cobb-Douglass style aggregate matching technology</p>
 <p>Wages are renegotiated each period and are set by a generalized Nash bargaining protocol</p>
 <p>The dynamics of the match surplus drives incentives for firms and individuals. Using the value functions of individuals and firms it can be written as the sum of two components:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>A standard term that is the discounted sum of the difference of production from employed and unemployed workers</li>
 <li>A new second term that captures the benefit from human capital accumulation for employed workers over unemployed individuals</li>
 </ol>

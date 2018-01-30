@@ -4,7 +4,7 @@
   from Home and Store Scanner Data.)'
 ---
 
-<p>This paper considers the relation between of firm size heterogeneity and income dispersion. Using two large panel data sets, they document a number of empirical facts about the link between these forms of heterogeneity, then build a model combining non-homothetic preferences for consumers and a Metliz' style production environment that can match the facts.</p>
+<p>This paper considers the relation between of firm size heterogeneity and income dispersion. Using two large panel data sets, they document a number of empirical facts about the link between these forms of heterogeneity, then build a model combining non-homothetic preferences for consumers and a Metliz’ style production environment that can match the facts.</p>
 <h2 id="data">Data</h2>
 <p>Kilts Nielsen consumer panel and retail scanner data..</p>
 <ul>

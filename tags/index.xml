@@ -2,14 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Sargent Reading Group Notes</title>
-    <link>http://srg.spencerlyon.com/tags/index.xml</link>
+    <link>http://srg.spencerlyon.com/tags/</link>
     <description>Recent content in Tags on Sargent Reading Group Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <atom:link href="http://srg.spencerlyon.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Nov 2017 09:41:00 -0500</lastBuildDate>
+    
+	<atom:link href="http://srg.spencerlyon.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Continuous Time</title>
+      <link>http://srg.spencerlyon.com/tags/continuous-time/</link>
+      <pubDate>Thu, 30 Nov 2017 09:41:00 -0500</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/tags/continuous-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Markets</title>
+      <link>http://srg.spencerlyon.com/tags/data-markets/</link>
+      <pubDate>Thu, 30 Nov 2017 09:41:00 -0500</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/tags/data-markets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model</title>
+      <link>http://srg.spencerlyon.com/tags/model/</link>
+      <pubDate>Thu, 30 Nov 2017 09:41:00 -0500</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/tags/model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Srg</title>
+      <link>http://srg.spencerlyon.com/tags/srg/</link>
+      <pubDate>Thu, 30 Nov 2017 09:41:00 -0500</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/tags/srg/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

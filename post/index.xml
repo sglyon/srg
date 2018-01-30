@@ -2,15 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sargent Reading Group Notes</title>
-    <link>http://srg.spencerlyon.com/post/index.xml</link>
+    <link>http://srg.spencerlyon.com/post/</link>
     <description>Recent content in Posts on Sargent Reading Group Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Christiano, Motto, and Rostagno (2014) (Risk shocks)</title>
+      <link>http://srg.spencerlyon.com/2018/01/30/christiano-motto-and-rostagno-2014-risk-shocks/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/01/30/christiano-motto-and-rostagno-2014-risk-shocks/</guid>
+      <description>Model The model in this paper is a mashup of the DSGE framework of Cristiano, Eichenbaum, and Evans and the entrepreneur and financial friction component of Bernanke, Gertler, and Gilchrist. To this framework they add an additional feature they term a “risk shock”, which is stochastic volatility in the distribution of entrepreneur productivity.
+The model has too many pieces for me to describe in detail, so I will attempt to focus on the parts that are most important for understanding the key takeaway of the paper.</description>
+    </item>
+    
+    <item>
+      <title>Eisfeldt and Papanikolaou (2013) (Organization capital and the cross section of expected returns)</title>
+      <link>http://srg.spencerlyon.com/2017/12/05/eisfeldt-and-papanikolaou-2013-organization-capital-and-the-cross-section-of-expected-returns/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/12/05/eisfeldt-and-papanikolaou-2013-organization-capital-and-the-cross-section-of-expected-returns/</guid>
+      <description>Intro This paper studies subset of intangible capital called organizational capital. The authors define organizational capital as intangible capital embodied in the firm’s key employees
+The authors maintain the hypothesis that returns from organizational capital are partly firm specific and partly due to key talent at the firm. Thus, shareholders must split revenues between themselves and key talent to entice them not to take their talents to another firm. This has a number of consequences:</description>
+    </item>
+    
+    <item>
+      <title>Eisfeldt and Papanikolaou 2013</title>
+      <link>http://srg.spencerlyon.com/2017/11/30/eisfeldt-and-papanikolaou-2013/</link>
+      <pubDate>Thu, 30 Nov 2017 09:41:00 -0500</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/11/30/eisfeldt-and-papanikolaou-2013/</guid>
+      <description>Intro  IN RECENT DECADES, INTANGIBLE capital has become an increasingly important factor of production. In many instances, such intangible capital is embodied in the firm’s key employees. We refer to this type of intangible capital as organization capital and develop a structural model to analyze its effect on asset prices. We argue that shareholders consider firms with high levels of organization capital to be riskier than firms with more physical capital, and provide empirical evidence supporting this claim.</description>
+    </item>
     
     <item>
       <title>McGratten (2017) (Intangible Capital and Measured Productivity)</title>
@@ -18,52 +49,8 @@
       <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/11/28/mcgratten-2017-intangible-capital-and-measured-productivity/</guid>
-      <description>&lt;p&gt;McGratten starts by saying that firms invest almost as much in intangible capital as they do physical capital, but that intangible capital is not reported in GDP. This severely understates the actual change in output. She sees this as one way in which we can see a rise in labor and investment coincide with relatively little increase in measured total factor productivity.&lt;/p&gt;
-&lt;p&gt;The goal of the paper is to build a multi-sector general equilibrium model that incorporates intangible capital and investment. Multiple sectors are needed to account for the distribution of intangible investment rates across industries.&lt;/p&gt;
-&lt;p&gt;She then uses data from the BEA input/output tables, which account directly for intellectual property products as part of investment, not as intermediate inputs.&lt;/p&gt;
-&lt;h1 id=&#34;model&#34;&gt;Model&lt;/h1&gt;
-&lt;p&gt;Discrete time. Infinite horizon&lt;/p&gt;
-&lt;p&gt;Representative household supplies labor to firms, owns the firms, and receives dividends from firms.&lt;/p&gt;
-&lt;p&gt;A government funds exogenous spending requirements by levying taxes on households and firms.&lt;/p&gt;
-&lt;h2 id=&#34;firms&#34;&gt;Firms&lt;/h2&gt;
-&lt;p&gt;Firms produce final goods for government and household consumption as well as intermediate goods used as inputs by other firms. The only randomness in the economy is stochastic shocks to firm productivity.&lt;/p&gt;
-&lt;p&gt;Each firm in the economy produces both tangible and intangible goods and services using Cobb-Douglass technologies in tangible capital, intangible capital, intermediate inputs, and labor hours, with a sector-specific labor augmenting productivity shock. All inputs chosen separately for the two output types, except for intangible capital which is assumed to be non-rival and the same stock of intangibles is used in both production processes. Input shares vary across sectors.&lt;/p&gt;
-&lt;p&gt;The tangible goods firms produce serve two purposes:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;Purchased directly by firms in other sectors and increase the tangible capital stock for the purchasing firm next period&lt;/li&gt;
-&lt;li&gt;Combined with the output from other sectors in a CES aggregation technology and used as the consumption and government spending good.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The intangible goods that are produced are only used by firms and are not consumed by households or the government.&lt;/p&gt;
-&lt;p&gt;The log of the sector level productivity shocks are the sum of a sector-specific component and an aggregate component. Each of the components follows an AR(1) process in logs. All innovations are independent of one another except for possible autocorrelation to sector-specific innovations.&lt;/p&gt;
-&lt;p&gt;Firms choose sequences of investment and labor to maximize the expected present discounted value of dividend payments to owners, subject to capital depreciation and government taxes on all operating profits and tangible stock capital.&lt;/p&gt;
-&lt;h2 id=&#34;government&#34;&gt;Government&lt;/h2&gt;
-&lt;p&gt;The government raises income via taxes and uses the aggregate firm output to finance exogenous expenditures. All excess revenue is rebated back to households as a lump sum transfer.&lt;/p&gt;
-&lt;h2 id=&#34;households&#34;&gt;Households&lt;/h2&gt;
-&lt;p&gt;Households own shares of the firm from each sector. The population of households grows at a fixed rate each period.&lt;/p&gt;
-&lt;p&gt;Households have time-separable, concave preferences over both consumption of the aggregate good and leisure.&lt;/p&gt;
-&lt;p&gt;Taxes are paid on consumption purchases, labor earnings, and dividends.&lt;/p&gt;
-&lt;p&gt;Household’s choose sequences of sector-level consumption and labor supply to maximize the expected PDV of lifetime utility, subject to a budget constraint equating net-of-taxes consumption spending plus purchases of shares of firms, to next of tax labor income, net-of-taxes dividend receipts, and a lump sum transfer.&lt;/p&gt;
-&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
-&lt;p&gt;An approximate solution is found by log-linearizing.&lt;/p&gt;
-&lt;p&gt;The state vector includes the logged and de-trended aggregate contribution to productivity, a constant, and sector specific terms for all of tangible capital, intangible capital, and productivity for both tangible and intangible outputs.&lt;/p&gt;
-&lt;p&gt;The solution is summarized by a law of motion for this state variable that reads, the state variable tomorrow is a matrix times the state variable today, plus another matrix times the vector of innovations.&lt;/p&gt;
-&lt;h1 id=&#34;estimation&#34;&gt;Estimation&lt;/h1&gt;
-&lt;p&gt;McGratten uses the 2007 benchmark BEA input/output tables to parameterize income and cost shares and data from the BEA and BLS to estimate processes for sectoral productivity processes. Other parameters are related to preferences, taxes, growth rates, and depreciation and she claims they are not critical for her main results.&lt;/p&gt;
-&lt;p&gt;I don’t have time to work through the details of her estimation, but the main points are:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;Shares of sector-level intermediates used in production can be computed directly in the model and mapped into the IO table data&lt;/li&gt;
-&lt;li&gt;Investment expenditure shares can be computed directly in the model and are mapped into detailed BEA investment data.&lt;/li&gt;
-&lt;li&gt;Capital income shares are parameters in the Cobb-Douglass production function and are chosen by iteratively adjusting the parameters and solving the model until total expenditure shares on tangible and intangible capital match the data.&lt;/li&gt;
-&lt;li&gt;The productivity process is estimated by using the approximate log-linear solution model as a state-space system on which the Kalman filter is applied. The observed variables used in this step are sector-level aggregates for output and hours per-capita.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
-&lt;p&gt;The main results are:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;The model is successful in generating large fluctuations in aggregate hours and a significant co-movement in sectoral hours that are in line with the data. A one sector model, or models without intangible capital fail to do this. Note that this result was achieved using a model with only productivity shocks and without using labor supply data in the calibration.&lt;/li&gt;
-&lt;li&gt;A variance decomposition of the aggregates used in the Kalman filter shows that the sectoral level productivity shocks and the input-output linkages across sectors are important in explaining the aggregate time series.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;She combines these two points and proposes that the multi-sector model with intangible capital is a better version of the real-business-cycle model than what has been commonly used in the past.&lt;/p&gt;
-</description>
+      <description>McGratten starts by saying that firms invest almost as much in intangible capital as they do physical capital, but that intangible capital is not reported in GDP. This severely understates the actual change in output. She sees this as one way in which we can see a rise in labor and investment coincide with relatively little increase in measured total factor productivity.
+The goal of the paper is to build a multi-sector general equilibrium model that incorporates intangible capital and investment.</description>
     </item>
     
     <item>
@@ -72,43 +59,9 @@
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/11/14/hall-1999-the-stock-market-and-capital-accumulation./</guid>
-      <description>&lt;p&gt;In this paper Hall seeks to quantify the price and stock of capital in the economy from 1960 to 2000 using data from the stock market.&lt;/p&gt;
-&lt;p&gt;To do this he proposes the following simple model.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Discrete time, infinite horizon&lt;/li&gt;
-&lt;li&gt;Constant returns to scale production&lt;/li&gt;
-&lt;li&gt;All produciton inputs except capital adjust frictionlessly&lt;/li&gt;
-&lt;li&gt;Adjustment to capital stock can be fully adjusted in the long run (no long run rents)&lt;/li&gt;
-&lt;li&gt;Factor markets are competitive&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In this setting firm profits is equal to capital times the product of capital, where the product of capital depends on non-capital production inputs.&lt;/p&gt;
-&lt;p&gt;Each period the firm pays out profits, less capital investment and adjustment costs to shareholders as dividends.&lt;/p&gt;
-&lt;p&gt;The value of the firm is the present discounted value of all dividend payments&lt;/p&gt;
-&lt;p&gt;Capital stock depreciates at a constant rate each period.&lt;/p&gt;
-&lt;p&gt;A firm’s problem is to choose a sequence of investment levels to maximize the present discounted value of all shareholder payouts, subject to capital stock depreciation and quadratic adjustment costs. The Lagrange multiplier on the time t capital accumulation equation is the shadow price of capital.&lt;/p&gt;
-&lt;p&gt;Under the assumptions in the model, the following is true:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Security (stock) price of firm = value of firm = PDV of future dividends = shadow value (price) of firm’s capital times stock of capital&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The last part of that equivalence chain is the most surprising, but most useful in this context.&lt;/p&gt;
-&lt;p&gt;Hall uses this condition as well as the first order condition for firm investment as two equations in terms of time t-1 capital stock and time t security price in order to solve for the two unknowns: time t capital stock and time t shadow price. Thus, if Hall makes an assumption about the initial level of the capital stock and data on stock prices, he can use his mini-theory to trace out time series of capital stock and price.&lt;/p&gt;
-&lt;p&gt;Using the Flow of Funds Accounts data set from the Fed Board, he follows exactly this procedure. The data contain balance sheet information for all non-farm and non-financial US corporations.&lt;/p&gt;
-&lt;p&gt;His main findings&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Application of a simple empirical test that the security price of a firm represents the present value of future payouts to shareholders seems to hold across his dataset. He summarizes his findings by saying “I see nothing in the data that demonstrates a systematic failure of the standard valuation principle – that the value of the stock market is the present value of future cash payouts to shareholders”&lt;/li&gt;
-&lt;li&gt;Results for the quantity and price of capital were dependent on the quadratic adjustment cost parameter. He took a lower and upper bound of values for this parameter from the related literature.
-&lt;ul&gt;
-&lt;li&gt;For low adjustment costs, prices remained fairly constant over the whole sample, but the quantity rose steadily – especially after 1980.&lt;/li&gt;
-&lt;li&gt;For high Over the time horizon, the quantity increased smoothly across the whole sample and most of the variation in the value of the capital stock came from movements in the shadow price.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The stock of capital implied by the low and high adjustment cost parameterizations forms a fairly uniform band around the value of capital inferred from data on capital investment.&lt;/li&gt;
-&lt;li&gt;Tobin’s q (ratio of value of a firm to the reproduction cost of its plant and equipment rose sharply from 1980 to 2000 (From 0.5 to approximately 3.5). Under the hypothesis that the securities markets reveal the value of the firm, this could happen if there were large persistent movements of the price of installed capital, or if the firm accumulated significant quantities of intangible capital.
-&lt;ul&gt;
-&lt;li&gt;Earlier evidence refutes the idea that there were large movements in the price of capital, making the story of firms accumulating intangible capital more likely.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hall’s main takeaway is that under the expectations of rational securities markets, the evidence he uncovered on prices and stocks of physical capital point to a large increase of intangible capital that added value to firms.&lt;/p&gt;
-</description>
+      <description>In this paper Hall seeks to quantify the price and stock of capital in the economy from 1960 to 2000 using data from the stock market.
+To do this he proposes the following simple model.
+ Discrete time, infinite horizon Constant returns to scale production All produciton inputs except capital adjust frictionlessly Adjustment to capital stock can be fully adjusted in the long run (no long run rents) Factor markets are competitive  In this setting firm profits is equal to capital times the product of capital, where the product of capital depends on non-capital production inputs.</description>
     </item>
     
     <item>
@@ -117,58 +70,8 @@
       <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/11/07/de-loecker-and-eeckhout-2017-the-rise-of-market-power-and-the-macroeconomic-implications/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This is a “facts” paper that documents some facts about the distribution of market power over time and then talks about some macroeconomic implications of the change in market power. To talk about some of these facts, they need to write down a very simple model.&lt;/p&gt;
-&lt;h2 id=&#34;facts&#34;&gt;Facts&lt;/h2&gt;
-&lt;h3 id=&#34;data&#34;&gt;Data&lt;/h3&gt;
-&lt;p&gt;They use firm-level Compustat data from 1950-2014. The data includes all publicly traded firms over that time horizon. They comment that while this clearly does not include all firms, it does capture most of subset of firms relative for their study (large firms are usually public, and they are the ones with significant market power).&lt;/p&gt;
-&lt;p&gt;They talk at length about how their approach to measuring markups is different from the most commonly used approach. They say that researchers typically rely on assumptions about consumer behavior, profit maximization, and firm competition structure in order to measure markups. Instead in this paper they take a “production approach” that relies on balance-sheet input and output data for firms.&lt;/p&gt;
-&lt;p&gt;In order to use this approach the authors make the following assumptions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The production technology is Cobb-Douglass in capital and a variable input, with industry specific productivity&lt;/li&gt;
-&lt;li&gt;Industry productivity follows an AR(1) in logs with Gaussian innovations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The implementation happens in three stages:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;Regress output on variable inputs, capital inputs, and one more term that is a non-parametric function of these two inputs. Unfortunately I couldn’t understand exactly what this term was from the text. Hopefully a future draft will be more clear.&lt;/li&gt;
-&lt;li&gt;Given the third, non-parametric term, they are able to recover the implied productivity. With this in hand they regress&lt;/li&gt;
-&lt;li&gt;Given the residuals from the productivity regression, they use a moment condition that says the expectation of time t productivity innovations and time t-1 variable inputs must be zero. In other words time t-1 choices can’t depend on time t shocks. This gives them a function for output elasticity, which they can express directly as markups&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The main findings of the paper are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Average markups were fairly constant before 1980, but have been steadily and sharply increasing since then (from 20% above MC to 67% between 1980 and
-&lt;ol start=&#34;2014&#34; type=&#34;1&#34;&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;The distribution of markups has been changing. The median markup (and all percentiles below) has been relatively constant over the whole sample. On the other hand the 90th percentile of markup rises from 40% in 1980 to 160% in
-&lt;ol start=&#34;2014&#34; type=&#34;1&#34;&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;There is not a strong compositional pattern across industries and most of the increase in markups occurs within industries.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They check these facts using aggregate data on all firms from the IRS as well as an aggregate they construct from the Compustat data and find similar patterns.&lt;/p&gt;
-&lt;h2 id=&#34;macro-implications&#34;&gt;Macro implications&lt;/h2&gt;
-&lt;p&gt;They discuss 7 different macro implications. I won’t have time to talk about them in detail, but I will list them here so you know what is in the paper and you can look back yourself if you are interested.&lt;/p&gt;
-&lt;p&gt;The following macro implications are established only using their data:&lt;/p&gt;
-&lt;!-- mytn is &#39;more than you need&#39; --&gt;
-&lt;ul&gt;
-&lt;li&gt;Decline in labor share (mtyn: labor share tracks inverse markup, and markups are rising)&lt;/li&gt;
-&lt;li&gt;Decline in capital share (mtyn: labor share tracks inverse markup, and markups are rising)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The following macro implications required them to specify a model of market structure and demand:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;mtyn: the model is P(Q) = c + lambda h(Q), where lambda indexes degree of compeition in model (lambda=1 is monopoly and lambda=0 is perfect compeition). Markups are then 1 + lambda h(Q) / c. Markups rise if lambda rises, h(Q) rises, or c falls. They consider what happens when lambda rises.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Decline in low skill wages (mtyn: given wages and productivity, aggregate labor demand is decreasing in market power and individual labor demand is increasing in market power (mkt power = 1/number of firms. Aggregate statement reflects that production falls as # firms falls.) Furthermore, if there are CRS, then w and L fall with mkt power)&lt;/li&gt;
-&lt;li&gt;Decline in labor force participation (mtyn: this is supply side of fall in aggregate labor demand as market power rises. This is partially offset by a sharp increase in female labor participation rates post 1960)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These last implications required them all for firm specific productivity shocks&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Decline in labor market flows (mtyn: driven by imperfect competition meaning we aren’t on productivity or output frontier)&lt;/li&gt;
-&lt;li&gt;Decline in migration rates (mtyn: same mechanism as labor market flows)&lt;/li&gt;
-&lt;li&gt;Slowdown in aggregate output (mtyn: this happens to coincide with the increase in market power, tough they don’t offer causal analysis)&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-</description>
+      <description>This is a “facts” paper that documents some facts about the distribution of market power over time and then talks about some macroeconomic implications of the change in market power. To talk about some of these facts, they need to write down a very simple model.
+Facts Data They use firm-level Compustat data from 1950-2014. The data includes all publicly traded firms over that time horizon. They comment that while this clearly does not include all firms, it does capture most of subset of firms relative for their study (large firms are usually public, and they are the ones with significant market power).</description>
     </item>
     
     <item>
@@ -177,44 +80,9 @@
       <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/10/24/asturias-hur-kehoe-and-ruhl-2017-firm-entry-and-exit-and-aggregate-growth./</guid>
-      <description>&lt;p&gt;This goal of this paper is to better understand how firm entry and exit interact with aggregate productivity growth.&lt;/p&gt;
-&lt;h2 id=&#34;empirical-finding&#34;&gt;Empirical finding&lt;/h2&gt;
-&lt;p&gt;The authors main empirical finding is that the contribution to aggregate productivity growth from new firms is larger in periods of high productivity growth than in periods of low productivity growth.&lt;/p&gt;
-&lt;p&gt;This finding is established using data on all manufacturing plants in Chile from 1995 to 2006 and in Korea for 1992-1997, 2001-2006, and 2009-2014. The authors argue that these two countries are good candidates for studying their question because over the data coverage period, both countries experienced stretches of low and high growth in GDP per worker.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;The authors then then build a model that can deliver this new fact and use the model as a laboratory for doing counterfactual experiments.&lt;/p&gt;
-&lt;p&gt;The model is in the spirit of Hopenhayn (!992). The economy is and has three distinguishing features:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;The distribution from which potential entrants draw their efficiencies exogenously improves each period&lt;/li&gt;
-&lt;li&gt;The efficiency of incumbent firms improves both through an exogenous process and through spillovers with the rest of the economy&lt;/li&gt;
-&lt;li&gt;Firm entry and exit are endogenous&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;details&#34;&gt;Details&lt;/h2&gt;
-&lt;p&gt;Infinite horizon, discrete time.&lt;/p&gt;
-&lt;p&gt;Representative household that inelastically supplies one unit of labor to firms. The household is paid a wage by the firms and receives aggregate dividends paid out by all firms. They also have access to a non-state contingent one period bond. They choose a sequence of consumption and bond holdings to maximize the present discounted value of lifetime log consumption, subject to a period by period budget constraint, a no-Ponzi condition, and an initial supply of bond holdings.&lt;/p&gt;
-&lt;p&gt;In each period potential entrants must pay a fixed cost to draw an efficiency parameter from a Pareto distribution. The scale parameter of this distribution indexes how easily new firms can adopt the frontier technology. Because household own firms, this cost is paid by the household. After observing the efficiency draw, the firm chooses whether to operate or stay out of the economy. The mass of potential entrants is characterized by a free entry condition, such that the expected value of paying the cost to make a new productivity draw is exactly equal to the fixed cost.&lt;/p&gt;
-&lt;p&gt;An operating firm, either incumbent or new entrant, produces using a DRS production technology in labor. The firms pay a fixed operating cost in each period of operation. Firms choose labor demand to maximize output, less wage payments and the fixed cost.&lt;/p&gt;
-&lt;p&gt;Operating firms exogenously exit with a constant probability each period. They also choose to exit endogenously if their value function ever becomes negative. Their efficiency in the next period will be equal to current period efficiency multiplied by a constant and the average efficiency growth in the economy, raised to a power that controls the degree of spillover in the economy. If this parameter is sufficiently less than 1 (sufficiency determined as a function of the constant term), the growth rate of incumbent efficiency is lower than the growth rate of new entrant efficiency. The calibrated value of the technology growth parameters satisfy this condition.&lt;/p&gt;
-&lt;p&gt;The exit decision is characterized by a cutoff level of efficiency, such that all firms below the cutoff optimally choose to exit. Because incumbent firms grow more slowly than new firms, all firms eventually exit and in each period firms of every age will exit.&lt;/p&gt;
-&lt;p&gt;The authors consider a balanced growth path equilibrium where where wages, GDP, consumption, dividends, and the cutoff threshold all grow at the same rate.&lt;/p&gt;
-&lt;h2 id=&#34;calibration&#34;&gt;Calibration&lt;/h2&gt;
-&lt;p&gt;The authors assume that the two fixed costs are equal to an underlying value multiplied by one plus a policy parameter. They say that the underlying value captures the status of technology.&lt;/p&gt;
-&lt;p&gt;They calibrate the model using US data under the assumption that the two policy parameters in the fixed costs are equal to zero and that the scale parameter in the Pareto distribution is equal to 1. These restrictions imply that there are no distortions in the economy.&lt;/p&gt;
-&lt;p&gt;They essentially use SMM to match moments they obtain from census Bureau data, but I won’t go into more calibration details right now.&lt;/p&gt;
-&lt;h2 id=&#34;reform&#34;&gt;Reform&lt;/h2&gt;
-&lt;p&gt;Within the calibrated model they do three counterfactual experiments, each corresponding to one form of policy reform. The three reforms are:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;Lowering the fixed cost for potential entrants to make a productivity draw&lt;/li&gt;
-&lt;li&gt;Lowering the fixed operating cost&lt;/li&gt;
-&lt;li&gt;Lowering the barriers for new firms to adopt the frontier technology (the Pareto distribution scale parameter)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In each case they alter the corresponding parameter until the growth of output is 15% lower than the baseline value. They then do an experiment where they return the parameter to the no-distortion level and watch what happens in the transition to the original balanced growth path.&lt;/p&gt;
-&lt;p&gt;The results they find when lowering either the fixed entry cost or the barrier to new firm adoption of frontier technology are quantitatively similar. In each case, the policy reform increases the expected value of potential entrants, which leads to a permanent increase in the mass of potential entrants. This leads to more entry, which increases labor demand, causing wages to rise. Higher wages cause low efficiency firms to exit, leading to a more efficient cohort of firms in the economy.&lt;/p&gt;
-&lt;p&gt;The results are different when they consider lowering the fixed operating cost. The lower operating cost allows less efficient firms to enter and choose not to exit. The larger mass of firms increases output in the economy, but causes aggregate productivity to fall because less-efficient firms are able to continue producing.&lt;/p&gt;
-&lt;h2 id=&#34;tie-back-to-data&#34;&gt;Tie back to data&lt;/h2&gt;
-&lt;p&gt;To conclude, I will show how the authors tie the results of these counterfactual experiments back to their main empirical finding. Recall the finding: the share of aggregate productivity growth accounted for by new entrants is larger in periods of high output growth.&lt;/p&gt;
-&lt;p&gt;In the model, periods of low growth are the balanced growth paths whereas the high growth periods happen on the transition from the distortionary economy to the distortion free economy. Along the transition the share of aggregate productivity growth accounted for by entrants is much larger than it is while on the balanced growth path.&lt;/p&gt;
-</description>
+      <description>This goal of this paper is to better understand how firm entry and exit interact with aggregate productivity growth.
+Empirical finding The authors main empirical finding is that the contribution to aggregate productivity growth from new firms is larger in periods of high productivity growth than in periods of low productivity growth.
+This finding is established using data on all manufacturing plants in Chile from 1995 to 2006 and in Korea for 1992-1997, 2001-2006, and 2009-2014.</description>
     </item>
     
     <item>
@@ -223,62 +91,10 @@
       <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/10/17/lee-and-yi-2017-global-value-chains-and-inequality-with-endogenous-labor-supply/</guid>
-      <description>&lt;p&gt;The goal of this paper is to use the modeling concept of Global value chains to analyze the international impact of a lowering of trade costs.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;Most of the paper is about describing the model. It is too complicated to explain in full in just 5 minutes, so I will discuss some of the key features so we can understand the results.&lt;/p&gt;
-&lt;p&gt;The model is static.&lt;/p&gt;
-&lt;p&gt;There are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries that are symmetric in technology, but will have different parameter values in the calibrated model.&lt;/p&gt;
-&lt;p&gt;Within each country there are a finite number of sectors.&lt;/p&gt;
-&lt;p&gt;Within each sector there is a continuum of final goods. Each final good is the output of a global value chain of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;J&lt;/em&gt;&lt;/span&gt;. This means that each final good goes through &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;J&lt;/em&gt;&lt;/span&gt; stages of production before becoming a final good. Stages can happen in any of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries.&lt;/p&gt;
-&lt;p&gt;Within each sector, the continuum of final goods within each sector is aggregated using a CES technology. Sector aggregates are combined via a Cobb Douglass technology. The output of Cobb-Douglass aggregator is used for household consumption or as an intermediate input in production.&lt;/p&gt;
-&lt;p&gt;The technology at each stage combines 4 inputs:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;country-sector-stage idiosyncratic productivity&lt;/li&gt;
-&lt;li&gt;labor from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;O&lt;/em&gt;&lt;/span&gt; occupations,&lt;/li&gt;
-&lt;li&gt;the output of this good’s previous stage,&lt;/li&gt;
-&lt;li&gt;the Cobb-Douglass aggregated good.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Labor is supplied by a continuum of workers that are of one of a finite number of types. Within each worker type, each worker has idiosyncratic productivity across occupations and sectors. Workers inelastically supply all their labor endowment to the sector and occupation that yields them the highest return.&lt;/p&gt;
-&lt;p&gt;The main outcome of the model is a nested system of comparative advantage. There is comparative advantage at the country level and the worker level.&lt;/p&gt;
-&lt;p&gt;At the country level, comparative advantage is driven by:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Country-stage specific occupation weights in the production function&lt;/li&gt;
-&lt;li&gt;Country-sector-stage distribution of productivity&lt;/li&gt;
-&lt;li&gt;Country-stage weight on previous stage output&lt;/li&gt;
-&lt;li&gt;Country-sector importance of the Cobb-Douglass aggregated good&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;At the worker level, comparative advantage is driven by:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Type-sector-occupation distribution of productivity. This has two components:
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;A type-sector-occupation component that captures between-worker-type comparative advantage&lt;/li&gt;
-&lt;li&gt;A type specific component that captures within-worker-type variation in comparative advantage&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;My takeaway from the model section is that the model is very rich and if it can be estimated effectively, could shed some light on the structure of comparative advantage in the global economy as well as provide a laboratory through which we can study the network effects of changes in trade costs.&lt;/p&gt;
-&lt;h2 id=&#34;calibration&#34;&gt;Calibration&lt;/h2&gt;
-&lt;p&gt;… which brings me to the calibration.&lt;/p&gt;
-&lt;p&gt;They choose to calibrate a model with&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;5 worker types based on education&lt;/li&gt;
-&lt;li&gt;3 Countries: US, China, rest of world&lt;/li&gt;
-&lt;li&gt;5 occupations based on skill and routineness&lt;/li&gt;
-&lt;li&gt;2 production stages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;set some of the CES parameters exogenously&lt;/li&gt;
-&lt;li&gt;Use the world input and output database to calibrate iceberg trade costs to match moments on aggregate trade flows by sector&lt;/li&gt;
-&lt;li&gt;Estimate parameters of the worker productivity distribution using data from the American Consumer Survey for 2000&lt;/li&gt;
-&lt;li&gt;Calibrate production parameters to match moments describing absorption of final and intermediate goods to similar moments in the data, computed from the world input output database for 200&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the end, their calibration suggests that China has a comparative advantage in manufacturing and stage two production, while the US has an advantage in high-skilled occupations in the services sector and stage one production.&lt;/p&gt;
-&lt;h2 id=&#34;counter-factual&#34;&gt;Counter factual&lt;/h2&gt;
-&lt;p&gt;With the calibrated model, they do a counter factual where trade costs between China and the US and between China and the rest of the world fall by 50%.&lt;/p&gt;
-&lt;p&gt;They report changes in the mass of sector-level aggregated goods that are entirely produced in one country. For China and the rest of the world, the mass of these goods falls sharply in all sectors. This indicates that lower trade costs allow for better sector-level specialization. On the other hand, for the US only manufacturing falls sharply while agriculture and mining fall by a small amount and services actually go up. The reason for these results is that the US already had a very strong comparative advantage in services, so it wasn’t allocating many workers to agriculture or mining.&lt;/p&gt;
-&lt;p&gt;They also report changes in labor supply allocations across country, education level, and job type. They find in China, the movement for low educated workers is to move out of low skill jobs in services into low skill jobs in manufacturing. For highly educated workers the movement is from high skill jobs in services to high skill jobs in manufacturing. In the US the flows are a mirror: low education workers move from low skill jobs in manufacturing to low skill jobs in services and high education workers move from high skill jobs in manufacturing to high skill jobs in services.&lt;/p&gt;
-&lt;p&gt;In the end the results are quite predictable and in line with intuition. To me this is a positive as it helps me believe their very complicated model a little bit more.&lt;/p&gt;
-</description>
+      <description>The goal of this paper is to use the modeling concept of Global value chains to analyze the international impact of a lowering of trade costs.
+Model Most of the paper is about describing the model. It is too complicated to explain in full in just 5 minutes, so I will discuss some of the key features so we can understand the results.
+The model is static.
+There are N countries that are symmetric in technology, but will have different parameter values in the calibrated model.</description>
     </item>
     
     <item>
@@ -287,62 +103,10 @@
       <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/10/17/lee-and-yi-2017-global-value-chains-and-inequality-with-endogenous-labor-supply/</guid>
-      <description>&lt;p&gt;The goal of this paper is to use the modeling concept of Global value chains to analyze the international impact of a lowering of trade costs.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;Most of the paper is about describing the model. It is too complicated to explain in full in just 5 minutes, so I will discuss some of the key features so we can understand the results.&lt;/p&gt;
-&lt;p&gt;The model is static.&lt;/p&gt;
-&lt;p&gt;There are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries that are symmetric in technology, but will have different parameter values in the calibrated model.&lt;/p&gt;
-&lt;p&gt;Within each country there are a finite number of sectors.&lt;/p&gt;
-&lt;p&gt;Within each sector there is a continuum of final goods. Each final good is the output of a global value chain of length &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;J&lt;/em&gt;&lt;/span&gt;. This means that each final good goes through &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;J&lt;/em&gt;&lt;/span&gt; stages of production before becoming a final good. Stages can happen in any of the &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries.&lt;/p&gt;
-&lt;p&gt;Within each sector, the continuum of final goods within each sector is aggregated using a CES technology. Sector aggregates are combined via a Cobb Douglass technology. The output of Cobb-Douglass aggregator is used for household consumption or as an intermediate input in production.&lt;/p&gt;
-&lt;p&gt;The technology at each stage combines 4 inputs:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;country-sector-stage idiosyncratic productivity&lt;/li&gt;
-&lt;li&gt;labor from &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;O&lt;/em&gt;&lt;/span&gt; occupations,&lt;/li&gt;
-&lt;li&gt;the output of this good&#39;s previous stage,&lt;/li&gt;
-&lt;li&gt;the Cobb-Douglass aggregated good.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Labor is supplied by a continuum of workers that are of one of a finite number of types. Within each worker type, each worker has idiosyncratic productivity across occupations and sectors. Workers inelastically supply all their labor endowment to the sector and occupation that yields them the highest return.&lt;/p&gt;
-&lt;p&gt;The main outcome of the model is a nested system of comparative advantage. There is comparative advantage at the country level and the worker level.&lt;/p&gt;
-&lt;p&gt;At the country level, comparative advantage is driven by:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Country-stage specific occupation weights in the production function&lt;/li&gt;
-&lt;li&gt;Country-sector-stage distribution of productivity&lt;/li&gt;
-&lt;li&gt;Country-stage weight on previous stage output&lt;/li&gt;
-&lt;li&gt;Country-sector importance of the Cobb-Douglass aggregated good&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;At the worker level, comparative advantage is driven by:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Type-sector-occupation distribution of productivity. This has two components:
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;A type-sector-occupation component that captures between-worker-type comparative advantage&lt;/li&gt;
-&lt;li&gt;A type specific component that captures within-worker-type variation in comparative advantage&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;My takeaway from the model section is that the model is very rich and if it can be estimated effectively, could shed some light on the structure of comparative advantage in the global economy as well as provide a laboratory through which we can study the network effects of changes in trade costs.&lt;/p&gt;
-&lt;h2 id=&#34;calibration&#34;&gt;Calibration&lt;/h2&gt;
-&lt;p&gt;... which brings me to the calibration.&lt;/p&gt;
-&lt;p&gt;They choose to calibrate a model with&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;5 worker types based on education&lt;/li&gt;
-&lt;li&gt;3 Countries: US, China, rest of world&lt;/li&gt;
-&lt;li&gt;5 occupations based on skill and routineness&lt;/li&gt;
-&lt;li&gt;2 production stages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;set some of the CES parameters exogenously&lt;/li&gt;
-&lt;li&gt;Use the world input and output database to calibrate iceberg trade costs to match moments on aggregate trade flows by sector&lt;/li&gt;
-&lt;li&gt;Estimate parameters of the worker productivity distribution using data from the American Consumer Survey for 2000&lt;/li&gt;
-&lt;li&gt;Calibrate production parameters to match moments describing absorption of final and intermediate goods to similar moments in the data, computed from the world input output database for 200&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the end, their calibration suggests that China has a comparative advantage in manufacturing and stage two production, while the US has an advantage in high-skilled occupations in the services sector and stage one production.&lt;/p&gt;
-&lt;h2 id=&#34;counter-factual&#34;&gt;Counter factual&lt;/h2&gt;
-&lt;p&gt;With the calibrated model, they do a counter factual where trade costs between China and the US and between China and the rest of the world fall by 50%.&lt;/p&gt;
-&lt;p&gt;They report changes in the mass of sector-level aggregated goods that are entirely produced in one country. For China and the rest of the world, the mass of these goods falls sharply in all sectors. This indicates that lower trade costs allow for better sector-level specialization. On the other hand, for the US only manufacturing falls sharply while agriculture and mining fall by a small amount and services actually go up. The reason for these results is that the US already had a very strong comparative advantage in services, so it wasn&#39;t allocating many workers to agriculture or mining.&lt;/p&gt;
-&lt;p&gt;They also report changes in labor supply allocations across country, education level, and job type. They find in China, the movement for low educated workers is to move out of low skill jobs in services into low skill jobs in manufacturing. For highly educated workers the movement is from high skill jobs in services to high skill jobs in manufacturing. In the US the flows are a mirror: low education workers move from low skill jobs in manufacturing to low skill jobs in services and high education workers move from high skill jobs in manufacturing to high skill jobs in services.&lt;/p&gt;
-&lt;p&gt;In the end the results are quite predictable and in line with intuition. To me this is a positive as it helps me believe their very complicated model a little bit more.&lt;/p&gt;
-</description>
+      <description>The goal of this paper is to use the modeling concept of Global value chains to analyze the international impact of a lowering of trade costs.
+Model Most of the paper is about describing the model. It is too complicated to explain in full in just 5 minutes, so I will discuss some of the key features so we can understand the results.
+The model is static.
+There are N countries that are symmetric in technology, but will have different parameter values in the calibrated model.</description>
     </item>
     
     <item>
@@ -351,38 +115,8 @@
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/10/03/heathcote-storesletten-and-violante-2017-optimal-tax-progressivity-an-analytical-framework/</guid>
-      <description>&lt;p&gt;The goal of this paper is to supply a theory that can shed light on what determines both the actual degree of tax progressivity in the US economy as well as a theoretical optimal level of tax progressivity.&lt;/p&gt;
-&lt;h2 id=&#34;tax-function&#34;&gt;Tax function&lt;/h2&gt;
-&lt;p&gt;The tax function used in this paper comes from Benabou (2002) and is log linear in income. That is taxes collected gross income, minus &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;λ&lt;/em&gt;&lt;/span&gt; times gross income to the &lt;span class=&#34;math inline&#34;&gt;1 − &lt;em&gt;τ&lt;/em&gt;&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;λ&lt;/em&gt;&lt;/span&gt; governs the average level of taxes and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; controls the degree of progressivity. If &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt; &amp;gt; 0&lt;/span&gt; the system is progressive and the marginal tax rate rises with income. If &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt; &amp;lt; 0&lt;/span&gt; the system is regressive.&lt;/p&gt;
-&lt;p&gt;Although very simple, this tax function matches the US tax system quite well. The tax data used in the paper is produced by taking income data from the PSID and passing it to the NBER TAXSIM program. The authors then estimate &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;λ&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; using ordinary least squares on the log of the tax function. The estimated value for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;0.181&lt;/span&gt;, with a very small standard error. The R-squared for the regression 0.91, suggesting that the log-linear tax function is able to capture data quite well.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;I now describe the model used by the authors to talk about the optimal degree of tax progressivity.&lt;/p&gt;
-&lt;p&gt;There is a unit mass of households. Each household survives from one period to the next with probability &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;δ&lt;/em&gt;&lt;/span&gt;. Each period a new cohort of households of mass &lt;span class=&#34;math inline&#34;&gt;(1 − &lt;em&gt;δ&lt;/em&gt;)&lt;/span&gt; is born.&lt;/p&gt;
-&lt;p&gt;The lifecycle of each agent starts with an initial investment in skills. Skills are chosen when the agent initially enters the economy, are fixed over time, and impact the earnings the individual earns each period.&lt;/p&gt;
-&lt;p&gt;Output in the economy is formed using a CES technology over the average efficiency units of labor supplied by each skill type multiplied by the mass of agents with that skill type.&lt;/p&gt;
-&lt;p&gt;Output is used both for individual consumption and government spending.&lt;/p&gt;
-&lt;p&gt;Agents have preferences over the initial investment in skill, as well as consumption, labor supply, and government spending each working period. The disutility of the initial skill investment has the form of the CRRA utility function, augmented by an individual-specific multiplicative parameter that determines the idiosyncratic cost of acquiring skill. The per-period utility function is fully separable in time and all components: log in consumption and government spending and CRRA in labor supplied. The labor disutility term is also augmented by a multiplicative, idiosyncratic term capturing varying disutility of work. The two preference shocks are assumed to be normally distributed and independent.&lt;/p&gt;
-&lt;p&gt;Log labor productivity is the sum of two terms: (1) a random walk and (2) purely transitory shocks. Individual earnings are the product of hours worked, labor productivity, and the price for a each worker’s skill.&lt;/p&gt;
-&lt;p&gt;There are full insurance markets against the transitory shocks to labor productivity, but there is no insurance for the shocks to the permanent component. Insurance claims are in zero net supply and agents are born without any claims.&lt;/p&gt;
-&lt;p&gt;The government has expenditures equal to a constant share of total output each period. They run a balanced budget, so the total net taxes collected must equal expenditures. The government is responsible for choosing the share of output used for government spending (call it &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;) and the tax progressivity parameter &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt;. Given these two, the scale term in the tax function is set to ensure a balanced budget.&lt;/p&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;h3 id=&#34;equilibrium-and-social-welfare&#34;&gt;Equilibrium and social welfare&lt;/h3&gt;
-&lt;p&gt;The government uses a utilitarian social welfare function to rank policies characterized by &lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;g&lt;/em&gt;, &lt;em&gt;τ&lt;/em&gt;)&lt;/span&gt; pairs. The government must balance a few competing forces when choosing a &lt;span class=&#34;math inline&#34;&gt;(&lt;em&gt;g&lt;/em&gt;, &lt;em&gt;τ&lt;/em&gt;)&lt;/span&gt; plan:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The utilitarian social welfare function causes the government to dislike inequality. A more progressive tax system lowers inequality.&lt;/li&gt;
-&lt;li&gt;Higher tax progressively distorts both the skill investment and labor supply choices, pushing both of them lower. This lowers aggregate output in the economy, which lowers the utility level of each agent, brining down social welfare.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;parameterization&#34;&gt;Parameterization&lt;/h3&gt;
-&lt;p&gt;The authors are able to solve model entirely in closed form. This allows them to derive closed form expressions for aggregate moments as a function of parameters that they then use to parameterize the model. They use data from the PSID and CEX and target variances and co-variances between wages, hours worked, and consumption to pin down parameter values.&lt;/p&gt;
-&lt;p&gt;When choosing parameter values, the authors use their estimate for the progressivity of the US tax system and set &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; to 0.189 – consistent with US levels of government spending over the same time horizon as the micro data.&lt;/p&gt;
-&lt;p&gt;Under this parameterization, they can then determine the optimal values of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; within the model. The find that the optimal &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; implied by their model is 0.084, meaning the model suggests the tax system should be less progressive than what is observed.&lt;/p&gt;
-&lt;p&gt;The final thing I will talk about is how each component of their model contributes to this optimal number.&lt;/p&gt;
-&lt;p&gt;In a representative agent version of the economy (variance of all idiosyncratic shocks is zero), the optimal value for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; is -0.233.&lt;/p&gt;
-&lt;p&gt;After adding back just the heterogeneity in disutility in skill investment the optimal value for &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; moves to -0.035.&lt;/p&gt;
-&lt;p&gt;Adding back heterogeneity in preferences moves &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; to -0.007.&lt;/p&gt;
-&lt;p&gt;Also including the permanent, uninsurable labor productivity shocks moves &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;τ&lt;/em&gt;&lt;/span&gt; to 0.009.&lt;/p&gt;
-&lt;p&gt;Finally adding all back the transitory, insurable shocks returns tau to the baseline level of 0.084.&lt;/p&gt;
-</description>
+      <description>The goal of this paper is to supply a theory that can shed light on what determines both the actual degree of tax progressivity in the US economy as well as a theoretical optimal level of tax progressivity.
+Tax function The tax function used in this paper comes from Benabou (2002) and is log linear in income. That is taxes collected gross income, minus λ times gross income to the 1 − τ.</description>
     </item>
     
     <item>
@@ -391,74 +125,9 @@
       <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/09/26/antras-de-gortari-itskhoki-2017-globalization-inequality-and-welfare/</guid>
-      <description>&lt;p&gt;The goal of this paper is to quantify the welfare implications of opening to trade in a setting where trade increases aggregate income, but also increases income inequality. Furthermore, redistribution happens through distorting income taxes.&lt;/p&gt;
-&lt;h2 id=&#34;closed-economy-model&#34;&gt;Closed economy model&lt;/h2&gt;
-&lt;p&gt;Discrete time, infinite horizon.&lt;/p&gt;
-&lt;p&gt;A continuum of consumers, each with GHH preferences over an aggregate consumption good and labor. Individuals are indexed by their ability to produce a certain variety or task (unique to each consumer). Individual production or output is the product of ability and labor supply. The ability of each agent is fixed over time and drawn from a known distribution.&lt;/p&gt;
-&lt;p&gt;The tasks performed by all agents are imperfect substitutes and are combined in the production of an aggregate, final consumption good using a CES aggregator.&lt;/p&gt;
-&lt;p&gt;Labor income is taxed according to a tax schedule that is log linear in individual production. There are no assets, so consumption each period is equal to after-tax income. The exponent on individual production indexes the progressivity of the tax system.&lt;/p&gt;
-&lt;p&gt;The government that collects taxes to finance exogenous government expenditures that are a constant share of total output. Government expenditures do not show up in individual utility The government runs a balanced budget each period.&lt;/p&gt;
-&lt;p&gt;Individuals choose labor supply to solve a static utility maximization problem. The authors have closed form solutions for both optimal after-tax earnings and individual utility – both indexed by the individual ability level.&lt;/p&gt;
-&lt;h2 id=&#34;measuring-welfare&#34;&gt;Measuring welfare&lt;/h2&gt;
-&lt;p&gt;The authors review two classic approaches to measuring welfare and then propose a new, third approach that mixes the previous two.&lt;/p&gt;
-&lt;p&gt;We don’t have time to review the former methods that serve as building blocks, so I’ll just describe the novel method proposed and used by the authors.&lt;/p&gt;
-&lt;!-- The first is known as the Kaldor-Hicks compensation principle. The idea is that
-for a pair of policies (call one the baseline and the other the alternative),
-the researcher will compute a compensating or equivalent variation to
-individual income that makes the agent indifferent between the baseline policy
-and the alternative policy, with the added income. In this simple setting the
-compensating variation sets utility of income under the baseline policy equal
-to the utility of income plus the variation under the alternative policy.
-
-One issue with this approach is that it makes three assumptions:
-
-1. There is _potential_ for agents better off under the alternative policy to compensate the losers from the policy change
-2. This _potential_ compensation actually takes place
-3. The government (or central authority) has access to a non-distortionary means to actually implement this redistribution (e.g. they can use lump sum taxes).
-
-The second approach is known as the welfarist approach. The key idea with this
-approach is that there exists a social welfare function that maps a vector of
-agents&#39; welfare levels into a single real number. The class of social welfare
-functions typically chosen express social welfare as the integral over the
-distribution of agent types of a concave transformation of actual disposable
-income under a proposed policy. A popular choice of concave transformation is
-to apply the CRRA utility function, where instead capturing risk aversion, the
-parameter instead indexes inequality aversion.
-
-In this setting, welfare can be written as the product aggregate output in the
-economy and a function of expected earnings under the proposed distribution and
-social welfare function parameters. The second term is referred to as the
-_welfarist inequality correction_ by the authors. --&gt;
-&lt;p&gt;The core idea behind their approach has two components:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;The government uses the progressive tax system to redistribute earnings across agents of differing ability levels. A more progressive tax system has two effects: (1) it compresses the after-tax income distribution, reducing inequality and (2) it distorts the labor supply decision, especially for high ability workers. This impacts aggregate income. This tradeoff captures costly-redistribution.&lt;/li&gt;
-&lt;li&gt;A CRRA-like social welfare function is used to map from the set of individual utilities into a single value for social welfare. The parameter in this function is not a risk aversion parameter in this setting, but rather an inequality aversion parameter.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In the setting described above, the value for social welfare can be written as the product of three terms:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;The counterfactual level of welfare in an economy with zero tax progressivity and zero inequality aversion&lt;/li&gt;
-&lt;li&gt;A costly-redistribution correction that is a function of the elasticity of taxable realized income to the marginal tax rate&lt;/li&gt;
-&lt;li&gt;A welfarist correction that is a function of the inequality aversion parameter in the social welfare function and expected disposable income under a given policy.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;This decomposition highlights the core tension faced by the policy maker: how progressive should the tax system be in order to reduce inequality, keeping in mind that higher progressivity depresses aggregate output.&lt;/p&gt;
-&lt;h2 id=&#34;some-data&#34;&gt;Some data&lt;/h2&gt;
-&lt;p&gt;The authors look at some US data over the period 1979-2007 through their model. After calibration, their joint analysis of model and data leaves them with the following takeaways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Tax progressivity steadily fell over the sample&lt;/li&gt;
-&lt;li&gt;The costly redistribution correction has risen over time – meaning it is getting closer to 1 and depressing aggregate welfare &lt;em&gt;less&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;The welfarist correction fell sharply over the sample&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;trade&#34;&gt;Trade&lt;/h2&gt;
-&lt;p&gt;Their main goal was to measure welfare in a setting with distiortionary redistribution and trade. To turn their model into a trade model they simply make &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; exact copies of the closed economy described above. Agents can supply their task to any country they want, but must pay costs to do so. There are both fixed costs that rise exponentially with the number of countries supplied and an iceberg cost meaning that only a fraction individual output reaches a foreign destination.&lt;/p&gt;
-&lt;p&gt;They make a few other assumptions to ensure that all countries are symmetric.&lt;/p&gt;
-&lt;p&gt;There are three main changes induced by opening the economy to trade:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;Aggregate output rises – the CES aggregator likes to have more varieties and now in addition to domestic inputs, there are foreign inputs.&lt;/li&gt;
-&lt;li&gt;Welfare of &lt;em&gt;all agents&lt;/em&gt; increases. This happens because the greater number of varieties lowers the price of the final good and all agents are able to consume more.&lt;/li&gt;
-&lt;li&gt;Realized income inequality rises. This happens becuase the increase in realized income is not symmetric over the individual ability distribution. Only agents with high ability find it optimal to pay the costs to export their variety, so they end up with a larger increase in income than relatively less able agents.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The key takeaway is that trade-induced increases in the dispersion of income reduce the gains from trade by about 20% (for a &lt;em&gt;plausable&lt;/em&gt; value of the inequality aversion parameter). Furthermore welfare gains are about 15% smaller when redistribution happens through distortionary means than it would be if lump-sum transfers could be used.&lt;/p&gt;
-</description>
+      <description>The goal of this paper is to quantify the welfare implications of opening to trade in a setting where trade increases aggregate income, but also increases income inequality. Furthermore, redistribution happens through distorting income taxes.
+Closed economy model Discrete time, infinite horizon.
+A continuum of consumers, each with GHH preferences over an aggregate consumption good and labor. Individuals are indexed by their ability to produce a certain variety or task (unique to each consumer).</description>
     </item>
     
     <item>
@@ -467,21 +136,7 @@ _welfarist inequality correction_ by the authors. --&gt;
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/09/12/ljungqvist-and-sargent-2011-a-labor-supply-elasticity-accord./</guid>
-      <description>&lt;p&gt;Here Ljungqvist and Sargent explain both sides of a long debated issue regarding labor supply elasticity (percent change in labor supply divided by percent change in wages) and then describe a relatively new idea that has the potential to reconcile the opposing views. The main argument from the micro-and-labor-economics camp is that the labor supply elasticity is quite low for individuals in the work force. On the other hand, macroeconomists typically say that the aggregate labor supply elasticity is large.&lt;/p&gt;
-&lt;p&gt;The classic way to reconcile these two seemingly opposing viewpoints is to allow labor supply to respond sharply on the &lt;em&gt;extensive&lt;/em&gt; margin. This will allow workers to continue to have a small elasticity while they are working, but as individuals move in and out of work more freely the aggregate labor supply elasticity is driven up.&lt;/p&gt;
-&lt;p&gt;The benchmark way to model this flavor of environment is to follow Rogerson and use employment lotteries with perfect, competitive insurance markets for unemployment. The basic idea is that households are composed of families. Each family will choose a probability with which each of its members works in that period. If the realization of the lottery is positive, that individual supplies full labor to the market and receives wages. If the realization is negative they supply zero labor. The family then purchases an insurance claim that pays a specified amount of the consumption good if a member of the family receives a bad outcome from the employment lottery. The insurance market is competitive, which results in all agents having equal consumption after lotteries have been realized and insurance claims paid out. In this setting agents who work supply the maximum amount of labor regardless of the wage, meaning the micro labor supply elasticity is small. However as wages change, households will adjust the probability that each family member works, causing there to be some elasticity on the extensive margin.&lt;/p&gt;
-&lt;p&gt;This is commonly referred to as an aggregation theory. Micro economists have issue with this particular aggregation theory because they cannot find evidence that these sort of employment lotteries exist.&lt;/p&gt;
-&lt;p&gt;Ljungqvist and Sargent then go on to explain a new way of thinking that seeks to unify the rhetoric regarding labor supply elasticity. The main idea is that instead of thinking about the labor supply choice as a lottery played out amongst family members in a household, we can think of it as an individual making a binary labor supply decision at every instant of their life. One natural interpretation of this type of setting is that there is a lifecycle component to the model, where after some date agents enter retirement and do not supply labor any more, regardless of the wage. The fraction of the lifetime spent working has been termed the career length of the individual.&lt;/p&gt;
-&lt;p&gt;It turns out that for an interior solution for labor supply probability in the Rogerson model is identical to interior solutions for career length, when the discount factor equals the market rate of return in a deterministic setting. This means that same results for micro and macro labor supply elasticity that held in the Rogerson setting continue to hold in this lifecycle model. There are two last points I’ll make about this:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;This type of aggregation theory has been better received by labor economists. They consider the career length choice more plausible than the employment lottery choice.&lt;/li&gt;
-&lt;li&gt;This does not settle the debate about whether the macro (aggregate) labor supply elasticity should be large or small: the theory could support either argument.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Recall that I said the lifecycle career-length choice was equivalent to the employment probability lottery, at &lt;em&gt;interior&lt;/em&gt; solutions. The behavior is somewhat different at the corners.&lt;/p&gt;
-&lt;p&gt;For our discussion we can think of an agent being on corner solution as an agent who is incentivized to retire at a certain age. If a large portion of the workers in an economy are on a corner, then when wages move the aggregate response in labor supply will be dampened (people can’t come out of retirement)) and the aggregate labor supply elasticity will be low. On the contrary, if there are relatively few agents at the corner, the aggregate labor supply elasticity will be high.&lt;/p&gt;
-&lt;p&gt;The measure of agents at a corner will be crucially impacted by the government policies regarding targeted retirement age, retirement benefits or payments, and how they are financed.&lt;/p&gt;
-&lt;p&gt;Ljungqvist and Sargent conclude by suggesting that a promising area for new research will look at how to reform taxation and disability/retirement payments to minimize the deadweight loss associated with distorting the labor supply decision through taxes.&lt;/p&gt;
-</description>
+      <description>Here Ljungqvist and Sargent explain both sides of a long debated issue regarding labor supply elasticity (percent change in labor supply divided by percent change in wages) and then describe a relatively new idea that has the potential to reconcile the opposing views. The main argument from the micro-and-labor-economics camp is that the labor supply elasticity is quite low for individuals in the work force. On the other hand, macroeconomists typically say that the aggregate labor supply elasticity is large.</description>
     </item>
     
     <item>
@@ -490,56 +145,9 @@ _welfarist inequality correction_ by the authors. --&gt;
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/05/02/autor-dorn-hanson-and-song-2014-trade-adjustment-worker-level-evidence/</guid>
-      <description>&lt;p&gt;Empirical paper that tries to determine labor market response to China trade shock at the individual level. It is a complement to the authors’ China Syndrome paper that answers similar questions at the regional level.&lt;/p&gt;
-&lt;h2 id=&#34;stylized-facts&#34;&gt;Stylized facts&lt;/h2&gt;
-&lt;p&gt;To prompt their research, the authors list a number of recent stylized facts concerning China’s impact on US labor markets. They are that greater import exposure results in&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Higher rates of plant exit and more rapid declines in plant employment&lt;/li&gt;
-&lt;li&gt;Larger decreases in manufacturing employment&lt;/li&gt;
-&lt;li&gt;Increases in unemployment and labor force non-participation rates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These facts have been verified or reproduced at the industry and regional level, but the gap that this paper seeks to fill is what are the associated facts at the individual level.&lt;/p&gt;
-&lt;p&gt;Specifically, the authors state their purpose as seeking to capture the changes in earnings and employments that workers in exposed industries encountered when adjusting to the trade shock.&lt;/p&gt;
-&lt;h2 id=&#34;theory&#34;&gt;Theory&lt;/h2&gt;
-&lt;p&gt;This paper does not do rigorous theoretical work, but they do paint the picture of the type of model they had in mind when they came up with their empirical specification. This is the setting.&lt;/p&gt;
-&lt;p&gt;Consider an economy with two sectors – one that is directly exposed to trade shocks and one that is not. In the long run, but not necessarily the short run, labor is between sectors such that long run wages are equalized across sectors for similarly skilled workers.&lt;/p&gt;
-&lt;p&gt;Suppose that foreign productivity growth causes demand for the home country’s traded sector to fall. That sector begins contracting immediately, reducing their demand for labor which depresses wages. Depending on the degree of frictions to labor mobility, the transition of workers from the exposed sector to the unexposed sector may take time. Along this transition path, wages in the exposed sector will be below wages in the non-exposed sector. Summing worker earnings over the pre-shock, shock, and post-shock periods; cumulative income for workers initially employed in the exposed sector will be lower than workers who started in the other sector.&lt;/p&gt;
-&lt;p&gt;These effects on cumulative earnings and the associated worker turnover across employees, sectors, and even regions, are the focus of the empirical study in this paper.&lt;/p&gt;
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-&lt;p&gt;To do their analysis, the authors use data in the period 1988-2007. The data come from from a few sources:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The annual Employee-Employer File from the social security administration. This contains a randomly selected 1% of US workers and provides annual earnings, employer ID number, and SIC code for each job a worker held. This data is augmented with demographic data on each individual, also using data from the social security administration.&lt;/li&gt;
-&lt;li&gt;The County Business Patterns from the IRS provide aggregate estimates of employment by industry and county. This is used because the 1% sample does not have enough data to accurately portray the regional industry structure in the US&lt;/li&gt;
-&lt;li&gt;Comtrade data is used to give an estimate of imports and exports at the HS-10 level. This data is aggregated to the industry level to be consistent with the other data used in this study.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;empirical-model&#34;&gt;Empirical model&lt;/h2&gt;
-&lt;p&gt;The main empirical model is a linear regression model that regresses&lt;/p&gt;
-&lt;p&gt;the cumulative earnings for a worker on&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the change in import penetration from 1991-2007&lt;/li&gt;
-&lt;li&gt;the level of import penetration in 1991&lt;/li&gt;
-&lt;li&gt;demographic controls for the individual&lt;/li&gt;
-&lt;li&gt;industry specific controls that capture the economic conditions in each industry in 1991.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Their definition of industry import penetration is the change in imports from China over their time horizon divided by initial industry absorption, which they define as industry shipments, plus imports, less exports.&lt;/p&gt;
-&lt;p&gt;To address concerns that changes in import penetration are driven by a mixture of supply side effects in China &lt;em&gt;and&lt;/em&gt; demand side shocks in the US, the authors instrument this variable using the same data from other high-income countries. The assumption with this instrument is high-income countries are similar exposed to growth in Chinese imports and that demand side shocks between the US and other high income countries are not correlated.&lt;/p&gt;
-&lt;p&gt;The main results are that there is a significant, negative effect of increased import penetration on individual cumulative earnings. More precisely, if we consider a worker in the 75% percentile of import penetration (about 7.3%) to a worker in the 25th percentile, the model predicts 20% lower cumulative earnings between 1991 and 2007.&lt;/p&gt;
-&lt;p&gt;These results are robust to alternative measures of worker earnings and the inclusion or exclusion of various control variables.&lt;/p&gt;
-&lt;h3 id=&#34;worker-mobility&#34;&gt;Worker mobility&lt;/h3&gt;
-&lt;p&gt;The other main empirical exercise is an attempt to determine the degree of worker mobility in response to the change in import penetration. The use of social security data enables tracking individuals over time to see the industry of their employer as well as their county of residence.&lt;/p&gt;
-&lt;p&gt;Here they run their same regression on different subsets of the data at a time:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;employees who stayed at the same firm for the entirety of the sample&lt;/li&gt;
-&lt;li&gt;Employees who moved to another firm in the same industry&lt;/li&gt;
-&lt;li&gt;Employees who moved to a firm in a different industry, within the manufacturing sector&lt;/li&gt;
-&lt;li&gt;Workers who left manufacturing altogether&lt;/li&gt;
-&lt;li&gt;Workers who moved to a firm that didn’t have a registered industry (mostly new firms that the SSA didn’t update their records to account for industry)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They find that workers who stayed at highly exposed firms suffered the largest decline in earnings. Workers who shifted firms did better. Others who shifted industries within manufacturing actually saw an increase in wages. Workers who left manufacturing suffered losses comparable to those who shifted firms within the same industry.&lt;/p&gt;
-&lt;p&gt;They interpret these findings as suggesting that workers who started at firms in highly exposed industries experience both reduced earnings at their initial employers and lower income from firms in the same industry.&lt;/p&gt;
-&lt;p&gt;They find that the negative effects on workers at firms in exposed industry is only partially offset by gains from workers in non-exposed industries. Their main explanation for this is that workers who leave an exposed firm seem to end up working at a different exposed firm.&lt;/p&gt;
-&lt;p&gt;They also try to see if exposed workers offset the losses from trade via geographic mobility. Their results show little to no evidence of this happening within the their sample.&lt;/p&gt;
-</description>
+      <description>Empirical paper that tries to determine labor market response to China trade shock at the individual level. It is a complement to the authors’ China Syndrome paper that answers similar questions at the regional level.
+Stylized facts To prompt their research, the authors list a number of recent stylized facts concerning China’s impact on US labor markets. They are that greater import exposure results in
+ Higher rates of plant exit and more rapid declines in plant employment Larger decreases in manufacturing employment Increases in unemployment and labor force non-participation rates  These facts have been verified or reproduced at the industry and regional level, but the gap that this paper seeks to fill is what are the associated facts at the individual level.</description>
     </item>
     
     <item>
@@ -548,49 +156,8 @@ _welfarist inequality correction_ by the authors. --&gt;
       <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/04/25/greenland-lopresti-mchenry-2016-import-competition-and-internal-migration/</guid>
-      <description>&lt;p&gt;This is a purely empirical paper that tries to determine the degree to which there was worker relocation across regions in the US in response to the Chinese trade shock.&lt;/p&gt;
-&lt;p&gt;Many recent papers have documented negative regional labor market consequences in regions that specialize in industries that are more exposed to Chinese trade competition. Among these results are higher unemployment, lower wages, and lower labor force participation rates. Furthermore, evidence has been presented showing that there was little to no contemporaneous worker migration out of exposed regions.&lt;/p&gt;
-&lt;p&gt;The main finding of this paper is that regions at the 75th percentile of import exposure had population growth 2.1% lower than regions at the 25th percentile of exposure. Additionally, the majority of these migrations occurred between 7 and 10 years &lt;em&gt;after&lt;/em&gt; the onset of the China import shock.&lt;/p&gt;
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-&lt;p&gt;The story is that before 2001 China was paying the normal trade relation tariffs, but on a potentially temporary basis. This is the tariff rate paid amongst all WTO nations. Each year the US congress would vote to decide if China would be granted the same tariff rates in the next year, or if they would rise above the WTO levels. This created uncertainty for Chinese firms about future costs. In 2001 congress decided to give China WTO tariff rates permanently, thus resolving the uncertainty. The data shows a sharp uptick in US imports from China, suggesting that many firms chose to enter in response to lower uncertainty.&lt;/p&gt;
-&lt;p&gt;The authors leverage this fact to construct their measure of import exposure to Chinese trade across regions in the US. Specifically, for each industry (not region) they construct a tariff gap, which is the difference between potential non-WTO tariff rates and WTO tariff rates within the industry. The next step is to map this into a regional measure, at the commuting zone level. A commuting zone is a notion of local economy, constructed so that it if an individual lives in a commuting zone, it is very likely that their day to day job is also in the commuting zone. To construct a regional tariff gap they compute an industry-labor-share weighed average of the tariff gap across all industries that operate in each commute zone.&lt;/p&gt;
-&lt;p&gt;The authors then use data from the US census to construct population totals in each commute zone.&lt;/p&gt;
-&lt;p&gt;The authors also do some work at the individual level using data from the National Education Longitudinal Study, but the results are secondary to the ones presented at the aggregate level, so I will not talk about them here.&lt;/p&gt;
-&lt;!-- The final main source of data comes From the National Education Longitudinal
-Study of 1988 and 2002. This data set constructs a nationally-representative
-sample of 10th graders, providing information in location, demographics, and
-educational outcomes. 10 years after the initial survey, there is a follow-up
-survey that reports the location of main residence for all the original
-participants. This allows the authors to track the migration patterns at the
-individual level, with additional data on demographics and educational outcomes. --&gt;
-&lt;h2 id=&#34;regression-model&#34;&gt;Regression Model&lt;/h2&gt;
-&lt;p&gt;The main results of the paper are regression outcomes from regressing the 10-year change in log population in a commute zone on&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;an interaction between the tariff gap in the commute zone and an indicator for whether or not the time period is after 2001,&lt;/li&gt;
-&lt;li&gt;Time invariant regional controls, interacted with the post-WTO rates indicator&lt;/li&gt;
-&lt;li&gt;A time fixed effect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Without the inclusion of the regional control variables, the regression predicts a small and statistically insignificant change in population in response to an interquartile shift in the tariff gap.&lt;/p&gt;
-&lt;p&gt;However, with the inclusion of the regional controls, the regression predicts that the interquartile effect of tariff gap on population growth is 2.1% – significant at the 1% level. To me, this suggests that the controls that are included in the regression are &lt;em&gt;crucial&lt;/em&gt; for obtaining the results. Unfortunately the lack of a theoretical model means that the choice of which control variables are included is ad-hoc. A useful extension or follow up to this work would be to build a model that allows regional migration in response to trade shocks and let the model be informative about which control variables should be included.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;FWIW the controls they included were the pre-1990 cz pop growth trend, share of population under 25 years old, share of population accounted for by minority groups&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;temporal-structure-of-migration&#34;&gt;Temporal structure of migration&lt;/h3&gt;
-&lt;p&gt;Because these regressions were run using data between 1988-1998 and then 2002-2012, the results suggest only that within an 11 year window after China was granted permanent WTO tariff rates did this migration occur. The authors want to be able to answer the question “when in this 11 year window did the movement of workers happen?”&lt;/p&gt;
-&lt;p&gt;To do this they use data data the US population migration data from the IRS. This data set uses the tax filings from individuals to determine, year to year, how many individuals moved from one county to another based on their primary residence.&lt;/p&gt;
-&lt;p&gt;They use this data to regress the annual log change in commute zone population on&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;0 to 12 year changes in the tariff gap interacted with a post 2001 indicator&lt;/li&gt;
-&lt;li&gt;time invariant regional controls, interacted with the post 2001 indicator&lt;/li&gt;
-&lt;li&gt;A commute zone fixed effect&lt;/li&gt;
-&lt;li&gt;A time fixed effect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The identification is weak of all 13 time-lag parameters, so they constrain the model so that the coefficients to evolve smoothly over time according to a cubic function.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To do this they say that the point estimate for the lag l coefficient is equal to a cubic polynomial in l. They then construct 4 auxiliary variables that are the sum of lagged changes from 0 to 12 of the tariff gap times post 2001 dummy times the number of lags to the [0, 1, 2, 3] (that’s where they get 4 variables). They then replace the 13 lag terms with these 4 auxiliary variables and estimate coefficients on just the 4 parameters.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This reduces the number of parameters from 13 to 4. Model predictions are largely unchanged, but identification is much sharper. Their results predict that about 20% of the total effect happens within one year of the trade shock, with a significant portion happening at a lag of 7 or more years (they don’t give numbers…).&lt;/p&gt;
-</description>
+      <description>This is a purely empirical paper that tries to determine the degree to which there was worker relocation across regions in the US in response to the Chinese trade shock.
+Many recent papers have documented negative regional labor market consequences in regions that specialize in industries that are more exposed to Chinese trade competition. Among these results are higher unemployment, lower wages, and lower labor force participation rates. Furthermore, evidence has been presented showing that there was little to no contemporaneous worker migration out of exposed regions.</description>
     </item>
     
     <item>
@@ -599,55 +166,8 @@ individual level, with additional data on demographics and educational outcomes.
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/03/07/galle-rodriguez-clare-and--yi-2015-slicing-the-pie-quantifying-the-aggregate-and-distributional-effects-of-trade/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper develops a model that allows the authors to assess the aggregate gains from trade and the distribution of the gains from trade across groups of workers.&lt;/p&gt;
-&lt;p&gt;The motivation for the paper came from a recognition that most empirical work focuses on the losses accrued on the import side from increased competition. The general equilibrium setup in this paper captures both import and export effects of trade shocks, which they use to paint a more complete picture of the distribution of welfare responses to trade exposure.&lt;/p&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;The model is a mashup between the Eaton and Kortum model of international trade and the Roy model of worker heterogeneity.&lt;/p&gt;
-&lt;p&gt;Firms:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;There are &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; countries and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/span&gt; sectors within each country&lt;/li&gt;
-&lt;li&gt;Within each sector there is a continuum of goods produced by firms&lt;/li&gt;
-&lt;li&gt;Each firm has an idiosyncratic productivity, drawn from a Frechet distribution. Output is productivity times labor efficiency units hired&lt;/li&gt;
-&lt;li&gt;All goods within each sector are aggregated with a CES technology.&lt;/li&gt;
-&lt;li&gt;The sectoral outputs are aggregated with a Cobb-Douglass technology&lt;/li&gt;
-&lt;li&gt;There are iceberg trade costs to trade goods internationally&lt;/li&gt;
-&lt;li&gt;All technology and preference parameters are country specific&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Households:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; types of workers, where the types differ in their ability across sectors&lt;/li&gt;
-&lt;li&gt;Each worker type draws efficiency units for each sector from a Frechet distribution&lt;/li&gt;
-&lt;li&gt;Workers supply labor inelastically&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- The authors note under extreme parameter assumptions, this model nests other
-recent models. --&gt;
-&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
-&lt;p&gt;Workers are heterogenous in sector productivities, but not across groups. This means that sectoral labor supply is upward sloping and wages will differ across sectors, but be constant across groups.&lt;/p&gt;
-&lt;p&gt;An equilibrium will be pinned down by a set of country-sector specific wages that allow labor markets to clear.&lt;/p&gt;
-&lt;p&gt;Each country-sector labor market clearing condition equates the demand for efficiency units of labor from the firms with the supply of these units from households.&lt;/p&gt;
-&lt;h2 id=&#34;trade-shock&#34;&gt;Trade shock&lt;/h2&gt;
-&lt;p&gt;The main welfare measure used in this paper is real income within a country and group.&lt;/p&gt;
-&lt;p&gt;A trade shock is modeled as a change in iceberg trade costs.&lt;/p&gt;
-&lt;p&gt;In response to a trade shock, the change in welfare for a particular group is decomposed into two components:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;The product of changes to home-to-home trade shares across sectors. This term is found in multi-sectoral Eaton and Kortum models.&lt;/li&gt;
-&lt;li&gt;The product of changes to group-level employment shares, across sectors. This term is new to this model and is the emphasis of their analysis.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;To understand this second term, they write it as a function of the Kullback-Leibler divergence. This divergence is used as a way to summarize the degree of specialization of a group. The divergence of one vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; from another vector &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;/span&gt; is the sum of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; times the log difference of &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;They can write this second term as the exponential of the difference in Kullback-Leibler divergence between post-trade shock employment shares and the Cobb Douglass sectoral weights and the pre-trade shock KL divergence between the same vectors.&lt;/p&gt;
-&lt;p&gt;Viewing this term in this light makes it very clear that the welfare effect of a trade shock on a particular group is determined by the change in the degree of the specialization of that group across sectors.&lt;/p&gt;
-&lt;p&gt;The aggregate welfare change in response to the trade shock is the sum over the group-specific welfare changes, weighted by the each group’s share of aggregate income.&lt;/p&gt;
-&lt;p&gt;This differs from the multi-sectoral Eaton and Kortum models because the trade shock will impact wages, which feeds back into group level income and sectoral level prices.&lt;/p&gt;
-&lt;h2 id=&#34;distribution-of-welfare-responses&#34;&gt;Distribution of welfare responses&lt;/h2&gt;
-&lt;p&gt;The purpose of the paper was to look at the distribution of welfare changes across worker groups.&lt;/p&gt;
-&lt;p&gt;In experiments where the economy goes from autarky (iceberg costs at infinity) to trading with the world, they find the following:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Worker groups whose comparative advantage is in import-intensive sectors suffer welfare losses&lt;/li&gt;
-&lt;li&gt;On the other hand, welfare rises for worker groups that specialize in export-intensive sectors&lt;/li&gt;
-&lt;li&gt;The net gain from opening to trade is positive.&lt;/li&gt;
-&lt;li&gt;The degree of worker heterogeneity (one of the Frechet parameters for the distribution of worker efficiency) scales the aggregate gains from trade.&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-</description>
+      <description>This paper develops a model that allows the authors to assess the aggregate gains from trade and the distribution of the gains from trade across groups of workers.
+The motivation for the paper came from a recognition that most empirical work focuses on the losses accrued on the import side from increased competition. The general equilibrium setup in this paper captures both import and export effects of trade shocks, which they use to paint a more complete picture of the distribution of welfare responses to trade exposure.</description>
     </item>
     
     <item>
@@ -656,32 +176,9 @@ recent models. --&gt;
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/02/28/autor-dorn-and-hanson-2016-the-china-shock-learning-from-labor-market-adjustment-to-large-changes-in-trade/</guid>
-      <description>&lt;p&gt;Review paper that summarizes the main points of the story behind China’s fantastic growth in export markets in the lats 30 years and how it has impacted labor markets of developed countries.&lt;/p&gt;
-&lt;p&gt;This paper covers a width breadth of material in relatively little depth, so I will pick and choose from the main points they tried to make.&lt;/p&gt;
-&lt;h2 id=&#34;the-story&#34;&gt;The story&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Mao Zedong founded People’s republic of China and governed it as the chairman of the communist part of China from 1949 until his death in 1976. He instituted many policies that lead to stagnating economic growth in China. From 1952 to 1978 China fell from being ranked 59th to 134th in GDP per capita out of the 167 Penn World Table countries.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Following the death of Mao, Deng Xiaoping took over leading the People’s republic and kicked off a decade of quote “reform and opening”. In 1992 he launched the “Southern Tour”, which included the creation of special economic zones (SEZ).&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In the early 1990’s China began to create Special economic zones (SEZ). An SEZ allows foreign countries to set up factories that imported inputs and exported final outputs with relatively little interference from the government. Essentially it allows foreign firms to use Chinese labor for goods they sell outside of China. There were 20 SEZs in 1991 and 150 in 2010. The world bank estimates that GDI was 0.7% of Chinese GDP in 1980 and up to 4.2% in the 1990s and 2000s. Also, China’s share of global manufacturing exports rose from 2.3% in 1991 to 18.8% in 2013.&lt;/p&gt;
-&lt;p&gt;China’s ascension into the modern trade network serves as a natural experiment that is exciting to economists for at least the following reasons:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;China plays a quantitatively significant role in today’s Global economy&lt;/li&gt;
-&lt;li&gt;The export growth was unexpected&lt;/li&gt;
-&lt;li&gt;China’s isolation under Mao created a lot of room for China to catch up&lt;/li&gt;
-&lt;li&gt;China has a distinctive comparative advantage in manufacturing. This means China’s growth in manufacturing exports led to a large positive shock in global manufacturing supply and a large negative global demand shock for raw materials.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;labor-market-effects&#34;&gt;Labor market effects&lt;/h2&gt;
-&lt;p&gt;The focus of the paper is how the increase in manufacturing exports from China impact labor markets. The authors review many papers and describe the empirical facts the literature has uncovered. I’ll summarize the most salient ones here:&lt;/p&gt;
-&lt;p&gt;Early (2006) work documented industries facing greater increases in trade exposure are subject to higher rates of plant exit. Surviving plants have in more exposed regions have larger reductions in employment and a higher likelihood of adjusting their 4-digit manufacturing industry. I’ll summarize the key empirical facts this paper documents in question and answer form:&lt;/p&gt;
-&lt;p&gt;A $1,000 increaser in a commute zone’s per-worker import exposure reduces the fraction of working age population employed in manufacturing by 0.60 percentage points and raises the fraction of unemployed or out of the labor force by 0.22 percentage points.&lt;/p&gt;
-&lt;p&gt;Acemoglu et. al. (2016) estimate that had import penetration from China not grown after 1999 there would have been 560,000 fewer manufacturing jobs lost through 1999 to 2011 (about 10% of job loss in that period). This is done using just a direct effect of foreign competition on exposed regions, but ignores input-ouput linkages to other firms in that region. Including IO linkages within the region drives that number to 2,000,000.&lt;/p&gt;
-&lt;p&gt;Tracing individual workers over time shows there is little migration in response to the trade shock. The losses are localized and persistent and offsetting gains haven’t been measured.&lt;/p&gt;
-&lt;p&gt;There is other empirical work that shows that more trade-exposed commute zones experience larger reductions in average weekly wages. This result is extended using quintile regressions to account for the income distribution and the result is that the wage losses from trade exposure are concentrated in the bottom 4 wage deciles.&lt;/p&gt;
-&lt;p&gt;Comparing the 25th and 75th percentiles of import exposure, individuals in the more exposed location experienced a reduction in annual labor income of $549 per adult. At the same time transfers to these individuals rose by $58, offsetting only about 10% of the losses.&lt;/p&gt;
-</description>
+      <description>Review paper that summarizes the main points of the story behind China’s fantastic growth in export markets in the lats 30 years and how it has impacted labor markets of developed countries.
+This paper covers a width breadth of material in relatively little depth, so I will pick and choose from the main points they tried to make.
+The story  Mao Zedong founded People’s republic of China and governed it as the chairman of the communist part of China from 1949 until his death in 1976.</description>
     </item>
     
     <item>
@@ -690,55 +187,9 @@ recent models. --&gt;
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/02/28/drozd--nozal2012-understanding-international-prices-customers-as-capital/</guid>
-      <description>&lt;p&gt;&lt;p&gt;This paper builds a model that treats consumers as a form of non-productive capital in an attempt to resolve a few outstanding puzzles in the international macro literature.&lt;/p&gt;
-&lt;h2 id=&#34;puzzles&#34;&gt;Puzzles&lt;/h2&gt;
-&lt;p&gt;The puzzles are:&lt;/p&gt;
-&lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;In the standard theory (like BKK), the price of exported goods co-moves negatively with the price of imported goods. In their sample o2 12 OECD countries, the authors find that the correlation is always positive and covers a range from 0.57 to 0.94, with a median of 0.87.&lt;/li&gt;
-&lt;li&gt;Standard theory predicts that the volatility of the terms of trade (ratio of import to export price) and the real exchange rate is exactly the same. In their data sample, the ratio of these volatilities range from 0.21 to 0.83.&lt;/li&gt;
-&lt;li&gt;Finally, there is a lot of empirical evidence of pricing to market – an apparent violation of the law of one price (LOP). Standard theory suggests that the LOP always holds.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
-&lt;p&gt;Environment:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Discrete time, infinite horizon&lt;/li&gt;
-&lt;li&gt;Two ex-ante identical, symmetric countries called home and foreign&lt;/li&gt;
-&lt;li&gt;The only source of uncertainty is country-specific productivity shocks&lt;/li&gt;
-&lt;li&gt;Tradable goods are country specific and are produced using a CRS technology in capital and labor, subject to a productivity that is AR(1) in logs&lt;/li&gt;
-&lt;li&gt;Producers sell their goods to retailers in each country, then retailers sell the goods to final consumers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Households:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In each country there is a unit mass of identical households&lt;/li&gt;
-&lt;li&gt;Each period they choose the level of consumption, investment physical capital, labor supply, purchase of tradable goods from domestic and foreign sources, and a portfolio from a complete set of one period state-contingent bonds to maximize the expected discounted lifetime utility from consumption and leisure.&lt;/li&gt;
-&lt;li&gt;Domestic and foreign goods are combined with a CES technology with home bias. The aggregate is then allocated across consumption and investment.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Producers:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The novel part of this model is that producers must make costly matches with retailers in each country in order to sell their goods.&lt;/li&gt;
-&lt;li&gt;To do this the authors introduce two additional variables into an otherwise standard firm problem: marketing capital and a customer list – both are market specific.
-&lt;ul&gt;
-&lt;li&gt;Marketing capital is non-productive, but is required for matching with new retailers&lt;/li&gt;
-&lt;li&gt;The customer list is the total number of matches a producer has made in that market. It is assumed that the producer can sell one unit of their output to each retailer in their customer list.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The customer list depreciates at a constant rate and is increased each period by the measure of searching retailers times this producer’s share of the marketing capital in the destination market.&lt;/li&gt;
-&lt;li&gt;The marketing capital depreciates at a constant rate, and is increased each period by direct marketing input less a fixed cost of adjusting.&lt;/li&gt;
-&lt;li&gt;The firm takes as given his productivity state, level marketing capital and customer list in each market and chooses capital, labor, and marketing input to maximize the expected discounted value of profit streams.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Retailers:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In each country there is an atomless retailers that purchase goods from producers and resell them to consumers in a destination-specific competitive market.&lt;/li&gt;
-&lt;li&gt;They face a cost of entry and dynamics are governed by a free entry condition&lt;/li&gt;
-&lt;li&gt;When a retailer meets a producer, they bargain over the total surplus from a potential match. The surplus is split with a Nash bargaining solution with continuous renegotiation. The solution is a constant share of the surplus going to producers and retailers each period.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;p&gt;This model is able to resolve all three puzzles simultaneously.&lt;/p&gt;
-&lt;p&gt;The main result is that in this model, deviations from the law of one price are driven by movement in the real exchange rate. Here’s the main mechanism.&lt;/p&gt;
-&lt;p&gt;The real exchange rate moves when firms get a productivity shock relative to its competitors. In this case they will find it optimal to add new buyers when the surplus from trading is higher in one market than the other (they want to equate these). But, because there are adjustment costs, firms don’t equate these in one period, so there is a sustained short and medium run price differential. Along this transition the real exchange rate is moving.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To understand the intuition behind these responses, consider the sequence of the events that follows the productivity shock. From panel A, observe that the domestic production cost v falls, which, ceteris paribus, must raise the surplus from trading the domestic good in matches. Second, due to home-bias in trade, relative to the foreign country retailers, the domestic country retailers have an advantage in meeting the domestic country producers. Not surprisingly, this creates a gap in the relative search intensity, which leads to the real exchange rate depreciation (this last implication follows from risk sharing condition). The price differential created by that feeds into prices at which producers sell to retailers and creates an incentive for the domestic country producers to expand their market share abroad more than at home. However, as implied by Lemma 1, in the short- and medium- run the adjustment of market shares will not close the initial price gap completely due to increasing cost of matching. As a result, the equilibrium response of prices features persistent deviations from LOP in our model.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/p&gt;
-</description>
+      <description>This paper builds a model that treats consumers as a form of non-productive capital in an attempt to resolve a few outstanding puzzles in the international macro literature.
+Puzzles The puzzles are:
+In the standard theory (like BKK), the price of exported goods co-moves negatively with the price of imported goods. In their sample o2 12 OECD countries, the authors find that the correlation is always positive and covers a range from 0.</description>
     </item>
     
     <item>
@@ -747,22 +198,454 @@ recent models. --&gt;
       <pubDate>Tue, 21 Feb 2017 00:00:00 +0000</pubDate>
       <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
       <guid>http://srg.spencerlyon.com/2017/02/21/barrot-loualiche-plosser-sauvangnat-2016-import-competition-and-household-debt/</guid>
-      <description>&lt;p&gt;&lt;p&gt;Empirical paper that tries to quantify the effect of import competition on the composition of the balance sheet of individuals between 2000 and 2007.&lt;/p&gt;
-&lt;p&gt;The main finding is that consumers in regions with higher exposure to import competition had debt growth of 20 percentage points more than consumers in regions with low import competition exposure.&lt;/p&gt;
-&lt;h1 id=&#34;data&#34;&gt;Data&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;New york FRB consumer credit panel: 5% of all US individuals with a credit record and social security number. Data is measured at a quarterly frequency. The important features for this study are a breakdown of household debt into mortgages, home equity credit, auto loans, credit card debt, and other loans. There is also limited demographic data such as the age, credit score, and zip code of participants.&lt;/li&gt;
-&lt;li&gt;Census and IRS data to compute regional demographics&lt;/li&gt;
-&lt;li&gt;House prices from CoreLogic&lt;/li&gt;
-&lt;li&gt;Employment data from BLS&lt;/li&gt;
-&lt;li&gt;Home Mortgage Disclosure Act data. the consumer credit panel doesn’t show what people did with rising debt. The authors here adopt the methodology explained in the paper Don presented last week&lt;/li&gt;
-&lt;li&gt;PSID: track household income and debt over time&lt;/li&gt;
-&lt;li&gt;Building Permits survey BPS: capture change in mortgages due to new house purchases&lt;/li&gt;
-&lt;li&gt;Peter Schott’s database of shipping costs as a percentage of sale price at the product level&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;strategy&#34;&gt;Strategy&lt;/h1&gt;
-&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;&lt;/p&gt;
-</description>
+      <description>Empirical paper that tries to quantify the effect of import competition on the composition of the balance sheet of individuals between 2000 and 2007.
+The main finding is that consumers in regions with higher exposure to import competition had debt growth of 20 percentage points more than consumers in regions with low import competition exposure.
+Data  New york FRB consumer credit panel: 5% of all US individuals with a credit record and social security number.</description>
+    </item>
+    
+    <item>
+      <title>Benhabib, Perla, Tonetti (2017) (Reconciling Models of Diffusion and Innovation: A Theory of the Productivity Distribution and Technology Frontier.)</title>
+      <link>http://srg.spencerlyon.com/2017/02/14/benhabib-perla-tonetti-2017-reconciling-models-of-diffusion-and-innovation-a-theory-of-the-productivity-distribution-and-technology-frontier./</link>
+      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/02/14/benhabib-perla-tonetti-2017-reconciling-models-of-diffusion-and-innovation-a-theory-of-the-productivity-distribution-and-technology-frontier./</guid>
+      <description>The main contribution of this paper is to provide a model where technology adoption and innovation interact to determine the equilibrium characteristics of the economy.
+They end up using a model where adoption an the rate of innovation are both choice variables for the firm, but describe the main mechanisms and intuitions where only adoption is a control variable and innovation is stochastic. The qualitative results from both models are the same, so I to will use the simpler model with exogenous innovation.</description>
+    </item>
+    
+    <item>
+      <title>Faber, Fally (2017) (Firm Heterogeneity in Consumption Baskets -- Evidence from Home and Store Scanner Data.)</title>
+      <link>http://srg.spencerlyon.com/2017/02/07/faber-fally-2017-firm-heterogeneity-in-consumption-baskets----evidence-from-home-and-store-scanner-data./</link>
+      <pubDate>Tue, 07 Feb 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/02/07/faber-fally-2017-firm-heterogeneity-in-consumption-baskets----evidence-from-home-and-store-scanner-data./</guid>
+      <description>This paper considers the relation between of firm size heterogeneity and income dispersion. Using two large panel data sets, they document a number of empirical facts about the link between these forms of heterogeneity, then build a model combining non-homothetic preferences for consumers and a Metliz’ style production environment that can match the facts.
+Data Kilts Nielsen consumer panel and retail scanner data..
+ weekly upc code level data from households and firms contains prices and quantities also demographic info about households: discrete income binning, location Metadata about stores: brands they sell, location  Empirical finding Main empirical finding is that wealthier households spend a higher share of consumption expenditure on goods from large firms.</description>
+    </item>
+    
+    <item>
+      <title>Y Yedid-Levi, S Haller, and D Fitzgerald (2017) (How Exporters Grow)</title>
+      <link>http://srg.spencerlyon.com/2017/01/31/y-yedid-levi-s-haller-and-d-fitzgerald-2017-how-exporters-grow/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2017/01/31/y-yedid-levi-s-haller-and-d-fitzgerald-2017-how-exporters-grow/</guid>
+      <description>The authors of this paper use confidential Irish data to document 4 novel facts about the lifecycle of exporting firms and then combine two existing modeling pieces to builds a partial equilibrium model that can reconcile the reported facts.
+Data The authors use two confidential micro data sets from Ireland:
+The Irish census of industrial production Irish custom records  They are able to link the datasets to build a panel dataset at the firm-product-destination market level.</description>
+    </item>
+    
+    <item>
+      <title>Lustig, Zhang, and Hartman-Glaser (2016) (Capital Share Dynamics When Firms Insure Managers)</title>
+      <link>http://srg.spencerlyon.com/2016/12/13/lustig-zhang-and-hartman-glaser-2016-capital-share-dynamics-when-firms-insure-managers/</link>
+      <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/12/13/lustig-zhang-and-hartman-glaser-2016-capital-share-dynamics-when-firms-insure-managers/</guid>
+      <description>This paper uses Compustat data to document that the aggregate capital share of income and average capital share of income have diverged over the last 20 years. Specifically, the average capital share has fallen while the aggregate share has risen.
+They then write down a model that uses changes in firm level volatility of productivity to generate similar dynamics in general equilibrium.
+The model is interesting in its own right. It features a 2 sided limited commitment contracting problem.</description>
+    </item>
+    
+    <item>
+      <title>Timoshenko (2015) (Learning, prices, and firm dynamics)</title>
+      <link>http://srg.spencerlyon.com/2016/12/06/timoshenko-2015-learning-prices-and-firm-dynamics/</link>
+      <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/12/06/timoshenko-2015-learning-prices-and-firm-dynamics/</guid>
+      <description>The authors of this paper use firm level data on Portuguese manufacturing firms and documents two new novel facts about the joint evolution of firm performance and prices:
+Within product categories, firms with longer tenure in export markets tend to export larger quantities at similar prices Older or more experienced exporters tend to import more expensive inputs  The authors then write down a model that can match these facts</description>
+    </item>
+    
+    <item>
+      <title>Hess:2000wh (Risk sharing by households within and across regions and industries. (Hess, Shin; 2000))</title>
+      <link>http://srg.spencerlyon.com/2016/11/22/hess2000wh-risk-sharing-by-households-within-and-across-regions-and-industries.-hess-shin-2000/</link>
+      <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/11/22/hess2000wh-risk-sharing-by-households-within-and-across-regions-and-industries.-hess-shin-2000/</guid>
+      <description>The goal of this paper is to test the degree of risk sharing across regions and industries in the US.
+The rough outline is to write down a simple model they use to motivate an empirical specification, then test if that specification holds in the data.
+Model There are H households that each live in one of R regions and work within one of I industries. Each period, households receive an endowment of the consumption good and are able to trade in complete state contingent markets.</description>
+    </item>
+    
+    <item>
+      <title>Adam:2011ix (Adam, K., &amp; Marcet, A. (2011). Internal rationality, imperfect market
+knowledge and asset prices
+)</title>
+      <link>http://srg.spencerlyon.com/2016/11/01/adam2011ix-adam-k.--marcet-a.-2011.-internal-rationality-imperfect-marketknowledge-and-asset-prices/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/11/01/adam2011ix-adam-k.--marcet-a.-2011.-internal-rationality-imperfect-marketknowledge-and-asset-prices/</guid>
+      <description>The basic idea in this paper is to separate the standard rationality requirements embedded in the rational expectations hypothesis into internal and external components. Internal rationality means that the agents make fully optimal decisions given some well-defined subjective beliefs about payoff relevant variables. External rationality requires that the probability distribution generated by agent subjective beliefs matches the true distribution of underlying variables.
+This paper will maintain the assumption of internal rationality, but not impose external rationality.</description>
+    </item>
+    
+    <item>
+      <title>Adam:2011ix (Adam, K., &amp; Marcet, A. (2011). Internal rationality, imperfect market knowledge and asset prices)</title>
+      <link>http://srg.spencerlyon.com/2016/11/01/adam2011ix-adam-k.--marcet-a.-2011.-internal-rationality-imperfect-market-knowledge-and-asset-prices/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/11/01/adam2011ix-adam-k.--marcet-a.-2011.-internal-rationality-imperfect-market-knowledge-and-asset-prices/</guid>
+      <description>The basic idea in this paper is to separate the standard rationality requirements embedded in the rational expectations hypothesis into internal and external components. Internal rationality means that the agents make fully optimal decisions given some well-defined subjective beliefs about payoff relevant variables. External rationality requires that the probability distribution generated by agent subjective beliefs matches the true distribution of underlying variables.
+This paper will maintain the assumption of internal rationality, but not impose external rationality.</description>
+    </item>
+    
+    <item>
+      <title>Adam:2016hd (Adam, K., &amp; Marcet, A. &amp; Nicolini J. (2016). Stock Market Volatility and Learning.)</title>
+      <link>http://srg.spencerlyon.com/2016/11/01/adam2016hd-adam-k.--marcet-a.--nicolini-j.-2016.-stock-market-volatility-and-learning./</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/11/01/adam2016hd-adam-k.--marcet-a.--nicolini-j.-2016.-stock-market-volatility-and-learning./</guid>
+      <description>Builds on the internal rationality framework from last week to build a model of asset pricing that can explain 5 facts that have puzzled the literature at one time or another.
+Facts Standard deviation of price dividend ratio is very high (about 1/2 the mean of the PD ratio) First-order quarterly autocorrelation of PD ratio is vary high Standard deviation of stock returns is almost 4 times as large as standard deviation of dividend growth PD ratio is good long run predictor of stock returns Equity premium puzzle: return on risky stocks is too high relative to bonds for standard models  Model There is a unit mass of infinitely lived investors, endowed with one unit of a stock that can be traded in a competitive market and that pays a per period dividend D in units of a perishable consumption good.</description>
+    </item>
+    
+    <item>
+      <title>Baley:2016wr (Firm uncertainty cycles and the propagation of nominal shocks)</title>
+      <link>http://srg.spencerlyon.com/2016/10/25/baley2016wr-firm-uncertainty-cycles-and-the-propagation-of-nominal-shocks/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/10/25/baley2016wr-firm-uncertainty-cycles-and-the-propagation-of-nominal-shocks/</guid>
+      <description>This paper develops a model with menu costs for adjusting prices and imperfect information about idiosyncratic productivity shocks. They conduct monetary policy experiments and conclude that the distribution of firm level uncertainty is important for the propagation of monetary shocks.
+Model In this model time is continuous. There is a representative consumer, a continuum of monopolistically competitive firms, and a monetary authority.
+In the baseline model, the monetary authority keeps the money supply fixed at its initial level.</description>
+    </item>
+    
+    <item>
+      <title>Ikegami:2016ek (Poverty Traps and the Social Protection Paradox)</title>
+      <link>http://srg.spencerlyon.com/2016/10/18/ikegami2016ek-poverty-traps-and-the-social-protection-paradox/</link>
+      <pubDate>Tue, 18 Oct 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/10/18/ikegami2016ek-poverty-traps-and-the-social-protection-paradox/</guid>
+      <description>This paper presents and analyzes a stylized model of poverty traps in developing economies.
+Baseline model In the baseline model there are a finite number of agents.
+Agent’s are characterized by a constant level of innate ability α and an evolving stock of capital k.
+Each period, agents choose which of two DRS production technologies they wish to operate in that period. Switching technologies is costless. Both technologies have innate ability multiplied by physical capital raised to a power less than one.</description>
+    </item>
+    
+    <item>
+      <title>Kaplan:2016fe (Non-durable Consumption and Housing Net Worth in the Great Recession: Evidence from Easily Accessible Data.)</title>
+      <link>http://srg.spencerlyon.com/2016/10/11/kaplan2016fe-non-durable-consumption-and-housing-net-worth-in-the-great-recession-evidence-from-easily-accessible-data./</link>
+      <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/10/11/kaplan2016fe-non-durable-consumption-and-housing-net-worth-in-the-great-recession-evidence-from-easily-accessible-data./</guid>
+      <description>In 2013; Mian, Rao, Sufi used proprietary data on the US housing market (obtained from Core Logic) and personal consumption expenditures (obtained from master card) from 2006-2009 to estimate that the elasticity of consumption expenditures to changes in the housing share of household net worth.
+This paper replicates the main results from Mian, Rao, and Sufi using data that is more easily accessed by economists in academia.
+Data The authors proxy the housing data from Core Logic, using housing data from Zillow.</description>
+    </item>
+    
+    <item>
+      <title>Amiti:2014ez (Importers, Exporters, and Exchange Rate Disconnect.)</title>
+      <link>http://srg.spencerlyon.com/2016/10/04/amiti2014ez-importers-exporters-and-exchange-rate-disconnect./</link>
+      <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/10/04/amiti2014ez-importers-exporters-and-exchange-rate-disconnect./</guid>
+      <description>This paper aims to explain the low exchange rate pass-through for exporters. Exchange rate pass-through is the response in export prices to movement in the exchange rate.
+Model The theoretical model is not the focus of the authors’ analysis in this paper. They write down a fairly complicated model, derive some of the equilibrium conditions, then use the implications of the equilibrium conditions as testable predictions they take to the data.</description>
+    </item>
+    
+    <item>
+      <title>Kee:2016ej (Trade adjustment dynamics and the welfare gains from trade)</title>
+      <link>http://srg.spencerlyon.com/2016/09/27/kee2016ej-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/09/27/kee2016ej-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</guid>
+      <description>A mostly empirical paper that examines the inputs used by Chinese firms to produce exported goods.
+DVAR The empirical analysis in this paper is centered around a variable named DVA, which stands for domestic value added in exports.
+To derive DVA, we start with total revenue. The authors break total revenue into the sum of
+ profits labor costs capital costs materials from domestic sources materials from foreign sources  Because intermediate good producers can get their inputs from China or foreign sources, the domestic and foreign materials sources are decomposed into Chinese and non-Chinese components.</description>
+    </item>
+    
+    <item>
+      <title>Brumm, Mikushin, Scheidegger and Schenk (2015) (Scalable high-dimensional dynamic stochastic economic modeling)</title>
+      <link>http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/</link>
+      <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/</guid>
+      <description>An economist, a physicist, and two computer scientists walk into a bar…
+This is a computational paper that describes and algorithm featuring an adaptive sparse grid and discuss implementation details on a sophisticated HPC cluster.
+Model They provide examples of their algorithm and computation using a standard international real business cycle model. This is not the interesting part of the paper, so I will not focus on it here.
+Computation Adaptive Sparse Grids The first main contribution of this paper is to introduce economists to a specialized flavor of function approximation.</description>
+    </item>
+    
+    <item>
+      <title>Farias Saure Weintraub (2012) (An approximate dynamic programming approach to solving dynamic oligopoly models)</title>
+      <link>http://srg.spencerlyon.com/2016/05/03/farias-saure-weintraub-2012-an-approximate-dynamic-programming-approach-to-solving-dynamic-oligopoly-models/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/05/03/farias-saure-weintraub-2012-an-approximate-dynamic-programming-approach-to-solving-dynamic-oligopoly-models/</guid>
+      <description>This paper builds on the approximate linear programming work of Farias and van Roy that I presented a few weeks ago and applies a version of that technique to a dynamic oligopoly model.
+The actual model is not novel to this research, so I will spend most of my time talking about the algorithm.
+Model  The model is set in discrete time and multiple firms compete in a single good market over an infinite horizon.</description>
+    </item>
+    
+    <item>
+      <title>Timoshenko (2015) (Learning versus sunk costs explanations of export persistence)</title>
+      <link>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-learning-versus-sunk-costs-explanations-of-export-persistence/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-learning-versus-sunk-costs-explanations-of-export-persistence/</guid>
+      <description>This is a mostly empirical paper that tries to decompose exporter persistence into sunk cost and learning components.
+Model Let firms be indexed by i. Firms have two state variables: productivity zi, t that follows an AR(1) process and export experience Ai, t. In Ai, t is the number of consecutive periods a firm has exported coming into period t.
+Without microfoudations, Timoshenko assumes that per-period sales are the Melitz result, multiplied by a function g of export experience:</description>
+    </item>
+    
+    <item>
+      <title>Timoshenko (2015) (Product switching in a model of learning)</title>
+      <link>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-product-switching-in-a-model-of-learning/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/04/26/timoshenko-2015-product-switching-in-a-model-of-learning/</guid>
+      <description>This paper documents facts about Brazilian manufacturing firms that switch their bundle of exported products over time. The author then builds a Melitz-style trade model that attempts to explain these facts.
+Empirics The author uses data product level data on Brazilian manufacturing firms to document several stylized facts.
+ 72% of continuing exporters alter their product mix every year (add new exported products or drop existing exported products) 83% of all Brazilian exports come from these product switching firms The proportion of exporters who do product switching falls with age in export market The frequency with which exporters engage in product switching falls with age The exit rate of product switching firms is lower than aggregate exit rate for all ages of exporter.</description>
+    </item>
+    
+    <item>
+      <title>Konda and Tsitsiklis (2003) (Actor-critic Algorithms)</title>
+      <link>http://srg.spencerlyon.com/2016/04/19/konda-and-tsitsiklis-2003-actor-critic-algorithms/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/04/19/konda-and-tsitsiklis-2003-actor-critic-algorithms/</guid>
+      <description>Background When a Markov decision process (MDP) is formulated as a dynamic programming problem, the reinforcement learning literature proposes are two classic classes of algorithms to solve them. Let’s briefly review these types of algorithms and point out strengths and weaknesses of each.
+1: Actor only methods We can think of an actor as a fictitious character that operates on a policy rule.
+When I talk about the performance of an actor, I mean the value of following a policy.</description>
+    </item>
+    
+    <item>
+      <title>Busoniu, DeSchutter, Babuska(2010) (Approximate dynamic programming and reinforcement learning)</title>
+      <link>http://srg.spencerlyon.com/2016/04/12/busoniu-deschutter-babuska2010-approximate-dynamic-programming-and-reinforcement-learning/</link>
+      <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/04/12/busoniu-deschutter-babuska2010-approximate-dynamic-programming-and-reinforcement-learning/</guid>
+      <description>This paper provides an overview of various solution concepts that belong to the families of approximate dynamic programming and reinforcement learning.
+I will discuss an alternative representation of a dynamic programming that is often used in this literature and provide an overview of some solution methods that are common with this representation.
+Basics: Q-functions In economics, the standard representation of a dynamic programming problem is to define a recursive function V that maps from a state space into the real line.</description>
+    </item>
+    
+    <item>
+      <title>de Farias &amp; van Roy (2003) (The Linear Programming Approach to Approximate Dynamic Programming)</title>
+      <link>http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/</link>
+      <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/</guid>
+      <description>This paper was published in Operations Research and as such they use a different notation and jargon than economists. I’ll present some of their main results, but in a language and notation that is familiar to me.
+Background Consider a typical dynamic programming problem faced by an economic agent, which we summarize by the following Bellman equation:
+
+$$V(x) = \underset{c \in \Gamma(x)}{\max} u(x, c) + \beta E V(x&#39;)$$
+Now define the natural operator associated with the Bellman, which we call T:</description>
+    </item>
+    
+    <item>
+      <title>Hull (2015) (Approximate dynamic programming with post-decision states as a solution method for dynamic economic models)</title>
+      <link>http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/</link>
+      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/</guid>
+      <description>This paper presents a stochastic simulation method for solving dynamic economic models.
+The ideas in this paper lean on a literature sometimes known as approximate dynamic programming and can enable us to solve models with many state variables and non-convexities in objectives and constraints.
+My intent is to summarize the core theoretical ideas behind the algorithm.
+Main idea: Post decision states Notation: classic Bellman equation Consider a stationary economic model where at time t the state is summarized by a vector st of endogenous state variables and a vector xt of exogenous state variables.</description>
+    </item>
+    
+    <item>
+      <title>Achdou, Han, Lasry, Lions, Moll (2015) (Hetergenous agent models in continuous time)</title>
+      <link>http://srg.spencerlyon.com/2016/03/08/achdou-han-lasry-lions-moll-2015-hetergenous-agent-models-in-continuous-time/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/03/08/achdou-han-lasry-lions-moll-2015-hetergenous-agent-models-in-continuous-time/</guid>
+      <description>This paper looks at the class of equations used to represent and solve heterogenous agent models in continuous time and presents a solution approach that is efficient and tractable.
+Model A few models were presented in the paper. Here we’ll take the simplest one: a continuous time version of the Huggett economy.
+In this economy there are a continuum of individuals that are heterogeneous in their wealth and income.
+Individuals value streams of consumption using CRRA preferences and a constant discount factor ρ.</description>
+    </item>
+    
+    <item>
+      <title>Costinot, Rodriguez, Werning (2016) (Micro to Macro: Optimal Trade Policy with Firm Heterogeneity)</title>
+      <link>http://srg.spencerlyon.com/2016/03/01/costinot-rodriguez-werning-2016-micro-to-macro-optimal-trade-policy-with-firm-heterogeneity/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/03/01/costinot-rodriguez-werning-2016-micro-to-macro-optimal-trade-policy-with-firm-heterogeneity/</guid>
+      <description>This paper extends the Meltiz framework to allow for optimal tariff policies.
+Model This model extends a two country Melitz framework in two ways:
+Allows for heterogeneity in variable and fixed costs. This will be a policy instrument where governments can set firm specific tariffs The representative consumer in each country has a constant elasticity of substitution across all varieties procued within a country, but that elasticity can differ across countries.</description>
+    </item>
+    
+    <item>
+      <title>Eaton, Eslava, Jinkins, Krizan, Tybout (2014) (A search and learning model of export dynamics)</title>
+      <link>http://srg.spencerlyon.com/2016/02/16/eaton-eslava-jinkins-krizan-tybout-2014-a-search-and-learning-model-of-export-dynamics/</link>
+      <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/02/16/eaton-eslava-jinkins-krizan-tybout-2014-a-search-and-learning-model-of-export-dynamics/</guid>
+      <description>Overview A primarily empirical paper that studies how allowing exporting firms to learn about demand for their product impacts firm dynamics in a Melitz style trade model.
+Data and stylized facts Let’s start with the data.
+The data set used in this paper describes all imports by US buyers from Colombian exporters from 1992-2009. The source is the U.S. Census Bureau’s Longitudinal Foreign Trade Transactions Database (LFTTD).
+Using this data, the authors report the following stylized facts:</description>
+    </item>
+    
+    <item>
+      <title>Niepmann (2013) (Banking across borders)</title>
+      <link>http://srg.spencerlyon.com/2016/02/16/niepmann-2013-banking-across-borders/</link>
+      <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/02/16/niepmann-2013-banking-across-borders/</guid>
+      <description>Intro This introduces heterogenous banks into a general equilibrium trade model in the flavor of Melitz. There are also empirical exercises that show that the model can generate some features of German banking data.
+Model We will describe the model in two stages:
+Closed economy, where we will characterize economic setting and the optimization problem of each agent. Open economy, where combine 2 closed economies and allow them to trade  Closed economy The economy consists of the following agents:</description>
+    </item>
+    
+    <item>
+      <title>Das, Roberts, Tybout (2007) (Market entry costs, producer heterogeneity, and export dynamics)</title>
+      <link>http://srg.spencerlyon.com/2016/02/09/das-roberts-tybout-2007-market-entry-costs-producer-heterogeneity-and-export-dynamics/</link>
+      <pubDate>Tue, 09 Feb 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/02/09/das-roberts-tybout-2007-market-entry-costs-producer-heterogeneity-and-export-dynamics/</guid>
+      <description>Intro This paper takes an empirical look at a variant of the Melitz model from last week.
+Model  Assumptions:
+Domestic and foreign product markets are monopolistically competitive and segmented. In Melitz we got segmentation from CRS production. Marginal costs do not respond to output shocks: domestic shocks do not impact optimal export levels Firms are heterogeneous in marginal production costs and foreign demand functions (so profits differ) Future exchange rate, production costs, and foreign demand shifters are unkown, but Markov Firms must pay an up-front cost to enter export market in addition to per period fixed operating costs   For a firm already in the export market, export profits are characterized by log-linear (Cobb Douglass in levels) function of firm-specific characteristics, the real exchange rate, and a random disturbance.</description>
+    </item>
+    
+    <item>
+      <title>Melitz 2003 (The impact of trade on intra-industry reallocations and aggregate industry productivity)</title>
+      <link>http://srg.spencerlyon.com/2016/02/02/melitz-2003-the-impact-of-trade-on-intra-industry-reallocations-and-aggregate-industry-productivity/</link>
+      <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2016/02/02/melitz-2003-the-impact-of-trade-on-intra-industry-reallocations-and-aggregate-industry-productivity/</guid>
+      <description>Intro An early paper that introduced a now common framework for thinking about firm entry, export decision, and exit in trade models.
+Model I’ll describe the model in two stages:
+A closed economy version of the model with a single country An open economy version with many similar countries  Closed economy Consumers There is a representative consumer with CES a utility function over a continuum of goods. The elasticity of substitution between any two goods is σ &amp;gt; 1.</description>
+    </item>
+    
+    <item>
+      <title>Kehoe2015 (Discount Rates , Learning by Doing and Employment Fluctuations)</title>
+      <link>http://srg.spencerlyon.com/2015/12/08/kehoe2015-discount-rates--learning-by-doing-and-employment-fluctuations/</link>
+      <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/12/08/kehoe2015-discount-rates--learning-by-doing-and-employment-fluctuations/</guid>
+      <description>Model The model is a search and matching model in the flavor of DPM, with a few modifications.
+Consumers There are a continuum of identical consumers that have the following characteristics:
+ They face both idiosyncratic and aggregate risk (both productivity shocks that are AR(1) in logs) Have a constant hazard probability ϕ of dying each period Are organized into families that pool all idiosyncratic risk and exhibit perfect idiosyncratic risk sharing within the family  The family problem:</description>
+    </item>
+    
+    <item>
+      <title>Betts2008 (Real exchange rate movements and the relative price of non-traded goods)</title>
+      <link>http://srg.spencerlyon.com/2015/11/24/betts2008-real-exchange-rate-movements-and-the-relative-price-of-non-traded-goods/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/11/24/betts2008-real-exchange-rate-movements-and-the-relative-price-of-non-traded-goods/</guid>
+      <description>Outline An empirical paper that examines the relationship between the real exchange rate and the relative price of non-traded vs traded goods.
+Modes of thought At the time of writing the paper, there were two main modes of thought for thinking about real exchange rate movements
+ Traditional view: all movements in bilateral real exchange rate between two countries are due to fluctuations in the bilateral relative price of non-traded to traded goods.</description>
+    </item>
+    
+    <item>
+      <title>Ruhl2015 (New Exporter Dynamics)</title>
+      <link>http://srg.spencerlyon.com/2015/11/17/ruhl2015-new-exporter-dynamics/</link>
+      <pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/11/17/ruhl2015-new-exporter-dynamics/</guid>
+      <description>Intro The authors did some empirical work with data on Columbian firms to arrive at two stlyized facts about new exporters (firms who recently began exporting):
+On average, entrant exporters are smaller than long-time exporters The probability of exiting the export market falls with tenure  The goal of the paper is to write a model that can match the data on these two dimensions.
+Model Partial equilibrium version of the model I presented last week.</description>
+    </item>
+    
+    <item>
+      <title>Alessandria2014 (Trade adjustment dynamics and the welfare gains from trade)</title>
+      <link>http://srg.spencerlyon.com/2015/11/10/alessandria2014-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</link>
+      <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/11/10/alessandria2014-trade-adjustment-dynamics-and-the-welfare-gains-from-trade/</guid>
+      <description>Model This is a general equilibrium trade model that focuses on producer export, entry, expansion, and exit. The structure of the model nests other standard models such as Krugman, Melitz and others.
+In the model there are two symmetric countries. Within each country there are consumers, final goods producers, intermediate goods producers, and a government.
+Consumers  A unit mass of identical consumers live in each country and inelastically supple one unit of labor Choose sequences of capital, risk free one period bond holdings, and consumption to maximize expected present discounted value of CRRA utility over consumption.</description>
+    </item>
+    
+    <item>
+      <title>Jermann2012 (Macroeconomic Effects of Financial Shocks)</title>
+      <link>http://srg.spencerlyon.com/2015/11/03/jermann2012-macroeconomic-effects-of-financial-shocks/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/11/03/jermann2012-macroeconomic-effects-of-financial-shocks/</guid>
+      <description>Model Firm Problem The model has a representative firm that uses capital and labor within CRS Cobb Douglas production technology, subject to TFP shock.
+Capital evolution is standard: kt + 1 = (1 − δ)kt + it
+Firms also raise resources through debt and equity financing:
+ Debt financing comes through the issuance of a non-state contingent one period bond.  Debt financing has a tax advantage relative to equity (Rt = 1 + rt(1 − τ))  Equity financing comes through dividend payments (or receipts) from shareholders  Total cost to firms of dividend payouts is the payment amount plus a quadratic term in deviation of payout from target (steady state).</description>
+    </item>
+    
+    <item>
+      <title>Iskhakov2013 (Recursive Lexicographical Search: Finding all Markov Perfect Equilibria of Finite State Directional Dynamic Games)</title>
+      <link>http://srg.spencerlyon.com/2015/10/27/iskhakov2013-recursive-lexicographical-search-finding-all-markov-perfect-equilibria-of-finite-state-directional-dynamic-games/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/10/27/iskhakov2013-recursive-lexicographical-search-finding-all-markov-perfect-equilibria-of-finite-state-directional-dynamic-games/</guid>
+      <description>Outline The authors of this paper do 3 main things:
+Describe a particular class of Dynamic economic games Describe two algorithms for computing Markov perfect equilibria of those games Give two detailed, non-trivial examples of how to apply the algorithms to games in this class  We won’t have time to touch on the examples, but my goal today is to describe the class of models and explain the key components of the algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Chassang2010 (Building routines: Learning, cooperation, and the dynamics of incomplete relational contracts)</title>
+      <link>http://srg.spencerlyon.com/2015/10/20/chassang2010-building-routines-learning-cooperation-and-the-dynamics-of-incomplete-relational-contracts/</link>
+      <pubDate>Tue, 20 Oct 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/10/20/chassang2010-building-routines-learning-cooperation-and-the-dynamics-of-incomplete-relational-contracts/</guid>
+      <description>Model Mechanics Two agents, infinite horizon, discrete time, and each agent has a common discount factor δ.
+Each period agent 1 can choose to enter or exit.
+Player 2 has a countably finite set of actions, represented as the set 𝒜, which is equal to the natural numbers. Each period an i.i.d subset of A ⊂ 𝒜 is drawn. This is both the state of the economy in each period and agent 2’s feasible actions set for the period.</description>
+    </item>
+    
+    <item>
+      <title>Borovicka2011b (Risk Price Dynamics)</title>
+      <link>http://srg.spencerlyon.com/2015/10/13/borovicka2011b-risk-price-dynamics/</link>
+      <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/10/13/borovicka2011b-risk-price-dynamics/</guid>
+      <description>Intro Goal: Characterize the main conceptual composition of risk and shock elasticities and provide an example of their interpretation in a macro model.
+Outline:
+ General continuous time framework  Stochastic process for state Growth processes and cash flows Perturbations Elasticities  Simple example  Do the BL model. Can talk about choosing αd = ei for i = 1, 2, 3.   Mathematical Framework I will briefly explain the mathematical framework used in this and related papers.</description>
+    </item>
+    
+    <item>
+      <title>Angeletos, Iovino, La&#39;O (2015) (Real Rigidity , Nominal Rigidity , and the Social Value of Information)</title>
+      <link>http://srg.spencerlyon.com/2015/10/06/angeletos-iovino-lao-2015-real-rigidity--nominal-rigidity--and-the-social-value-of-information/</link>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/10/06/angeletos-iovino-lao-2015-real-rigidity--nominal-rigidity--and-the-social-value-of-information/</guid>
+      <description>Model The model in this paper is fairly simple. The interesting analysis in this paper has to do with the information structure
+Setup Agents in the model either live in the mainland or on one of a continuum of islands
+Each island:
+ Is populated by a continuum of workers and a continuum of monopolistic firms. Within each island all firms are identical, as are workers Firms:  Hire workers through competitive labor markets Use labor in a linear production technology: product of labor supply island specific TFP  The log of TFP in each period is the sum of an aggregate and an idiosyncratic shock All shocks in the model are mean zero Gaussians, unless otherwise specified.</description>
+    </item>
+    
+    <item>
+      <title>Schorfheide, Song, &amp; Yaron (2014) (Identifying Long-Run Risks: A Bayesian Mixed-Frequency Approach (@Schorfheide2014))</title>
+      <link>http://srg.spencerlyon.com/2015/09/15/schorfheide-song--yaron-2014-identifying-long-run-risks-a-bayesian-mixed-frequency-approach-schorfheide2014/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/09/15/schorfheide-song--yaron-2014-identifying-long-run-risks-a-bayesian-mixed-frequency-approach-schorfheide2014/</guid>
+      <description>Outline This is paper is more empirical than theoretical.
+Theoretical contributions are to specify more flexible stochastic environment than in other long run risk models a la Bansal et al. (2007)
+Empirical contributions are
+ form a linear approximation of the stochastic environment to apply state space methods within an MCMC algorithm Show how to incorporate data of various frequencies and accuracy in the inference algorithm  Overview of this talk:</description>
+    </item>
+    
+    <item>
+      <title>He &amp; Krishnamurthy (2013) (Intermediary Asset Pricing)</title>
+      <link>http://srg.spencerlyon.com/2015/09/07/he--krishnamurthy-2013-intermediary-asset-pricing/</link>
+      <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2015/09/07/he--krishnamurthy-2013-intermediary-asset-pricing/</guid>
+      <description>Model This is two-type agent, continuous time model of financial intermediaries. He and Krishnamurthy (2013)
+Agents are either households or specialists.
+Distinction will be made clear once we understand the market structure
+Market structure  One risk-free short run bond in zero net supply  All agents can freely buy this asset Specialists can also short  One risky asset whose dividends evolve as GBM  Only specialists can purchase this asset, however they can do so in behalf of households via an intermediary mechanism to be explained shortly Net supply normalized to 1   Technology (how markets work) Each period between t and t + dt is split into 5 mini-periods:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://srg.spencerlyon.com/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/1/01/01/</guid>
+      <description>Section 1 (intro):  Two channels:  productivity channel says move from low productivity to high productivity country risk-sharing channel says move from low marginal utility (MU) to high MU country  Section 2 (lit review):  Differ from Tretvol on three dimensions: (1) look at long run shocks, (2) Tretvoll considers standard BKK capital accumulation (TODO: what is used here) (3) parameter values are closer to asset pricing than RBC literature (RRA = 10, IES &amp;gt; 1 where tretvoll has RRA=100, IES &amp;lt; 1)  Section 3 (empirics):  Used data on G7 countries to show three main results: Positive short run productivity news leads to net inflow of capital Positive long run productivity news leads to net outflow of captial Did estimation for US vs UK and then for US vs all other G6.</description>
     </item>
     
   </channel>

@@ -51,10 +51,9 @@
     },
     "datePublished": "2016-05-09",
     "description": "",
-    "wordCount": 620
+    "wordCount": 621
   }
 </script>
-
 
 
 <link rel="canonical" href="http://srg.spencerlyon.com/2016/05/09/brumm-mikushin-scheidegger-and-schenk-2015-scalable-high-dimensional-dynamic-stochastic-economic-modeling/" />
@@ -62,7 +61,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.20-DEV" />
+<meta name="generator" content="Hugo 0.32-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -151,7 +150,7 @@
 
   
   &middot; Read in about 3 min
-  &middot; (620 Words)
+  &middot; (621 Words)
   <br>
   
 
@@ -185,7 +184,7 @@
 <li>Solve the system of non-linear equations characterizing the optimal controls at that grid point (note you will need to interpolate over the current guess of the policy function) to obtain a new guess for the policy rule at that point</li>
 <li>If the distance between the old and new guess for the policy at the grid point is greater than some threshold, add the neighboring points at the next refinement level to G_new</li>
 </ul></li>
-<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> + =1</span></li>
+<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> +  = 1</span></li>
 </ul></li>
 <li>Calculate the error for this iteration as the sup norm over the implied policy rule from the current iteration and the previous iteration</li>
 </ul>

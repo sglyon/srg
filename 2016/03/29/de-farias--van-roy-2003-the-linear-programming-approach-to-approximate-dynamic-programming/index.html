@@ -51,10 +51,9 @@
     },
     "datePublished": "2016-03-29",
     "description": "",
-    "wordCount": 641
+    "wordCount": 643
   }
 </script>
-
 
 
 <link rel="canonical" href="http://srg.spencerlyon.com/2016/03/29/de-farias--van-roy-2003-the-linear-programming-approach-to-approximate-dynamic-programming/" />
@@ -62,7 +61,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.20-DEV" />
+<meta name="generator" content="Hugo 0.32-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -151,7 +150,7 @@
 
   
   &middot; Read in about 4 min
-  &middot; (641 Words)
+  &middot; (643 Words)
   <br>
   
 
@@ -183,7 +182,7 @@ s.t. &amp; \quad v \ge T v
 <p>These two facts mean that the unique solution to the programming problem is <span class="math inline"><em>v</em><sup>*</sup></span>.</p>
 <h2 id="linear-program">Linear program</h2>
 <p>I told you that we would use linear programming, but notice that the constraint is nonlinear because <span class="math inline"><em>T</em></span> is nonlinear.</p>
-<p>However, if we stare at the definition of <span class="math inline"><em>T</em></span> for long enough we will notice that if we consider the constraint <span class="math inline"><em>v</em> ≥ <em>T</em><em>v</em></span> state by state, (e.g. <span class="math inline"><em>v</em>(<em>x</em>)≥<em>T</em><em>v</em>(<em>x</em>)</span>) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.</p>
+<p>However, if we stare at the definition of <span class="math inline"><em>T</em></span> for long enough we will notice that if we consider the constraint <span class="math inline"><em>v</em> ≥ <em>T</em><em>v</em></span> state by state, (e.g. <span class="math inline"><em>v</em>(<em>x</em>) ≥ <em>T</em><em>v</em>(<em>x</em>)</span>) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.</p>
 <p>This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman’s equation for that state and control. The program looks as follows:</p>
 <p><br /><span class="math display">$$\begin{aligned}&amp;\underset{V}{\min} c'v \\
 s.t. &amp; \quad v(x) \ge u(x,c) + \beta \sum_{x'} P(x'| x,c)v(x') \quad \forall x \in X \; \forall c \in \mathcal{A}_x

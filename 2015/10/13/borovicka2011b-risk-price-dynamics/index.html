@@ -51,10 +51,9 @@
     },
     "datePublished": "2015-10-13",
     "description": "",
-    "wordCount": 920
+    "wordCount": 926
   }
 </script>
-
 
 
 <link rel="canonical" href="http://srg.spencerlyon.com/2015/10/13/borovicka2011b-risk-price-dynamics/" />
@@ -62,7 +61,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.20-DEV" />
+<meta name="generator" content="Hugo 0.32-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -151,7 +150,7 @@
 
   
   &middot; Read in about 5 min
-  &middot; (920 Words)
+  &middot; (926 Words)
   <br>
   
 
@@ -182,8 +181,8 @@
 <h3 id="state">State</h3>
 <p>State is Markov diffusion: <span class="math inline"><em>d</em><em>X</em><sub><em>t</em></sub> = <em>μ</em>(<em>X</em><sub><em>t</em></sub>)<em>d</em><em>t</em> + <em>σ</em>(<em>X</em><sub><em>t</em></sub>)<em>d</em><em>W</em><sub><em>t</em></sub></span> (<span class="math inline"><em>W</em></span> is standard BM, <span class="math inline"><em>μ</em></span> and <span class="math inline"><em>σ</em></span> may be non-linear.)</p>
 <h3 id="functionals">Functionals</h3>
-<p>Additive functionals: parameterized by state dependent drift <span class="math inline"><em>β</em>(<em>X</em>)</span> and volatility <span class="math inline"><em>α</em>(<em>X</em>)</span> coefficients integrated over time (<span class="math inline"><em>A</em><sub><em>t</em></sub> = ∫<sub>0</sub><sup><em>t</em></sup><em>β</em>(<em>X</em><sub><em>u</em></sub>)<em>d</em><em>u</em> + ∫<sub>0</sub><sup><em>t</em></sup><em>α</em>(<em>X</em><sub><em>u</em></sub>)⋅<em>d</em><em>W</em><sub><em>u</em></sub></span>)</p>
-<p>Multiplicative functionals are also characterized by <span class="math inline">(<em>β</em>, <em>α</em>)</span> and are the exponential of an underlying additive functional (<span class="math inline"><em>M</em> = exp(<em>A</em>)</span>)</p>
+<p>Additive functionals: parameterized by state dependent drift <span class="math inline"><em>β</em>(<em>X</em>)</span> and volatility <span class="math inline"><em>α</em>(<em>X</em>)</span> coefficients integrated over time (<span class="math inline"><em>A</em><sub><em>t</em></sub> = ∫<sub>0</sub><sup><em>t</em></sup><em>β</em>(<em>X</em><sub><em>u</em></sub>)<em>d</em><em>u</em> + ∫<sub>0</sub><sup><em>t</em></sup><em>α</em>(<em>X</em><sub><em>u</em></sub>) ⋅ <em>d</em><em>W</em><sub><em>u</em></sub></span>)</p>
+<p>Multiplicative functionals are also characterized by <span class="math inline">(<em>β</em>, <em>α</em>)</span> and are the exponential of an underlying additive functional (<span class="math inline"><em>M</em> = exp (<em>A</em>)</span>)</p>
 <p>Growth processes of economic interest, e.g. cash flows and consumption, will be modeled as multiplicative functionals.</p>
 <h3 id="perturbations">Perturbations</h3>
 <p>We will perturb the multiplicative functionals in a specific way that allow us to capture the <em>marginal value of exposure risk in a particular direction</em>.</p>
@@ -205,7 +204,7 @@
 <p>The Brownian motion will be three dimensional, where dimensions correspond to independent shocks directly to consumption itself, consumption growth <span class="math inline"><em>x</em><sub>1</sub></span>, and stochastic volatility <span class="math inline"><em>x</em><sub>2</sub></span></p>
 <p>Multiplicative functionals take a specific form:</p>
 <ul>
-<li>The drift is affine in deviations of <span class="math inline"><em>x</em><sub>1</sub></span> and <span class="math inline"><em>x</em><sub>2</sub></span> from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (<span class="math inline"><em>β</em>(<em>x</em>)=<em>β̄</em><sub>0</sub> + <em>β̄</em><sub><em>t</em></sub> ⋅ (<em>x</em><sub>1</sub> − <em>ι</em><sub>1</sub>)+<em>β̄</em><sub>2</sub>(<em>x</em><sub><em>t</em></sub> − <em>ι</em><sub>2</sub>)</span>)</li>
+<li>The drift is affine in deviations of <span class="math inline"><em>x</em><sub>1</sub></span> and <span class="math inline"><em>x</em><sub>2</sub></span> from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (<span class="math inline"><em>β</em>(<em>x</em>) = <em>β̄</em><sub>0</sub> + <em>β̄</em><sub><em>t</em></sub> ⋅ (<em>x</em><sub>1</sub> − <em>ι</em><sub>1</sub>) + <em>β̄</em><sub>2</sub>(<em>x</em><sub><em>t</em></sub> − <em>ι</em><sub>2</sub>)</span>)</li>
 <li>The volatility is the square root of <span class="math inline"><em>x</em><sub>2</sub></span> times a constant vector <span class="math inline">$(\alpha(x) = \sqrt{x_2} \bar{\alpha}$</span>).</li>
 </ul>
 <p>Consumption growth is modeled directly as a multiplicative functional.</p>
@@ -233,7 +232,7 @@
 <h1 id="references" class="unnumbered">References</h1>
 <div id="refs" class="references">
 <div id="ref-Borovicka2011b">
-<p>Borovička, Jaroslav, Lars Peter Hansen, Mark Hendricks, and José Alexandre Scheinkman. 2011. “Risk-Price Dynamics.” <em>Journal of Financial Econometrics</em> 9 (1). Oxford University Press: 3–65. <a href="http://jfec.oxfordjournals.org/content/9/1/3.full papers3://publication/doi/10.1093/jjfinec/nbq030" class="uri"><a href="http://jfec.oxfordjournals.org/content/9/1/3.full">http://jfec.oxfordjournals.org/content/9/1/3.full</a> papers3://publication/doi/10.1093/jjfinec/nbq030</a>.</p>
+<p>Borovička, Jaroslav, Lars Peter Hansen, Mark Hendricks, and José Alexandre Scheinkman. 2011. “Risk-Price Dynamics.” <em>Journal of Financial Econometrics</em> 9 (1). Oxford University Press:3–65. <a href="http://jfec.oxfordjournals.org/content/9/1/3.full papers3://publication/doi/10.1093/jjfinec/nbq030" class="uri"><a href="http://jfec.oxfordjournals.org/content/9/1/3.full">http://jfec.oxfordjournals.org/content/9/1/3.full</a> papers3://publication/doi/10.1093/jjfinec/nbq030</a>.</p>
 </div>
 </div></p>
 

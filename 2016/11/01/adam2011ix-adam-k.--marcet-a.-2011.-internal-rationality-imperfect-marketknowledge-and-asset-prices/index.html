@@ -59,10 +59,9 @@ knowledge and asset prices
     },
     "datePublished": "2016-11-01",
     "description": "",
-    "wordCount": 29850
+    "wordCount": 29889
   }
 </script>
-
 
 
 <link rel="canonical" href="http://srg.spencerlyon.com/2016/11/01/adam2011ix-adam-k.--marcet-a.-2011.-internal-rationality-imperfect-marketknowledge-and-asset-prices/" />
@@ -70,7 +69,7 @@ knowledge and asset prices
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.20-DEV" />
+<meta name="generator" content="Hugo 0.32-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -161,7 +160,7 @@ knowledge and asset prices
 
   
   &middot; Read in about 141 min
-  &middot; (29850 Words)
+  &middot; (29889 Words)
   <br>
   
 
@@ -504,7 +503,7 @@ knowledge and asset prices
 <li>Solve the system of non-linear equations characterizing the optimal controls at that grid point (note you will need to interpolate over the current guess of the policy function) to obtain a new guess for the policy rule at that point</li>
 <li>If the distance between the old and new guess for the policy at the grid point is greater than some threshold, add the neighboring points at the next refinement level to G<em>new</li>
 </ul></li>
-<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> + =1</span></li>
+<li>Set <span class="math inline"><em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> = <em>G</em></span>, <span class="math inline"><em>G</em> = <em>G</em><sub><em>o</em></sub><em>l</em><em>d</em> ∪ <em>G</em><sub><em>n</em></sub><em>e</em><em>w</em></span>, <span class="math inline"><em>G</em><sub><em>n</em></sub><em>e</em><em>w</em> = ∅</span> and <span class="math inline"><em>l</em> +  = 1</span></li>
 </ul></li>
 <li>Calculate the error for this iteration as the sup norm over the implied policy rule from the current iteration and the previous iteration</li>
 </ul>
@@ -521,7 +520,7 @@ knowledge and asset prices
 <p>In economics, the standard representation of a dynamic programming problem is to define a recursive function <span class="math inline"><em>V</em></span> that maps from a state space into the real line. Today I will call <span class="math inline"><em>V</em></span> the <span class="math inline"><em>V</em></span> function. The <span class="math inline"><em>V</em></span> function describes the value of being in a particular state.</p>
 <p>Consider an alternative function <span class="math inline"><em>Q</em></span> that maps from the state-action space, into the real line. I will call this the <span class="math inline"><em>Q</em></span>-function. The <span class="math inline"><em>Q</em></span> function describes the value of being in a particular state and choosing a particular action.</p>
 <p>As we do with the <span class="math inline"><em>V</em></span>-function, we can express the <span class="math inline"><em>Q</em></span>-function recursively using Bellman’s principle of optimality. The recursive form of the <span class="math inline"><em>Q</em></span>-function is</p>
-<p><br /><span class="math display"><em>Q</em>(<em>s</em>, <em>x</em>)=<em>E</em><sub><em>s</em>′∼<em>f</em>(<em>s</em>, <em>x</em>, ⋅)</sub>[<em>r</em>(<em>s</em>,<em>x</em>,<em>s</em>′)+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em>(<em>s</em>′,<em>x</em>′)]</span><br /></p>
+<p><br /><span class="math display"><em>Q</em>(<em>s</em>, <em>x</em>) = <em>E</em><sub><em>s</em>′ ∼ <em>f</em>(<em>s</em>, <em>x</em>,  ⋅ )</sub>[<em>r</em>(<em>s</em>,<em>x</em>,<em>s</em>′)+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em>(<em>s</em>′,<em>x</em>′)]</span><br /></p>
 <p>We can make some basic comparisons between <span class="math inline"><em>Q</em></span> and <span class="math inline"><em>V</em></span> by studying their recursive representations:</p>
 <ul>
 <li>Parameteric representations (i.e. splines or other interpolands) of <span class="math inline"><em>Q</em></span> are more expensive than representations of <span class="math inline"><em>V</em></span> because <span class="math inline"><em>Q</em></span> is defined over the state-action space instead of just the state space.</li>
@@ -540,7 +539,7 @@ knowledge and asset prices
 <li>Then on each iteration <span class="math inline"><em>k</em></span>:
 <ul>
 <li>Given the state action pair on the <span class="math inline"><em>i</em></span>th iteration (<span class="math inline">(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)</span>), the observation of the period <span class="math inline"><em>i</em></span> return <span class="math inline"><em>r</em><sub><em>i</em></sub></span>, and the state iteration <span class="math inline"><em>i</em> + 1</span> <span class="math inline"><em>s</em><sub><em>i</em> + 1</sub></span>…</li>
-<li>… update your guess for <span class="math inline"><em>Q</em></span> using: <br /><span class="math display"><em>Q</em><sub><em>i</em> + 1</sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)=(1 − <em>α</em><sub><em>i</em></sub>)<em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)+<em>α</em><sub><em>i</em></sub>(<em>r</em><sub><em>i</em></sub>+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em> + 1</sub>,<em>u</em>′))</span><br /></li>
+<li>… update your guess for <span class="math inline"><em>Q</em></span> using: <br /><span class="math display"><em>Q</em><sub><em>i</em> + 1</sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>) = (1 − <em>α</em><sub><em>i</em></sub>)<em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>) + <em>α</em><sub><em>i</em></sub>(<em>r</em><sub><em>i</em></sub>+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em> + 1</sub>,<em>u</em>′))</span><br /></li>
 </ul></li>
 </ul>
 <p>Notice that the right hand side is a convex combination of the current guess of the <span class="math inline"><em>Q</em></span> function and the right hand side of the <span class="math inline"><em>Q</em></span>-function operator. This is very similar to standard value function iteration, but has the main advantage of not having any expectations.</p>
@@ -591,7 +590,7 @@ knowledge and asset prices
 <li><span class="math inline">ℋ<sup>2|1</sup></span> histories are <span class="math inline"><em>h</em><sup>1</sup> ⊔ {<em>d</em><sub><em>t</em></sub>, <em>A</em><sub><em>t</em></sub>}</span> are agent 1’s information at agent 2’s decision node in period <span class="math inline"><em>t</em></span>.</li>
 <li><span class="math inline">ℋ<sup>2</sup></span> histories are <span class="math inline"><em>h</em><sup>2|1</sup> ⊔ 𝒩</span> are agent 2’s information set at his decision node in period <span class="math inline"><em>t</em></span>.</li>
 </ol>
-<p>A pure strategy for player 1 is <span class="math inline"><em>s</em><sub>1</sub> : ℋ<sup>1</sup> → {<em>S</em>, <em>E</em>}</span>. A pure strategy for player 2 is <span class="math inline"><em>s</em><sub>2</sub> : ℋ<sup>2</sup> → 𝒜</span> such that forall histories <span class="math inline"><em>h</em><sub><em>t</em></sub><sup>2</sup> ∈ ℋ<sup>2</sup></span>, <span class="math inline"><em>s</em><sub>2</sub>(<em>h</em><sub><em>t</em></sub><sup>2</sup>)∈<em>A</em><sub><em>t</em></sub></span>.</p>
+<p>A pure strategy for player 1 is <span class="math inline"><em>s</em><sub>1</sub> : ℋ<sup>1</sup> → {<em>S</em>, <em>E</em>}</span>. A pure strategy for player 2 is <span class="math inline"><em>s</em><sub>2</sub> : ℋ<sup>2</sup> → 𝒜</span> such that forall histories <span class="math inline"><em>h</em><sub><em>t</em></sub><sup>2</sup> ∈ ℋ<sup>2</sup></span>, <span class="math inline"><em>s</em><sub>2</sub>(<em>h</em><sub><em>t</em></sub><sup>2</sup>) ∈ <em>A</em><sub><em>t</em></sub></span>.</p>
 <p>The equilibrium concept is a Pareto efficient perfect Bayesian equilibrium in pure strategies. The strategy profiles form the equilibrium.</p>
 <h1 id="equilibrium-analysis">Equilibrium Analysis</h1>
 <h2 id="complete-information-benchmark">Complete information benchmark</h2>
@@ -605,7 +604,7 @@ knowledge and asset prices
 <p>A <strong>routine</strong> is a pair of strategies that starting from a particular history <span class="math inline"><em>h</em><sub><em>t</em> + 1</sub><sup>1</sup></span> include only confirmed or unproductive actions in the continuation game.</p>
 <h3 id="optimal-inefficiency">Optimal inefficiency</h3>
 <p>A main result of the paper is that along an equilibrium equilibrium, agent 1’s strategy can include inefficient exit.</p>
-<p>To see why consider a history <span class="math inline"><em>h</em><sub><em>t</em></sub><sup>2|1</sup></span> where <span class="math inline"><em>N</em>′&lt;<em>N</em></span> productive actions have been confirmed.</p>
+<p>To see why consider a history <span class="math inline"><em>h</em><sub><em>t</em></sub><sup>2|1</sup></span> where <span class="math inline"><em>N</em>′ &lt; <em>N</em></span> productive actions have been confirmed.</p>
 <p>Then denote by <span class="math inline">$\underbar{V}_2^{N&rsquo;}$</span> the value agent 2 gets by selecting a non-productive action in every period along paths where agent 1 never exits.</p>
 <p>Then, if at this history, <span class="math inline">$\delta (\bar{V} - \underbar{V}_2^{N&rsquo;}) &lt; c$</span>, exit <strong>must</strong> occur with positive probability on the continuation path.</p>
 <p>This inequality means that the cost of choosing a productive action today, is greater than the discounted difference between maximal value in the full information game and the value of always choosing unproductive actions. In other words, given that agent 1 will never exit, agent 2 has no hope to make up losses in value induced by the cost today of choosing a productive action.</p>
@@ -924,8 +923,8 @@ knowledge and asset prices
 <h3 id="state">State</h3>
 <p>State is Markov diffusion: <span class="math inline"><em>d</em><em>X</em><sub><em>t</em></sub> = <em>μ</em>(<em>X</em><sub><em>t</em></sub>)<em>d</em><em>t</em> + <em>σ</em>(<em>X</em><sub><em>t</em></sub>)<em>d</em><em>W</em><sub><em>t</em></sub></span> (<span class="math inline"><em>W</em></span> is standard BM, <span class="math inline"><em>μ</em></span> and <span class="math inline"><em>σ</em></span> may be non-linear.)</p>
 <h3 id="functionals">Functionals</h3>
-<p>Additive functionals: parameterized by state dependent drift <span class="math inline"><em>β</em>(<em>X</em>)</span> and volatility <span class="math inline"><em>α</em>(<em>X</em>)</span> coefficients integrated over time (<span class="math inline"><em>A</em><sub><em>t</em></sub> = ∫<sub>0</sub><sup><em>t</em></sup><em>β</em>(<em>X</em><sub><em>u</em></sub>)<em>d</em><em>u</em> + ∫<sub>0</sub><sup><em>t</em></sup><em>α</em>(<em>X</em><sub><em>u</em></sub>)⋅<em>d</em><em>W</em><sub><em>u</em></sub></span>)</p>
-<p>Multiplicative functionals are also characterized by <span class="math inline">(<em>β</em>, <em>α</em>)</span> and are the exponential of an underlying additive functional (<span class="math inline"><em>M</em> = exp(<em>A</em>)</span>)</p>
+<p>Additive functionals: parameterized by state dependent drift <span class="math inline"><em>β</em>(<em>X</em>)</span> and volatility <span class="math inline"><em>α</em>(<em>X</em>)</span> coefficients integrated over time (<span class="math inline"><em>A</em><sub><em>t</em></sub> = ∫<sub>0</sub><sup><em>t</em></sup><em>β</em>(<em>X</em><sub><em>u</em></sub>)<em>d</em><em>u</em> + ∫<sub>0</sub><sup><em>t</em></sup><em>α</em>(<em>X</em><sub><em>u</em></sub>) ⋅ <em>d</em><em>W</em><sub><em>u</em></sub></span>)</p>
+<p>Multiplicative functionals are also characterized by <span class="math inline">(<em>β</em>, <em>α</em>)</span> and are the exponential of an underlying additive functional (<span class="math inline"><em>M</em> = exp (<em>A</em>)</span>)</p>
 <p>Growth processes of economic interest, e.g. cash flows and consumption, will be modeled as multiplicative functionals.</p>
 <h3 id="perturbations">Perturbations</h3>
 <p>We will perturb the multiplicative functionals in a specific way that allow us to capture the <em>marginal value of exposure risk in a particular direction</em>.</p>
@@ -947,7 +946,7 @@ knowledge and asset prices
 <p>The Brownian motion will be three dimensional, where dimensions correspond to independent shocks directly to consumption itself, consumption growth <span class="math inline"><em>x</em><sub>1</sub></span>, and stochastic volatility <span class="math inline"><em>x</em><sub>2</sub></span></p>
 <p>Multiplicative functionals take a specific form:</p>
 <ul>
-<li>The drift is affine in deviations of <span class="math inline"><em>x</em><sub>1</sub></span> and <span class="math inline"><em>x</em><sub>2</sub></span> from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (<span class="math inline"><em>β</em>(<em>x</em>)=<em>β̄</em><sub>0</sub> + <em>β̄</em><sub><em>t</em></sub> ⋅ (<em>x</em><sub>1</sub> − <em>ι</em><sub>1</sub>)+<em>β̄</em><sub>2</sub>(<em>x</em><sub><em>t</em></sub> − <em>ι</em><sub>2</sub>)</span>)</li>
+<li>The drift is affine in deviations of <span class="math inline"><em>x</em><sub>1</sub></span> and <span class="math inline"><em>x</em><sub>2</sub></span> from their mean values. The intercept and coefficients on deviations distinguish multiplicative functionals (<span class="math inline"><em>β</em>(<em>x</em>) = <em>β̄</em><sub>0</sub> + <em>β̄</em><sub><em>t</em></sub> ⋅ (<em>x</em><sub>1</sub> − <em>ι</em><sub>1</sub>) + <em>β̄</em><sub>2</sub>(<em>x</em><sub><em>t</em></sub> − <em>ι</em><sub>2</sub>)</span>)</li>
 <li>The volatility is the square root of <span class="math inline"><em>x</em><sub>2</sub></span> times a constant vector <span class="math inline">$(\alpha(x) = \sqrt{x_2} \bar{\alpha}$</span>).</li>
 </ul>
 <p>Consumption growth is modeled directly as a multiplicative functional.</p>
@@ -1043,7 +1042,7 @@ knowledge and asset prices
 <li>Infinitely lived.</li>
 <li>Operates a single intermediary (represent decision makers of bank, hedge fund, extc.)</li>
 <li>Chooses sequence of consumption and portfolio shares in risky asset (acting as intermediary) to maximize the expected present discounted value of a CRRA utility function of consumption subject to…</li>
-<li>Budget constraint: <span class="math inline"><em>d</em><em>w</em><sub><em>t</em></sub> = −<em>c</em><sub><em>t</em></sub><em>d</em><em>t</em> + <em>w</em><sub><em>t</em></sub><em>r</em><sub><em>t</em></sub><em>d</em><em>t</em> + <em>w</em><sub><em>t</em></sub>(<em>d</em><em>R</em><sub><em>t</em></sub>(<em>α</em><sub><em>t</em></sub><sup><em>I</em></sup>)−<em>r</em><sub><em>t</em></sub><em>d</em><em>t</em>)</span>, where <span class="math inline"><em>α</em><sub><em>t</em></sub><sup><em>I</em></sup></span> is intermediary share in risky asset and <span class="math inline"><em>d</em><em>R</em><sub><em>t</em></sub>(<em>α</em><sub><em>t</em></sub><sup><em>I</em></sup>)</span> is the associated return</li>
+<li>Budget constraint: <span class="math inline"><em>d</em><em>w</em><sub><em>t</em></sub> =  − <em>c</em><sub><em>t</em></sub><em>d</em><em>t</em> + <em>w</em><sub><em>t</em></sub><em>r</em><sub><em>t</em></sub><em>d</em><em>t</em> + <em>w</em><sub><em>t</em></sub>(<em>d</em><em>R</em><sub><em>t</em></sub>(<em>α</em><sub><em>t</em></sub><sup><em>I</em></sup>)−<em>r</em><sub><em>t</em></sub><em>d</em><em>t</em>)</span>, where <span class="math inline"><em>α</em><sub><em>t</em></sub><sup><em>I</em></sup></span> is intermediary share in risky asset and <span class="math inline"><em>d</em><em>R</em><sub><em>t</em></sub>(<em>α</em><sub><em>t</em></sub><sup><em>I</em></sup>)</span> is the associated return</li>
 </ul></li>
 </ul>
 <h1 id="equilibrium-outcomes">Equilibrium outcomes</h1>
@@ -1138,7 +1137,7 @@ the same. -->
 <h3 id="notation-classic-bellman-equation">Notation: classic Bellman equation</h3>
 <p>Consider a stationary economic model where at time <span class="math inline"><em>t</em></span> the state is summarized by a vector <span class="math inline"><em>s</em><sub><em>t</em></sub></span> of endogenous state variables and a vector <span class="math inline"><em>x</em><sub><em>t</em></sub></span> of exogenous state variables.</p>
 <p>The optimization problem of an agent is often summarized by a Bellman equation of the form</p>
-<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)=<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>)+<em>β</em><em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em> + 1</sub>)]</span><br /></p>
+<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>) = <em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>) + <em>β</em><em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em> + 1</sub>)]</span><br /></p>
 <p>subject to</p>
 <p><br /><span class="math display"><em>s</em><sub><em>t</em> + 1</sub> = <em>f</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>, <em>c</em><sub><em>t</em></sub>), <em>c</em><sub><em>t</em></sub> ∈ <em>Γ</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>), <em>x</em><sub><em>t</em> + 1</sub> = <em>g</em>(<em>x</em><sub><em>t</em></sub>, <em>ϵ</em><sub><em>t</em> + 1</sub>)</span><br /></p>
 <h3 id="post-decision-state-value-function">Post-decision state value function</h3>
@@ -1147,12 +1146,12 @@ the same. -->
 <p>We will now consider a different representation of the state vector that couples the endogenous state defined at the end of period <span class="math inline"><em>t</em> − 1</span> with the exogenous state realized at the start of period <span class="math inline"><em>t</em> − 1</span>. That is we will consider <span class="math inline"><em>s</em><sub><em>t</em></sub></span> and <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span>, which is known as the post-decision state at time <span class="math inline"><em>t</em> − 1</span>.</p>
 <p>Let <span class="math inline"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)</span> be the value of having post-decision state <span class="math inline"><em>s</em><sub><em>t</em></sub></span>, <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span> in period <span class="math inline"><em>t</em> − 1</span>. This is the maximum expected, discounted utility an agent can achieve after controls have been selected in period <span class="math inline"><em>t</em> − 1</span>.</p>
 <p>Because <span class="math inline"><em>c</em><sub><em>t</em> − 1</sub></span> is not chosen until <em>after</em> <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span> is realized, we know that <span class="math inline"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)</span> is equal to the expectation of the maximum expected, discounted utility the agent will receive after <span class="math inline"><em>x</em><sub><em>t</em></sub></span> arrives. That is, we can write</p>
-<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)=<em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>],</span><br /></p>
+<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>) = <em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>],</span><br /></p>
 <p>where <span class="math inline"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)</span> is the pre-decision Bellman equation.</p>
 <p>It follows that we can write</p>
-<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)=<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub> + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>).</span><br /></p>
+<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>) = <em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub> + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>).</span><br /></p>
 <p>These equations can be manipulated to produce the recursive form of the post-decision state Bellman equation:</p>
-<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)=<em>E</em>[<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>)+<em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>].</span><br /></p>
+<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>) = <em>E</em>[<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>) + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>].</span><br /></p>
 <p>Notice that the expectation is <em>outside</em> the max operator, meaning that the maximization problem is deterministic.</p>
 <h2 id="algorithm-1">Algorithm</h2>
 <p>Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I’ll discuss how I’d change it later.</p>
@@ -1258,7 +1257,7 @@ the same. -->
 <ul>
 <li>For each state <span class="math inline"><em>d</em> ∈ <em>D</em><sub><em>M</em></sub></span>
 <ul>
-<li>Compute all MPE of the subgame starting from <span class="math inline"><em>s</em> = <em>d</em> × <em>x</em>,  ∀<em>x</em> ∈ <em>X</em></span>, taking as given optimal strategies already computed in subgroups <span class="math inline"><em>j</em> &gt; <em>i</em></span></li>
+<li>Compute all MPE of the subgame starting from <span class="math inline"><em>s</em> = <em>d</em> × <em>x</em>, ∀<em>x</em> ∈ <em>X</em></span>, taking as given optimal strategies already computed in subgroups <span class="math inline"><em>j</em> &gt; <em>i</em></span></li>
 <li>If multiple such equilibria exist, use some deterministic equilibrium selection rule to choose a unique MPE</li>
 </ul></li>
 </ul></li>
@@ -1617,7 +1616,7 @@ strategy, whereas a randomized stationary is like a mixed strategy. -->
 <li>Channel capital from depositors to firms and</li>
 <li>Monitor the firms they lend to. Bankers earn a return <span class="math inline"><em>R</em></span> on all capital they lend to firms (their own, plus that collected from depositors)</li>
 </ol></li>
-<li>A depositor lends their capital endowment to banks and earn a return <span class="math inline"><em>R</em><sup><em>D</em></sup> &lt; =<em>R</em></span> on their investment. <span class="math inline"><em>R</em><sup><em>D</em></sup></span> is an equilibrium object. Preferences dictate that they then consume all that they have</li>
+<li>A depositor lends their capital endowment to banks and earn a return <span class="math inline"><em>R</em><sup><em>D</em></sup> &lt;  = <em>R</em></span> on their investment. <span class="math inline"><em>R</em><sup><em>D</em></sup></span> is an equilibrium object. Preferences dictate that they then consume all that they have</li>
 </ul></li>
 <li>A continuum of potential entrepreneurs that run firms.
 <ul>
@@ -1985,7 +1984,7 @@ setting, the adoption policy
 </ul>
 <h1 id="conclusion-3">Conclusion</h1>
 <ul>
-<li><p>Paper provides empirical evidence for G7 countries that short-and-long-term productivity news have differing effects on capital flows (short <span class="math inline">↑⇒</span> captial in . long <span class="math inline">↑⇒</span> capital out)</p></li>
+<li><p>Paper provides empirical evidence for G7 countries that short-and-long-term productivity news have differing effects on capital flows (short <span class="math inline"> ↑ ⇒</span> captial in . long <span class="math inline"> ↑ ⇒</span> capital out)</p></li>
 <li><p>They start with a classic BKK model (two agents, two goods, CRRA utility, constant volatility, persistent shocks to productivity, frictionless trade across countries). Here there is one main channel that prompts resource flows: productivity. So good news about either long run or short run productivity growth will cause resources to flow into that country.</p></li>
 <li><p>They also present an almost identical version of the model, the only change being endowing agents with Epstein Zin recursive preferences instead of additive preferences. In addition to the productivity channel inherited from the BKK structure, the EZ preferences bring a risk-channel or motive for resource allocation. This motive can be seen by considering 3 related things:</p></li>
 </ul>
@@ -2033,7 +2032,7 @@ s.t. &amp; \quad v \ge T v
 <p>These two facts mean that the unique solution to the programming problem is <span class="math inline"><em>v</em><sup></em></sup></span>.</p>
 <h2 id="linear-program">Linear program</h2>
 <p>I told you that we would use linear programming, but notice that the constraint is nonlinear because <span class="math inline"><em>T</em></span> is nonlinear.</p>
-<p>However, if we stare at the definition of <span class="math inline"><em>T</em></span> for long enough we will notice that if we consider the constraint <span class="math inline"><em>v</em> ≥ <em>T</em><em>v</em></span> state by state, (e.g. <span class="math inline"><em>v</em>(<em>x</em>)≥<em>T</em><em>v</em>(<em>x</em>)</span>) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.</p>
+<p>However, if we stare at the definition of <span class="math inline"><em>T</em></span> for long enough we will notice that if we consider the constraint <span class="math inline"><em>v</em> ≥ <em>T</em><em>v</em></span> state by state, (e.g. <span class="math inline"><em>v</em>(<em>x</em>) ≥ <em>T</em><em>v</em>(<em>x</em>)</span>) we will notice that we can replace the single non-linear constraint per state with a system of linear constraints for each state.</p>
 <p>This system is defined by enumerating all feasible actions for each state and writing down the right hand side of Bellman’s equation for that state and control. The program looks as follows:</p>
 <p><br /><span class="math display">$$\begin{aligned}&amp;\underset{V}{\min} c&rsquo;v <br />
 s.t. &amp; \quad v(x) \ge u(x,c) + \beta \sum_{x&rsquo;} P(x&rsquo;| x,c)v(x&rsquo;) \quad \forall x \in X \; \forall c \in \mathcal{A}<em>x

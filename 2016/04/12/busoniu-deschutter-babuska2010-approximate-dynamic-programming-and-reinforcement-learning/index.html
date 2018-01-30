@@ -51,10 +51,9 @@
     },
     "datePublished": "2016-04-12",
     "description": "",
-    "wordCount": 805
+    "wordCount": 814
   }
 </script>
-
 
 
 <link rel="canonical" href="http://srg.spencerlyon.com/2016/04/12/busoniu-deschutter-babuska2010-approximate-dynamic-programming-and-reinforcement-learning/" />
@@ -62,7 +61,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.20-DEV" />
+<meta name="generator" content="Hugo 0.32-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -151,7 +150,7 @@
 
   
   &middot; Read in about 4 min
-  &middot; (805 Words)
+  &middot; (814 Words)
   <br>
   
 
@@ -167,7 +166,7 @@
 <p>In economics, the standard representation of a dynamic programming problem is to define a recursive function <span class="math inline"><em>V</em></span> that maps from a state space into the real line. Today I will call <span class="math inline"><em>V</em></span> the <span class="math inline"><em>V</em></span> function. The <span class="math inline"><em>V</em></span> function describes the value of being in a particular state.</p>
 <p>Consider an alternative function <span class="math inline"><em>Q</em></span> that maps from the state-action space, into the real line. I will call this the <span class="math inline"><em>Q</em></span>-function. The <span class="math inline"><em>Q</em></span> function describes the value of being in a particular state and choosing a particular action.</p>
 <p>As we do with the <span class="math inline"><em>V</em></span>-function, we can express the <span class="math inline"><em>Q</em></span>-function recursively using Bellman’s principle of optimality. The recursive form of the <span class="math inline"><em>Q</em></span>-function is</p>
-<p><br /><span class="math display"><em>Q</em>(<em>s</em>, <em>x</em>)=<em>E</em><sub><em>s</em>′∼<em>f</em>(<em>s</em>, <em>x</em>, ⋅)</sub>[<em>r</em>(<em>s</em>,<em>x</em>,<em>s</em>′)+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em>(<em>s</em>′,<em>x</em>′)]</span><br /></p>
+<p><br /><span class="math display"><em>Q</em>(<em>s</em>, <em>x</em>) = <em>E</em><sub><em>s</em>′ ∼ <em>f</em>(<em>s</em>, <em>x</em>,  ⋅ )</sub>[<em>r</em>(<em>s</em>,<em>x</em>,<em>s</em>′)+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em>(<em>s</em>′,<em>x</em>′)]</span><br /></p>
 <p>We can make some basic comparisons between <span class="math inline"><em>Q</em></span> and <span class="math inline"><em>V</em></span> by studying their recursive representations:</p>
 <ul>
 <li>Parameteric representations (i.e. splines or other interpolands) of <span class="math inline"><em>Q</em></span> are more expensive than representations of <span class="math inline"><em>V</em></span> because <span class="math inline"><em>Q</em></span> is defined over the state-action space instead of just the state space.</li>
@@ -186,7 +185,7 @@
 <li>Then on each iteration <span class="math inline"><em>k</em></span>:
 <ul>
 <li>Given the state action pair on the <span class="math inline"><em>i</em></span>th iteration (<span class="math inline">(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)</span>), the observation of the period <span class="math inline"><em>i</em></span> return <span class="math inline"><em>r</em><sub><em>i</em></sub></span>, and the state iteration <span class="math inline"><em>i</em> + 1</span> <span class="math inline"><em>s</em><sub><em>i</em> + 1</sub></span>…</li>
-<li>… update your guess for <span class="math inline"><em>Q</em></span> using: <br /><span class="math display"><em>Q</em><sub><em>i</em> + 1</sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)=(1 − <em>α</em><sub><em>i</em></sub>)<em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>)+<em>α</em><sub><em>i</em></sub>(<em>r</em><sub><em>i</em></sub>+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em> + 1</sub>,<em>u</em>′))</span><br /></li>
+<li>… update your guess for <span class="math inline"><em>Q</em></span> using: <br /><span class="math display"><em>Q</em><sub><em>i</em> + 1</sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>) = (1 − <em>α</em><sub><em>i</em></sub>)<em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>x</em><sub><em>i</em></sub>) + <em>α</em><sub><em>i</em></sub>(<em>r</em><sub><em>i</em></sub>+<em>β</em>max<sub><em>x</em>′</sub><em>Q</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em> + 1</sub>,<em>u</em>′))</span><br /></li>
 </ul></li>
 </ul>
 <p>Notice that the right hand side is a convex combination of the current guess of the <span class="math inline"><em>Q</em></span> function and the right hand side of the <span class="math inline"><em>Q</em></span>-function operator. This is very similar to standard value function iteration, but has the main advantage of not having any expectations.</p>

@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/2018/01/30/christiano-motto-and-rostagno-2014-risk-shocks/</loc>
+    <lastmod>2018-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/2017/12/05/eisfeldt-and-papanikolaou-2013-organization-capital-and-the-cross-section-of-expected-returns/</loc>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/eisfeldt_papanikolaou_2017/</loc>
+    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/2017/11/30/eisfeldt-and-papanikolaou-2013/</loc>
+    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
+  </url>
   
   <url>
     <loc>http://srg.spencerlyon.com/2017/11/28/mcgratten-2017-intangible-capital-and-measured-productivity/</loc>
@@ -276,19 +297,44 @@
   </url>
   
   <url>
+    <loc>http://srg.spencerlyon.com/tags/continuous-time/</loc>
+    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/tags/data-markets/</loc>
+    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/tags/model/</loc>
+    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://srg.spencerlyon.com/post/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://srg.spencerlyon.com/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/tags/srg/</loc>
+    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://srg.spencerlyon.com/tags/</loc>
+    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   

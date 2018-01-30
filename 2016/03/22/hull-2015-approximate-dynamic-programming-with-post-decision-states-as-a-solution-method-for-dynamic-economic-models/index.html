@@ -51,10 +51,9 @@
     },
     "datePublished": "2016-03-22",
     "description": "",
-    "wordCount": 841
+    "wordCount": 853
   }
 </script>
-
 
 
 <link rel="canonical" href="http://srg.spencerlyon.com/2016/03/22/hull-2015-approximate-dynamic-programming-with-post-decision-states-as-a-solution-method-for-dynamic-economic-models/" />
@@ -62,7 +61,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://srg.spencerlyon.com/touch-icon-144-precomposed.png">
 <link href="http://srg.spencerlyon.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.20-DEV" />
+<meta name="generator" content="Hugo 0.32-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -150,8 +149,8 @@
 
 
   
-  &middot; Read in about 4 min
-  &middot; (841 Words)
+  &middot; Read in about 5 min
+  &middot; (853 Words)
   <br>
   
 
@@ -168,7 +167,7 @@
 <h3 id="notation-classic-bellman-equation">Notation: classic Bellman equation</h3>
 <p>Consider a stationary economic model where at time <span class="math inline"><em>t</em></span> the state is summarized by a vector <span class="math inline"><em>s</em><sub><em>t</em></sub></span> of endogenous state variables and a vector <span class="math inline"><em>x</em><sub><em>t</em></sub></span> of exogenous state variables.</p>
 <p>The optimization problem of an agent is often summarized by a Bellman equation of the form</p>
-<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)=<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>)+<em>β</em><em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em> + 1</sub>)]</span><br /></p>
+<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>) = <em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>) + <em>β</em><em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em> + 1</sub>)]</span><br /></p>
 <p>subject to</p>
 <p><br /><span class="math display"><em>s</em><sub><em>t</em> + 1</sub> = <em>f</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>, <em>c</em><sub><em>t</em></sub>), <em>c</em><sub><em>t</em></sub> ∈ <em>Γ</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>), <em>x</em><sub><em>t</em> + 1</sub> = <em>g</em>(<em>x</em><sub><em>t</em></sub>, <em>ϵ</em><sub><em>t</em> + 1</sub>)</span><br /></p>
 <h3 id="post-decision-state-value-function">Post-decision state value function</h3>
@@ -177,12 +176,12 @@
 <p>We will now consider a different representation of the state vector that couples the endogenous state defined at the end of period <span class="math inline"><em>t</em> − 1</span> with the exogenous state realized at the start of period <span class="math inline"><em>t</em> − 1</span>. That is we will consider <span class="math inline"><em>s</em><sub><em>t</em></sub></span> and <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span>, which is known as the post-decision state at time <span class="math inline"><em>t</em> − 1</span>.</p>
 <p>Let <span class="math inline"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)</span> be the value of having post-decision state <span class="math inline"><em>s</em><sub><em>t</em></sub></span>, <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span> in period <span class="math inline"><em>t</em> − 1</span>. This is the maximum expected, discounted utility an agent can achieve after controls have been selected in period <span class="math inline"><em>t</em> − 1</span>.</p>
 <p>Because <span class="math inline"><em>c</em><sub><em>t</em> − 1</sub></span> is not chosen until <em>after</em> <span class="math inline"><em>x</em><sub><em>t</em> − 1</sub></span> is realized, we know that <span class="math inline"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)</span> is equal to the expectation of the maximum expected, discounted utility the agent will receive after <span class="math inline"><em>x</em><sub><em>t</em></sub></span> arrives. That is, we can write</p>
-<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)=<em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>],</span><br /></p>
+<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>) = <em>E</em>[<em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>],</span><br /></p>
 <p>where <span class="math inline"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)</span> is the pre-decision Bellman equation.</p>
 <p>It follows that we can write</p>
-<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>)=<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub> + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>).</span><br /></p>
+<p><br /><span class="math display"><em>V</em>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em></sub>) = <em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub> + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>).</span><br /></p>
 <p>These equations can be manipulated to produce the recursive form of the post-decision state Bellman equation:</p>
-<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>)=<em>E</em>[<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>)+<em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>].</span><br /></p>
+<p><br /><span class="math display"><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>) = <em>E</em>[<em>m</em><em>a</em><em>x</em><sub><em>c</em><sub><em>t</em></sub></sub><em>u</em>(<em>c</em><sub><em>t</em></sub>) + <em>β</em><em>V</em><sup><em>x</em></sup>(<em>s</em><sub><em>t</em> + 1</sub>, <em>x</em><sub><em>t</em></sub>)|<em>s</em><sub><em>t</em></sub>, <em>x</em><sub><em>t</em> − 1</sub>].</span><br /></p>
 <p>Notice that the expectation is <em>outside</em> the max operator, meaning that the maximization problem is deterministic.</p>
 <h2 id="algorithm">Algorithm</h2>
 <p>Now that we have the post-decision state Bellman equation, the algorithm is fairly straightforward. I will present the algorithm from the paper in the context of Markov exogenous processes, but I believe it is incorrectly specified. I’ll discuss how I’d change it later.</p>

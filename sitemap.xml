@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://srg.spencerlyon.com/2018/02/13/brynjolfsson-and-hitt-2003/</loc>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://srg.spencerlyon.com/2018/01/30/christiano-motto-and-rostagno-2014-risk-shocks/</loc>
     <lastmod>2018-01-30T00:00:00+00:00</lastmod>
   </url>
@@ -304,7 +309,7 @@
   
   <url>
     <loc>http://srg.spencerlyon.com/tags/data-markets/</loc>
-    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -316,19 +321,25 @@
   
   <url>
     <loc>http://srg.spencerlyon.com/post/</loc>
-    <lastmod>2018-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://srg.spencerlyon.com/tags/read/</loc>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://srg.spencerlyon.com/</loc>
-    <lastmod>2018-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://srg.spencerlyon.com/tags/srg/</loc>
-    <lastmod>2017-11-30T09:41:00-05:00</lastmod>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

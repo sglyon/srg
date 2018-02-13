@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Read on Sargent Reading Group Notes</title>
+    <link>http://srg.spencerlyon.com/tags/read/</link>
+    <description>Recent content in Read on Sargent Reading Group Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-EN</language>
+    <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
+    <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
+    <copyright>(c) 2015 Spencer Lyon.</copyright>
+    <lastBuildDate>Tue, 13 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://srg.spencerlyon.com/tags/read/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brynjolfsson and Hitt 2003</title>
+      <link>http://srg.spencerlyon.com/2018/02/13/brynjolfsson-and-hitt-2003/</link>
+      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/02/13/brynjolfsson-and-hitt-2003/</guid>
+      <description>CLOSED: [2017-11-13 Mon 09:37]
+Data The goal of this paper is to use firm-level data to determine the determinants of productivity and output growth.
+To do this, the authors use a nearly-balanced panel from 1987-1994 on 527 of the fortune 1000 firms to attempt to estimate the impact on investment in computers on output and productivity growth. This panel is a merging of compustat data with data from the Computer Intelligence InfoCorp, or CII.</description>
+    </item>
+    
+  </channel>
+</rss>

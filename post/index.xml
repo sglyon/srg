@@ -9,10 +9,21 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 27 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Doraszelski, Lewis, Pakes (2018) (Just Starting Out: Learning And Equilibrium In A New Market)</title>
+      <link>http://srg.spencerlyon.com/2018/03/13/doraszelski-lewis-pakes-2018-just-starting-out-learning-and-equilibrium-in-a-new-market/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/03/13/doraszelski-lewis-pakes-2018-just-starting-out-learning-and-equilibrium-in-a-new-market/</guid>
+      <description>This paper uses legal reform in the energy industry in the UK as a natural experiment to study how firms learn to compete and optimally set prices while converging to behavior that looks like competitive Nash equilibrium.
+TODO: revise the last few words. Nash what exactly?
+Electricity in the UK The paper goes into very interesting detail about how the electricity collection and delivery happens in the UK. I’ll do my best to cover the essential parts here.</description>
+    </item>
     
     <item>
       <title>Grossman and Helpman 2018 (Growth, Trade, and Inequality)</title>

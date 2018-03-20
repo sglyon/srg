@@ -9,10 +9,21 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 13 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Steinwender (2018) (Real Effects of Information Frictions: When the States and the Kingdom Became United)</title>
+      <link>http://srg.spencerlyon.com/2018/03/20/steinwender-2018-real-effects-of-information-frictions-when-the-states-and-the-kingdom-became-united/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/03/20/steinwender-2018-real-effects-of-information-frictions-when-the-states-and-the-kingdom-became-united/</guid>
+      <description>This author uses data from just before and after the trans Atlantic telegraph was completed to study how information frictions distorted international trade in cotton between the US and the United Kingdom.
+Data This paper uses from July 29, 1865 through July 27, 1867. The telegraph was completed in July 28, 1866 – 1/2 of the sample is before the telegraph and 1/2 is after.
+At the time, the primary route for cotton trade was between New York City and Liverpool England.</description>
+    </item>
     
     <item>
       <title>Doraszelski, Lewis, Pakes (2018) (Just Starting Out: Learning And Equilibrium In A New Market)</title>

@@ -9,10 +9,33 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 20 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://srg.spencerlyon.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Athey (2018). (The Impact of Machine Learning on Economics)</title>
+      <link>http://srg.spencerlyon.com/2018/04/03/athey-2018.-the-impact-of-machine-learning-on-economics/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/04/03/athey-2018.-the-impact-of-machine-learning-on-economics/</guid>
+      <description>This is what I’ll call an editorial paper where someone in economics that uses many tools and ideas from machine learning surveys the current usages of ML in econ and muses about the possible future interactions between the two fields.
+There isn’t a whole lot of meat here in terms of model or data, but there are interesting concepts that I think will be applicable to empirical economists in the future.</description>
+    </item>
+    
+    <item>
+      <title>Bergemann, Bonatti, and Smolin (2018). (The Design and Price of Information.)</title>
+      <link>http://srg.spencerlyon.com/2018/03/27/bergemann-bonatti-and-smolin-2018.-the-design-and-price-of-information./</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/03/27/bergemann-bonatti-and-smolin-2018.-the-design-and-price-of-information./</guid>
+      <description>This paper analyzes a theoretical framework for thinking about how information can be productized and priced.
+Model This is a static, one-shot model.
+There are two agents: a decision maker or data buyer, and a data seller.
+There a finite number of states and a finite number of actions available to the decision maker.
+The true state is hidden to the data buyer. The data buyer receives utility based on the realized state and action she chooses.</description>
+    </item>
     
     <item>
       <title>Steinwender (2018) (Real Effects of Information Frictions: When the States and the Kingdom Became United)</title>

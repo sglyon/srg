@@ -9,10 +9,40 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Athreya, Owens, and Schwartzman (2017) (Does redistribution increase output? The centrality of labor supply.)</title>
+      <link>http://srg.spencerlyon.com/2018/04/24/athreya-owens-and-schwartzman-2017-does-redistribution-increase-output-the-centrality-of-labor-supply./</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/04/24/athreya-owens-and-schwartzman-2017-does-redistribution-increase-output-the-centrality-of-labor-supply./</guid>
+      <description>The goal of this paper is to understand what impacts a redistribution from rich to poor has on short run output. The authors want to understand the mechanisms or model assumptions that lead to quantitatively significant effects.
+The standard thinking is that a transfer from rich to poor will stimulate the economy, because in general the poor have a higher marginal propensity to consume out of wealth. The main finding of this paper is that this line of thinking is only correct and significant</description>
+    </item>
+    
+    <item>
+      <title>Dolandson and Hornbeck (2016) (Railroads and American Economic Growth: A “Market Access” Approach)</title>
+      <link>http://srg.spencerlyon.com/2018/04/17/dolandson-and-hornbeck-2016-railroads-and-american-economic-growth-a-market-access-approach/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/04/17/dolandson-and-hornbeck-2016-railroads-and-american-economic-growth-a-market-access-approach/</guid>
+      <description>This paper studies how the growth of the railroad infrastructure in the US between 1870 and 1890 changed the “market access” each county had to all other US counties and the implications for this change in market access on the value of agricultural land.
+Data In this time period, there were three primary modes of transportation (for moving freight):
+Roads travelled via wagon Canals travelled via barge Railroads  The dataset used in this paper has three main components:</description>
+    </item>
+    
+    <item>
+      <title>Atkin, Khandelwal, Osman (2017). (Exporting and Firm Performance: Evidence from a Randomized Experiment)</title>
+      <link>http://srg.spencerlyon.com/2018/04/10/atkin-khandelwal-osman-2017.-exporting-and-firm-performance-evidence-from-a-randomized-experiment/</link>
+      <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/04/10/atkin-khandelwal-osman-2017.-exporting-and-firm-performance-evidence-from-a-randomized-experiment/</guid>
+      <description>This paper uses a randomized empirical experiment to address how much exporting impacts firm performance. Tens of billions of dollars are spent each year by organizations like the world trade organization in an effort to help developing countries participate in global export markets. One justification for this spending is that people believe that exporting improves firm productivity through learning-by-exporting. When learning-by-exporting happens, trade generates efficiency gains that narrow the productivity gap and further magnify gains from trade.</description>
+    </item>
     
     <item>
       <title>Athey (2018). (The Impact of Machine Learning on Economics)</title>

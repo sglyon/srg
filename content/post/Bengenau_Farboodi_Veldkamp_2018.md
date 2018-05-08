@@ -1,6 +1,6 @@
 ---
 'date': '2018-05-08'
-'title': 'Juliane, Farboodi, and Veldkamp (2018) (Big Data in Finance and the Growth
+'title': 'Begenau, Farboodi, and Veldkamp (2018) (Big Data in Finance and the Growth
   of Large Firms.)'
 ---
 

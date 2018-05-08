@@ -9,10 +9,20 @@
     <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015 Spencer Lyon.</copyright>
-    <lastBuildDate>Tue, 24 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://srg.spencerlyon.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Juliane, Farboodi, and Veldkamp (2018) (Big Data in Finance and the Growth of Large Firms.)</title>
+      <link>http://srg.spencerlyon.com/2018/05/08/juliane-farboodi-and-veldkamp-2018-big-data-in-finance-and-the-growth-of-large-firms./</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://srg.spencerlyon.com/2018/05/08/juliane-farboodi-and-veldkamp-2018-big-data-in-finance-and-the-growth-of-large-firms./</guid>
+      <description>This paper studies the hypothesis that the use of big data sets and technologies by financial firms has lowered the cost of capital for large firms, relative to small ones, allowing large firms to grow larger.
+The authors motivate the study of the growth rate of small and large firms by noting that in terms of employment and revenue share, the firms in the top 5% have grown more and faster relative to small firms.</description>
+    </item>
     
     <item>
       <title>Athreya, Owens, and Schwartzman (2017) (Does redistribution increase output? The centrality of labor supply.)</title>
